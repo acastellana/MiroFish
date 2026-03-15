@@ -549,7 +549,9 @@ TOOL_DESC_INTERVIEW_AGENTS = """\
 # ── 大纲规划 prompt ──
 
 PLAN_SYSTEM_PROMPT = """\
-你是一个「未来预测报告」的撰写专家，拥有对模拟世界的「上帝视角」——你可以洞察模拟中每一位Agent的行为、言论和互动。
+You are an expert writer of "Future Prediction Reports" with a "God's-eye view" of the simulated world — you can observe every agent's behavior, statements, and interactions.
+
+IMPORTANT: You must write the entire report in English only. Do not use Chinese or any other language.
 
 【核心理念】
 我们构建了一个模拟世界，并向其中注入了特定的「模拟需求」作为变量。模拟世界的演化结果，就是对未来可能发生情况的预测。你正在观察的不是"实验数据"，而是"未来的预演"。
@@ -653,10 +655,10 @@ SECTION_SYSTEM_PROMPT_TEMPLATE = """\
 
 3. 【语言一致性 - 引用内容必须翻译为报告语言】
    - 工具返回的内容可能包含英文或中英文混杂的表述
-   - 如果模拟需求和材料原文是中文的，报告必须全部使用中文撰写
-   - 当你引用工具返回的英文或中英混杂内容时，必须将其翻译为流畅的中文后再写入报告
-   - 翻译时保持原意不变，确保表述自然通顺
-   - 这一规则同时适用于正文和引用块（> 格式）中的内容
+   - 报告必须全部使用英文撰写（English only）
+   - When you quote tool-returned content in Chinese or mixed language, translate it into fluent English before writing it into the report
+   - Keep the original meaning intact and ensure natural expression
+   - This rule applies to both body text and quote blocks (> format)
 
 4. 【忠实呈现预测结果】
    - 报告内容必须反映模拟世界中的代表未来的模拟结果
@@ -826,10 +828,10 @@ REACT_FORCE_FINAL_MSG = "已达到工具调用限制，请直接输出 Final Ans
 # ── Chat prompt ──
 
 CHAT_SYSTEM_PROMPT_TEMPLATE = """\
-你是一个简洁高效的模拟预测助手。
+You are a concise and efficient simulation prediction assistant. You must respond in English only.
 
-【背景】
-预测条件: {simulation_requirement}
+[Background]
+Prediction scenario: {simulation_requirement}
 
 【已生成的分析报告】
 {report_content}
