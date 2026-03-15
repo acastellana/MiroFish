@@ -23,7 +23,7 @@
       <div class="header-right">
         <div class="workflow-step">
           <span class="step-num">Step 3/5</span>
-          <span class="step-name">开始模拟</span>
+          <span class="step-name">Start Simulation</span>
         </div>
         <div class="step-divider"></div>
         <span class="status-indicator" :class="statusClass">
@@ -47,7 +47,7 @@
         />
       </div>
 
-      <!-- Right Panel: Step3 开始模拟 -->
+      <!-- Right Panel: Step3 Start Simulation -->
       <div class="panel-wrapper right" :style="rightPanelStyle">
         <Step3Simulation
           :simulationId="currentSimulationId"
@@ -89,7 +89,7 @@ const viewMode = ref('split')
 const currentSimulationId = ref(route.params.simulationId)
 // 直接在初始化时从 query 参数获取 maxRounds，确保子组件能立即获取到值
 const maxRounds = ref(route.query.maxRounds ? parseInt(route.query.maxRounds) : null)
-const minutesPerRound = ref(30) // 默认每轮30分钟
+const minutesPerRound = ref(30) // 默认每轮30min
 const projectData = ref(null)
 const graphData = ref(null)
 const graphLoading = ref(false)
@@ -145,8 +145,8 @@ const toggleMaximize = (target) => {
 }
 
 const handleGoBack = async () => {
-  // 在返回 Step 2 之前，先关闭正在运行的模拟
-  addLog('准备返回 Step 2，正在关闭模拟...')
+  // 在Back Step 2 之前，先关闭正在运行的模拟
+  addLog('准备Back Step 2，正在关闭模拟...')
   
   // 停止轮询
   stopGraphRefresh()
@@ -164,38 +164,38 @@ const handleGoBack = async () => {
         })
         addLog('✓ 模拟环境已关闭')
       } catch (closeErr) {
-        addLog(`关闭模拟环境失败，尝试强制停止...`)
+        addLog(`关闭模拟环境Failed，尝试强制停止...`)
         try {
           await stopSimulation({ simulation_id: currentSimulationId.value })
           addLog('✓ 模拟已强制停止')
         } catch (stopErr) {
-          addLog(`强制停止失败: ${stopErr.message}`)
+          addLog(`强制停止Failed: ${stopErr.message}`)
         }
       }
     } else {
       // 环境未运行，检查是否需要停止进程
       if (isSimulating.value) {
-        addLog('正在停止模拟进程...')
+        addLog('正在Stop Simulation进程...')
         try {
           await stopSimulation({ simulation_id: currentSimulationId.value })
-          addLog('✓ 模拟已停止')
+          addLog('✓ 模拟Stopped')
         } catch (err) {
-          addLog(`停止模拟失败: ${err.message}`)
+          addLog(`Stop SimulationFailed: ${err.message}`)
         }
       }
     }
   } catch (err) {
-    addLog(`检查模拟状态失败: ${err.message}`)
+    addLog(`检查模拟StatusFailed: ${err.message}`)
   }
   
-  // 返回到 Step 2 (环境搭建)
+  // Back到 Step 2 (Environment Setup)
   router.push({ name: 'Simulation', params: { simulationId: currentSimulationId.value } })
 }
 
 const handleNextStep = () => {
-  // Step3Simulation 组件会直接处理报告生成和路由跳转
-  // 这个方法仅作为备用
-  addLog('进入 Step 4: 报告生成')
+  // Step3Simulation 组件会直接处理Report Generation和路由跳转
+  // 这方法仅作为备用
+  addLog('进入 Step 4: Report Generation')
 }
 
 // --- Data Logic ---
@@ -213,10 +213,10 @@ const loadSimulationData = async () => {
         const configRes = await getSimulationConfig(currentSimulationId.value)
         if (configRes.success && configRes.data?.time_config?.minutes_per_round) {
           minutesPerRound.value = configRes.data.time_config.minutes_per_round
-          addLog(`时间配置: 每轮 ${minutesPerRound.value} 分钟`)
+          addLog(`Time配置: 每轮 ${minutesPerRound.value} min`)
         }
       } catch (configErr) {
-        addLog(`获取时间配置失败，使用默认值: ${minutesPerRound.value}分钟/轮`)
+        addLog(`获取Time配置Failed，使用默认值: ${minutesPerRound.value}min/轮`)
       }
       
       // 获取 project 信息
@@ -224,7 +224,7 @@ const loadSimulationData = async () => {
         const projRes = await getProject(simData.project_id)
         if (projRes.success && projRes.data) {
           projectData.value = projRes.data
-          addLog(`项目加载成功: ${projRes.data.project_id}`)
+          addLog(`项目加载Success: ${projRes.data.project_id}`)
           
           // 获取 graph 数据
           if (projRes.data.graph_id) {
@@ -233,7 +233,7 @@ const loadSimulationData = async () => {
         }
       }
     } else {
-      addLog(`加载模拟数据失败: ${simRes.error || '未知错误'}`)
+      addLog(`加载模拟数据Failed: ${simRes.error || '未知Error'}`)
     }
   } catch (err) {
     addLog(`加载异常: ${err.message}`)
@@ -241,8 +241,8 @@ const loadSimulationData = async () => {
 }
 
 const loadGraph = async (graphId) => {
-  // 当正在模拟时，自动刷新不显示全屏 loading，以免闪烁
-  // 手动刷新或初始加载时显示 loading
+  // 当正在模拟时，自动Refresh不显示全屏 loading，以免闪烁
+  // 手动Refresh或初始加载时显示 loading
   if (!isSimulating.value) {
     graphLoading.value = true
   }
@@ -252,11 +252,11 @@ const loadGraph = async (graphId) => {
     if (res.success) {
       graphData.value = res.data
       if (!isSimulating.value) {
-        addLog('图谱数据加载成功')
+        addLog('Graph Data加载Success')
       }
     }
   } catch (err) {
-    addLog(`图谱加载失败: ${err.message}`)
+    addLog(`图谱加载Failed: ${err.message}`)
   } finally {
     graphLoading.value = false
   }
@@ -273,8 +273,8 @@ let graphRefreshTimer = null
 
 const startGraphRefresh = () => {
   if (graphRefreshTimer) return
-  addLog('开启图谱实时刷新 (30s)')
-  // 立即刷新一次，然后每30秒刷新
+  addLog('开启图谱实时Refresh (30s)')
+  // 立即Refresh一次，然后每30sRefresh
   graphRefreshTimer = setInterval(refreshGraph, 30000)
 }
 
@@ -282,7 +282,7 @@ const stopGraphRefresh = () => {
   if (graphRefreshTimer) {
     clearInterval(graphRefreshTimer)
     graphRefreshTimer = null
-    addLog('停止图谱实时刷新')
+    addLog('停止图谱实时Refresh')
   }
 }
 

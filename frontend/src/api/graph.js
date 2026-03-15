@@ -1,7 +1,7 @@
 import service, { requestWithRetry } from './index'
 
 /**
- * 生成本体（上传文档和模拟需求）
+ * 生成本体（上传文档和Simulation Requirement）
  * @param {Object} data - 包含files, simulation_requirement, project_name等
  * @returns {Promise}
  */
@@ -34,7 +34,7 @@ export function buildGraph(data) {
 }
 
 /**
- * 查询任务状态
+ * 查询任务Status
  * @param {String} taskId - 任务ID
  * @returns {Promise}
  */
@@ -46,7 +46,7 @@ export function getTaskStatus(taskId) {
 }
 
 /**
- * 获取图谱数据
+ * 获取Graph Data
  * @param {String} graphId - 图谱ID
  * @returns {Promise}
  */

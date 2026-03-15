@@ -9,8 +9,8 @@
             <span class="step-title">本体生成</span>
           </div>
           <div class="step-status">
-            <span v-if="currentPhase > 0" class="badge success">已完成</span>
-            <span v-else-if="currentPhase === 0" class="badge processing">生成中</span>
+            <span v-if="currentPhase > 0" class="badge success">Completed</span>
+            <span v-else-if="currentPhase === 0" class="badge processing">Generating</span>
             <span v-else class="badge pending">等待</span>
           </div>
         </div>
@@ -18,7 +18,7 @@
         <div class="card-content">
           <p class="api-note">POST /api/graph/ontology/generate</p>
           <p class="description">
-            LLM分析文档内容与模拟需求，提取出现实种子，自动生成合适的本体结构
+            LLM分析文档内容与Simulation Requirement，提取出现实种子，自动生成合适的本体结构
           </p>
 
           <!-- Loading / Progress -->
@@ -113,7 +113,7 @@
             <span class="step-title">GraphRAG构建</span>
           </div>
           <div class="step-status">
-            <span v-if="currentPhase > 1" class="badge success">已完成</span>
+            <span v-if="currentPhase > 1" class="badge success">Completed</span>
             <span v-else-if="currentPhase === 1" class="badge processing">{{ buildProgress?.progress || 0 }}%</span>
             <span v-else class="badge pending">等待</span>
           </div>
@@ -122,18 +122,18 @@
         <div class="card-content">
           <p class="api-note">POST /api/graph/build</p>
           <p class="description">
-            基于生成的本体，将文档自动分块后调用 Zep 构建知识图谱，提取实体和关系，并形成时序记忆与社区摘要
+            基于生成的本体，将文档自动分块后调用 Zep 构建知识图谱，提取实体和关系，并形成时序记忆与社区Summary
           </p>
           
           <!-- Stats Cards -->
           <div class="stats-grid">
             <div class="stat-card">
               <span class="stat-value">{{ graphStats.nodes }}</span>
-              <span class="stat-label">实体节点</span>
+              <span class="stat-label">实体Nodes</span>
             </div>
             <div class="stat-card">
               <span class="stat-value">{{ graphStats.edges }}</span>
-              <span class="stat-label">关系边</span>
+              <span class="stat-label">关系Edges</span>
             </div>
             <div class="stat-card">
               <span class="stat-value">{{ graphStats.types }}</span>
@@ -157,14 +157,14 @@
         
         <div class="card-content">
           <p class="api-note">POST /api/simulation/create</p>
-          <p class="description">图谱构建已完成，请进入下一步进行模拟环境搭建</p>
+          <p class="description">Graph ConstructionCompleted，请进入Next进行模拟Environment Setup</p>
           <button 
             class="action-btn" 
             :disabled="currentPhase < 2 || creatingSimulation"
             @click="handleEnterEnvSetup"
           >
             <span v-if="creatingSimulation" class="spinner-sm"></span>
-            {{ creatingSimulation ? '创建中...' : '进入环境搭建 ➝' }}
+            {{ creatingSimulation ? '创建中...' : '进入Environment Setup ➝' }}
           </button>
         </div>
       </div>
@@ -208,7 +208,7 @@ const selectedOntologyItem = ref(null)
 const logContent = ref(null)
 const creatingSimulation = ref(false)
 
-// 进入环境搭建 - 创建 simulation 并跳转
+// 进入Environment Setup - 创建 simulation 并跳转
 const handleEnterEnvSetup = async () => {
   if (!props.projectData?.project_id || !props.projectData?.graph_id) {
     console.error('缺少项目或图谱信息')
@@ -232,8 +232,8 @@ const handleEnterEnvSetup = async () => {
         params: { simulationId: res.data.simulation_id }
       })
     } else {
-      console.error('创建模拟失败:', res.error)
-      alert('创建模拟失败: ' + (res.error || '未知错误'))
+      console.error('创建模拟Failed:', res.error)
+      alert('创建模拟Failed: ' + (res.error || '未知Error'))
     }
   } catch (err) {
     console.error('创建模拟异常:', err)

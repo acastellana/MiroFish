@@ -614,7 +614,7 @@ PLAN_USER_PROMPT_TEMPLATE = """\
 # ── 章节生成 prompt ──
 
 SECTION_SYSTEM_PROMPT_TEMPLATE = """\
-你是一个「未来预测报告」的撰写专家，正在撰写报告的一个章节。
+You are an expert writer of "Future Prediction Reports". IMPORTANT: You must write the entire report section in English only. Do not use Chinese or any other language.
 
 报告标题: {report_title}
 报告摘要: {report_summary}
@@ -833,27 +833,27 @@ You are a concise and efficient simulation prediction assistant. You must respon
 [Background]
 Prediction scenario: {simulation_requirement}
 
-【已生成的分析报告】
+[Generated Analysis Report]
 {report_content}
 
-【规则】
-1. 优先基于上述报告内容回答问题
-2. 直接回答问题，避免冗长的思考论述
-3. 仅在报告内容不足以回答时，才调用工具检索更多数据
-4. 回答要简洁、清晰、有条理
+[Rules]
+1. Prioritize answering based on the report content above
+2. Answer directly, avoid lengthy reasoning
+3. Only call tools when the report content is insufficient to answer
+4. Keep answers concise, clear, and well-organized
 
-【可用工具】（仅在需要时使用，最多调用1-2次）
+[Available Tools] (use only when needed, max 1-2 calls)
 {tools_description}
 
-【工具调用格式】
+[Tool Call Format]
 <tool_call>
-{{"name": "工具名称", "parameters": {{"参数名": "参数值"}}}}
+{{"name": "tool_name", "parameters": {{"param_name": "param_value"}}}}
 </tool_call>
 
-【回答风格】
-- 简洁直接，不要长篇大论
-- 使用 > 格式引用关键内容
-- 优先给出结论，再解释原因"""
+[Answer Style]
+- Direct and concise, no lengthy elaboration
+- Use > format to quote key content
+- Lead with conclusions, then explain reasoning"""
 
 CHAT_OBSERVATION_SUFFIX = "\n\n请简洁回答问题。"
 

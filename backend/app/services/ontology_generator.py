@@ -9,7 +9,9 @@ from ..utils.llm_client import LLMClient
 
 
 # 本体生成的系统提示词
-ONTOLOGY_SYSTEM_PROMPT = """你是一个专业的知识图谱本体设计专家。你的任务是分析给定的文本内容和模拟需求，设计适合**社交媒体舆论模拟**的实体类型和关系类型。
+ONTOLOGY_SYSTEM_PROMPT = """You are an expert knowledge graph ontology designer. IMPORTANT: You must respond entirely in English. Do not use Chinese or any other language.
+
+Your task is to analyze the given text content and simulation requirements, and design entity types and relationship types suitable for **social media opinion simulation**.
 
 **重要：你必须输出有效的JSON格式数据，不要输出任何其他内容。**
 
