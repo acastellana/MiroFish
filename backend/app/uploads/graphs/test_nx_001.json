@@ -1,0 +1,38 @@
+{
+  "nodes": {
+    "50bbdf4c-512a-475a-8c9e-285af3adca44": {
+      "uuid": "50bbdf4c-512a-475a-8c9e-285af3adca44",
+      "name": "Alice",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "age": "30"
+      }
+    },
+    "d0f9e51f-722c-45a5-b419-58ef17ff44b9": {
+      "uuid": "d0f9e51f-722c-45a5-b419-58ef17ff44b9",
+      "name": "ACME",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    }
+  },
+  "edges": [
+    {
+      "uuid": "b354b084-7805-4c0f-b370-a78db4282b6e",
+      "name": "works_at",
+      "fact": "Alice works at ACME.",
+      "source_node_uuid": "50bbdf4c-512a-475a-8c9e-285af3adca44",
+      "target_node_uuid": "d0f9e51f-722c-45a5-b419-58ef17ff44b9",
+      "attributes": {}
+    }
+  ]
+}

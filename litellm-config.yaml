@@ -1,12 +1,7 @@
 model_list:
-  - model_name: gpt-5-nano
+  - model_name: gpt-5.4-mini
     litellm_params:
-      model: openai/gpt-5-nano
-      api_key: os.environ/OPENAI_API_KEY
-
-  - model_name: gpt-5-mini
-    litellm_params:
-      model: openai/gpt-5-mini
+      model: openai/gpt-5.4-mini
       api_key: os.environ/OPENAI_API_KEY
 
   - model_name: gpt-4o-mini
@@ -14,27 +9,17 @@ model_list:
       model: openai/gpt-4o-mini
       api_key: os.environ/OPENAI_API_KEY
 
-  - model_name: qwen-plus
+  - model_name: gpt-5-nano
     litellm_params:
-      model: openai/qwen-plus
-      api_base: https://dashscope.aliyuncs.com/compatible-mode/v1
-      api_key: os.environ/LLM_API_KEY
-
-  - model_name: claude-3-5-sonnet
-    litellm_params:
-      model: anthropic/claude-3-5-sonnet-20241022
-      api_key: os.environ/ANTHROPIC_API_KEY
+      model: openai/gpt-5-nano
+      api_key: os.environ/OPENAI_API_KEY
 
 litellm_settings:
-  # Log all requests for usage tracking
-  success_callback: ["langfuse"]
-  failure_callback: ["langfuse"]
   # Budget limits to prevent runaway swarm costs
-  max_budget: 10  # USD per day cap — raise when needed
+  max_budget: 20  # USD per day cap
 
 general_settings:
-  master_key: os.environ/LITELLM_MASTER_KEY  # set to anything, used for API auth
-  database_url: os.environ/DATABASE_URL       # optional: postgres for persistent logs
+  master_key: os.environ/LITELLM_MASTER_KEY
 
 # Usage: litellm --config litellm-config.yaml --port 4000
 # Then set in MiroFish .env:

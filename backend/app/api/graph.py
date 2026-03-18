@@ -283,9 +283,7 @@ def build_graph():
         logger.info("=== 开始构建图谱 ===")
         
         # 检查配置
-        errors = []
-        if not Config.ZEP_API_KEY:
-            errors.append("ZEP_API_KEY未配置")
+        errors = Config.validate()
         if errors:
             logger.error(f"配置错误: {errors}")
             return jsonify({
@@ -381,8 +379,8 @@ def build_graph():
                     message="初始化图谱构建服务..."
                 )
                 
-                # 创建图谱构建服务
-                builder = GraphBuilderService(api_key=Config.ZEP_API_KEY)
+                # 创建图谱构建服务 (local NetworkX, no API key needed)
+                builder = GraphBuilderService()
                 
                 # 分块
                 task_manager.update_task(
@@ -400,7 +398,7 @@ def build_graph():
                 # 创建图谱
                 task_manager.update_task(
                     task_id,
-                    message="创建Zep图谱...",
+                    message="创建图谱...",
                     progress=10
                 )
                 graph_id = builder.create_graph(name=graph_name)
@@ -439,22 +437,12 @@ def build_graph():
                     progress_callback=add_progress_callback
                 )
                 
-                # 等待Zep处理完成（查询每个episode的processed状态）
+                # NetworkX processes synchronously; no waiting needed
                 task_manager.update_task(
                     task_id,
-                    message="等待Zep处理数据...",
-                    progress=55
+                    message="图谱数据已写入本地文件...",
+                    progress=90
                 )
-                
-                def wait_progress_callback(msg, progress_ratio):
-                    progress = 55 + int(progress_ratio * 35)  # 55% - 90%
-                    task_manager.update_task(
-                        task_id,
-                        message=msg,
-                        progress=progress
-                    )
-                
-                builder._wait_for_episodes(episode_uuids, wait_progress_callback)
                 
                 # 获取图谱数据
                 task_manager.update_task(
@@ -564,23 +552,17 @@ def list_tasks():
 @graph_bp.route('/data/<graph_id>', methods=['GET'])
 def get_graph_data(graph_id: str):
     """
-    获取图谱数据（节点和边）
+    获取图谱数据（节点和边）— powered by local NetworkX graph
     """
     try:
-        if not Config.ZEP_API_KEY:
-            return jsonify({
-                "success": False,
-                "error": "ZEP_API_KEY未配置"
-            }), 500
-        
-        builder = GraphBuilderService(api_key=Config.ZEP_API_KEY)
+        builder = GraphBuilderService()
         graph_data = builder.get_graph_data(graph_id)
-        
+
         return jsonify({
             "success": True,
             "data": graph_data
         })
-        
+
     except Exception as e:
         return jsonify({
             "success": False,
@@ -592,26 +574,89 @@ def get_graph_data(graph_id: str):
 @graph_bp.route('/delete/<graph_id>', methods=['DELETE'])
 def delete_graph(graph_id: str):
     """
-    删除Zep图谱
+    删除图谱
     """
     try:
-        if not Config.ZEP_API_KEY:
-            return jsonify({
-                "success": False,
-                "error": "ZEP_API_KEY未配置"
-            }), 500
-        
-        builder = GraphBuilderService(api_key=Config.ZEP_API_KEY)
+        builder = GraphBuilderService()
         builder.delete_graph(graph_id)
-        
+
         return jsonify({
             "success": True,
             "message": f"图谱已删除: {graph_id}"
         })
-        
+
     except Exception as e:
         return jsonify({
             "success": False,
             "error": str(e),
             "traceback": traceback.format_exc()
         }), 500
+
+
+# ============== Seed Files endpoint ==============
+
+@graph_bp.route('/project/<project_id>/files', methods=['GET'])
+def get_project_files(project_id: str):
+    """
+    Return list of seed files with content for a project.
+    Parses extracted_text.txt using === filename === separators.
+    """
+    project = ProjectManager.get_project(project_id)
+    if not project:
+        return jsonify({"success": False, "error": f"Project not found: {project_id}"}), 404
+
+    text = ProjectManager.get_extracted_text(project_id)
+    if not text:
+        return jsonify({"success": True, "data": {"files": []}})
+
+    import re
+    # Split on === filename === markers
+    parts = re.split(r'\n?=== (.+?) ===\n', text)
+    # parts[0] is empty or pre-amble, then alternating name/content
+    files = []
+    for i in range(1, len(parts) - 1, 2):
+        filename = parts[i].strip()
+        content = parts[i + 1].strip() if i + 1 < len(parts) else ''
+        files.append({
+            "filename": filename,
+            "size": len(content),
+            "content": content
+        })
+
+    return jsonify({"success": True, "data": {"files": files}})
+
+
+@graph_bp.route('/project/<project_id>/files/<path:filename>', methods=['PUT'])
+def update_project_file(project_id: str, filename: str):
+    """Update a single seed file's content by rewriting extracted_text.txt"""
+    project = ProjectManager.get_project(project_id)
+    if not project:
+        return jsonify({"success": False, "error": f"Project not found: {project_id}"}), 404
+
+    data = request.get_json()
+    if not data or 'content' not in data:
+        return jsonify({"success": False, "error": "Missing content field"}), 400
+
+    text = ProjectManager.get_extracted_text(project_id)
+    if not text:
+        return jsonify({"success": False, "error": "No extracted text found"}), 404
+
+    import re
+    parts = re.split(r'\n?=== (.+?) ===\n', text)
+    # Rebuild: parts[0] is empty preamble, then alternating name/content
+    found = False
+    new_parts = [parts[0]] if parts else ['']
+    for i in range(1, len(parts) - 1, 2):
+        fname = parts[i].strip()
+        content = parts[i + 1] if i + 1 < len(parts) else ''
+        if fname == filename:
+            content = '\n' + data['content'].strip() + '\n'
+            found = True
+        new_parts.append(f"\n=== {fname} ===\n{content}")
+
+    if not found:
+        return jsonify({"success": False, "error": f"File not found: {filename}"}), 404
+
+    new_text = ''.join(new_parts)
+    ProjectManager.save_extracted_text(project_id, new_text)
+    return jsonify({"success": True})

@@ -5,6 +5,8 @@ import SimulationView from '../views/SimulationView.vue'
 import SimulationRunView from '../views/SimulationRunView.vue'
 import ReportView from '../views/ReportView.vue'
 import InteractionView from '../views/InteractionView.vue'
+import ScenarioOverview from '../views/ScenarioOverview.vue'
+import AgentExplorer from '../views/AgentExplorer.vue'
 
 const routes = [
   {
@@ -41,11 +43,23 @@ const routes = [
     name: 'Interaction',
     component: InteractionView,
     props: true
+  },
+  {
+    path: '/scenario/:simulationId',
+    name: 'ScenarioOverview',
+    component: ScenarioOverview,
+    props: true
+  },
+  {
+    path: '/agents/:simulationId',
+    name: 'AgentExplorer',
+    component: AgentExplorer,
+    props: true
   }
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/mirofish/'),
   routes
 })
 

@@ -69,7 +69,6 @@ class Config:
         errors = []
         if not cls.LLM_API_KEY:
             errors.append("LLM_API_KEY 未配置")
-        if not cls.ZEP_API_KEY:
-            errors.append("ZEP_API_KEY 未配置")
+        # ZEP_API_KEY is now optional (replaced by local NetworkX graph)
         return errors
 

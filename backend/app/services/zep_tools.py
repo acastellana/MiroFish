@@ -423,10 +423,12 @@ class ZepToolsService:
     
     def __init__(self, api_key: Optional[str] = None, llm_client: Optional[LLMClient] = None):
         self.api_key = api_key or Config.ZEP_API_KEY
-        if not self.api_key:
-            raise ValueError("ZEP_API_KEY 未配置")
-        
-        self.client = Zep(api_key=self.api_key)
+        # ZEP_API_KEY is now optional; fall back to local search when absent
+        if self.api_key:
+            self.client = Zep(api_key=self.api_key)
+        else:
+            self.client = None
+            logger.info("ZepToolsService: no ZEP_API_KEY, will use local nx_graph search")
         # LLM客户端用于InsightForge生成子问题
         self._llm_client = llm_client
         logger.info("ZepToolsService 初始化完成")
@@ -484,8 +486,12 @@ class ZepToolsService:
             SearchResult: 搜索结果
         """
         logger.info(f"图谱搜索: graph_id={graph_id}, query={query[:50]}...")
-        
-        # 尝试使用Zep Cloud Search API
+
+        # Fall back to local search when no Zep client
+        if not self.client:
+            return self._local_search(graph_id, query, limit, scope)
+
+        # Try Zep Cloud Search API; fall back to local on any error
         try:
             search_results = self._call_with_retry(
                 func=lambda: self.client.graph.search(
@@ -659,21 +665,42 @@ class ZepToolsService:
         """
         logger.info(f"获取图谱 {graph_id} 的所有节点...")
 
-        nodes = fetch_all_nodes(self.client, graph_id)
+        def _local_nodes():
+            from . import nx_graph as _nx
+            raw = _nx.get_entities(graph_id)
+            r = [
+                NodeInfo(
+                    uuid=n.get("uuid", ""),
+                    name=n.get("name", ""),
+                    labels=n.get("labels", []),
+                    summary=n.get("summary", ""),
+                    attributes=n.get("attributes", {}),
+                )
+                for n in raw
+            ]
+            logger.info(f"获取到 {len(r)} 个节点 (local nx_graph)")
+            return r
 
-        result = []
-        for node in nodes:
-            node_uuid = getattr(node, 'uuid_', None) or getattr(node, 'uuid', None) or ""
-            result.append(NodeInfo(
-                uuid=str(node_uuid) if node_uuid else "",
-                name=node.name or "",
-                labels=node.labels or [],
-                summary=node.summary or "",
-                attributes=node.attributes or {}
-            ))
+        if not self.client:
+            return _local_nodes()
 
-        logger.info(f"获取到 {len(result)} 个节点")
-        return result
+        try:
+            nodes = fetch_all_nodes(self.client, graph_id)
+            result = []
+            for node in nodes:
+                node_uuid = getattr(node, 'uuid_', None) or getattr(node, 'uuid', None) or ""
+                result.append(NodeInfo(
+                    uuid=str(node_uuid) if node_uuid else "",
+                    name=node.name or "",
+                    labels=node.labels or [],
+                    summary=node.summary or "",
+                    attributes=node.attributes or {}
+                ))
+            logger.info(f"获取到 {len(result)} 个节点")
+            return result
+        except Exception as e:
+            logger.info(f"Zep nodes fetch failed ({e}), falling back to local nx_graph")
+            return _local_nodes()
 
     def get_all_edges(self, graph_id: str, include_temporal: bool = True) -> List[EdgeInfo]:
         """
@@ -688,7 +715,29 @@ class ZepToolsService:
         """
         logger.info(f"获取图谱 {graph_id} 的所有边...")
 
-        edges = fetch_all_edges(self.client, graph_id)
+        def _local_edges():
+            from . import nx_graph as _nx
+            raw = _nx.get_edges(graph_id)
+            r = []
+            for e in raw:
+                r.append(EdgeInfo(
+                    uuid=e.get("uuid", ""),
+                    name=e.get("name", ""),
+                    fact=e.get("fact", ""),
+                    source_node_uuid=e.get("source_node_uuid", ""),
+                    target_node_uuid=e.get("target_node_uuid", ""),
+                ))
+            logger.info(f"获取到 {len(r)} 条边 (local nx_graph)")
+            return r
+
+        if not self.client:
+            return _local_edges()
+
+        try:
+            edges = fetch_all_edges(self.client, graph_id)
+        except Exception as e:
+            logger.info(f"Zep edges fetch failed ({e}), falling back to local nx_graph")
+            return _local_edges()
 
         result = []
         for edge in edges:
@@ -724,7 +773,13 @@ class ZepToolsService:
             节点信息或None
         """
         logger.info(f"获取节点详情: {node_uuid[:8]}...")
-        
+
+        if not self.client:
+            from . import nx_graph as _nx
+            # We don't know which graph — search all loaded graphs or look by UUID
+            # Fallback: return None (InsightForge will skip unknowns)
+            return None
+
         try:
             node = self._call_with_retry(
                 func=lambda: self.client.graph.node.get(uuid_=node_uuid),

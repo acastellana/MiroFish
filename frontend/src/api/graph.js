@@ -68,3 +68,31 @@ export function getProject(projectId) {
     method: 'get'
   })
 }
+
+/**
+ * Get seed files for a project
+ * @param {String} projectId - Project ID
+ * @returns {Promise}
+ */
+export function getProjectFiles(projectId) {
+  return service({
+    url: `/api/graph/project/${projectId}/files`,
+    method: 'get'
+  })
+}
+
+/**
+ * Update a seed file's content
+ * @param {String} projectId - Project ID
+ * @param {String} filename - Filename to update
+ * @param {String} content - New content
+ * @returns {Promise}
+ */
+export function updateProjectFile(projectId, filename, content) {
+  return service({
+    url: `/api/graph/project/${projectId}/files/${encodeURIComponent(filename)}`,
+    method: 'put',
+    data: { content },
+    headers: { 'Content-Type': 'application/json' }
+  })
+}

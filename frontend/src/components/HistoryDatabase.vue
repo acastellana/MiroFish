@@ -179,6 +179,17 @@
                 <span class="btn-text">Analysis Report</span>
               </button>
             </div>
+            <!-- Intel Buttons: Scenario Overview + Agent Explorer -->
+            <div class="modal-intel-actions">
+              <button class="modal-intel-btn" @click="goToScenario">
+                <span class="btn-icon">◈</span>
+                <span class="btn-text">Scenario Overview</span>
+              </button>
+              <button class="modal-intel-btn" @click="goToAgents">
+                <span class="btn-icon">◧</span>
+                <span class="btn-text">Agent Explorer</span>
+              </button>
+            </div>
             <!-- Non-replayable hint -->
             <div class="modal-playback-hint">
               <span class="hint-text">Step3 "Start Simulation" and Step5 "Deep Interaction" require a live session and do not support history replay</span>
@@ -429,6 +440,28 @@ const goToReport = () => {
     router.push({
       name: 'Report',
       params: { reportId: selectedProject.value.report_id }
+    })
+    closeModal()
+  }
+}
+
+// Navigate to Scenario Overview
+const goToScenario = () => {
+  if (selectedProject.value?.simulation_id) {
+    router.push({
+      name: 'ScenarioOverview',
+      params: { simulationId: selectedProject.value.simulation_id }
+    })
+    closeModal()
+  }
+}
+
+// Navigate to Agent Explorer
+const goToAgents = () => {
+  if (selectedProject.value?.simulation_id) {
+    router.push({
+      name: 'AgentExplorer',
+      params: { simulationId: selectedProject.value.simulation_id }
     })
     closeModal()
   }
@@ -1319,6 +1352,42 @@ onUnmounted(() => {
 .modal-btn:hover:not(:disabled) .btn-text {
   color: #111827;
 }
+
+/* Intel buttons: Scenario + Agents */
+.modal-intel-actions {
+  display: flex;
+  gap: 12px;
+  padding: 0 32px 16px;
+  background: #FFFFFF;
+}
+
+.modal-intel-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid #E5E7EB;
+  border-radius: 6px;
+  background: #F9FAFB;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: #4B5563;
+  letter-spacing: 0.3px;
+}
+.modal-intel-btn .btn-icon { font-size: 1rem; color: #6B7280; }
+.modal-intel-btn:hover {
+  border-color: #000;
+  background: #fff;
+  color: #000;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.modal-intel-btn:hover .btn-icon { color: #000; }
 
 /* Non-replayable hint */
 .modal-playback-hint {

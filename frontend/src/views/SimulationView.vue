@@ -26,6 +26,17 @@
           <span class="step-name">Environment Setup</span>
         </div>
         <div class="step-divider"></div>
+        <button
+          class="intel-btn"
+          @click="router.push(`/scenario/${currentSimulationId}`)"
+          title="Scenario Overview"
+        >◈ Scenario</button>
+        <button
+          class="intel-btn"
+          @click="router.push(`/agents/${currentSimulationId}`)"
+          title="Explore Agents"
+        >◧ Agents</button>
+        <div class="step-divider"></div>
         <span class="status-indicator" :class="statusClass">
           <span class="dot"></span>
           {{ statusText }}
@@ -409,6 +420,22 @@ onMounted(async () => {
 .status-indicator.processing .dot { background: #FF5722; animation: pulse 1s infinite; }
 .status-indicator.completed .dot { background: #4CAF50; }
 .status-indicator.error .dot { background: #F44336; }
+
+.intel-btn {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border: 1px solid #e5e5e5;
+  background: transparent;
+  cursor: pointer;
+  color: #666;
+  letter-spacing: 0.3px;
+  transition: all 0.2s;
+  height: 30px;
+  white-space: nowrap;
+}
+.intel-btn:hover { border-color: #333; color: #000; background: #f5f5f5; }
 
 @keyframes pulse { 50% { opacity: 0.5; } }
 
