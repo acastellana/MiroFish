@@ -160,6 +160,9 @@
         <div class="section-header">
           <span class="section-label">04 / Agent Roster Preview</span>
           <span class="section-sub">{{ previewAgents.length }} agents shown</span>
+          <button class="seed-copy-all-btn" @click="copyAllAgents" :class="{ 'copied': agentsCopied }" v-if="previewAgents.length">
+            {{ agentsCopied ? 'Copied ✓' : '⎘ Copy Agents' }}
+          </button>
           <router-link :to="`/agents/${simulationId}`" class="view-all-link">
             View all agents →
           </router-link>
@@ -255,7 +258,7 @@
               This simulation has been completed. View the analysis report.
             </div>
             <div class="cta-sub" v-else-if="simData?.status === 'running'">
-              Simulation is currently running.
+              Simulation is running — click to watch live.
             </div>
             <div class="cta-sub" v-else>
               Launch the simulation to begin agent interactions.
@@ -379,9 +382,9 @@ const statusLabel = computed(() => {
 })
 
 const runLabel = computed(() => {
-  if (simData.value?.status === 'completed' && simData.value?.report_id) {
-    return 'View Report'
-  }
+  const s = simData.value?.status
+  if (s === 'completed' && simData.value?.report_id) return 'View Report'
+  if (s === 'running') return 'View Live Run'
   return 'Run Simulation'
 })
 
@@ -483,6 +486,31 @@ const loadSeedFiles = async (projectId) => {
 
 const toggleFile = (idx) => {
   seedFiles.value[idx]._expanded = !seedFiles.value[idx]._expanded
+}
+
+const agentsCopied = ref(false)
+
+const copyAllAgents = async () => {
+  const text = profiles.value.map(a => {
+    const name = a.name || a.user_name || 'Unknown'
+    const type = a.entity_type ? `[${a.entity_type}]` : ''
+    const bio = a.bio || a.description || a.summary || ''
+    return `## ${name} ${type}\n\n${bio}`
+  }).join('\n\n---\n\n')
+  try {
+    await navigator.clipboard.writeText(text)
+    agentsCopied.value = true
+    setTimeout(() => { agentsCopied.value = false }, 2000)
+  } catch (e) {
+    const ta = document.createElement('textarea')
+    ta.value = text
+    document.body.appendChild(ta)
+    ta.select()
+    document.execCommand('copy')
+    document.body.removeChild(ta)
+    agentsCopied.value = true
+    setTimeout(() => { agentsCopied.value = false }, 2000)
+  }
 }
 
 const copyAllFiles = async () => {
