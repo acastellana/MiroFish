@@ -94,6 +94,9 @@
           </span>
         </div>
         
+        <!-- Quick open button (visible on hover) -->
+        <div class="card-quick-open" @click.stop="openDefault(project)">Open →</div>
+
         <!-- Bottom decoration line (expands on hover) -->
         <div class="card-bottom-line"></div>
       </div>
@@ -216,6 +219,10 @@ const isExpanded = ref(false)
 const hoveringCard = ref(null)
 const historyContainer = ref(null)
 const selectedProject = ref(null)  // Currently selected project (for modal)
+
+// Responsive
+const isMobile = ref(window.innerWidth < 768)
+const handleResize = () => { isMobile.value = window.innerWidth < 768 }
 let observer = null
 let isAnimating = false  // Animation lock, prevents flickering
 let expandDebounceTimer = null  // Debounce timer
@@ -249,6 +256,9 @@ const containerStyle = computed(() => {
 
 // Get card style
 const getCardStyle = (index) => {
+  // On mobile, use normal flow (no absolute positioning)
+  if (isMobile.value) return {}
+
   const total = projects.value.length
   
   if (isExpanded.value) {
@@ -402,9 +412,17 @@ const truncateFilename = (filename, maxLength) => {
   return truncatedName + ext
 }
 
-// Open project details modal
+// Open project details modal (on desktop); on mobile go directly to simulation
 const navigateToProject = (simulation) => {
-  selectedProject.value = simulation
+  if (isMobile.value) {
+    // Go directly to simulation view
+    router.push({
+      name: 'Simulation',
+      params: { simulationId: simulation.simulation_id }
+    })
+  } else {
+    selectedProject.value = simulation
+  }
 }
 
 // Close modal
@@ -424,6 +442,7 @@ const goToProject = () => {
 }
 
 // Navigate to environment setup page (Simulation)
+// Also used as default "open" action from card click
 const goToSimulation = () => {
   if (selectedProject.value?.simulation_id) {
     router.push({
@@ -431,6 +450,15 @@ const goToSimulation = () => {
       params: { simulationId: selectedProject.value.simulation_id }
     })
     closeModal()
+  }
+}
+
+// Default open: go to simulation if no report, else report
+const openDefault = (project) => {
+  if (project.report_id) {
+    router.push({ name: 'Report', params: { reportId: project.report_id } })
+  } else {
+    router.push({ name: 'Simulation', params: { simulationId: project.simulation_id } })
   }
 }
 
@@ -580,6 +608,8 @@ onMounted(async () => {
   setTimeout(() => {
     initObserver()
   }, 100)
+
+  window.addEventListener('resize', handleResize)
 })
 
 // If using keep-alive, reload data when component activates
@@ -598,6 +628,7 @@ onUnmounted(() => {
     clearTimeout(expandDebounceTimer)
     expandDebounceTimer = null
   }
+  window.removeEventListener('resize', handleResize)
 })
 </script>
 
@@ -984,6 +1015,37 @@ onUnmounted(() => {
 .card-footer .card-progress.in-progress { color: #F59E0B; }
 .card-footer .card-progress.not-started { color: #9CA3AF; }
 
+/* Quick open button */
+.card-quick-open {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  background: #000000;
+  padding: 4px 8px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  z-index: 20;
+  transition: background 0.2s;
+}
+.card-quick-open:hover {
+  background: #FF4500;
+}
+.project-card:hover .card-quick-open {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .card-quick-open {
+    display: block;
+    background: #FF4500;
+  }
+}
+
 /* Bottom decoration line */
 .card-bottom-line {
   position: absolute;
@@ -1037,10 +1099,26 @@ onUnmounted(() => {
 
 @media (max-width: 768px) {
   .cards-container {
-    padding: 0 20px;
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0 16px;
+    min-height: unset !important;
   }
+
   .project-card {
-    width: 200px;
+    position: static !important;
+    width: 100% !important;
+    transform: none !important;
+    opacity: 1 !important;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-container {
+    grid-template-columns: 1fr;
   }
 }
 
