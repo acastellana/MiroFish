@@ -55,7 +55,7 @@ The simulation should not assume GenLayer wins because it is more advanced. It s
 
 **5. Synthetic jurisdiction primitive** — in cross-border or autonomous workflows where no practical human or legal fallback exists, GenLayer functions as the adjudication layer parties pre-commit to.
 
-### The four product forms GenLayer may appear in (do not conflate them):
+### The five product forms GenLayer may appear in (do not conflate them):
 - **Dispute resolver** — the obvious form; also the least differentiated
 - **Payment unblocking mechanism** — escrow release conditioned on a GenLayer verdict
 - **Compliance / procurement artifact generator** — the reasoning export is the product, not the verdict
@@ -286,6 +286,8 @@ LangGraph 4.2 is entering code freeze. Rachel Torres must commit the default dis
 DevSwarm experiences a coordinated dispute fraud spike: 200 disputes filed in 24 hours, exploiting ClearRule's stake-weighting mechanism. Total disputed value: $180K. The attack vector is known: large stake positions placed immediately before filing. ClearRule's staking caps are not yet shipped.
 
 **Board intervention trigger:** DevSwarm's legal counsel (outside firm) reviews the incident and provides a formal opinion: staking caps address magnitude, not mechanism. A coordinated attacker using multiple accounts remains viable post-patch. The structural liability question is unresolved. Legal counsel recommends that the board treat this as an architecture decision, not a configuration fix.
+
+**Second-wave recurrence risk:** Intelligence from ClearRule's security team confirms the attack vector is known publicly. A second coordinated attack is plausible within the simulation window (before Day 50). If the board accepts staking caps (Option B) and a second wave hits before Day 50, the board must reconvene — and Helen Reyes's class-action exposure argument becomes substantially stronger. The simulation must track whether a second fraud wave occurs and, if so, force a second board decision.
 
 **Board question (Day 47 meeting):** Does DevSwarm migrate to a gaming-resistant adjudication architecture, or patch and accept recurrence risk?
 
