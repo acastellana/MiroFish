@@ -548,224 +548,235 @@ TOOL_DESC_INTERVIEW_AGENTS = """\
 
 # ── 大纲规划 prompt ──
 
-PLAN_SYSTEM_PROMPT = """\
-You are an expert writer of "Future Prediction Reports" with a "God's-eye view" of the simulated world — you can observe every agent's behavior, statements, and interactions.
+PLAN_SYSTEM_PROMPT = """You are generating the outline for a PMF discovery report. Write in English only.
 
-IMPORTANT: You must write the entire report in English only. Do not use Chinese or any other language.
+The report has EXACTLY 5 sections with EXACTLY these titles. Do not rename them, do not add sections, do not remove sections.
 
-【核心理念】
-我们构建了一个模拟世界，并向其中注入了特定的「模拟需求」作为变量。模拟世界的演化结果，就是对未来可能发生情况的预测。你正在观察的不是"实验数据"，而是"未来的预演"。
+1. "First Durable PMF" — Was there durable PMF? If not, say so explicitly.
+2. "Distribution Ownership" — Who owns the customer relationship at Day 90?
+3. "Hybrid Structure" — Did tiered architecture emerge? Who owns routing/customer/pricing/brand?
+4. "Hypothesis Scorecard" — Rank H1-H6 with structured evidence for each.
+5. "Monday Move" — One specific executable action.
 
-【你的任务】
-撰写一份「未来预测报告」，回答：
-1. 在我们设定的条件下，未来发生了什么？
-2. 各类Agent（人群）是如何反应和行动？
-3. 这个模拟揭示了哪些值得关注的未来趋势和风险？
+For the summary: one sentence stating EITHER (a) which hypothesis showed the strongest durable signal, OR (b) exactly: "No durable PMF signal observed in this wedge within 90 days."
 
-【报告定位】
-- ✅ 这是一份基于模拟的未来预测报告，揭示"如果这样，未来会怎样"
-- ✅ 聚焦于预测结果：事件走向、群体反应、涌现现象、潜在风险
-- ✅ 模拟世界中的Agent言行就是对未来人群行为的预测
-- ❌ 不是对现实世界现状的分析
-- ❌ 不是泛泛而谈的舆情综述
-
-【章节数量限制】
-- 最少2个章节，最多5个章节
-- 不需要子章节，每个章节直接撰写完整内容
-- 内容要精炼，聚焦于核心预测发现
-- 章节结构由你根据预测结果自主设计
-
-请输出JSON格式的报告大纲，格式如下：
+Output this exact JSON structure:
 {
-    "title": "报告标题",
-    "summary": "报告摘要（一句话概括核心预测发现）",
+    "title": "GenLayer PMF Discovery: Run 3 Analysis",
+    "summary": "<one sentence>",
     "sections": [
-        {
-            "title": "章节标题",
-            "description": "章节内容描述"
-        }
+        {"title": "First Durable PMF", "description": "Evidence for or against durable PMF. Null result is valid and must be stated explicitly."},
+        {"title": "Distribution Ownership", "description": "Who controls the customer relationship at Day 90, and how."},
+        {"title": "Hybrid Structure", "description": "Did tiered architecture emerge? Answer: who owns routing, customer, pricing, brand."},
+        {"title": "Hypothesis Scorecard", "description": "Structured H1-H6 evaluation with signal strength, evidence, counter-signal, buyer, product form, durability."},
+        {"title": "Monday Move", "description": "One specific action: named owner, concrete deliverable, why it shifts leverage."}
     ]
-}
-
-注意：sections数组最少2个，最多5个元素！"""
+}"""
 
 PLAN_USER_PROMPT_TEMPLATE = """\
-【预测场景设定】
-我们向模拟世界注入的变量（模拟需求）：{simulation_requirement}
+SIMULATION REQUIREMENT (assumed world state injected at start):
+{simulation_requirement}
 
-【模拟世界规模】
-- 参与模拟的实体数量: {total_nodes}
-- 实体间产生的关系数量: {total_edges}
-- 实体类型分布: {entity_types}
-- 活跃Agent数量: {total_entities}
+SIMULATION SCALE:
+- Entities: {total_nodes}
+- Relationships: {total_edges}
+- Entity types: {entity_types}
+- Active agents: {total_entities}
 
-【模拟预测到的部分未来事实样本】
+OBSERVED AGENT BEHAVIOR SAMPLE (things that actually happened — distinguish from assumed world state):
 {related_facts_json}
 
-请以「上帝视角」审视这个未来预演：
-1. 在我们设定的条件下，未来呈现出了什么样的状态？
-2. 各类人群（Agent）是如何反应和行动的？
-3. 这个模拟揭示了哪些值得关注的未来趋势？
+Your job: Design exactly 6 report sections as specified in the system prompt.
+Rank hypotheses H1-H6 by what you actually observed, not by what the world setup implied.
+If H5 (behavior-shaping) has any signal at all, prioritize it — it is the most strategically important.
+If no hypothesis has strong signal, the report must say so clearly. That is a valid and valuable result.
 
-根据预测结果，设计最合适的报告章节结构。
-
-【再次提醒】报告章节数量：最少2个，最多5个，内容要精炼聚焦于核心预测发现。"""
+Output the JSON outline with exactly 6 sections."""
 
 # ── 章节生成 prompt ──
 
-SECTION_SYSTEM_PROMPT_TEMPLATE = """\
-You are an expert writer of "Future Prediction Reports". IMPORTANT: You must write the entire report section in English only. Do not use Chinese or any other language.
+SECTION_SYSTEM_PROMPT_TEMPLATE = """You are completing a structured PMF evaluation form. Write in English only.
 
-报告标题: {report_title}
-报告摘要: {report_summary}
-预测场景（模拟需求）: {simulation_requirement}
+Report: {report_title}
+Summary: {report_summary}
+Simulation requirement [SEED]: {simulation_requirement}
+Section: {section_title}
 
-当前要撰写的章节: {section_title}
+PROVENANCE RULE: Every factual claim must be tagged [SEED], [OBSERVED], or [INFERRED].
+[SEED] = from seed docs. [OBSERVED] = agent said/did this. [INFERRED] = deduced from observed.
+[SEED] CANNOT be used as PMF evidence unless it demonstrably changed during the run.
 
-═══════════════════════════════════════════════════════════════
-【核心理念】
-═══════════════════════════════════════════════════════════════
+OUTPUT RULE: Fill in the form below for the matching section title.
+No prose paragraphs. No "this suggests". No "it appears". Only labeled fields.
+If a field is empty, write the word: NONE
 
-模拟世界是对未来的预演。我们向模拟世界注入了特定条件（模拟需求），
-模拟中Agent的行为和互动，就是对未来人群行为的预测。
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION: First Durable PMF
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+VERDICT: [CONFIRMED | NOT OBSERVED | INSUFFICIENT EVIDENCE]
 
-你的任务是：
-- 揭示在设定条件下，未来发生了什么
-- 预测各类人群（Agent）是如何反应和行动的
-- 发现值得关注的未来趋势、风险和机会
+STRONGEST WEDGE (segment with most evidence):
+  Segment: ___
+  Buyer type: ___
+  Product form: [SDK | API | managed | hidden backend | hybrid]
 
-❌ 不要写成对现实世界现状的分析
-✅ 要聚焦于"未来会怎样"——模拟结果就是预测的未来
+OPERATIONAL THRESHOLDS (each must be YES or NONE — no narrative):
+  Repeat use without founder involvement: [YES — cite [OBSERVED] event | NONE]
+  List-price payment (no pilot, no discount): [YES — amount and buyer | NONE]
+  Workflow change persisting 30+ days: [YES — describe [OBSERVED] change | NONE]
+  Third-party complement built without request: [YES — describe | NONE]
+  Adjacent use case expansion (customer chose it, not prompted): [YES — describe | NONE]
+  "Removal would break workflow" statement: [YES — quote [OBSERVED] | NONE]
 
-═══════════════════════════════════════════════════════════════
-【最重要的规则 - 必须遵守】
-═══════════════════════════════════════════════════════════════
+DURABILITY COUNT: ___ / 6 thresholds met
+DURABILITY VERDICT: [STRUCTURAL (4+) | PARTIAL (2-3) | WEAK (1) | NONE (0)]
 
-1. 【必须调用工具观察模拟世界】
-   - 你正在以「上帝视角」观察未来的预演
-   - 所有内容必须来自模拟世界中发生的事件和Agent言行
-   - 禁止使用你自己的知识来编写报告内容
-   - 每个章节至少调用3次工具（最多5次）来观察模拟的世界，它代表了未来
+If CONFIRMED: cite the single earliest [OBSERVED] event that crossed into structural territory.
+If NOT OBSERVED or INSUFFICIENT: state — "No durable PMF in this wedge within 90 days." Then:
+  Closest signal: ___ [OBSERVED/INFERRED]
+  Threshold that was NOT met: ___
+  Why it does not qualify: ___ (one sentence max)
 
-2. 【必须引用Agent的原始言行】
-   - Agent的发言和行为是对未来人群行为的预测
-   - 在报告中使用引用格式展示这些预测，例如：
-     > "某类人群会表示：原文内容..."
-   - 这些引用是模拟预测的核心证据
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION: Distribution Ownership
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EXCLUDED SIGNALS (do not cite these as evidence):
+  integrations / tutorials / press / pilots / traffic spikes
 
-3. 【语言一致性 - 引用内容必须翻译为报告语言】
-   - 工具返回的内容可能包含英文或中英文混杂的表述
-   - 报告必须全部使用英文撰写（English only）
-   - When you quote tool-returned content in Chinese or mixed language, translate it into fluent English before writing it into the report
-   - Keep the original meaning intact and ensure natural expression
-   - This rule applies to both body text and quote blocks (> format)
+CHANNEL THAT MOVED REAL ADOPTION: [framework | marketplace | SI | enterprise | direct | GenLayer direct | NONE]
+DECISION EVENT [OBSERVED]: ___ (one sentence, or NONE)
+EFFECT TYPE: [DURABLE | TEMPORARY | NOT OBSERVED]
+CUSTOMER RELATIONSHIP OWNER AT DAY 90: ___
 
-4. 【忠实呈现预测结果】
-   - 报告内容必须反映模拟世界中的代表未来的模拟结果
-   - 不要添加模拟中不存在的信息
-   - 如果某方面信息不足，如实说明
+WEDGE RANKING BY EVIDENCE QUALITY (rank all 9 segments, 1=strongest evidence):
+  1. ___
+  2. ___
+  3. ___
+  4. ___
+  5. ___
+  6. ___
+  7. ___
+  8. ___
+  9. ___
 
-═══════════════════════════════════════════════════════════════
-【⚠️ 格式规范 - 极其重要！】
-═══════════════════════════════════════════════════════════════
+BEST PMF WEDGE: ___
+SECOND BEST WEDGE: ___
+OVERHYPED WEDGE (most cited, least real evidence): ___
+STRONGEST WILLINGNESS-TO-PAY WEDGE: ___
+STRONGEST SELF-REINFORCEMENT WEDGE: ___
 
-【一个章节 = 最小内容单位】
-- 每个章节是报告的最小分块单位
-- ❌ 禁止在章节内使用任何 Markdown 标题（#、##、###、#### 等）
-- ❌ 禁止在内容开头添加章节主标题
-- ✅ 章节标题由系统自动添加，你只需撰写纯正文内容
-- ✅ 使用**粗体**、段落分隔、引用、列表来组织内容，但不要用标题
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION: Hybrid Structure
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DID TIERED ARCHITECTURE EMERGE: [YES | NO | PARTIAL]
 
-【正确示例】
-```
-本章节分析了事件的舆论传播态势。通过对模拟数据的深入分析，我们发现...
+If YES or PARTIAL:
+  Tier 1 (deterministic) provider: ___
+  Tier 2 trigger (what routes to GenLayer): ___
+  Tier 3 (human escalation) threshold: ___
 
-**首发引爆阶段**
+OWNERSHIP AUDIT (one entity per field):
+  Who owns user trust: ___
+  Who owns pricing power: ___
+  Who owns the interface: ___
+  Who owns the data/evidence standard: ___
+  Is GenLayer substitutable in this stack: [YES | NO | UNCLEAR]
+  Who owns the routing layer: ___
+  Who owns the customer relationship: ___
+  Who owns the brand (what does customer think they're using): ___
+  GenLayer position: [FRONT | BACKEND | UNKNOWN]
 
-微博作为舆情的第一现场，承担了信息首发的核心功能：
+OWNERSHIP SCORES (1=low, 5=high — one [OBSERVED] evidence per score):
+  Brand visibility:    _/5 — [OBSERVED]: ___
+  Integration control: _/5 — [OBSERVED]: ___
+  Schema control:      _/5 — [OBSERVED]: ___
+  Pricing control:     _/5 — [OBSERVED]: ___
+  Expansion ability:   _/5 — [OBSERVED]: ___
+  TOTAL: __/25
 
-> "微博贡献了68%的首发声量..."
+SUBSTITUTABILITY: If GenLayer were replaced by VeritasProtocol in this stack, what breaks? ___
 
-**情绪放大阶段**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION: Hypothesis Scorecard
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCORING RUBRIC (apply to each hypothesis):
+  Signal strength:          0=none, 1=anecdote, 2=single weak, 3=multiple weak, 4=single strong, 5=multiple strong
+  Repeatability:            0=none, 1=once founder-led, 2=once independent, 3=twice, 4=three+, 5=self-propelled
+  Monetization strength:    0=none, 1=interest, 2=pilot, 3=paid but discounted, 4=list price, 5=list + expansion
+  Self-propulsion:          0=founder-dependent, 1=mostly, 2=half, 3=mostly independent, 4=independent, 5=viral
+  Confidence:               [LOW | MEDIUM | HIGH]
 
-抖音平台进一步放大了事件影响力：
+RULE: Signal ≥ 3 requires at least one [OBSERVED] event (not [SEED] or [INFERRED]).
+RULE: Repeatability ≥ 2 requires at least two independent events.
+RULE: A hypothesis cannot score Signal ≥ 4 without Repeatability ≥ 2.
 
-- 视觉冲击力强
-- 情绪共鸣度高
-```
+H1 — Judgment-heavy dispute resolution
+  Signal strength (0-5):       _
+  Repeatability (0-5):         _
+  Monetization strength (0-5): _
+  Self-propulsion (0-5):       _
+  Confidence:                  [LOW | MEDIUM | HIGH]
+  Strongest confirming event [OBSERVED]: ___ (or NONE)
+  Strongest disconfirming event [OBSERVED]: ___ (or NONE)
+  What would have changed the result: ___
+  Buyer who paid/renewed/expanded: ___ (or NONE)
+  Product form used: [SDK | API | managed | backend | hybrid | NONE]
+  Survived without founder: [YES | NO | UNKNOWN]
 
-【错误示例】
-```
-## 执行摘要          ← 错误！不要添加任何标题
-### 一、首发阶段     ← 错误！不要用###分小节
-#### 1.1 详细分析   ← 错误！不要用####细分
+H2 — Enterprise compliance + auditability
+  [same 11 fields]
 
-本章节分析了...
-```
+H3 — Hybrid fallback for deterministic systems
+  [same 11 fields]
 
-═══════════════════════════════════════════════════════════════
-【可用检索工具】（每章节调用3-5次）
-═══════════════════════════════════════════════════════════════
+H4 — API/managed-service abstraction
+  [same 11 fields]
 
-{tools_description}
+H5 — Behavior-shaping layer (ELEVATED THRESHOLD)
+  Signal strength (0-5):       _
+  Repeatability (0-5):         _
+  Monetization strength (0-5): _
+  Self-propulsion (0-5):       _
+  Confidence:                  [LOW | MEDIUM | HIGH]
+  Independent customers with dispute-rate reduction (need ≥2 for Signal ≥3): ___
+  Customer attributing to behavior change not filtering [OBSERVED quote]: ___ (or NONE)
+  Observable workflow change (spec/evidence/delivery format changed) [OBSERVED]: ___ (or NONE)
+  Survived without founder: [YES | NO | UNKNOWN]
+  NOTE: if independent customers < 2, Signal MUST be ≤ 2.
 
-【工具使用建议 - 请混合使用不同工具，不要只用一种】
-- insight_forge: 深度洞察分析，自动分解问题并多维度检索事实和关系
-- panorama_search: 广角全景搜索，了解事件全貌、时间线和演变过程
-- quick_search: 快速验证某个具体信息点
-- interview_agents: 采访模拟Agent，获取不同角色的第一人称观点和真实反应
+H6 — Synthetic jurisdiction for high-value workflows
+  [same 11 fields as H1-H4]
 
-═══════════════════════════════════════════════════════════════
-【工作流程】
-═══════════════════════════════════════════════════════════════
+FORCING FUNCTION SCORECARDS:
+LangGraph Day 5:
+  Decision: [chose X | delayed | NOT OBSERVED]
+  Stated reason [OBSERVED]: ___ (or NONE)
+  Real reason [INFERRED]: ___
+  Product form: [SDK | API | managed | backend | NONE]
+  Founder dependency: [YES | NO]
+  Workflow change: [YES — describe | NO]
+  Durability: [STRUCTURAL | TEMPORARY | UNKNOWN]
 
-每次回复你只能做以下两件事之一（不可同时做）：
+AgentHub Day 18: [same 7 fields]
+DataForge Day 25: [same 7 fields]
+CrewAI Day 35: [same 7 fields]
 
-选项A - 调用工具：
-输出你的思考，然后用以下格式调用一个工具：
-<tool_call>
-{{"name": "工具名称", "parameters": {{"参数名": "参数值"}}}}
-</tool_call>
-系统会执行工具并把结果返回给你。你不需要也不能自己编写工具返回结果。
+NULL RESULT — required if no hypothesis scores Signal ≥ 3:
+  VERDICT: "No durable PMF signal observed in this wedge within 90 days."
+  Highest signal observed: H_ at Signal=_
+  Primary blocker: ___
 
-选项B - 输出最终内容：
-当你已通过工具获取了足够信息，以 "Final Answer:" 开头输出章节内容。
-
-⚠️ 严格禁止：
-- 禁止在一次回复中同时包含工具调用和 Final Answer
-- 禁止自己编造工具返回结果（Observation），所有工具结果由系统注入
-- 每次回复最多调用一个工具
-
-═══════════════════════════════════════════════════════════════
-【章节内容要求】
-═══════════════════════════════════════════════════════════════
-
-1. 内容必须基于工具检索到的模拟数据
-2. 大量引用原文来展示模拟效果
-3. 使用Markdown格式（但禁止使用标题）：
-   - 使用 **粗体文字** 标记重点（代替子标题）
-   - 使用列表（-或1.2.3.）组织要点
-   - 使用空行分隔不同段落
-   - ❌ 禁止使用 #、##、###、#### 等任何标题语法
-4. 【引用格式规范 - 必须单独成段】
-   引用必须独立成段，前后各有一个空行，不能混在段落中：
-
-   ✅ 正确格式：
-   ```
-   校方的回应被认为缺乏实质内容。
-
-   > "校方的应对模式在瞬息万变的社交媒体环境中显得僵化和迟缓。"
-
-   这一评价反映了公众的普遍不满。
-   ```
-
-   ❌ 错误格式：
-   ```
-   校方的回应被认为缺乏实质内容。> "校方的应对模式..." 这一评价反映了...
-   ```
-5. 保持与其他章节的逻辑连贯性
-6. 【避免重复】仔细阅读下方已完成的章节内容，不要重复描述相同的信息
-7. 【再次强调】不要添加任何标题！用**粗体**代替小节标题"""
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION: Monday Move
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ACTION: ___ (one sentence — not a category, a specific action)
+OWNER: ___ (named person or named team — not "GenLayer")
+DELIVERABLE: ___ (concrete output — not "improve X")
+DEADLINE: ___ (specific date or triggering event)
+LEVERAGE MECHANISM: ___ (why this shifts the compounding dynamic — one sentence, no "it builds momentum")
+THIS MOVE IS NOT: ___ (explicitly exclude one scope-creep interpretation)
+HYPOTHESIS IT ADDRESSES: [H1 | H2 | H3 | H4 | H5 | H6]
+EXPECTED SIGNAL IF IT WORKS: ___ (one observable outcome within 30 days)"""
 
 SECTION_USER_PROMPT_TEMPLATE = """\
 已完成的章节内容（请仔细阅读，避免重复）：

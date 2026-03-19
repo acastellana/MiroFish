@@ -1,0 +1,5660 @@
+{
+  "nodes": {
+    "50903c47-89bf-4010-a953-5ff8d5d41aa1": {
+      "uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "name": "GenLayer",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "technology adoption discussed in regulated industries",
+        "description": "product/company mentioned as having distribution channels",
+        "integration": "One production integration (Rentahuman.ai, 1,200 tx/day)",
+        "judgment_accuracy": "Strong",
+        "sdk_onboarding": "rough",
+        "integration_time": "2-3 week",
+        "median_verdict_time": "90-second",
+        "role": "source",
+        "offer": "no competing offer",
+        "described_as": "wins as a managed API, hidden backend, fallback layer, behavior-shaping layer, enterprise first wedge",
+        "service_agreement_offered": "false",
+        "hard_SLA_exists": "false",
+        "position": "the judgment layer",
+        "unique position": "API-native, judgment-capable, fast, cheap, generates behavioral improvement",
+        "tradeoff": "implementation complexity and explainability gaps",
+        "configuration": "SDK",
+        "buyer_profile": "Developer-Led",
+        "what_it_is": "Python/npm package",
+        "category": "platform",
+        "announcement": "$2M integration pilot",
+        "pricing": "$10,000-50,000/month + per-dispute",
+        "service": "managed service",
+        "managed_api_cost": "$2,000-10,000/month",
+        "disputes_per_month": "1,000",
+        "savings_vs_current": "$30,000-70,000/month",
+        "payback_period": "immediate to 3 months",
+        "budget_owner": "Procurement / CFO office",
+        "pricing_sensitivity": "medium",
+        "deal_size": "$2,000-10,000/month",
+        "mentioned_in": "Can GenLayer fix today? Yes, with documentation",
+        "certification": "none",
+        "technology": "GenLayer Intelligent Contracts",
+        "latency": "30-120 seconds",
+        "cost": "$0.10-$5/dispute",
+        "accuracy_on_judgment_calls": "high (~94% verdict acceptance in production)",
+        "type": "Marketplace Operator"
+      }
+    },
+    "d557f3d3-c836-48ba-84f0-9ee5b03f9d8b": {
+      "uuid": "d557f3d3-c836-48ba-84f0-9ee5b03f9d8b",
+      "name": "H1",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "6b319923-b975-443b-b9f0-441380a66965": {
+      "uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "name": "VeritasProtocol",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "company",
+        "investment": "$12M a16z",
+        "integration_time": "30-minute",
+        "production_references": "0 in agent economy",
+        "offer": "$200K developer credits + dedicated engineer",
+        "description": "default choice for 8,000 developers if Channel 3 decision window is missed",
+        "status": "dangerous"
+      }
+    },
+    "cfdcb8e6-efae-420f-a777-4d46bb1c9d7e": {
+      "uuid": "cfdcb8e6-efae-420f-a777-4d46bb1c9d7e",
+      "name": "marketplace operator",
+      "entity_type": "MarketplaceOperator",
+      "labels": [
+        "Entity",
+        "MarketplaceOperator"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "bfae4bab-a210-49d5-a71a-1ab011a65ea8": {
+      "uuid": "bfae4bab-a210-49d5-a71a-1ab011a65ea8",
+      "name": "Enterprise buyers",
+      "entity_type": "EnterpriseBuyer",
+      "labels": [
+        "Entity",
+        "EnterpriseBuyer"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "care less about dispute resolution speed and more about having a signed, explainable, auditable trail of every AI decision"
+      }
+    },
+    "6d1a74eb-ba76-4341-aaa9-3f0282f4d667": {
+      "uuid": "6d1a74eb-ba76-4341-aaa9-3f0282f4d667",
+      "name": "enterprise legal or procurement team",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "de393de3-acfb-49b8-9196-cf550ed9cd68": {
+      "uuid": "de393de3-acfb-49b8-9196-cf550ed9cd68",
+      "name": "vendor onboarding checklist",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "69a9ba2e-cec4-4a2b-abaf-627da3b4112e": {
+      "uuid": "69a9ba2e-cec4-4a2b-abaf-627da3b4112e",
+      "name": "REST API",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "service interface"
+      }
+    },
+    "d6467e73-6999-40c1-a86c-f6a373f3bf93": {
+      "uuid": "d6467e73-6999-40c1-a86c-f6a373f3bf93",
+      "name": "SaaS",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "2231c4ad-9ea2-42a5-bba6-05a297a5705e": {
+      "uuid": "2231c4ad-9ea2-42a5-bba6-05a297a5705e",
+      "name": "blockchain",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "f2fb8de6-2591-4114-9654-32dfa684b17d": {
+      "uuid": "f2fb8de6-2591-4114-9654-32dfa684b17d",
+      "name": "Marketplace Type",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "category": "table_header"
+      }
+    },
+    "89b4e2ed-42b8-464f-ad02-110bab1ed6d3": {
+      "uuid": "89b4e2ed-42b8-464f-ad02-110bab1ed6d3",
+      "name": "AI coding agents",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "volume": "$2M/day",
+        "dispute_rate": "11%",
+        "current_enforcement": "Manual review + refunds"
+      }
+    },
+    "1e05e6c8-8c01-4f02-bd78-0eb3aa149679": {
+      "uuid": "1e05e6c8-8c01-4f02-bd78-0eb3aa149679",
+      "name": "AI research/data agents",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "volume": "$400K/day",
+        "dispute_rate": "9%",
+        "current_enforcement": "Human arbitrator queue"
+      }
+    },
+    "f1d69121-600d-4c37-9899-eb89d44fea5d": {
+      "uuid": "f1d69121-600d-4c37-9899-eb89d44fea5d",
+      "name": "AI creative/content agents",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "volume": "$180K/day",
+        "dispute_rate": "6%",
+        "current_enforcement": "None (goodwill)"
+      }
+    },
+    "46494a5f-0436-4776-a02d-bbdf8ce2cac5": {
+      "uuid": "46494a5f-0436-4776-a02d-bbdf8ce2cac5",
+      "name": "General orchestration",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "volume": "$900K/day",
+        "dispute_rate": "14%",
+        "current_enforcement": "Deterministic escrow (fails on judgment)"
+      }
+    },
+    "241c88ca-64fd-4a8b-87c1-9e73c6a5ae60": {
+      "uuid": "241c88ca-64fd-4a8b-87c1-9e73c6a5ae60",
+      "name": "Enterprise agent fleets",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "volume": "$5M+/",
+        "dispute_rate": "unknown",
+        "current_enforcement": "unknown"
+      }
+    },
+    "6e157415-c721-499a-9ef3-f246b2c6773d": {
+      "uuid": "6e157415-c721-499a-9ef3-f246b2c6773d",
+      "name": "Rentahuman.ai",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "transactions_per_day": "1,200 tx/day",
+        "tx_per_day": "1200",
+        "verdict_acceptance_rate": "94%",
+        "dispute_rate_reduction": "~40% post-GenLayer",
+        "monthly_cost": "$60K/month",
+        "production_data": "35,000 transactions, 94% acceptance rate, zero unresolved disputes",
+        "type": "reference",
+        "status": "production reference",
+        "transactions": "35K",
+        "acceptance": "94%",
+        "unresolved": "0"
+      }
+    },
+    "8947278b-5b3b-4d63-8d2b-64f7caca865a": {
+      "uuid": "8947278b-5b3b-4d63-8d2b-64f7caca865a",
+      "name": "VeritasProtocol",
+      "entity_type": "FrameworkBuilder",
+      "labels": [
+        "Entity",
+        "FrameworkBuilder"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "1c68ae6b-c173-431d-9dc1-f3e076dc3100": {
+      "uuid": "1c68ae6b-c173-431d-9dc1-f3e076dc3100",
+      "name": "a16z",
+      "entity_type": "Investor",
+      "labels": [
+        "Entity",
+        "Investor"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "aea20ede-beac-4ce6-9574-e557fcdac4df": {
+      "uuid": "aea20ede-beac-4ce6-9574-e557fcdac4df",
+      "name": "TaskRail",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "status": "active evaluation"
+      }
+    },
+    "e4e9911d-adc7-4616-8322-af88cd7c9921": {
+      "uuid": "e4e9911d-adc7-4616-8322-af88cd7c9921",
+      "name": "AgentHub",
+      "entity_type": "EnterpriseBuyer",
+      "labels": [
+        "Entity",
+        "EnterpriseBuyer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "635e598a-6564-43ad-afcc-2cf7942b62fe": {
+      "uuid": "635e598a-6564-43ad-afcc-2cf7942b62fe",
+      "name": "Accenture",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "category": "systems integrator",
+        "division": "Digital AI practice",
+        "description": "Enterprise systems integrator",
+        "team": "AI ventures team"
+      }
+    },
+    "a09c3f3b-f96d-42e8-9b34-7a9ee5e38dcf": {
+      "uuid": "a09c3f3b-f96d-42e8-9b34-7a9ee5e38dcf",
+      "name": "Deloitte",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "7b062076-6ae3-4d8e-8111-3feec8a8536f": {
+      "uuid": "7b062076-6ae3-4d8e-8111-3feec8a8536f",
+      "name": "Wipro",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "157a1be5-a627-4935-b88b-300fac177664": {
+      "uuid": "157a1be5-a627-4935-b88b-300fac177664",
+      "name": "enterprise agent workflows",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "8ff43734-1c05-45ce-9918-961489e80306": {
+      "uuid": "8ff43734-1c05-45ce-9918-961489e80306",
+      "name": "Procurement platforms",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "enterprise tools that manage AI vendor selection and SLA monitoring"
+      }
+    },
+    "738c0f73-4b1e-4d9e-9e5b-d9d039a9ad76": {
+      "uuid": "738c0f73-4b1e-4d9e-9e5b-d9d039a9ad76",
+      "name": "Monitoring vendors",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "observability companies that want to add dispute resolution to their offering"
+      }
+    },
+    "6a90402a-381a-4f43-9ad2-c42f3c3d4520": {
+      "uuid": "6a90402a-381a-4f43-9ad2-c42f3c3d4520",
+      "name": "Deloitte AI practices",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "category": "systems integrator"
+      }
+    },
+    "5ef49043-60e2-4894-9f59-31d15714c6d8": {
+      "uuid": "5ef49043-60e2-4894-9f59-31d15714c6d8",
+      "name": "Ironclad",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "enterprise SaaS for contract lifecycle management"
+      }
+    },
+    "0ecd8212-9c35-44d5-8926-319c7b6734b1": {
+      "uuid": "0ecd8212-9c35-44d5-8926-319c7b6734b1",
+      "name": "DocuSign",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "enterprise SaaS for e-signature"
+      }
+    },
+    "a074f3fa-993f-424b-8ab1-4bec43ee5f17": {
+      "uuid": "a074f3fa-993f-424b-8ab1-4bec43ee5f17",
+      "name": "Clio",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "9c4f6d41-61a9-42fd-a8d8-c9d74919175c": {
+      "uuid": "9c4f6d41-61a9-42fd-a8d8-c9d74919175c",
+      "name": "Coupa",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "fd627ee1-c65a-4122-8d19-30d409dbc03b": {
+      "uuid": "fd627ee1-c65a-4122-8d19-30d409dbc03b",
+      "name": "Ariba",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "317469e9-8d23-4551-ad9b-004697fadd66": {
+      "uuid": "317469e9-8d23-4551-ad9b-004697fadd66",
+      "name": "Arize",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "47adde99-b4c9-400d-8142-24d2a5889370": {
+      "uuid": "47adde99-b4c9-400d-8142-24d2a5889370",
+      "name": "Weights & Biases",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "6d0b727a-f388-4ab9-95ce-934e43a40eb2": {
+      "uuid": "6d0b727a-f388-4ab9-95ce-934e43a40eb2",
+      "name": "Helicone",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c658ae9f-c5e0-46dc-a7ee-115ae10a9157": {
+      "uuid": "c658ae9f-c5e0-46dc-a7ee-115ae10a9157",
+      "name": "Rachel Torres",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "recommendation gatekeeper for Channel 3",
+        "current_position": "Leaning VeritasProtocol (DX advantage)",
+        "what_would_change_it": "GenLayer 30-min quickstart before Day 10",
+        "H-Relevant": "H3, H4",
+        "affiliation": "LangGraph"
+      }
+    },
+    "027f43fd-b8a7-4078-93e1-4905040b395c": {
+      "uuid": "027f43fd-b8a7-4078-93e1-4905040b395c",
+      "name": "Marcus Chen",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "AgentHub CEO",
+        "current_position": "Convinced but waiting for 2nd reference",
+        "what_would_change_it": "Priya Nair explains AgentHub-specific fit",
+        "H-Relevant": "H1, H3, H5",
+        "test_subject": "Primary",
+        "day": "48",
+        "label": "Judgment-Heavy Dispute Resolution",
+        "prior_probability": "40%",
+        "profile": "AgentHub"
+      }
+    },
+    "17a751d9-ea33-4c1b-8def-e273b5781d93": {
+      "uuid": "17a751d9-ea33-4c1b-8def-e273b5781d93",
+      "name": "Sofia Eriksson",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "DataForge CEO",
+        "current_position": "Leaning",
+        "note": "Primary test subject"
+      }
+    },
+    "710e3386-5569-46a5-9b60-95f1180fc682": {
+      "uuid": "710e3386-5569-46a5-9b60-95f1180fc682",
+      "name": "Nina Patel",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "running a formal process",
+        "affiliation": "CrewAI"
+      }
+    },
+    "12f2251e-57d6-40b2-bb9d-ddf8d8e69827": {
+      "uuid": "12f2251e-57d6-40b2-bb9d-ddf8d8e69827",
+      "name": "Yuki Tanaka",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "developer/influencer",
+        "audience": "12K newsletter readers",
+        "experience": "documented",
+        "onboarding_time": "4+ days even for experienced developers",
+        "time_spent": "3 hours",
+        "location": "Tokyo",
+        "previous_affiliation": "AutoAgent Labs",
+        "day": "50",
+        "prior_probability": "40%",
+        "profile": "solo devs with high-value contracts and frequent disputes",
+        "spent_time": "3 hours"
+      }
+    },
+    "a04427c9-8925-4511-ad08-57c68a1c6b48": {
+      "uuid": "a04427c9-8925-4511-ad08-57c68a1c6b48",
+      "name": "Priya Nair",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "reference bottleneck",
+        "affiliation": "Rentahuman.ai"
+      }
+    },
+    "dcc4b0b0-b834-4e0d-94fd-a9b300a299e2": {
+      "uuid": "dcc4b0b0-b834-4e0d-94fd-a9b300a299e2",
+      "name": "Zara Ahmed",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "spending $220K/month on manual resolution",
+        "test_subject": "Secondary",
+        "label": "contagion trigger",
+        "organization": "DevSwarm"
+      }
+    },
+    "f4c02da4-b4cb-4f2f-83a0-e8e1e71dbd77": {
+      "uuid": "f4c02da4-b4cb-4f2f-83a0-e8e1e71dbd77",
+      "name": "Alex Petrov",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "VeritasProtocol CEO"
+      }
+    },
+    "501618a2-0b17-4291-81aa-74a889f0301d": {
+      "uuid": "501618a2-0b17-4291-81aa-74a889f0301d",
+      "name": "Rachel",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "recommends a single backend",
+        "choice": "Option D",
+        "recommendation": "no recommendation"
+      }
+    },
+    "c2c31fb0-2791-4439-900e-6e0fe3e67a0c": {
+      "uuid": "c2c31fb0-2791-4439-900e-6e0fe3e67a0c",
+      "name": "Daniel Marin",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "team of 1",
+        "capacity": "stretched thin",
+        "organization": "GenLayer"
+      }
+    },
+    "8682f65d-fa5b-4438-bd31-b97ee68eafbf": {
+      "uuid": "8682f65d-fa5b-4438-bd31-b97ee68eafbf",
+      "name": "DevSwarm",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "company",
+        "manual_arbitration_cost": "$220K/month",
+        "note": "manual arbitration cost context",
+        "segment": "coding marketplace",
+        "current_monthly_arbitration_cost": "$220K manual",
+        "genlayer_estimated_cost": "$15K-$30K",
+        "willingness_to_pay": "High",
+        "willingness_to_pay_amount": "$50K/month",
+        "monthly_cost": "$220K/month estimated",
+        "category": "Platform-led direct customer",
+        "status": "active evaluation"
+      }
+    },
+    "2309db00-7c05-4b2a-a333-e678839fa5ae": {
+      "uuid": "2309db00-7c05-4b2a-a333-e678839fa5ae",
+      "name": "uman.ai",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "company"
+      }
+    },
+    "37d17340-b75a-4d5c-8aef-3c659da95206": {
+      "uuid": "37d17340-b75a-4d5c-8aef-3c659da95206",
+      "name": "Sandra Lee",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "profile",
+        "affiliation": "Shopify profile",
+        "organization": "Shopify"
+      }
+    },
+    "723ba2af-bee7-4be5-9808-32266526f8fc": {
+      "uuid": "723ba2af-bee7-4be5-9808-32266526f8fc",
+      "name": "Shopify",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "pilot"
+      }
+    },
+    "184fdf7e-0176-49d4-98f3-f95be08a9173": {
+      "uuid": "184fdf7e-0176-49d4-98f3-f95be08a9173",
+      "name": "AgentHub",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "manual_arbitration_cost": "$40K/month",
+        "role": "CEO",
+        "segment": "orchestration",
+        "current_monthly_arbitration_cost": "$40K manual",
+        "genlayer_estimated_cost": "$5K-$10K",
+        "willingness_to_pay": "Medium",
+        "monthly_cost": "$40K/month",
+        "category": "Platform-led direct customer",
+        "dispute profile": "11% rate, judgment-heavy",
+        "status": "active evaluation"
+      }
+    },
+    "bc67d5e7-573c-4821-84ca-97685d3e3cc0": {
+      "uuid": "bc67d5e7-573c-4821-84ca-97685d3e3cc0",
+      "name": "DataForge",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "manual_arbitration_cost": "$60K/month",
+        "segment": "Enterprise",
+        "industry": "Pharma",
+        "note": "human queue arbitration cost context",
+        "role": "research",
+        "category": "Platform-led direct customer",
+        "status": "active evaluation"
+      }
+    },
+    "94fb42c1-01f8-4a0d-8a6f-f4eb07d81baf": {
+      "uuid": "94fb42c1-01f8-4a0d-8a6f-f4eb07d81baf",
+      "name": "LangGraph",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "user_base": "8,000 active developers",
+        "category": "framework"
+      }
+    },
+    "d85f1dde-8c76-4c24-84d2-c540e3539b7e": {
+      "uuid": "d85f1dde-8c76-4c24-84d2-c540e3539b7e",
+      "name": "a16z",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "66f7d5e6-5f06-4c58-8756-00c06e9a848b": {
+      "uuid": "66f7d5e6-5f06-4c58-8756-00c06e9a848b",
+      "name": "developers",
+      "entity_type": "Developer",
+      "labels": [
+        "Entity",
+        "Developer"
+      ],
+      "summary": "",
+      "attributes": {
+        "experience": "experienced",
+        "count": "8000"
+      }
+    },
+    "014dee5e-ab2d-4147-98b5-8f4d2ca20b1c": {
+      "uuid": "014dee5e-ab2d-4147-98b5-8f4d2ca20b1c",
+      "name": "Marcus",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "platform": "GenLayer",
+        "status": "doesn't move",
+        "action": "renews human arbitration",
+        "option": "FF2 Option A"
+      }
+    },
+    "9f37a0ed-44a7-4053-b389-7b4f5626a7da": {
+      "uuid": "9f37a0ed-44a7-4053-b389-7b4f5626a7da",
+      "name": "Sofia",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "d106b3f7-e28c-4ff0-81d9-ec3d5af728da": {
+      "uuid": "d106b3f7-e28c-4ff0-81d9-ec3d5af728da",
+      "name": "GenLayer SDK",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "version": "v0.4.x"
+      }
+    },
+    "d60550c7-4d2f-4452-8f27-affe8f3eda68": {
+      "uuid": "d60550c7-4d2f-4452-8f27-affe8f3eda68",
+      "name": "CrewAI",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "category": "framework",
+        "context": "RFP"
+      }
+    },
+    "5e26cf11-f456-4d69-9d65-84de8116f0d6": {
+      "uuid": "5e26cf11-f456-4d69-9d65-84de8116f0d6",
+      "name": "LangGraph 4.1",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "backend default recommendation"
+      }
+    },
+    "a0b85341-e942-4864-b3b5-8792c39103d0": {
+      "uuid": "a0b85341-e942-4864-b3b5-8792c39103d0",
+      "name": "Pharma client",
+      "entity_type": "EnterpriseBuyer",
+      "labels": [
+        "Entity",
+        "EnterpriseBuyer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "b79742d1-e023-42be-b88b-f56eeb99afba": {
+      "uuid": "b79742d1-e023-42be-b88b-f56eeb99afba",
+      "name": "Yuki Distribution Fork",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "4b55a477-526a-43d6-a920-a484ba976779": {
+      "uuid": "4b55a477-526a-43d6-a920-a484ba976779",
+      "name": "agent dispute resolution series",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "d0c0093d-528d-462c-bd9f-c980f18121e5": {
+      "uuid": "d0c0093d-528d-462c-bd9f-c980f18121e5",
+      "name": "Developer",
+      "entity_type": "Developer",
+      "labels": [
+        "Entity",
+        "Developer"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "technical decision-maker"
+      }
+    },
+    "5aed0044-cd27-43dd-a282-4d5cbca368cf": {
+      "uuid": "5aed0044-cd27-43dd-a282-4d5cbca368cf",
+      "name": "Ben Nakamura",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "Accenture Digital AI practice",
+        "organization": "Accenture",
+        "team": "AI ventures team"
+      }
+    },
+    "4adf81ca-15ed-4141-af8a-beb2faa41836": {
+      "uuid": "4adf81ca-15ed-4141-af8a-beb2faa41836",
+      "name": "GenLayer team",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "3d79c118-dcaf-4113-8049-a5baea6d07df": {
+      "uuid": "3d79c118-dcaf-4113-8049-a5baea6d07df",
+      "name": "another product",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "e5b8860a-9d8b-4b61-855a-f15fda9bb91f": {
+      "uuid": "e5b8860a-9d8b-4b61-855a-f15fda9bb91f",
+      "name": "Twitter/X",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "49e5689b-c38e-4e3b-9334-079a0b882139": {
+      "uuid": "49e5689b-c38e-4e3b-9334-079a0b882139",
+      "name": "LinkedIn",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "1cb78f07-cb4e-4e96-af9a-73aa55c999df": {
+      "uuid": "1cb78f07-cb4e-4e96-af9a-73aa55c999df",
+      "name": "gpt-4o-mini",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "fa4874e0-96fd-470c-99cb-ad67664f548e": {
+      "uuid": "fa4874e0-96fd-470c-99cb-ad67664f548e",
+      "name": "InternetCourt",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "the most mature product built on GenLayer primitives"
+      }
+    },
+    "6e522087-0bbb-42ad-95b8-829268c69ed4": {
+      "uuid": "6e522087-0bbb-42ad-95b8-829268c69ed4",
+      "name": "GenLayer validators",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "827f1453-9435-40d4-bad0-8db03b66d3de": {
+      "uuid": "827f1453-9435-40d4-bad0-8db03b66d3de",
+      "name": "GPT-5",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "90f60450-fc23-4187-ace2-241de6308753": {
+      "uuid": "90f60450-fc23-4187-ace2-241de6308753",
+      "name": "Claude",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "2b313b9d-07d4-406c-9b80-227290015651": {
+      "uuid": "2b313b9d-07d4-406c-9b80-227290015651",
+      "name": "Gemini",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "76c5e261-0e7b-430b-bacc-3b3a911044cc": {
+      "uuid": "76c5e261-0e7b-430b-bacc-3b3a911044cc",
+      "name": "AI agent",
+      "entity_type": "Developer",
+      "labels": [
+        "Entity",
+        "Developer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "0226420c-3340-4be0-b3fd-300d8de25d58": {
+      "uuid": "0226420c-3340-4be0-b3fd-300d8de25d58",
+      "name": "API",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "abstracted service"
+      }
+    },
+    "b8c9e6a9-728a-44d3-9e98-931c03dce284": {
+      "uuid": "b8c9e6a9-728a-44d3-9e98-931c03dce284",
+      "name": "LayerZero V2 Bridge",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "84ee031f-0499-4890-9198-bdb287e18b4f": {
+      "uuid": "84ee031f-0499-4890-9198-bdb287e18b4f",
+      "name": "CodeNest",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "d8532de7-2582-43b3-81ea-45baf4efe684": {
+      "uuid": "d8532de7-2582-43b3-81ea-45baf4efe684",
+      "name": "enterprise and compliance buyers",
+      "entity_type": "EnterpriseBuyer",
+      "labels": [
+        "Entity",
+        "EnterpriseBuyer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "cbd376b1-0dae-478e-8f94-1d0f956203e3": {
+      "uuid": "cbd376b1-0dae-478e-8f94-1d0f956203e3",
+      "name": "Parties",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "7f885e88-8a7f-4c41-ac83-2631260aefc7": {
+      "uuid": "7f885e88-8a7f-4c41-ac83-2631260aefc7",
+      "name": "Integrators",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "submit disputes via REST API and receive verdicts"
+      }
+    },
+    "8a54a99a-139c-45c1-924e-36e9aefb0874": {
+      "uuid": "8a54a99a-139c-45c1-924e-36e9aefb0874",
+      "name": "Customers",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "pay per verdict"
+      }
+    },
+    "028fad64-fa6c-4c30-bd7b-4d80354353e1": {
+      "uuid": "028fad64-fa6c-4c30-bd7b-4d80354353e1",
+      "name": "Enterprises",
+      "entity_type": "EnterpriseBuyer",
+      "labels": [
+        "Entity",
+        "EnterpriseBuyer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "0cb46fc6-a800-48ee-be97-6988d2188be3": {
+      "uuid": "0cb46fc6-a800-48ee-be97-6988d2188be3",
+      "name": "LayerZero V2",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "f59b82fd-caa6-4e5b-8f36-1e08add74fb8": {
+      "uuid": "f59b82fd-caa6-4e5b-8f36-1e08add74fb8",
+      "name": "USDC",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "requires both parties to hold USDC"
+      }
+    },
+    "823c3bf0-917d-4107-83c3-5b625def6b20": {
+      "uuid": "823c3bf0-917d-4107-83c3-5b625def6b20",
+      "name": "dispute reducer",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "3069bcce-01c6-4a14-98be-59f88394f7a6": {
+      "uuid": "3069bcce-01c6-4a14-98be-59f88394f7a6",
+      "name": "primitives",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "28abf3af-4bd8-466f-9e14-969e2fec694f": {
+      "uuid": "28abf3af-4bd8-466f-9e14-969e2fec694f",
+      "name": "Marketplace operator",
+      "entity_type": "MarketplaceOperator",
+      "labels": [
+        "Entity",
+        "MarketplaceOperator"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "15ebf838-5790-4d86-8204-62b873fa302d": {
+      "uuid": "15ebf838-5790-4d86-8204-62b873fa302d",
+      "name": "Enterprise buyer",
+      "entity_type": "EnterpriseBuyer",
+      "labels": [
+        "Entity",
+        "EnterpriseBuyer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "45fe0d10-2f91-4b0e-9227-f7383ae16d6c": {
+      "uuid": "45fe0d10-2f91-4b0e-9227-f7383ae16d6c",
+      "name": "Enterprise IT",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "850b436a-576b-497e-aa08-5e4255cb4204": {
+      "uuid": "850b436a-576b-497e-aa08-5e4255cb4204",
+      "name": "Platform operators",
+      "entity_type": "MarketplaceOperator",
+      "labels": [
+        "Entity",
+        "MarketplaceOperator"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "ae1ce366-3dae-4b9a-8452-417cd496c7f8": {
+      "uuid": "ae1ce366-3dae-4b9a-8452-417cd496c7f8",
+      "name": "CTO",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "budget owner"
+      }
+    },
+    "f2276dcf-bb7d-431d-84da-c12edb69a814": {
+      "uuid": "f2276dcf-bb7d-431d-84da-c12edb69a814",
+      "name": "engineering lead",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "budget owner"
+      }
+    },
+    "5e7cd9e0-3a53-41f6-a344-de2bcd4589a1": {
+      "uuid": "5e7cd9e0-3a53-41f6-a344-de2bcd4589a1",
+      "name": "AutoAgent",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "category": "framework",
+        "context": "competing open-source module"
+      }
+    },
+    "55467881-7b36-4250-b2ce-f9f879ec8642": {
+      "uuid": "55467881-7b36-4250-b2ce-f9f879ec8642",
+      "name": "Product/engineering team",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "buyer_profile": "technical, not blockchain-native"
+      }
+    },
+    "9916189c-e406-4390-b8b5-b3b76c02dcf4": {
+      "uuid": "9916189c-e406-4390-b8b5-b3b76c02dcf4",
+      "name": "marketplace",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "buyer profile"
+      }
+    },
+    "8d1ce000-7664-4260-b633-3010044fc04d": {
+      "uuid": "8d1ce000-7664-4260-b633-3010044fc04d",
+      "name": "SaaS product",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "buyer profile"
+      }
+    },
+    "2ad46c93-8e80-494c-a22d-33b891a05ab4": {
+      "uuid": "2ad46c93-8e80-494c-a22d-33b891a05ab4",
+      "name": "Customer",
+      "entity_type": "EnterpriseBuyer",
+      "labels": [
+        "Entity",
+        "EnterpriseBuyer"
+      ],
+      "summary": "",
+      "attributes": {
+        "profile": "Non-technical decision-maker",
+        "departments": "Enterprise IT, compliance, operations",
+        "evaluation_criteria": "SLA, compliance documentation, vendor stability, price predictability"
+      }
+    },
+    "7849d80b-6377-487e-8b53-fa1a2ffdf700": {
+      "uuid": "7849d80b-6377-487e-8b53-fa1a2ffdf700",
+      "name": "B2B AI vendor",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "9a4ee510-3588-46ee-bdb2-c37653d01ce1": {
+      "uuid": "9a4ee510-3588-46ee-bdb2-c37653d01ce1",
+      "name": "Compliance team",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "42e9bccc-1a3b-4856-9e49-d4519115746b": {
+      "uuid": "42e9bccc-1a3b-4856-9e49-d4519115746b",
+      "name": "External auditor",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "bb59d21a-dfe1-4b9a-b655-ab9d3bf95b13": {
+      "uuid": "bb59d21a-dfe1-4b9a-b655-ab9d3bf95b13",
+      "name": "EU directive",
+      "entity_type": "Regulator",
+      "labels": [
+        "Entity",
+        "Regulator"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "548dcf1a-c79e-4d30-a448-48263745647b": {
+      "uuid": "548dcf1a-c79e-4d30-a448-48263745647b",
+      "name": "Contract templates",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "a8e07c6a-ca4c-4960-a88d-62f7e55f3c36": {
+      "uuid": "a8e07c6a-ca4c-4960-a88d-62f7e55f3c36",
+      "name": "The Open Question",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "a3a32203-e364-43a9-a6ae-af2275d3fea9": {
+      "uuid": "a3a32203-e364-43a9-a6ae-af2275d3fea9",
+      "name": "A hidden backend",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "a946fae5-bb90-4ee2-8662-69fbe0bb813c": {
+      "uuid": "a946fae5-bb90-4ee2-8662-69fbe0bb813c",
+      "name": "a popular framework",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "e1f09f3e-889e-4f06-ba4a-c57e4066b93e": {
+      "uuid": "e1f09f3e-889e-4f06-ba4a-c57e4066b93e",
+      "name": "A behavior-shaping layer",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "b10aa07a-f869-459a-8354-662fe2c1e5ff": {
+      "uuid": "b10aa07a-f869-459a-8354-662fe2c1e5ff",
+      "name": "a dispute resolution product",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "54522eba-ef53-4293-9f58-4109b5340e94": {
+      "uuid": "54522eba-ef53-4293-9f58-4109b5340e94",
+      "name": "Head of Product",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "Budget owner"
+      }
+    },
+    "d08977a1-9535-4a0b-95f1-35a7032f9aca": {
+      "uuid": "d08977a1-9535-4a0b-95f1-35a7032f9aca",
+      "name": "CEO",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "b36f50f4-a18b-4d1e-83d2-68086a2cbbff": {
+      "uuid": "b36f50f4-a18b-4d1e-83d2-68086a2cbbff",
+      "name": "Enterprise Internal AI Workflows",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "budget_owner": "Head of AI / VP Engi"
+      }
+    },
+    "8a07649f-3654-4bbf-9474-917df2014167": {
+      "uuid": "8a07649f-3654-4bbf-9474-917df2014167",
+      "name": "SOC 2",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "requirement"
+      }
+    },
+    "0d1f68b7-c420-418d-8460-788ccaa24792": {
+      "uuid": "0d1f68b7-c420-418d-8460-788ccaa24792",
+      "name": "SLA",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "requirement"
+      }
+    },
+    "2e85ead8-8f32-4312-b7db-aae1a525e6f3": {
+      "uuid": "2e85ead8-8f32-4312-b7db-aae1a525e6f3",
+      "name": "Procurement",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "budget owner"
+      }
+    },
+    "c3519c72-0579-4ae7-b541-10a1cb207479": {
+      "uuid": "c3519c72-0579-4ae7-b541-10a1cb207479",
+      "name": "CFO office",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "budget owner"
+      }
+    },
+    "16d82979-f6ed-450e-804f-f544e401a76f": {
+      "uuid": "16d82979-f6ed-450e-804f-f544e401a76f",
+      "name": "Solo / Indie Agent Developers",
+      "entity_type": "Developer",
+      "labels": [
+        "Entity",
+        "Developer"
+      ],
+      "summary": "",
+      "attributes": {
+        "dispute frequency": "5-50/month",
+        "average transaction value": "$10-$200",
+        "cost of false positive": "painful but survivable",
+        "cost of false negative": "loss of income, platform frustration",
+        "current workaround cost": "$0 (absorb loss or argue manually)",
+        "budget owner": "self",
+        "acceptable latency": "up to 5 minutes",
+        "explainability requirement": "low (just want the right answer)",
+        "integration tolerance": "high (will read docs, try"
+      }
+    },
+    "c83b97a5-fce4-4338-83a4-e946a54e863a": {
+      "uuid": "c83b97a5-fce4-4338-83a4-e946a54e863a",
+      "name": "FreshCargo",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "SME client and prospective GenLayer reference customer",
+        "clients": "600+ SME exporter clients",
+        "role": "CEO context"
+      }
+    },
+    "1e3acf2e-aea0-4601-b752-5f341ea1d1f0": {
+      "uuid": "1e3acf2e-aea0-4601-b752-5f341ea1d1f0",
+      "name": "DHL",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "e0f566d4-1ed1-48ba-9517-8f6a9085ea5a": {
+      "uuid": "e0f566d4-1ed1-48ba-9517-8f6a9085ea5a",
+      "name": "Flexport",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "category": "trade finance platform"
+      }
+    },
+    "65ffd4b2-f5fb-475e-81d3-b3ba27b11452": {
+      "uuid": "65ffd4b2-f5fb-475e-81d3-b3ba27b11452",
+      "name": "Taulia",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "3281ebb6-54e6-4e05-b406-15f8fbeb65a3": {
+      "uuid": "3281ebb6-54e6-4e05-b406-15f8fbeb65a3",
+      "name": "C2FO",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "5f96dab5-debf-4d25-8de4-1a181e0942bc": {
+      "uuid": "5f96dab5-debf-4d25-8de4-1a181e0942bc",
+      "name": "Tradeshift",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "category": "trade finance platform"
+      }
+    },
+    "17fa8278-0a98-40bc-9349-41c9c7d042c9": {
+      "uuid": "17fa8278-0a98-40bc-9349-41c9c7d042c9",
+      "name": "agent economy",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "2f6e65d0-596e-400a-aba1-58e0991ea634": {
+      "uuid": "2f6e65d0-596e-400a-aba1-58e0991ea634",
+      "name": "Bolivia",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "SME exporters in Bolivia"
+      }
+    },
+    "b2cc2fd2-3e8b-4fce-a296-d5c7202b9bbe": {
+      "uuid": "b2cc2fd2-3e8b-4fce-a296-d5c7202b9bbe",
+      "name": "Vietnam",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "SME exporters in Vietnam"
+      }
+    },
+    "57f47290-c263-4f67-a3c5-fbd6bcf6df87": {
+      "uuid": "57f47290-c263-4f67-a3c5-fbd6bcf6df87",
+      "name": "Freight forwarders",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "can absorb some of this friction",
+        "description": "primary channel; have relationships with SME exporters and importers; absorb integration complexity; motivation to add value-added service"
+      }
+    },
+    "4eb0ad9e-ec72-4572-bc4b-10575ab43354": {
+      "uuid": "4eb0ad9e-ec72-4572-bc4b-10575ab43354",
+      "name": "SME exporters",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "have relationships with freight forwarders"
+      }
+    },
+    "aef4ae93-9f47-48d1-9edf-b89414835f09": {
+      "uuid": "aef4ae93-9f47-48d1-9edf-b89414835f09",
+      "name": "importers",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "have relationships with freight forwarders"
+      }
+    },
+    "6f650fb1-9081-4ba2-b06f-b7ad89264d39": {
+      "uuid": "6f650fb1-9081-4ba2-b06f-b7ad89264d39",
+      "name": "Trade finance platforms",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "examples": "Flexport, Tradeshift",
+        "description": "could be channel partners; have their own technology roadmaps and may build competing solutions"
+      }
+    },
+    "57ca6de4-841f-4271-9138-3a264559831e": {
+      "uuid": "57ca6de4-841f-4271-9138-3a264559831e",
+      "name": "Marketplace operators",
+      "entity_type": "MarketplaceOperator",
+      "labels": [
+        "Entity",
+        "MarketplaceOperator"
+      ],
+      "summary": "",
+      "attributes": {
+        "budget_ownership": "clear",
+        "current_payment": "$40K–$220K/month",
+        "role": "own the budget"
+      }
+    },
+    "e8af8744-c4d3-4969-aeb5-2cd96dc1f563": {
+      "uuid": "e8af8744-c4d3-4969-aeb5-2cd96dc1f563",
+      "name": "CFO",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "conversation": "simple"
+      }
+    },
+    "a5826c23-c755-43cd-9902-f74ca95fef07": {
+      "uuid": "a5826c23-c755-43cd-9902-f74ca95fef07",
+      "name": "LangGraph",
+      "entity_type": "FrameworkBuilder",
+      "labels": [
+        "Entity",
+        "FrameworkBuilder"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "fa9dc4fe-f0ed-4de9-815b-acc43ab3bd9c": {
+      "uuid": "fa9dc4fe-f0ed-4de9-815b-acc43ab3bd9c",
+      "name": "CrewAI",
+      "entity_type": "FrameworkBuilder",
+      "labels": [
+        "Entity",
+        "FrameworkBuilder"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c75a8434-b517-44c1-abaa-ad73c9a128a3": {
+      "uuid": "c75a8434-b517-44c1-abaa-ad73c9a128a3",
+      "name": "AutoAgent",
+      "entity_type": "FrameworkBuilder",
+      "labels": [
+        "Entity",
+        "FrameworkBuilder"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "253ef6a6-81a7-498e-83ed-b9148ba34521": {
+      "uuid": "253ef6a6-81a7-498e-83ed-b9148ba34521",
+      "name": "DevSwarm",
+      "entity_type": "MarketplaceOperator",
+      "labels": [
+        "Entity",
+        "MarketplaceOperator"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "92369b95-1fc6-4de1-9405-0eff7c12a5fd": {
+      "uuid": "92369b95-1fc6-4de1-9405-0eff7c12a5fd",
+      "name": "AgentHub",
+      "entity_type": "MarketplaceOperator",
+      "labels": [
+        "Entity",
+        "MarketplaceOperator"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "b91da130-b5f4-45bf-8a34-a85fd47a93a6": {
+      "uuid": "b91da130-b5f4-45bf-8a34-a85fd47a93a6",
+      "name": "DataForge",
+      "entity_type": "MarketplaceOperator",
+      "labels": [
+        "Entity",
+        "MarketplaceOperator"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "cc0376eb-f410-4814-b368-3ad011f10ba9": {
+      "uuid": "cc0376eb-f410-4814-b368-3ad011f10ba9",
+      "name": "@AgentWatch",
+      "entity_type": "MediaAnalyst",
+      "labels": [
+        "Entity",
+        "MediaAnalyst"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "eb18ad08-6c58-4abb-b0d3-aadb32987dfb": {
+      "uuid": "eb18ad08-6c58-4abb-b0d3-aadb32987dfb",
+      "name": "Tom Okafor",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "affiliation": "Composio"
+      }
+    },
+    "185fd8a0-c79f-41a6-994d-7cc62d5a0b67": {
+      "uuid": "185fd8a0-c79f-41a6-994d-7cc62d5a0b67",
+      "name": "Composio",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "5a07e390-c60b-4778-8fdf-39221a9e1e47": {
+      "uuid": "5a07e390-c60b-4778-8fdf-39221a9e1e47",
+      "name": "Jessica Park",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "affiliation": "The Information",
+        "role": "controls this channel",
+        "organization": "The Information"
+      }
+    },
+    "c27106ee-b2c3-4bf7-bedf-d99ed69b98bb": {
+      "uuid": "c27106ee-b2c3-4bf7-bedf-d99ed69b98bb",
+      "name": "The Information",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "media outlet"
+      }
+    },
+    "5d6a915e-46f8-41a8-b049-9b3f7b8da3e6": {
+      "uuid": "5d6a915e-46f8-41a8-b049-9b3f7b8da3e6",
+      "name": "Maria Quispe",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "CEO"
+      }
+    },
+    "8a77664b-8f01-446a-81d0-4a622ad09d83": {
+      "uuid": "8a77664b-8f01-446a-81d0-4a622ad09d83",
+      "name": "EscrowChain",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "location": "UK",
+        "description": "competitor",
+        "category": "Primary Competitor"
+      }
+    },
+    "58837551-681f-4ce9-8649-9dffa6a84906": {
+      "uuid": "58837551-681f-4ce9-8649-9dffa6a84906",
+      "name": "Stripe",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "investor"
+      }
+    },
+    "a1c3651c-946c-4dca-985a-402e52c97a73": {
+      "uuid": "a1c3651c-946c-4dca-985a-402e52c97a73",
+      "name": "Bloomberg Businessweek",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "31650b98-033b-4d79-96d8-61bd54cee476": {
+      "uuid": "31650b98-033b-4d79-96d8-61bd54cee476",
+      "name": "UNDETERMINED failure mode",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c69f49c6-39bf-49a9-b39a-db4b6111b280": {
+      "uuid": "c69f49c6-39bf-49a9-b39a-db4b6111b280",
+      "name": "UN",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "e9a33f1a-aee7-46c3-ad67-bb680c967e1f": {
+      "uuid": "e9a33f1a-aee7-46c3-ad67-bb680c967e1f",
+      "name": "B2B trade",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "trade context"
+      }
+    },
+    "f62b2bfe-de0b-4092-8178-eb73d7449731": {
+      "uuid": "f62b2bfe-de0b-4092-8178-eb73d7449731",
+      "name": "UK/EU",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "7919bf19-7bb1-4439-8661-18f2d975ae60": {
+      "uuid": "7919bf19-7bb1-4439-8661-18f2d975ae60",
+      "name": "Stripe PM",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "cb93a2b3-cd2c-4f20-adf7-8e54ce51e818": {
+      "uuid": "cb93a2b3-cd2c-4f20-adf7-8e54ce51e818",
+      "name": "B2B trade escrow",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "02b99ba6-112f-4881-8b70-f76ed6fe6f80": {
+      "uuid": "02b99ba6-112f-4881-8b70-f76ed6fe6f80",
+      "name": "AI",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "e4566f83-d3c1-4686-b401-4bf7b537b044": {
+      "uuid": "e4566f83-d3c1-4686-b401-4bf7b537b044",
+      "name": "merchants",
+      "entity_type": "EnterpriseBuyer",
+      "labels": [
+        "Entity",
+        "EnterpriseBuyer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "86573085-93dc-4ce7-825d-7a919d64ddbb": {
+      "uuid": "86573085-93dc-4ce7-825d-7a919d64ddbb",
+      "name": "Fortune 500",
+      "entity_type": "EnterpriseBuyer",
+      "labels": [
+        "Entity",
+        "EnterpriseBuyer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "d53f78b7-5f48-4423-9ad3-ddc0a09bd07b": {
+      "uuid": "d53f78b7-5f48-4423-9ad3-ddc0a09bd07b",
+      "name": "AI",
+      "entity_type": "FrameworkBuilder",
+      "labels": [
+        "Entity",
+        "FrameworkBuilder"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "04aff1c9-db2c-4014-9305-e4cd0a197914": {
+      "uuid": "04aff1c9-db2c-4014-9305-e4cd0a197914",
+      "name": "SMEs",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "db3dabc6-8626-414e-8701-aaa9748dc938": {
+      "uuid": "db3dabc6-8626-414e-8701-aaa9748dc938",
+      "name": "Ripple",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "bb714e5c-f716-4e84-8119-61263609706e": {
+      "uuid": "bb714e5c-f716-4e84-8119-61263609706e",
+      "name": "ODL",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c52ec345-568b-40f7-a83b-78c60d316f90": {
+      "uuid": "c52ec345-568b-40f7-a83b-78c60d316f90",
+      "name": "The Compliance Lawyer",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "location": "London"
+      }
+    },
+    "500a279e-0f58-4850-b24c-955a9df94aae": {
+      "uuid": "500a279e-0f58-4850-b24c-955a9df94aae",
+      "name": "DG FISMA",
+      "entity_type": "Regulator",
+      "labels": [
+        "Entity",
+        "Regulator"
+      ],
+      "summary": "",
+      "attributes": {
+        "location": "Brussels"
+      }
+    },
+    "9bd0b54f-d4a3-4271-b459-1e20aa0846cd": {
+      "uuid": "9bd0b54f-d4a3-4271-b459-1e20aa0846cd",
+      "name": "EU AI Act",
+      "entity_type": "Regulator",
+      "labels": [
+        "Entity",
+        "Regulator"
+      ],
+      "summary": "",
+      "attributes": {
+        "article": "6",
+        "risk": "high-risk"
+      }
+    },
+    "28877690-6d3a-445b-aae4-183ad9c47f46": {
+      "uuid": "28877690-6d3a-445b-aae4-183ad9c47f46",
+      "name": "BBVA",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "Traditional Bank Trade Finance Officer source"
+      }
+    },
+    "6d770b4f-6c6f-4e89-b398-1f5f85963db4": {
+      "uuid": "6d770b4f-6c6f-4e89-b398-1f5f85963db4",
+      "name": "SME Exporter",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "0161812d-3b9a-4223-bb47-fef9514e80e5": {
+      "uuid": "0161812d-3b9a-4223-bb47-fef9514e80e5",
+      "name": "traditional freight forwarder",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "8d31084d-7be4-45ce-977a-c9038318b532": {
+      "uuid": "8d31084d-7be4-45ce-977a-c9038318b532",
+      "name": "VC Partner",
+      "entity_type": "Investor",
+      "labels": [
+        "Entity",
+        "Investor"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "efb14625-e09e-4bf5-a746-80abe01a724b": {
+      "uuid": "efb14625-e09e-4bf5-a746-80abe01a724b",
+      "name": "Champions Positions",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "cf97293b-9391-449c-aa54-9a90a0ae128d": {
+      "uuid": "cf97293b-9391-449c-aa54-9a90a0ae128d",
+      "name": "AI Agent Developer",
+      "entity_type": "Developer",
+      "labels": [
+        "Entity",
+        "Developer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "07c49123-cfeb-4f74-a5d0-95757f5a5b2f": {
+      "uuid": "07c49123-cfeb-4f74-a5d0-95757f5a5b2f",
+      "name": "Cargonaut",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "LatAm freight forwarder"
+      }
+    },
+    "37aaf793-5e0d-4b81-b649-9c8c8afa4312": {
+      "uuid": "37aaf793-5e0d-4b81-b649-9c8c8afa4312",
+      "name": "Flexport LatAm",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "LatAm freight forwarder"
+      }
+    },
+    "f7e29e30-bd2c-4462-9225-e4d47836c00b": {
+      "uuid": "f7e29e30-bd2c-4462-9225-e4d47836c00b",
+      "name": "Marketplace",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "8e6642f6-c718-43eb-beeb-3f6600e97a9f": {
+      "uuid": "8e6642f6-c718-43eb-beeb-3f6600e97a9f",
+      "name": "buyer",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "205d63c0-eb2f-42ee-963b-4cff7f0be4b2": {
+      "uuid": "205d63c0-eb2f-42ee-963b-4cff7f0be4b2",
+      "name": "seller",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "8a411646-d715-4c1b-b169-ca418149a92e": {
+      "uuid": "8a411646-d715-4c1b-b169-ca418149a92e",
+      "name": "marketplace quality",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "db794611-a278-4dce-8cdb-2db00ee57ab7": {
+      "uuid": "db794611-a278-4dce-8cdb-2db00ee57ab7",
+      "name": "Upwork",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "9a01e702-f2c2-40b3-936c-3c9128d90528": {
+      "uuid": "9a01e702-f2c2-40b3-936c-3c9128d90528",
+      "name": "EnterpriseBuyer",
+      "entity_type": "EnterpriseBuyer",
+      "labels": [
+        "Entity",
+        "EnterpriseBuyer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c8d5ee42-f869-4b76-844a-47dc8226253a": {
+      "uuid": "c8d5ee42-f869-4b76-844a-47dc8226253a",
+      "name": "enterprise buyers",
+      "entity_type": "EnterpriseBuyer",
+      "labels": [
+        "Entity",
+        "EnterpriseBuyer"
+      ],
+      "summary": "",
+      "attributes": {
+        "requirement": "SOC 2 Type II for vendors handling sensitive dispute data"
+      }
+    },
+    "ec658875-6254-4539-9cc5-f70ec4b78267": {
+      "uuid": "ec658875-6254-4539-9cc5-f70ec4b78267",
+      "name": "vendor",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "ae1337c9-f4ef-453d-be4d-9fcd8b489eae": {
+      "uuid": "ae1337c9-f4ef-453d-be4d-9fcd8b489eae",
+      "name": "Accenture Digital",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "Builds Enterprise AI Dispute Manager"
+      }
+    },
+    "243663ef-e377-4447-9ed4-b9898f2acbeb": {
+      "uuid": "243663ef-e377-4447-9ed4-b9898f2acbeb",
+      "name": "50 enterprise clients",
+      "entity_type": "EnterpriseBuyer",
+      "labels": [
+        "Entity",
+        "EnterpriseBuyer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "fdfb433a-ba3b-4526-8335-a5812641ed6c": {
+      "uuid": "fdfb433a-ba3b-4526-8335-a5812641ed6c",
+      "name": "Tier 2 API",
+      "entity_type": "FrameworkBuilder",
+      "labels": [
+        "Entity",
+        "FrameworkBuilder"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "281812c3-6ad9-4029-90d0-9c85248ce297": {
+      "uuid": "281812c3-6ad9-4029-90d0-9c85248ce297",
+      "name": "marketplace operators",
+      "entity_type": "MarketplaceOperator",
+      "labels": [
+        "Entity",
+        "MarketplaceOperator"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "45eb17d2-681d-4f10-bdbe-a6bfa15391ef": {
+      "uuid": "45eb17d2-681d-4f10-bdbe-a6bfa15391ef",
+      "name": "systems integrator",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "3dd85c7c-0990-4282-8c26-617301fa15ed": {
+      "uuid": "3dd85c7c-0990-4282-8c26-617301fa15ed",
+      "name": "EU AI Liability Directive proposal",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "year": "2022",
+        "status": "withdrawn in 2025",
+        "adopted": "no"
+      }
+    },
+    "78d865c8-0092-4b44-9683-9682510195aa": {
+      "uuid": "78d865c8-0092-4b44-9683-9682510195aa",
+      "name": "EU AI Act",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "year": "2024",
+        "scope": "high-risk AI systems",
+        "mandate": "does not mandate specific dispute resolution infrastructure"
+      }
+    },
+    "7bf821bd-e4ba-49e1-a2e4-881e4fec1f4b": {
+      "uuid": "7bf821bd-e4ba-49e1-a2e4-881e4fec1f4b",
+      "name": "high-risk AI systems",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c7dfdf5e-57a2-4ad4-b9f5-1887fced3e24": {
+      "uuid": "c7dfdf5e-57a2-4ad4-b9f5-1887fced3e24",
+      "name": "enterprise legal and compliance teams",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "internal teams"
+      }
+    },
+    "3fad35de-97f1-400f-b634-158066af327a": {
+      "uuid": "3fad35de-97f1-400f-b634-158066af327a",
+      "name": "vendor onboarding checklists",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "checklists"
+      }
+    },
+    "9f969632-ecbe-4a9e-bf6f-c0014df664ef": {
+      "uuid": "9f969632-ecbe-4a9e-bf6f-c0014df664ef",
+      "name": "enterprise procurement",
+      "entity_type": "EnterpriseBuyer",
+      "labels": [
+        "Entity",
+        "EnterpriseBuyer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "7909afd6-13e3-4370-9e4c-5ae72fe7a600": {
+      "uuid": "7909afd6-13e3-4370-9e4c-5ae72fe7a600",
+      "name": "r/LangChain",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "77b71ad4-dd97-46bb-93a9-99ddb25a8736": {
+      "uuid": "77b71ad4-dd97-46bb-93a9-99ddb25a8736",
+      "name": "dev.to",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "5a65805a-64e2-4861-ba2e-2f4cd6a619a4": {
+      "uuid": "5a65805a-64e2-4861-ba2e-2f4cd6a619a4",
+      "name": "Jan 14 2027",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "date"
+      }
+    },
+    "e641e41c-b2e0-4e04-8987-b4e9e57ee796": {
+      "uuid": "e641e41c-b2e0-4e04-8987-b4e9e57ee796",
+      "name": "Agent A",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "68f9d8cc-a280-41f3-a144-9863144ce0cd": {
+      "uuid": "68f9d8cc-a280-41f3-a144-9863144ce0cd",
+      "name": "Agent B",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "71273a7e-08e9-4a31-907d-fde8f6846bd6": {
+      "uuid": "71273a7e-08e9-4a31-907d-fde8f6846bd6",
+      "name": "DisputeClient",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "cbea0a23-48a9-4a04-b6e5-182d29049bc9": {
+      "uuid": "cbea0a23-48a9-4a04-b6e5-182d29049bc9",
+      "name": "client",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "6a3da712-ec22-4797-829a-0d9bc4163de1": {
+      "uuid": "6a3da712-ec22-4797-829a-0d9bc4163de1",
+      "name": "task",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "8d67b530-81f2-45bb-b6e1-76c2526242ba": {
+      "uuid": "8d67b530-81f2-45bb-b6e1-76c2526242ba",
+      "name": "agent_a",
+      "entity_type": "Developer",
+      "labels": [
+        "Entity",
+        "Developer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "8d1e9afe-4495-41cd-b45e-d027b616169d": {
+      "uuid": "8d1e9afe-4495-41cd-b45e-d027b616169d",
+      "name": "agent_b",
+      "entity_type": "Developer",
+      "labels": [
+        "Entity",
+        "Developer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "d4a3a493-9676-41b8-a4d7-567b8bb31842": {
+      "uuid": "d4a3a493-9676-41b8-a4d7-567b8bb31842",
+      "name": "dispute",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "7cd4b42d-a794-4046-9eee-a0fa9781c339": {
+      "uuid": "7cd4b42d-a794-4046-9eee-a0fa9781c339",
+      "name": "result",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "91ece81e-7cd7-4299-8654-a93f2184ba91": {
+      "uuid": "91ece81e-7cd7-4299-8654-a93f2184ba91",
+      "name": "majority_correct",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "Use case identifier or metric mentioned in the text"
+      }
+    },
+    "072a3a06-f9df-4784-b826-0c34874c1ae6": {
+      "uuid": "072a3a06-f9df-4784-b826-0c34874c1ae6",
+      "name": "GenLayer Studio",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "1093ddc7-a8b7-4814-a12c-019f98f0de0b": {
+      "uuid": "1093ddc7-a8b7-4814-a12c-019f98f0de0b",
+      "name": "entity recognition",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "ca3eb161-5d7e-4112-a91d-88e7384dd685": {
+      "uuid": "ca3eb161-5d7e-4112-a91d-88e7384dd685",
+      "name": "date parsing",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "92528a22-19ec-4764-ba75-44176857508f": {
+      "uuid": "92528a22-19ec-4764-ba75-44176857508f",
+      "name": "task marketplace",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "1888b456-4a72-4f62-a760-ca189d0b85c4": {
+      "uuid": "1888b456-4a72-4f62-a760-ca189d0b85c4",
+      "name": "my agents",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "6abc4469-d694-4935-b103-e47a8a80be64": {
+      "uuid": "6abc4469-d694-4935-b103-e47a8a80be64",
+      "name": "developer advocate role",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "0f0ab71a-93f7-4b84-8f3a-21a399426dc3": {
+      "uuid": "0f0ab71a-93f7-4b84-8f3a-21a399426dc3",
+      "name": "newsletter readers",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "count": "12K devs"
+      }
+    },
+    "a09ef0ed-9d34-46ad-9aa6-d095205e40e4": {
+      "uuid": "a09ef0ed-9d34-46ad-9aa6-d095205e40e4",
+      "name": "12K devs",
+      "entity_type": "Developer",
+      "labels": [
+        "Entity",
+        "Developer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "060dec53-6566-49ed-bf32-9e0f289abeda": {
+      "uuid": "060dec53-6566-49ed-bf32-9e0f289abeda",
+      "name": "tutorial",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "3c44f256-6ae3-4cea-a07e-032c5b77d429": {
+      "uuid": "3c44f256-6ae3-4cea-a07e-032c5b77d429",
+      "name": "AutoAgent Labs",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c918242e-96d8-4cde-b977-5e81a507b3de": {
+      "uuid": "c918242e-96d8-4cde-b977-5e81a507b3de",
+      "name": "Nina",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "e0303c32-61bd-497d-9024-c028f2e850cc": {
+      "uuid": "e0303c32-61bd-497d-9024-c028f2e850cc",
+      "name": "Fortune 500 RFP",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "3b4bcd12-6dba-453d-9a00-2cde681b8cef": {
+      "uuid": "3b4bcd12-6dba-453d-9a00-2cde681b8cef",
+      "name": "pharma client",
+      "entity_type": "EnterpriseBuyer",
+      "labels": [
+        "Entity",
+        "EnterpriseBuyer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "0f4ac6e0-647a-4ab0-a5e6-e1c73ada3640": {
+      "uuid": "0f4ac6e0-647a-4ab0-a5e6-e1c73ada3640",
+      "name": "legal team",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "2a6fe5bb-cff9-4edd-8683-073ccb04f7df": {
+      "uuid": "2a6fe5bb-cff9-4edd-8683-073ccb04f7df",
+      "name": "pharma client",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "7f9c0771-d34c-46f7-9e0a-b1cba26db59b": {
+      "uuid": "7f9c0771-d34c-46f7-9e0a-b1cba26db59b",
+      "name": "H2",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "1e105275-f9f3-4bc5-a3e6-4a975d040cd9": {
+      "uuid": "1e105275-f9f3-4bc5-a3e6-4a975d040cd9",
+      "name": "enterprise compliance test case",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "1710ca9b-a179-4e6d-9bab-a6dfd59170b5": {
+      "uuid": "1710ca9b-a179-4e6d-9bab-a6dfd59170b5",
+      "name": "Zara",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "dd44d96b-58fe-4431-84b6-317002d54c43": {
+      "uuid": "dd44d96b-58fe-4431-84b6-317002d54c43",
+      "name": "managed API",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "2b188045-8647-4738-8835-90f4b3cb8ece": {
+      "uuid": "2b188045-8647-4738-8835-90f4b3cb8ece",
+      "name": "Carlos Reyes",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "cold inbound, non-technical buyer",
+        "note": "Secondary test subject"
+      }
+    },
+    "d9f00612-b6f4-4147-bd62-8f268213dfd8": {
+      "uuid": "d9f00612-b6f4-4147-bd62-8f268213dfd8",
+      "name": "GenLayer dispute API",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "8e4116da-3c7e-4cdc-8c02-3506758ae562": {
+      "uuid": "8e4116da-3c7e-4cdc-8c02-3506758ae562",
+      "name": "GenLayer blockchain",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "36cf50d0-cafa-4ca5-a1f4-fbcf5a177378": {
+      "uuid": "36cf50d0-cafa-4ca5-a1f4-fbcf5a177378",
+      "name": "Developers",
+      "entity_type": "Developer",
+      "labels": [
+        "Entity",
+        "Developer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "96eebed3-b485-475e-bb79-4fc4acd4b1f4": {
+      "uuid": "96eebed3-b485-475e-bb79-4fc4acd4b1f4",
+      "name": "H5",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "70c5616e-a144-4400-8cc1-36a72ab3e720": {
+      "uuid": "70c5616e-a144-4400-8cc1-36a72ab3e720",
+      "name": "Yuki",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "8ed4627b-290c-4298-8695-1c07a1c1d2f3": {
+      "uuid": "8ed4627b-290c-4298-8695-1c07a1c1d2f3",
+      "name": "Aisha Okonkwo",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "Klarna",
+        "organization": "Klarna",
+        "waiting_duration": "6 months"
+      }
+    },
+    "2a84dad2-a529-44a3-959d-4195316b061d": {
+      "uuid": "2a84dad2-a529-44a3-959d-4195316b061d",
+      "name": "PMF Traps to Avoid",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "61efab97-eb09-48d2-aeeb-4690fd07bc5f": {
+      "uuid": "61efab97-eb09-48d2-aeeb-4690fd07bc5f",
+      "name": "SDK",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c5060246-3a90-43bf-a811-d7a5c6c81e17": {
+      "uuid": "c5060246-3a90-43bf-a811-d7a5c6c81e17",
+      "name": "recommendation",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "ced8bc57-6a9c-4628-b870-dfd170cb5c7b": {
+      "uuid": "ced8bc57-6a9c-4628-b870-dfd170cb5c7b",
+      "name": "RFP",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "87c56dda-bcb1-4e82-8e76-59c1a283936b": {
+      "uuid": "87c56dda-bcb1-4e82-8e76-59c1a283936b",
+      "name": "buyer-economics.md",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "section": "Buyer Economics — Who Pays and Why"
+      }
+    },
+    "9e23e0c8-f2fb-45e5-bb80-625baa864acc": {
+      "uuid": "9e23e0c8-f2fb-45e5-bb80-625baa864acc",
+      "name": "Indie Developer",
+      "entity_type": "Developer",
+      "labels": [
+        "Entity",
+        "Developer"
+      ],
+      "summary": "",
+      "attributes": {
+        "segment": "Solo Agent Builder",
+        "monthly_disputes": "5-50",
+        "average_transaction_value": "$10-$200",
+        "current_workaround": "absorb the loss or argue manually",
+        "cost_of_false_positive": "$10-200",
+        "cost_of_false_negative": "$10-200",
+        "switching_cost_to_GenLayer": "4 days",
+        "ideal_switching_cost": "4 hours",
+        "payback_period": "immediate if dispute rate > 5"
+      }
+    },
+    "976b3cbe-22a3-40a6-9e35-232231dee10a": {
+      "uuid": "976b3cbe-22a3-40a6-9e35-232231dee10a",
+      "name": "founder",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "budget owner"
+      }
+    },
+    "b4f5f09a-f372-482b-bbc6-6069505140ea": {
+      "uuid": "b4f5f09a-f372-482b-bbc6-6069505140ea",
+      "name": "marketplaces",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "1b23611a-44bd-4bd8-8504-ac75340cef10": {
+      "uuid": "1b23611a-44bd-4bd8-8504-ac75340cef10",
+      "name": "VP Engineering",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "budget owner"
+      }
+    },
+    "af689f0e-ab98-4e65-9e2e-fd2e13a5f6c5": {
+      "uuid": "af689f0e-ab98-4e65-9e2e-fd2e13a5f6c5",
+      "name": "CLO",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "budget owner"
+      }
+    },
+    "656aa9e1-e911-432e-af1a-d2b122080025": {
+      "uuid": "656aa9e1-e911-432e-af1a-d2b122080025",
+      "name": "B2B AI Service Procurement Platform",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "b4181c2b-6f58-4e83-a8f6-a54c51d151cc": {
+      "uuid": "b4181c2b-6f58-4e83-a8f6-a54c51d151cc",
+      "name": "SaaS integration budget",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "89d6fd75-46d6-4690-be70-a33b8e573815": {
+      "uuid": "89d6fd75-46d6-4690-be70-a33b8e573815",
+      "name": "platforms",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "buyer_profile": "who buys first",
+        "dispute_volume": "high"
+      }
+    },
+    "f70a1c75-e3db-45ec-86e0-ed7ae510263c": {
+      "uuid": "f70a1c75-e3db-45ec-86e0-ed7ae510263c",
+      "name": "B2B AI service procurement",
+      "entity_type": "EnterpriseBuyer",
+      "labels": [
+        "Entity",
+        "EnterpriseBuyer"
+      ],
+      "summary": "",
+      "attributes": {
+        "decision_cycle": "medium",
+        "savings": "clear",
+        "managed_api": "required but not yet built"
+      }
+    },
+    "d39e335b-469d-47ae-897b-3d8187445cf7": {
+      "uuid": "d39e335b-469d-47ae-897b-3d8187445cf7",
+      "name": "Solo developer",
+      "entity_type": "Developer",
+      "labels": [
+        "Entity",
+        "Developer"
+      ],
+      "summary": "",
+      "attributes": {
+        "decision_cycle": "fast",
+        "ACV": "low",
+        "SDK_experience": "must improve first"
+      }
+    },
+    "6bd251c0-f2aa-494b-bc4d-bb3e80f30021": {
+      "uuid": "6bd251c0-f2aa-494b-bc4d-bb3e80f30021",
+      "name": "evidence schema library",
+      "entity_type": "FrameworkBuilder",
+      "labels": [
+        "Entity",
+        "FrameworkBuilder"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "8aa5abcf-6bc7-4734-bb50-f2571816fb88": {
+      "uuid": "8aa5abcf-6bc7-4734-bb50-f2571816fb88",
+      "name": "enterprise legal teams",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "e625f6ff-4884-4b8f-913a-b50287c4fdd5": {
+      "uuid": "e625f6ff-4884-4b8f-913a-b50287c4fdd5",
+      "name": "SOC 2 Type II",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "kind": "compliance certification"
+      }
+    },
+    "b007d8ae-d821-42aa-8c7c-44c1b7bfe74f": {
+      "uuid": "b007d8ae-d821-42aa-8c7c-44c1b7bfe74f",
+      "name": "Tier 3 managed service",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "fix recommendation for past validator config issues"
+      }
+    },
+    "b2e3c114-1313-4490-b136-f12f13370b7a": {
+      "uuid": "b2e3c114-1313-4490-b136-f12f13370b7a",
+      "name": "integration support SLA",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "minimum support for paying customers"
+      }
+    },
+    "026b15f5-748d-4e32-ac7c-dc72fc1664cd": {
+      "uuid": "026b15f5-748d-4e32-ac7c-dc72fc1664cd",
+      "name": "marketplace CEOs",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "non-technical buyers"
+      }
+    },
+    "50441647-21fb-47fc-a129-9eaf0aa2393a": {
+      "uuid": "50441647-21fb-47fc-a129-9eaf0aa2393a",
+      "name": "enterprise VPs",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "non-technical buyers"
+      }
+    },
+    "d0e5c7af-92f0-421a-8389-f6f2dc80775d": {
+      "uuid": "d0e5c7af-92f0-421a-8389-f6f2dc80775d",
+      "name": "UNDETERMINED",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "f77fa010-13a2-43d1-8515-3c3473ee79b2": {
+      "uuid": "f77fa010-13a2-43d1-8515-3c3473ee79b2",
+      "name": "Legal team",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "blocks GenLayer adoption"
+      }
+    },
+    "ff7d4e42-9179-443d-811e-422ff7915701": {
+      "uuid": "ff7d4e42-9179-443d-811e-422ff7915701",
+      "name": "financial services",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "regulated industry example"
+      }
+    },
+    "4396b2ef-6042-4692-8639-1c6884a7a0a1": {
+      "uuid": "4396b2ef-6042-4692-8639-1c6884a7a0a1",
+      "name": "healthcare",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "regulated industry example"
+      }
+    },
+    "91dd73ce-2d36-44fb-9f7c-71d77fa16cc5": {
+      "uuid": "91dd73ce-2d36-44fb-9f7c-71d77fa16cc5",
+      "name": "regulated industries",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "industries with legal adoption barriers"
+      }
+    },
+    "48602ba2-f88c-473d-818f-6a8b54bd6842": {
+      "uuid": "48602ba2-f88c-473d-818f-6a8b54bd6842",
+      "name": "growth-stage marketplaces",
+      "entity_type": "MarketplaceOperator",
+      "labels": [
+        "Entity",
+        "MarketplaceOperator"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "1fd74e46-19d2-4dab-a031-200f63d9aa7f": {
+      "uuid": "1fd74e46-19d2-4dab-a031-200f63d9aa7f",
+      "name": "growth-stage companies",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "925134f3-124b-4832-ac20-2e4aa956caf8": {
+      "uuid": "925134f3-124b-4832-ac20-2e4aa956caf8",
+      "name": "the market",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "843c5349-7a83-4d4c-a096-a1e1bd5b2165": {
+      "uuid": "843c5349-7a83-4d4c-a096-a1e1bd5b2165",
+      "name": "Layer 2",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "handles": "~20-30% of disputes",
+        "role": "AI jury"
+      }
+    },
+    "54fb8ac0-6b22-4c8c-bc30-fa590ffb8ae9": {
+      "uuid": "54fb8ac0-6b22-4c8c-bc30-fa590ffb8ae9",
+      "name": "Layer 1-3",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "daff6167-0135-41aa-8ffa-371a0a4e12ba": {
+      "uuid": "daff6167-0135-41aa-8ffa-371a0a4e12ba",
+      "name": "rules",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "468fd83c-df6c-4059-b515-d101c180a9ab": {
+      "uuid": "468fd83c-df6c-4059-b515-d101c180a9ab",
+      "name": "human",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "991bd3d0-3f3a-4ef7-a152-69f3ecefe488": {
+      "uuid": "991bd3d0-3f3a-4ef7-a152-69f3ecefe488",
+      "name": "markets",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "35213acb-1387-46b1-b424-36c51e822639": {
+      "uuid": "35213acb-1387-46b1-b424-36c51e822639",
+      "name": "marketsplaces",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "15fea390-a840-469d-b541-7459eff872df": {
+      "uuid": "15fea390-a840-469d-b541-7459eff872df",
+      "name": "enterprise integrators",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "37722755-9e1f-4d6c-9ab9-4cac140825a1": {
+      "uuid": "37722755-9e1f-4d6c-9ab9-4cac140825a1",
+      "name": "developer API",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "522d275d-5e65-4edc-a1f0-e8ae4e8b5979": {
+      "uuid": "522d275d-5e65-4edc-a1f0-e8ae4e8b5979",
+      "name": "evidence schema standard",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "8601fe54-56f2-4e1e-ad5e-02097b6c3a77": {
+      "uuid": "8601fe54-56f2-4e1e-ad5e-02097b6c3a77",
+      "name": "IETF",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "705df6ab-15b2-4755-b954-cdfa3df07d7e": {
+      "uuid": "705df6ab-15b2-4755-b954-cdfa3df07d7e",
+      "name": "IEEE",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "f9ef3f73-03bf-455d-981f-c64e4d62b30c": {
+      "uuid": "f9ef3f73-03bf-455d-981f-c64e4d62b30c",
+      "name": "Enterprise-First Managed Service",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "f0c17504-01de-47ce-a412-d46fc5931bf7": {
+      "uuid": "f0c17504-01de-47ce-a412-d46fc5931bf7",
+      "name": "developer community",
+      "entity_type": "Developer",
+      "labels": [
+        "Entity",
+        "Developer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "16fabf94-5a22-4be3-9479-35de2d39d400": {
+      "uuid": "16fabf94-5a22-4be3-9479-35de2d39d400",
+      "name": "enterprise clients",
+      "entity_type": "EnterpriseBuyer",
+      "labels": [
+        "Entity",
+        "EnterpriseBuyer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c2f00aa8-3b03-47b9-9d12-ef67b124e8da": {
+      "uuid": "c2f00aa8-3b03-47b9-9d12-ef67b124e8da",
+      "name": "routing system",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "a40239e4-53c8-406c-9b2f-d2ac4c7f29e1": {
+      "uuid": "a40239e4-53c8-406c-9b2f-d2ac4c7f29e1",
+      "name": "indie developer",
+      "entity_type": "Developer",
+      "labels": [
+        "Entity",
+        "Developer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "470739d2-4e5d-4f3a-a636-8901035079e6": {
+      "uuid": "470739d2-4e5d-4f3a-a636-8901035079e6",
+      "name": "early-stage engineer",
+      "entity_type": "Developer",
+      "labels": [
+        "Entity",
+        "Developer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "82b50d35-1edf-4f69-a569-9eaa1e3db7f1": {
+      "uuid": "82b50d35-1edf-4f69-a569-9eaa1e3db7f1",
+      "name": "Framework maintainers",
+      "entity_type": "FrameworkBuilder",
+      "labels": [
+        "Entity",
+        "FrameworkBuilder"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c34a8844-c80c-4cc5-802d-602525e995f6": {
+      "uuid": "c34a8844-c80c-4cc5-802d-602525e995f6",
+      "name": "PixelPact",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "status": "active evaluation"
+      }
+    },
+    "8d310060-a244-4e92-bcf4-5f0146c9ba05": {
+      "uuid": "8d310060-a244-4e92-bcf4-5f0146c9ba05",
+      "name": "Derek Walsh",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "building a competing open-source module"
+      }
+    },
+    "fefc62b9-c706-4810-892b-68676816e766": {
+      "uuid": "fefc62b9-c706-4810-892b-68676816e766",
+      "name": "Klarna",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "743d6ce4-544c-4a05-956f-aa824948d640": {
+      "uuid": "743d6ce4-544c-4a05-956f-aa824948d640",
+      "name": "Fatima Al-Rashidi",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "controls this channel",
+        "organization": "Sequoia"
+      }
+    },
+    "afd52d89-d246-4fc5-a2d8-676199402a2b": {
+      "uuid": "afd52d89-d246-4fc5-a2d8-676199402a2b",
+      "name": "Sequoia",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "VC"
+      }
+    },
+    "1ba23a45-5a11-4ced-a28e-9b65e6a6acef": {
+      "uuid": "1ba23a45-5a11-4ced-a28e-9b65e6a6acef",
+      "name": "@AgentWatch",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "controls this channel"
+      }
+    },
+    "c68494e5-7a9e-41f4-9b0d-6493553418bd": {
+      "uuid": "c68494e5-7a9e-41f4-9b0d-6493553418bd",
+      "name": "Lior Ben-David",
+      "entity_type": "Investor",
+      "labels": [
+        "Entity",
+        "Investor"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "824a3672-f902-45ed-9d4f-1a00e60a1c2e": {
+      "uuid": "824a3672-f902-45ed-9d4f-1a00e60a1c2e",
+      "name": "AgentWatch",
+      "entity_type": "MediaAnalyst",
+      "labels": [
+        "Entity",
+        "MediaAnalyst"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "d4920463-6833-4a23-b3a4-91a8ba8dec93": {
+      "uuid": "d4920463-6833-4a23-b3a4-91a8ba8dec93",
+      "name": "Jessica Park",
+      "entity_type": "MediaAnalyst",
+      "labels": [
+        "Entity",
+        "MediaAnalyst"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "4834d957-c47a-4262-9d26-d0858a3acb19": {
+      "uuid": "4834d957-c47a-4262-9d26-d0858a3acb19",
+      "name": "AgentWatch",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "53636b2e-f4d1-4484-9b94-b2d031ec90f3": {
+      "uuid": "53636b2e-f4d1-4484-9b94-b2d031ec90f3",
+      "name": "Lior Ben-David",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "controls this channel"
+      }
+    },
+    "03b8057f-5803-4316-bb6a-eb4c1a53937a": {
+      "uuid": "03b8057f-5803-4316-bb6a-eb4c1a53937a",
+      "name": "Channel 2",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "Marketplace Operator Direct Sales"
+      }
+    },
+    "b257865d-43de-492f-ba22-7b8d7fab1dd6": {
+      "uuid": "b257865d-43de-492f-ba22-7b8d7fab1dd6",
+      "name": "Channel 3",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "Framework Integration"
+      }
+    },
+    "63b368ab-8b32-4827-ad66-7ac39573d5a4": {
+      "uuid": "63b368ab-8b32-4827-ad66-7ac39573d5a4",
+      "name": "5+ marketplaces",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "in evaluation"
+      }
+    },
+    "e7333e62-57e6-46e6-911e-a93a33f2ad4d": {
+      "uuid": "e7333e62-57e6-46e6-911e-a93a33f2ad4d",
+      "name": "one production reference",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "production reference"
+      }
+    },
+    "e41e98e9-ad67-4b51-814d-4df5c6091fea": {
+      "uuid": "e41e98e9-ad67-4b51-814d-4df5c6091fea",
+      "name": "GenLayer",
+      "entity_type": "FrameworkBuilder",
+      "labels": [
+        "Entity",
+        "FrameworkBuilder"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "gets framework distribution for its natural segment if dual-recommendation is won"
+      }
+    }
+  },
+  "edges": [
+    {
+      "uuid": "7d8030b9-8c9a-42de-b755-ad3fef3e3a53",
+      "name": "DEVELOPS",
+      "fact": "The text presents H1 as a PMF hypothesis under test for GenLayer.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "d557f3d3-c836-48ba-84f0-9ee5b03f9d8b",
+      "attributes": {}
+    },
+    {
+      "uuid": "b0d12dbe-e6fa-4b5d-a26b-d2ff18b44783",
+      "name": "PARTNERS_WITH",
+      "fact": "A marketplace operator publicly commits to GenLayer specifically because it handled a dispute VeritasProtocol couldn't.",
+      "source_node_uuid": "cfdcb8e6-efae-420f-a777-4d46bb1c9d7e",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "45e018ab-e8e0-49f9-ae7d-06a1a5bc2721",
+      "name": "PARTNERS_WITH",
+      "fact": "GenLayer handled a dispute VeritasProtocol couldn't.",
+      "source_node_uuid": "cfdcb8e6-efae-420f-a777-4d46bb1c9d7e",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "86a7d04e-e80c-4bbf-b746-d93cdb3dcdef",
+      "name": "BUYS_FROM",
+      "fact": "Enterprise buyers care less about dispute resolution speed and more about having a signed, explainable, auditable trail of every AI decision; GenLayer's verdicts become a compliance artifact.",
+      "source_node_uuid": "bfae4bab-a210-49d5-a71a-1ab011a65ea8",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "2963f511-b934-4f3f-9f56-ccaf03ddd31a",
+      "name": "BUYS_FROM",
+      "fact": "An enterprise legal or procurement team selects GenLayer over VeritasProtocol specifically because of the verdict reasoning export.",
+      "source_node_uuid": "6d1a74eb-ba76-4341-aaa9-3f0282f4d667",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "04bed55a-d2b5-45e9-b14f-ce469511be72",
+      "name": "DEVELOPS",
+      "fact": "GenLayer wins by hiding its complexity behind a clean SaaS interface.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "d6467e73-6999-40c1-a86c-f6a373f3bf93",
+      "attributes": {}
+    },
+    {
+      "uuid": "f50ba24c-1878-4c24-9dc5-9233fe4c9ce8",
+      "name": "BUYS_FROM",
+      "fact": "A marketplace operator keeps GenLayer as their primary reason due to measurable dispute rate reduction attributable to behavioral change, not dispute filtering.",
+      "source_node_uuid": "cfdcb8e6-efae-420f-a777-4d46bb1c9d7e",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "be96c8af-7f66-415b-85d7-e522e35161d2",
+      "name": "PARTNERS_WITH",
+      "fact": "GenLayer has one production integration with Rentahuman.ai.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "6e157415-c721-499a-9ef3-f246b2c6773d",
+      "attributes": {}
+    },
+    {
+      "uuid": "99dc14b0-f218-4009-8cc2-fa2c6ffc40c3",
+      "name": "INVESTS_IN",
+      "fact": "VeritasProtocol — Deterministic rules. $12M a16z.",
+      "source_node_uuid": "1c68ae6b-c173-431d-9dc1-f3e076dc3100",
+      "target_node_uuid": "8947278b-5b3b-4d63-8d2b-64f7caca865a",
+      "attributes": {}
+    },
+    {
+      "uuid": "7c3bd639-1d1b-4f7e-8c8d-40c51df784ea",
+      "name": "DEVELOPS",
+      "fact": "Accenture is described as building enterprise agent workflows.",
+      "source_node_uuid": "635e598a-6564-43ad-afcc-2cf7942b62fe",
+      "target_node_uuid": "157a1be5-a627-4935-b88b-300fac177664",
+      "attributes": {}
+    },
+    {
+      "uuid": "ff9a0da1-89d3-44d6-af59-6eff4e314816",
+      "name": "DEVELOPS",
+      "fact": "Deloitte is described as building enterprise agent workflows.",
+      "source_node_uuid": "a09c3f3b-f96d-42e8-9b34-7a9ee5e38dcf",
+      "target_node_uuid": "157a1be5-a627-4935-b88b-300fac177664",
+      "attributes": {}
+    },
+    {
+      "uuid": "5ce1b58c-3e32-4c68-91e1-0a5dd540a5cf",
+      "name": "DEVELOPS",
+      "fact": "Wipro is described as building enterprise agent workflows.",
+      "source_node_uuid": "7b062076-6ae3-4d8e-8111-3feec8a8536f",
+      "target_node_uuid": "157a1be5-a627-4935-b88b-300fac177664",
+      "attributes": {}
+    },
+    {
+      "uuid": "fdb9c07c-f943-47ea-9df1-cc0f425ace9c",
+      "name": "REPORTS_ON",
+      "fact": "Yuki Tanaka is writing a side-by-side comparison and mentions that GenLayer quickstart works before Day 15.",
+      "source_node_uuid": "12f2251e-57d6-40b2-bb9d-ddf8d8e69827",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "9749cf5c-e843-42b8-821f-e3517ebabf27",
+      "name": "BUYS_FROM",
+      "fact": "Alex Petrov is described as competitive, offering Rachel $200K dev credits.",
+      "source_node_uuid": "f4c02da4-b4cb-4f2f-83a0-e8e1e71dbd77",
+      "target_node_uuid": "501618a2-0b17-4291-81aa-74a889f0301d",
+      "attributes": {}
+    },
+    {
+      "uuid": "6cb990f8-80f9-4762-9560-c8b04bd43947",
+      "name": "DEVELOPS",
+      "fact": "Sandra Lee is identified as Shopify AI lead.",
+      "source_node_uuid": "37d17340-b75a-4d5c-8aef-3c659da95206",
+      "target_node_uuid": "723ba2af-bee7-4be5-9808-32266526f8fc",
+      "attributes": {}
+    },
+    {
+      "uuid": "6491f28b-b6af-44ae-a7ec-9d4a287d6c81",
+      "name": "INVESTS_IN",
+      "fact": "VeritasProtocol: $12M a16z",
+      "source_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "target_node_uuid": "d85f1dde-8c76-4c24-84d2-c540e3539b7e",
+      "attributes": {}
+    },
+    {
+      "uuid": "ebd77c4a-62f1-4110-a772-b92c00003ae4",
+      "name": "DEVELOPS",
+      "fact": "LangGraph user base: 8,000 active developers",
+      "source_node_uuid": "94fb42c1-01f8-4a0d-8a6f-f4eb07d81baf",
+      "target_node_uuid": "66f7d5e6-5f06-4c58-8756-00c06e9a848b",
+      "attributes": {}
+    },
+    {
+      "uuid": "ad3b498f-0e94-483e-bba9-8921b0f797f1",
+      "name": "PARTNERS_WITH",
+      "fact": "Rachel chooses VeritasProtocol-only for LangGraph.",
+      "source_node_uuid": "501618a2-0b17-4291-81aa-74a889f0301d",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "39f852a2-33ee-40e0-8a3f-d6848a024669",
+      "name": "DEVELOPS",
+      "fact": "Marcus goes live with GenLayer.",
+      "source_node_uuid": "014dee5e-ab2d-4147-98b5-8f4d2ca20b1c",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "c46abba4-0e9f-4c0e-bbdc-374ea1dd6519",
+      "name": "PARTNERS_WITH",
+      "fact": "CrewAI recommends VeritasProtocol.",
+      "source_node_uuid": "d60550c7-4d2f-4452-8f27-affe8f3eda68",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "99ac74d6-cd14-4066-a246-a52ae4f0a25c",
+      "name": "PARTNERS_WITH",
+      "fact": "VeritasProtocol is presented as an option for the default backend in LangGraph 4.1.",
+      "source_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "target_node_uuid": "5e26cf11-f456-4d69-9d65-84de8116f0d6",
+      "attributes": {}
+    },
+    {
+      "uuid": "fb977a14-9096-41f6-a4f3-4c86a53ba3cf",
+      "name": "PARTNERS_WITH",
+      "fact": "GenLayer is presented as an option for the default backend in LangGraph 4.1.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "5e26cf11-f456-4d69-9d65-84de8116f0d6",
+      "attributes": {}
+    },
+    {
+      "uuid": "44e073c4-f972-4e4a-969c-c3e49af078c9",
+      "name": "PARTNERS_WITH",
+      "fact": "Sofia Eriksson is identified as the decision maker and CEO of DataForge.",
+      "source_node_uuid": "17a751d9-ea33-4c1b-8def-e273b5781d93",
+      "target_node_uuid": "bc67d5e7-573c-4821-84ca-97685d3e3cc0",
+      "attributes": {}
+    },
+    {
+      "uuid": "7f206154-5e97-47f8-9dc3-5f04d8b00833",
+      "name": "BUYS_FROM",
+      "fact": "Pharma client accepts GenLayer specifically for verdict reasoning audit trail.",
+      "source_node_uuid": "a0b85341-e942-4864-b3b5-8792c39103d0",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "004b8107-4f78-4b28-b28d-a7fd5c72d8e8",
+      "name": "BUYS_FROM",
+      "fact": "Pharma client rejects GenLayer because \"AI reasoning is not a sufficient audit trail\".",
+      "source_node_uuid": "a0b85341-e942-4864-b3b5-8792c39103d0",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "9de53782-40bd-406e-8277-37478c312223",
+      "name": "BUYS_FROM",
+      "fact": "She chooses B because \"VeritasProtocol was easier even if less accurate\".",
+      "source_node_uuid": "a0b85341-e942-4864-b3b5-8792c39103d0",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "f90e4004-8f2b-4657-b9ff-e6f9c21cb0eb",
+      "name": "DEVELOPS",
+      "fact": "Yuki Tanaka is deciding which tutorial to publish in her upcoming agent dispute resolution series.",
+      "source_node_uuid": "12f2251e-57d6-40b2-bb9d-ddf8d8e69827",
+      "target_node_uuid": "4b55a477-526a-43d6-a920-a484ba976779",
+      "attributes": {}
+    },
+    {
+      "uuid": "fdd8bde6-223a-4069-825f-306941619ca1",
+      "name": "REPORTS_ON",
+      "fact": "Her recommendation shapes default developer choice for a 10K+ developer audience, and the options include a GenLayer tutorial.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "d0c0093d-528d-462c-bd9f-c980f18121e5",
+      "attributes": {}
+    },
+    {
+      "uuid": "05271945-7412-4e2b-9e47-f4fe2e09e7a7",
+      "name": "PARTNERS_WITH",
+      "fact": "Accenture has never spoken to GenLayer team.",
+      "source_node_uuid": "635e598a-6564-43ad-afcc-2cf7942b62fe",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "41e50977-d2ad-4e5a-bdba-f7baf24ded35",
+      "name": "PARTNERS_WITH",
+      "fact": "Accenture has never spoken to GenLayer team.",
+      "source_node_uuid": "635e598a-6564-43ad-afcc-2cf7942b62fe",
+      "target_node_uuid": "4adf81ca-15ed-4141-af8a-beb2faa41836",
+      "attributes": {}
+    },
+    {
+      "uuid": "718818c3-17da-4535-a6cb-ef548b9ee07e",
+      "name": "PARTNERS_WITH",
+      "fact": "GenLayer handles the judgment-heavy spike while VeritasProtocol fails on ambiguous cases",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "f3c6ad23-356a-4d21-9281-cd810d491c35",
+      "name": "PARTNERS_WITH",
+      "fact": "GenLayer runs behind another product's brand.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "3d79c118-dcaf-4113-8049-a5baea6d07df",
+      "attributes": {}
+    },
+    {
+      "uuid": "c7a5ba35-7170-44f1-9fcb-ccae9a7a41cc",
+      "name": "DEVELOPS",
+      "fact": "The prompt is addressed to GenLayer's CEO and discusses GenLayer's strategy and market simulation.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "587a60b2-47b4-4571-ac61-1966ed96f4aa",
+      "name": "PARTNERS_WITH",
+      "fact": "Twitter/X and LinkedIn are listed together.",
+      "source_node_uuid": "e5b8860a-9d8b-4b61-855a-f15fda9bb91f",
+      "target_node_uuid": "49e5689b-c38e-4e3b-9334-079a0b882139",
+      "attributes": {}
+    },
+    {
+      "uuid": "0976013c-7f68-4132-9778-08441fed71f6",
+      "name": "PARTNERS_WITH",
+      "fact": "The text refers to the GenLayer team in relation to GenLayer in the context of determining whether actions occurred with GenLayer team involvement.",
+      "source_node_uuid": "4adf81ca-15ed-4141-af8a-beb2faa41836",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "479dd5fd-8b67-461f-af0a-3a7e066fec5d",
+      "name": "DEVELOPS",
+      "fact": "InternetCourt is one product built on GenLayer's primitives.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "fa4874e0-96fd-470c-99cb-ad67664f548e",
+      "attributes": {}
+    },
+    {
+      "uuid": "6ccb4ccb-d4e0-437d-8eda-767254f63e80",
+      "name": "DEVELOPS",
+      "fact": "GenLayer validators can evaluate claims that don't have a binary true/false answer from a database.",
+      "source_node_uuid": "6e522087-0bbb-42ad-95b8-829268c69ed4",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "141c9188-31a8-4830-9f4a-46093779636a",
+      "name": "DEVELOPS",
+      "fact": "An AI agent can call the API to trigger GenLayer adjudication.",
+      "source_node_uuid": "76c5e261-0e7b-430b-bacc-3b3a911044cc",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "68a61674-a2f9-409d-a491-30f904103d5b",
+      "name": "DEVELOPS",
+      "fact": "InternetCourt is the most mature product built on GenLayer primitives.",
+      "source_node_uuid": "fa4874e0-96fd-470c-99cb-ad67664f548e",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "a11ef10c-a0a6-40cb-aa67-690b6d5cd9cd",
+      "name": "PARTNERS_WITH",
+      "fact": "The architecture shows GenLayer connecting through the LayerZero V2 Bridge for dispute handling.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "b8c9e6a9-728a-44d3-9e98-931c03dce284",
+      "attributes": {}
+    },
+    {
+      "uuid": "ae88e747-3e71-4176-8f72-4aaba37798c3",
+      "name": "DEVELOPS",
+      "fact": "Yuki Tanaka documented this directly: 'once I got GenLayer working, my dispute rate dropped.'",
+      "source_node_uuid": "12f2251e-57d6-40b2-bb9d-ddf8d8e69827",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "5067d0e9-ba7c-4547-91b6-d5c0fe53293d",
+      "name": "DEVELOPS",
+      "fact": "Yuki Tanaka documented this directly: 'VeritasProtocol didn't change agent behavior at all because gaming it was easier than improving quality.'",
+      "source_node_uuid": "12f2251e-57d6-40b2-bb9d-ddf8d8e69827",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "28ab491d-1e21-4c45-9c76-93078abc251f",
+      "name": "PARTNERS_WITH",
+      "fact": "Parties receive GenLayer's verdict as feedback, regardless of actual dispute outcome.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "cbd376b1-0dae-478e-8f94-1d0f956203e3",
+      "attributes": {}
+    },
+    {
+      "uuid": "96834dab-eda7-4655-872f-f9d334cc7375",
+      "name": "DEVELOPS",
+      "fact": "GenLayer runs as a backend service behind an API.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "0226420c-3340-4be0-b3fd-300d8de25d58",
+      "attributes": {}
+    },
+    {
+      "uuid": "3a485e42-926c-4834-88b8-8b097f3e5bc5",
+      "name": "DEVELOPS",
+      "fact": "AI agent outputs are submitted to GenLayer for independent evaluation.",
+      "source_node_uuid": "76c5e261-0e7b-430b-bacc-3b3a911044cc",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "2726fb2c-345c-4b47-8b58-6e56f146945a",
+      "name": "DEVELOPS",
+      "fact": "Codebases built for synchronous dispute resolution (like most VeritasProtocol integrations) require state machine refactoring to handle PENDING_CONSENSUS → VALIDATING → RESOLVED lifecycle. Yuki Tanaka spent 3 hours on this alone.",
+      "source_node_uuid": "12f2251e-57d6-40b2-bb9d-ddf8d8e69827",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "6d2378bb-cf89-4163-b116-fd58d92f96db",
+      "name": "BUYS_FROM",
+      "fact": "Enterprise buyers with contractual SLA requirements cannot commit to GenLayer without a service agreement that GenLayer does not currently offer.",
+      "source_node_uuid": "bfae4bab-a210-49d5-a71a-1ab011a65ea8",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "b73b3f4a-ac54-45a2-adb7-14b934664745",
+      "name": "DEVELOPS",
+      "fact": "The text frames GenLayer's strategic pitch as 'dispute reducer' rather than just 'dispute resolver'.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "823c3bf0-917d-4107-83c3-5b625def6b20",
+      "attributes": {}
+    },
+    {
+      "uuid": "4564a3bc-9a64-4c4b-952d-12e3e34b8361",
+      "name": "PARTNERS_WITH",
+      "fact": "The pattern describes a rules-first system with GenLayer fallback and deterministic checks using VeritasProtocol or custom rules.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "325bf9e3-76e5-45c7-be0d-5853c55932a4",
+      "name": "DEVELOPS",
+      "fact": "GenLayer's primitives can address all of them.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "3069bcce-01c6-4a14-98be-59f88394f7a6",
+      "attributes": {}
+    },
+    {
+      "uuid": "c542ab6c-d5b8-473b-a76d-69b86a757021",
+      "name": "BUYS_FROM",
+      "fact": "GenLayer can reach customers in a developer-led SDK configuration where the developer writes guidelines, deploys contracts, and handles async resolution in their own codebase.",
+      "source_node_uuid": "d0c0093d-528d-462c-bd9f-c980f18121e5",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "c43ea63a-a29b-442f-ab73-676184931aa1",
+      "name": "PARTNERS_WITH",
+      "fact": "Framework adoption (LangGraph, CrewAI, AutoAgent integrations) — third-party, not GenLayer-driven.",
+      "source_node_uuid": "94fb42c1-01f8-4a0d-8a6f-f4eb07d81baf",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "73c519bb-ee26-4666-803a-a44c371418a0",
+      "name": "PARTNERS_WITH",
+      "fact": "Framework adoption (LangGraph, CrewAI, AutoAgent integrations) — third-party, not GenLayer-driven.",
+      "source_node_uuid": "d60550c7-4d2f-4452-8f27-affe8f3eda68",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "466a990a-2119-43f1-9457-385c553314d6",
+      "name": "PARTNERS_WITH",
+      "fact": "Framework adoption (LangGraph, CrewAI, AutoAgent integrations) — third-party, not GenLayer-driven.",
+      "source_node_uuid": "5e7cd9e0-3a53-41f6-a344-de2bcd4589a1",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "eccec036-1035-4402-9f13-40f5730c2a32",
+      "name": "DEVELOPS",
+      "fact": "GenLayer handles all infrastructure for the abstracted service API.",
+      "source_node_uuid": "0226420c-3340-4be0-b3fd-300d8de25d58",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "5afd454b-5e28-4914-8f59-ef0e0623b86a",
+      "name": "DEVELOPS",
+      "fact": "GenLayer should win the agent economy first, then use that track record to enter trade finance.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "17fa8278-0a98-40bc-9349-41c9c7d042c9",
+      "attributes": {}
+    },
+    {
+      "uuid": "d1d30d64-ad53-447a-b41b-d8e389a78fed",
+      "name": "PARTNERS_WITH",
+      "fact": "Freight forwarders have relationships with SME exporters and importers.",
+      "source_node_uuid": "57f47290-c263-4f67-a3c5-fbd6bcf6df87",
+      "target_node_uuid": "4eb0ad9e-ec72-4572-bc4b-10575ab43354",
+      "attributes": {}
+    },
+    {
+      "uuid": "26c1709a-98af-45bf-b3c9-a306fe947956",
+      "name": "PARTNERS_WITH",
+      "fact": "Freight forwarders have relationships with SME exporters and importers.",
+      "source_node_uuid": "57f47290-c263-4f67-a3c5-fbd6bcf6df87",
+      "target_node_uuid": "aef4ae93-9f47-48d1-9edf-b89414835f09",
+      "attributes": {}
+    },
+    {
+      "uuid": "6d4c41e6-5f62-496f-845d-9ec959930009",
+      "name": "PARTNERS_WITH",
+      "fact": "Trade finance platforms (Flexport, Tradeshift) could be channel partners.",
+      "source_node_uuid": "6f650fb1-9081-4ba2-b06f-b7ad89264d39",
+      "target_node_uuid": "e0f566d4-1ed1-48ba-9517-8f6a9085ea5a",
+      "attributes": {}
+    },
+    {
+      "uuid": "af66c800-50a0-46ae-ad4a-22cc4a44dce1",
+      "name": "PARTNERS_WITH",
+      "fact": "Trade finance platforms (Flexport, Tradeshift) could be channel partners.",
+      "source_node_uuid": "6f650fb1-9081-4ba2-b06f-b7ad89264d39",
+      "target_node_uuid": "5f96dab5-debf-4d25-8de4-1a181e0942bc",
+      "attributes": {}
+    },
+    {
+      "uuid": "57e2f695-870a-47be-8e9f-871c0d023f38",
+      "name": "PARTNERS_WITH",
+      "fact": "A small number of framework maintainers and marketplace operators control access to the developer market, implying channel partnership relationships.",
+      "source_node_uuid": "a5826c23-c755-43cd-9902-f74ca95fef07",
+      "target_node_uuid": "253ef6a6-81a7-498e-83ed-b9148ba34521",
+      "attributes": {}
+    },
+    {
+      "uuid": "639d4cf2-c19d-4ddf-bfc8-a3a57b211644",
+      "name": "PARTNERS_WITH",
+      "fact": "A small number of framework maintainers and marketplace operators control access to the developer market, implying channel partnership relationships.",
+      "source_node_uuid": "a5826c23-c755-43cd-9902-f74ca95fef07",
+      "target_node_uuid": "92369b95-1fc6-4de1-9405-0eff7c12a5fd",
+      "attributes": {}
+    },
+    {
+      "uuid": "fc6ef56c-9ec2-4fec-a345-57d424e433d6",
+      "name": "PARTNERS_WITH",
+      "fact": "A small number of framework maintainers and marketplace operators control access to the developer market, implying channel partnership relationships.",
+      "source_node_uuid": "a5826c23-c755-43cd-9902-f74ca95fef07",
+      "target_node_uuid": "b91da130-b5f4-45bf-8a34-a85fd47a93a6",
+      "attributes": {}
+    },
+    {
+      "uuid": "031db7c0-9fea-4e4f-ab80-9a71b7707e26",
+      "name": "PARTNERS_WITH",
+      "fact": "A small number of framework maintainers and marketplace operators control access to the developer market, implying channel partnership relationships.",
+      "source_node_uuid": "fa9dc4fe-f0ed-4de9-815b-acc43ab3bd9c",
+      "target_node_uuid": "253ef6a6-81a7-498e-83ed-b9148ba34521",
+      "attributes": {}
+    },
+    {
+      "uuid": "2537bf2f-0824-4bc9-aff2-b9661f7082b9",
+      "name": "PARTNERS_WITH",
+      "fact": "A small number of framework maintainers and marketplace operators control access to the developer market, implying channel partnership relationships.",
+      "source_node_uuid": "fa9dc4fe-f0ed-4de9-815b-acc43ab3bd9c",
+      "target_node_uuid": "92369b95-1fc6-4de1-9405-0eff7c12a5fd",
+      "attributes": {}
+    },
+    {
+      "uuid": "df5a322a-27e4-47e4-8f5f-a3658b0d9b91",
+      "name": "PARTNERS_WITH",
+      "fact": "A small number of framework maintainers and marketplace operators control access to the developer market, implying channel partnership relationships.",
+      "source_node_uuid": "fa9dc4fe-f0ed-4de9-815b-acc43ab3bd9c",
+      "target_node_uuid": "b91da130-b5f4-45bf-8a34-a85fd47a93a6",
+      "attributes": {}
+    },
+    {
+      "uuid": "83d00fcd-5185-4fdc-b9c0-62e977d7015f",
+      "name": "PARTNERS_WITH",
+      "fact": "A small number of framework maintainers and marketplace operators control access to the developer market, implying channel partnership relationships.",
+      "source_node_uuid": "c75a8434-b517-44c1-abaa-ad73c9a128a3",
+      "target_node_uuid": "253ef6a6-81a7-498e-83ed-b9148ba34521",
+      "attributes": {}
+    },
+    {
+      "uuid": "dd458dbc-8efb-4ed5-8712-4d9f61f92b49",
+      "name": "PARTNERS_WITH",
+      "fact": "A small number of framework maintainers and marketplace operators control access to the developer market, implying channel partnership relationships.",
+      "source_node_uuid": "c75a8434-b517-44c1-abaa-ad73c9a128a3",
+      "target_node_uuid": "92369b95-1fc6-4de1-9405-0eff7c12a5fd",
+      "attributes": {}
+    },
+    {
+      "uuid": "3bb462c9-8f28-44d8-8484-950c48d85705",
+      "name": "PARTNERS_WITH",
+      "fact": "A small number of framework maintainers and marketplace operators control access to the developer market, implying channel partnership relationships.",
+      "source_node_uuid": "c75a8434-b517-44c1-abaa-ad73c9a128a3",
+      "target_node_uuid": "b91da130-b5f4-45bf-8a34-a85fd47a93a6",
+      "attributes": {}
+    },
+    {
+      "uuid": "67624739-9ee0-49e0-ae7c-ff4f5389d9bf",
+      "name": "PARTNERS_WITH",
+      "fact": "Rentahuman.ai is already a credible reference. AgentHub going live adds a second.",
+      "source_node_uuid": "184fdf7e-0176-49d4-98f3-f95be08a9173",
+      "target_node_uuid": "6e157415-c721-499a-9ef3-f246b2c6773d",
+      "attributes": {}
+    },
+    {
+      "uuid": "7e996778-f377-4f63-99f6-1c605738507a",
+      "name": "BUYS_FROM",
+      "fact": "LangGraph is described as a developer-led ecosystem channel for GenLayer, but no explicit ontology relationship is stated.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "94fb42c1-01f8-4a0d-8a6f-f4eb07d81baf",
+      "attributes": {}
+    },
+    {
+      "uuid": "4d645dc5-1b57-4450-9c6f-6fae3874cd0b",
+      "name": "BUYS_FROM",
+      "fact": "CrewAI is described as a developer-led ecosystem channel for GenLayer, but no explicit ontology relationship is stated.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "d60550c7-4d2f-4452-8f27-affe8f3eda68",
+      "attributes": {}
+    },
+    {
+      "uuid": "300f348b-fd46-4b66-83fc-ce08bf17bd70",
+      "name": "BUYS_FROM",
+      "fact": "AutoAgent is described as a developer-led ecosystem channel for GenLayer, but no explicit ontology relationship is stated.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "5e7cd9e0-3a53-41f6-a344-de2bcd4589a1",
+      "attributes": {}
+    },
+    {
+      "uuid": "3188e110-8bf0-42ff-889c-08ea53f51b63",
+      "name": "BUYS_FROM",
+      "fact": "DevSwarm is described as a direct customer of GenLayer.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "8682f65d-fa5b-4438-bd31-b97ee68eafbf",
+      "attributes": {}
+    },
+    {
+      "uuid": "81aae0c8-dbb6-4a3d-a287-40577058c0f2",
+      "name": "BUYS_FROM",
+      "fact": "AgentHub is described as a direct customer of GenLayer.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "184fdf7e-0176-49d4-98f3-f95be08a9173",
+      "attributes": {}
+    },
+    {
+      "uuid": "3180d500-481b-444c-811d-7f0dfaffddaf",
+      "name": "BUYS_FROM",
+      "fact": "DataForge is described as a direct customer of GenLayer.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "bc67d5e7-573c-4821-84ca-97685d3e3cc0",
+      "attributes": {}
+    },
+    {
+      "uuid": "7192ff49-7922-4b63-873b-4a660ded24d7",
+      "name": "PARTNERS_WITH",
+      "fact": "Tom Okafor (Composio) is mentioned as shaping the developer narrative in analyst/media amplification.",
+      "source_node_uuid": "eb18ad08-6c58-4abb-b0d3-aadb32987dfb",
+      "target_node_uuid": "185fd8a0-c79f-41a6-994d-7cc62d5a0b67",
+      "attributes": {}
+    },
+    {
+      "uuid": "ab550eaa-51e6-420a-8749-141cef2732e2",
+      "name": "REPORTS_ON",
+      "fact": "Jessica Park (The Information) is mentioned as shaping the developer narrative in analyst/media amplification.",
+      "source_node_uuid": "5a07e390-c60b-4778-8fdf-39221a9e1e47",
+      "target_node_uuid": "c27106ee-b2c3-4bf7-bedf-d99ed69b98bb",
+      "attributes": {}
+    },
+    {
+      "uuid": "651fbb10-c151-469d-bad0-96e54d373648",
+      "name": "PARTNERS_WITH",
+      "fact": "Nina Patel (CrewAI) is described as the bridge to enterprise buyers.",
+      "source_node_uuid": "710e3386-5569-46a5-9b60-95f1180fc682",
+      "target_node_uuid": "d60550c7-4d2f-4452-8f27-affe8f3eda68",
+      "attributes": {}
+    },
+    {
+      "uuid": "797be774-b382-4a36-ba02-f6ad1a08ca9d",
+      "name": "PARTNERS_WITH",
+      "fact": "GenLayer announces a $2M integration pilot with FreshCargo.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "c83b97a5-fce4-4338-83a4-e946a54e863a",
+      "attributes": {}
+    },
+    {
+      "uuid": "9783daa8-b3f5-403b-98a2-695b9b6f1c62",
+      "name": "INVESTS_IN",
+      "fact": "EscrowChain announces a $10M Series A with Stripe as strategic investor.",
+      "source_node_uuid": "58837551-681f-4ce9-8649-9dffa6a84906",
+      "target_node_uuid": "8a77664b-8f01-446a-81d0-4a622ad09d83",
+      "attributes": {}
+    },
+    {
+      "uuid": "82dc5de3-2d53-45b1-a8a6-4a52f02b1163",
+      "name": "REPORTS_ON",
+      "fact": "Bloomberg Businessweek publishes an article raising the UNDETERMINED failure mode as a hidden risk.",
+      "source_node_uuid": "a1c3651c-946c-4dca-985a-402e52c97a73",
+      "target_node_uuid": "31650b98-033b-4d79-96d8-61bd54cee476",
+      "attributes": {}
+    },
+    {
+      "uuid": "bbe6103d-95f3-4662-9951-67bc5c1a8321",
+      "name": "PARTNERS_WITH",
+      "fact": "The text mentions Stripe credibility in contrast with GenLayer.",
+      "source_node_uuid": "58837551-681f-4ce9-8649-9dffa6a84906",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "9a33c0c6-3483-4831-84b6-9d202c49e42b",
+      "name": "PARTNERS_WITH",
+      "fact": "The text says the approach integrates with Flexport tracking API in the context of GenLayer.",
+      "source_node_uuid": "e0f566d4-1ed1-48ba-9517-8f6a9085ea5a",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "49e9c29b-2eeb-43db-85ec-bae2f99d277f",
+      "name": "INVESTS_IN",
+      "fact": "Stripe is EscrowChain's investor.",
+      "source_node_uuid": "58837551-681f-4ce9-8649-9dffa6a84906",
+      "target_node_uuid": "8a77664b-8f01-446a-81d0-4a622ad09d83",
+      "attributes": {}
+    },
+    {
+      "uuid": "c78ce4cd-d722-4f87-8194-bfa6d5c63a8c",
+      "name": "INVESTS_IN",
+      "fact": "We invested in EscrowChain because B2B trade escrow needs certainty, not probability.",
+      "source_node_uuid": "7919bf19-7bb1-4439-8661-18f2d975ae60",
+      "target_node_uuid": "8a77664b-8f01-446a-81d0-4a622ad09d83",
+      "attributes": {}
+    },
+    {
+      "uuid": "6744bfd6-ca6a-435b-a87e-db8a1c42c06f",
+      "name": "INVESTS_IN",
+      "fact": "Stripe PM said, 'We invested in EscrowChain.'",
+      "source_node_uuid": "58837551-681f-4ce9-8649-9dffa6a84906",
+      "target_node_uuid": "8a77664b-8f01-446a-81d0-4a622ad09d83",
+      "attributes": {}
+    },
+    {
+      "uuid": "8f3ad3b5-f45e-4221-9a93-f96a0eae6e57",
+      "name": "DEVELOPS",
+      "fact": "AI introduces variance merchants can't price.",
+      "source_node_uuid": "d53f78b7-5f48-4423-9ad3-ddc0a09bd07b",
+      "target_node_uuid": "86573085-93dc-4ce7-825d-7a919d64ddbb",
+      "attributes": {}
+    },
+    {
+      "uuid": "56b10801-c2e7-4e2a-b366-6bc5380ccea8",
+      "name": "PARTNERS_WITH",
+      "fact": "Ripple's bank partners are potential GenLayer detractors, indicating an indirect relationship in the context of trade finance competition.",
+      "source_node_uuid": "db3dabc6-8626-414e-8701-aaa9748dc938",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "99e072cf-5c9f-4e61-a0f8-dabc8d815f6d",
+      "name": "REGULATES",
+      "fact": "EU Regulatory Officer (DG FISMA, Brussels) states that AI systems making financial decisions fall under the EU AI Act (Article 6 — high-risk).",
+      "source_node_uuid": "500a279e-0f58-4850-b24c-955a9df94aae",
+      "target_node_uuid": "9bd0b54f-d4a3-4271-b459-1e20aa0846cd",
+      "attributes": {}
+    },
+    {
+      "uuid": "2c2e4f2f-82c0-422e-bc1d-0ba596dbf6e8",
+      "name": "INVESTS_IN",
+      "fact": "VC Partner passed on GenLayer's last round.",
+      "source_node_uuid": "8d31084d-7be4-45ce-977a-c9038318b532",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "b048e1bf-cead-450e-9130-10944de4f206",
+      "name": "DEVELOPS",
+      "fact": "AI Agent Developer is building on GenLayer SDK and developing a procurement agent using GenLayer.",
+      "source_node_uuid": "cf97293b-9391-449c-aa54-9a90a0ae128d",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "15b0e408-5790-4f6f-9692-7fd791384fb3",
+      "name": "PARTNERS_WITH",
+      "fact": "FreshCargo succeeds and becomes a GenLayer reference customer.",
+      "source_node_uuid": "c83b97a5-fce4-4338-83a4-e946a54e863a",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "8cbb9e95-2f39-4ab1-87de-c6ea4ece7bd2",
+      "name": "PARTNERS_WITH",
+      "fact": "Other LatAm freight forwarders follow, including Cargonaut.",
+      "source_node_uuid": "07c49123-cfeb-4f74-a5d0-95757f5a5b2f",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "41821af7-08de-4635-ac4d-942c0ff872e6",
+      "name": "PARTNERS_WITH",
+      "fact": "Other LatAm freight forwarders follow, including Flexport LatAm.",
+      "source_node_uuid": "37aaf793-5e0d-4b81-b649-9c8c8afa4312",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "f2719334-149b-406f-aebf-0ddc063aa6ec",
+      "name": "BUYS_FROM",
+      "fact": "Marketplace policy defaults to refunding the buyer.",
+      "source_node_uuid": "f7e29e30-bd2c-4462-9225-e4d47836c00b",
+      "target_node_uuid": "8e6642f6-c718-43eb-beeb-3f6600e97a9f",
+      "attributes": {}
+    },
+    {
+      "uuid": "4f60caec-5c08-44d9-90f2-6a2d7c4e4839",
+      "name": "DEVELOPS",
+      "fact": "Alex Petrov has described this roadmap publicly in relation to GenLayer.",
+      "source_node_uuid": "f4c02da4-b4cb-4f2f-83a0-e8e1e71dbd77",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "009c6f03-95a4-4b2d-931b-08d1da271f23",
+      "name": "DEVELOPS",
+      "fact": "Framework developers add custom rules for their specific use case; Rachel Torres has the leverage to make this happen with one PR in the context of framework-native + custom rules.",
+      "source_node_uuid": "c658ae9f-c5e0-46dc-a7ee-115ae10a9157",
+      "target_node_uuid": "94fb42c1-01f8-4a0d-8a6f-f4eb07d81baf",
+      "attributes": {}
+    },
+    {
+      "uuid": "9f6e1238-ec82-48d0-a788-0effaff226d6",
+      "name": "DEVELOPS",
+      "fact": "Framework developers add custom rules for their specific use case; Rachel Torres has the leverage to make this happen with one PR in the context of framework-native + custom rules.",
+      "source_node_uuid": "c658ae9f-c5e0-46dc-a7ee-115ae10a9157",
+      "target_node_uuid": "d60550c7-4d2f-4452-8f27-affe8f3eda68",
+      "attributes": {}
+    },
+    {
+      "uuid": "fbb6c053-99d7-45e8-a14a-846c352f0235",
+      "name": "BUYS_FROM",
+      "fact": "The text says the enterprise SaaS sells to enterprise buyers who already trust the vendor.",
+      "source_node_uuid": "5ef49043-60e2-4894-9f59-31d15714c6d8",
+      "target_node_uuid": "9a01e702-f2c2-40b3-936c-3c9128d90528",
+      "attributes": {}
+    },
+    {
+      "uuid": "07a64764-5edc-4d01-8b3c-2f95d0d7c7c2",
+      "name": "BUYS_FROM",
+      "fact": "The text says the enterprise SaaS sells to enterprise buyers who already trust the vendor.",
+      "source_node_uuid": "0ecd8212-9c35-44d5-8926-319c7b6734b1",
+      "target_node_uuid": "9a01e702-f2c2-40b3-936c-3c9128d90528",
+      "attributes": {}
+    },
+    {
+      "uuid": "9a32264c-2be3-479c-9a2f-30f407b4dffb",
+      "name": "DEVELOPS",
+      "fact": "Accenture Digital builds an enterprise-grade dispute infrastructure product that uses GenLayer for the AI jury layer.",
+      "source_node_uuid": "ae1337c9-f4ef-453d-be4d-9fcd8b489eae",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "91b809e8-ca40-42dd-9306-36983bbebe1b",
+      "name": "DEVELOPS",
+      "fact": "Accenture Digital builds an enterprise-grade dispute infrastructure product that uses VeritasProtocol for the deterministic layer.",
+      "source_node_uuid": "ae1337c9-f4ef-453d-be4d-9fcd8b489eae",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "c20c51d1-9b2e-4f08-b1df-0aa82dd68da1",
+      "name": "BUYS_FROM",
+      "fact": "They sell this to 50 enterprise clients at $50K/year.",
+      "source_node_uuid": "ae1337c9-f4ef-453d-be4d-9fcd8b489eae",
+      "target_node_uuid": "243663ef-e377-4447-9ed4-b9898f2acbeb",
+      "attributes": {}
+    },
+    {
+      "uuid": "a949b04c-3791-439b-bb8d-390d0524f15a",
+      "name": "DEVELOPS",
+      "fact": "GenLayer doesn't build the Tier 2 API and Tier 3 managed service before a systems integrator does it for them.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "fdfb433a-ba3b-4526-8335-a5812641ed6c",
+      "attributes": {}
+    },
+    {
+      "uuid": "681e57cb-9426-4dd2-bb6f-465077353f77",
+      "name": "DEVELOPS",
+      "fact": "The text says to give developers a reason to say 'GenLayer' not 'dispute resolution'.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "66f7d5e6-5f06-4c58-8756-00c06e9a848b",
+      "attributes": {}
+    },
+    {
+      "uuid": "3a21ecda-bfe0-4d20-906b-229ba645425d",
+      "name": "REGULATES",
+      "fact": "The EU AI Act (2024) addresses high-risk AI systems.",
+      "source_node_uuid": "78d865c8-0092-4b44-9683-9682510195aa",
+      "target_node_uuid": "7bf821bd-e4ba-49e1-a2e4-881e4fec1f4b",
+      "attributes": {}
+    },
+    {
+      "uuid": "07e40d02-478e-44ca-bf96-c75c302dd7f0",
+      "name": "BUYS_FROM",
+      "fact": "GenLayer needs to define what 'verifiable' means on its own terms before enterprise buyers define it as 'deterministic.'",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "c8d5ee42-f869-4b76-844a-47dc8226253a",
+      "attributes": {}
+    },
+    {
+      "uuid": "b88faa8b-1eed-43d5-97ee-53ab2a96e5ea",
+      "name": "REPORTS_ON",
+      "fact": "Yuki Tanaka posted to r/LangChain and dev.to.",
+      "source_node_uuid": "12f2251e-57d6-40b2-bb9d-ddf8d8e69827",
+      "target_node_uuid": "7909afd6-13e3-4370-9e4c-5ae72fe7a600",
+      "attributes": {}
+    },
+    {
+      "uuid": "62642aed-d4a0-4ca7-b59e-b47ec4874ac3",
+      "name": "REPORTS_ON",
+      "fact": "Yuki Tanaka posted to r/LangChain and dev.to.",
+      "source_node_uuid": "12f2251e-57d6-40b2-bb9d-ddf8d8e69827",
+      "target_node_uuid": "77b71ad4-dd97-46bb-93a9-99ddb25a8736",
+      "attributes": {}
+    },
+    {
+      "uuid": "bf775d4f-cedd-4c52-8b55-db7831f952ba",
+      "name": "PARTNERS_WITH",
+      "fact": "I tried both GenLayer and VeritasProtocol end-to-end.",
+      "source_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "99f08a3e-020b-4a7f-a6ec-3ac7659e2602",
+      "name": "BUYS_FROM",
+      "fact": "Agent A hires Agent B to annotate a dataset.",
+      "source_node_uuid": "e641e41c-b2e0-4e04-8987-b4e9e57ee796",
+      "target_node_uuid": "68f9d8cc-a280-41f3-a144-9863144ce0cd",
+      "attributes": {}
+    },
+    {
+      "uuid": "76d27181-6d20-4f59-869a-eaebdfd0219b",
+      "name": "DEVELOPS",
+      "fact": "from veritasprotocol import DisputeClient",
+      "source_node_uuid": "71273a7e-08e9-4a31-907d-fde8f6846bd6",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "4acb2430-40b0-4b17-a639-93c6a9a9cc28",
+      "name": "DEVELOPS",
+      "fact": "agent_a.wallet is used as party_a in the dispute creation call.",
+      "source_node_uuid": "8d67b530-81f2-45bb-b6e1-76c2526242ba",
+      "target_node_uuid": "d4a3a493-9676-41b8-a4d7-567b8bb31842",
+      "attributes": {}
+    },
+    {
+      "uuid": "56d8cf09-c575-4ed8-a341-b807bc14ddd6",
+      "name": "DEVELOPS",
+      "fact": "agent_b.wallet is used as party_b in the dispute creation call.",
+      "source_node_uuid": "8d1e9afe-4495-41cd-b45e-d027b616169d",
+      "target_node_uuid": "d4a3a493-9676-41b8-a4d7-567b8bb31842",
+      "attributes": {}
+    },
+    {
+      "uuid": "665ea992-fb38-4204-836b-efc596845960",
+      "name": "DEVELOPS",
+      "fact": "The text references a use case, 'majority_correct,' in relation to VeritasProtocol.",
+      "source_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "target_node_uuid": "91ece81e-7cd7-4299-8654-a93f2184ba91",
+      "attributes": {}
+    },
+    {
+      "uuid": "6dd49430-1f4f-4ffe-b316-013028789b01",
+      "name": "PARTNERS_WITH",
+      "fact": "My task marketplace had assumed synchronous dispute resolution because that's how VeritasProtocol works.",
+      "source_node_uuid": "92528a22-19ec-4764-ba75-44176857508f",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "11126917-ed31-4304-985b-c9d9b4b24fbe",
+      "name": "DEVELOPS",
+      "fact": "VeritasProtocol will win more developer integrations in the next 6 months because the path from \"I have a dispute problem\" to \"disputes are being resolved\" is faster.",
+      "source_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "target_node_uuid": "d0c0093d-528d-462c-bd9f-c980f18121e5",
+      "attributes": {}
+    },
+    {
+      "uuid": "70483ad8-a587-4343-804f-1878c51acf68",
+      "name": "PARTNERS_WITH",
+      "fact": "The behavioral effect is a durable moat if GenLayer captures it in product and marketing.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "1888b456-4a72-4f62-a760-ca189d0b85c4",
+      "attributes": {}
+    },
+    {
+      "uuid": "accd1d65-a6d0-4928-a376-e3d10c56b684",
+      "name": "PARTNERS_WITH",
+      "fact": "VeritasProtocol offered me a developer advocate role.",
+      "source_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "target_node_uuid": "6abc4469-d694-4935-b103-e47a8a80be64",
+      "attributes": {}
+    },
+    {
+      "uuid": "1a07662b-b6bf-418e-815a-b5fb59cf8831",
+      "name": "DEVELOPS",
+      "fact": "I'm building a second tutorial, starting with GenLayer this time.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "060dec53-6566-49ed-bf32-9e0f289abeda",
+      "attributes": {}
+    },
+    {
+      "uuid": "7d9438c9-a923-420b-8621-68d8f2c4fe4f",
+      "name": "DEVELOPS",
+      "fact": "Yuki Tanaka builds agent infrastructure tools. Previously at AutoAgent Labs.",
+      "source_node_uuid": "12f2251e-57d6-40b2-bb9d-ddf8d8e69827",
+      "target_node_uuid": "3c44f256-6ae3-4cea-a07e-032c5b77d429",
+      "attributes": {}
+    },
+    {
+      "uuid": "7491c035-eb4f-402d-a4b1-d449e5df5028",
+      "name": "DEVELOPS",
+      "fact": "Marcus goes live on GenLayer.",
+      "source_node_uuid": "014dee5e-ab2d-4147-98b5-8f4d2ca20b1c",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "d831b24b-aaa8-4fc6-b5ab-ee2805a49c76",
+      "name": "BUYS_FROM",
+      "fact": "Marcus publicly states that he chose GenLayer because 'VeritasProtocol would have failed on our judgment-heavy disputes'.",
+      "source_node_uuid": "014dee5e-ab2d-4147-98b5-8f4d2ca20b1c",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "ff09e516-c42f-4705-a6ab-12c4e2afad31",
+      "name": "BUYS_FROM",
+      "fact": "Marcus evaluates GenLayer, concludes '80% of our disputes are actually pass/fail,' and chooses VeritasProtocol or renews human arbitration. The judgment-heavy framing doesn't hold for his actual dispute mix.",
+      "source_node_uuid": "014dee5e-ab2d-4147-98b5-8f4d2ca20b1c",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "dc8e321d-4b57-492a-a012-394c1c751450",
+      "name": "BUYS_FROM",
+      "fact": "Marcus evaluates GenLayer, concludes '80% of our disputes are actually pass/fail,' and chooses VeritasProtocol or renews human arbitration. The judgment-heavy framing doesn't hold for his actual dispute mix.",
+      "source_node_uuid": "014dee5e-ab2d-4147-98b5-8f4d2ca20b1c",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "360e5ae1-7c13-4315-990a-a722dfe71635",
+      "name": "PARTNERS_WITH",
+      "fact": "Sofia's pharma client requires a verifiable audit trail for AI decisions and GenLayer provides white-glove integration.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "9f37a0ed-44a7-4053-b389-7b4f5626a7da",
+      "attributes": {}
+    },
+    {
+      "uuid": "5c4281b9-f511-40bc-9247-3f765ccc15b2",
+      "name": "BUYS_FROM",
+      "fact": "The pharma client's legal team accepts GenLayer's verdict reasoning export as sufficient audit documentation and writes this into their vendor onboarding checklist.",
+      "source_node_uuid": "3b4bcd12-6dba-453d-9a00-2cde681b8cef",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "b06b88b2-3860-4ab5-8557-aee8bf6f61bd",
+      "name": "PARTNERS_WITH",
+      "fact": "GenLayer must offer white-glove integration and compliance documentation within 72 hours of Day 25; Sofia chooses Option D otherwise.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "9f37a0ed-44a7-4053-b389-7b4f5626a7da",
+      "attributes": {}
+    },
+    {
+      "uuid": "d74753c6-a743-47fd-b8dc-d240fc136c08",
+      "name": "BUYS_FROM",
+      "fact": "Sofia loses the pharma client (FF3 Option D).",
+      "source_node_uuid": "9f37a0ed-44a7-4053-b389-7b4f5626a7da",
+      "target_node_uuid": "2a6fe5bb-cff9-4edd-8683-073ccb04f7df",
+      "attributes": {}
+    },
+    {
+      "uuid": "2abf4948-f931-4008-bfd8-e8dcf42721fa",
+      "name": "DEVELOPS",
+      "fact": "H2 has no test case; it removes the only enterprise compliance test case in the simulation.",
+      "source_node_uuid": "7f9c0771-d34c-46f7-9e0a-b1cba26db59b",
+      "target_node_uuid": "1e105275-f9f3-4bc5-a3e6-4a975d040cd9",
+      "attributes": {}
+    },
+    {
+      "uuid": "0a237462-b80d-4c5e-beaa-d31ac99dbaab",
+      "name": "PARTNERS_WITH",
+      "fact": "Rachel routes easy disputes to VeritasProtocol.",
+      "source_node_uuid": "501618a2-0b17-4291-81aa-74a889f0301d",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "51e5b18f-8d26-4652-a263-ae0313dfef13",
+      "name": "PARTNERS_WITH",
+      "fact": "Rachel routes hard disputes to GenLayer.",
+      "source_node_uuid": "501618a2-0b17-4291-81aa-74a889f0301d",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "18fdc92a-647b-4ac4-98d3-3c4eaecf45a3",
+      "name": "DEVELOPS",
+      "fact": "GenLayer must ship the managed API before Day 35.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "dd44d96b-58fe-4431-84b6-317002d54c43",
+      "attributes": {}
+    },
+    {
+      "uuid": "28e09191-d829-4cc4-8a67-3a77cf97f6e2",
+      "name": "PARTNERS_WITH",
+      "fact": "The customer relationship is with \"GenLayer dispute API\" not \"GenLayer blockchain.\"",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "d9f00612-b6f4-4147-bd62-8f268213dfd8",
+      "attributes": {}
+    },
+    {
+      "uuid": "b39cb708-55ed-40c4-80a3-956d51c8a666",
+      "name": "BUYS_FROM",
+      "fact": "A second buyer (Carlos Reyes or equivalent) signs a paying contract for dispute-resolution-as-a-service without deploying the SDK.",
+      "source_node_uuid": "2b188045-8647-4738-8835-90f4b3cb8ece",
+      "target_node_uuid": "d9f00612-b6f4-4147-bd62-8f268213dfd8",
+      "attributes": {}
+    },
+    {
+      "uuid": "7560c79f-5734-49f0-9452-db153ad88166",
+      "name": "BUYS_FROM",
+      "fact": "Sofia chooses VeritasProtocol (Option B) specifically because it has a simpler integration path.",
+      "source_node_uuid": "9f37a0ed-44a7-4053-b389-7b4f5626a7da",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "480d172e-0265-45ca-9c3b-484e147a3792",
+      "name": "DEVELOPS",
+      "fact": "Marcus Chen (AgentHub CEO) is identified as the primary test subject associated with AgentHub.",
+      "source_node_uuid": "027f43fd-b8a7-4078-93e1-4905040b395c",
+      "target_node_uuid": "184fdf7e-0176-49d4-98f3-f95be08a9173",
+      "attributes": {}
+    },
+    {
+      "uuid": "3ade53d6-f553-4855-b022-4d0e76e59ab3",
+      "name": "DEVELOPS",
+      "fact": "Yuki Tanaka is identified as a developer/influencer in the context of the AgentHub behavior-shaping layer.",
+      "source_node_uuid": "12f2251e-57d6-40b2-bb9d-ddf8d8e69827",
+      "target_node_uuid": "184fdf7e-0176-49d4-98f3-f95be08a9173",
+      "attributes": {}
+    },
+    {
+      "uuid": "5481b3e3-e719-4781-9ace-805c384a0821",
+      "name": "DEVELOPS",
+      "fact": "Marcus goes live on GenLayer.",
+      "source_node_uuid": "014dee5e-ab2d-4147-98b5-8f4d2ca20b1c",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "43c2344e-1701-4c08-a2b9-3c802d0d24b4",
+      "name": "DEVELOPS",
+      "fact": "Developers cite both.",
+      "source_node_uuid": "12f2251e-57d6-40b2-bb9d-ddf8d8e69827",
+      "target_node_uuid": "36cf50d0-cafa-4ca5-a1f4-fbcf5a177378",
+      "attributes": {}
+    },
+    {
+      "uuid": "9c9ceb04-b96a-4e5d-9c34-2c4f1672bb70",
+      "name": "REPORTS_ON",
+      "fact": "Marcus reports faster resolution but no rate reduction. Rentahuman.ai's 40% drop is confirmed as idiosyncratic to their user base.",
+      "source_node_uuid": "014dee5e-ab2d-4147-98b5-8f4d2ca20b1c",
+      "target_node_uuid": "6e157415-c721-499a-9ef3-f246b2c6773d",
+      "attributes": {}
+    },
+    {
+      "uuid": "17c76c0a-7bd2-4490-af00-18b7f2a6eb42",
+      "name": "DEVELOPS",
+      "fact": "Zara Ahmed must adopt GenLayer (triggered by Marcus Chen going live) before Day 40.",
+      "source_node_uuid": "027f43fd-b8a7-4078-93e1-4905040b395c",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "26914379-3cab-4666-bca2-98080ca7df11",
+      "name": "DEVELOPS",
+      "fact": "Developers love the SDK, write tutorials, build examples.",
+      "source_node_uuid": "36cf50d0-cafa-4ca5-a1f4-fbcf5a177378",
+      "target_node_uuid": "61efab97-eb09-48d2-aeeb-4690fd07bc5f",
+      "attributes": {}
+    },
+    {
+      "uuid": "25bed5ff-ecb8-45b1-a40e-116b1fe578f1",
+      "name": "PARTNERS_WITH",
+      "fact": "LangGraph integrates GenLayer as default.",
+      "source_node_uuid": "a5826c23-c755-43cd-9902-f74ca95fef07",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "20e40e9b-a1e4-46f0-ad46-e9095fd2e97d",
+      "name": "PARTNERS_WITH",
+      "fact": "CrewAI integrates GenLayer as default.",
+      "source_node_uuid": "fa9dc4fe-f0ed-4de9-815b-acc43ab3bd9c",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "6dbfa8b2-c521-48f9-89f9-9ced4d0b5650",
+      "name": "PARTNERS_WITH",
+      "fact": "Yuki Tanaka's tutorial is mentioned as a distribution event.",
+      "source_node_uuid": "12f2251e-57d6-40b2-bb9d-ddf8d8e69827",
+      "target_node_uuid": "060dec53-6566-49ed-bf32-9e0f289abeda",
+      "attributes": {}
+    },
+    {
+      "uuid": "e5dc6b23-5061-4edc-8312-e0efedd041bb",
+      "name": "PARTNERS_WITH",
+      "fact": "Rachel Torres's recommendation is mentioned as a distribution event.",
+      "source_node_uuid": "c658ae9f-c5e0-46dc-a7ee-115ae10a9157",
+      "target_node_uuid": "c5060246-3a90-43bf-a811-d7a5c6c81e17",
+      "attributes": {}
+    },
+    {
+      "uuid": "b0922cb1-380e-4f37-b735-ad6a3f6da3d4",
+      "name": "PARTNERS_WITH",
+      "fact": "Nina Patel's RFP is mentioned as a distribution event.",
+      "source_node_uuid": "710e3386-5569-46a5-9b60-95f1180fc682",
+      "target_node_uuid": "ced8bc57-6a9c-4628-b870-dfd170cb5c7b",
+      "attributes": {}
+    },
+    {
+      "uuid": "3d42fc55-c75d-4293-9bee-4cd1d04657a5",
+      "name": "BUYS_FROM",
+      "fact": "Who buys first: marketplaces where manual review person is the bottleneck. API is listed as a purchase option.",
+      "source_node_uuid": "b4f5f09a-f372-482b-bbc6-6069505140ea",
+      "target_node_uuid": "0226420c-3340-4be0-b3fd-300d8de25d58",
+      "attributes": {}
+    },
+    {
+      "uuid": "3b0b263e-41e8-4c59-aae4-421ee44d0898",
+      "name": "DEVELOPS",
+      "fact": "Sandra Lee at Shopify profile.",
+      "source_node_uuid": "37d17340-b75a-4d5c-8aef-3c659da95206",
+      "target_node_uuid": "723ba2af-bee7-4be5-9808-32266526f8fc",
+      "attributes": {}
+    },
+    {
+      "uuid": "07516d45-08d9-4382-a606-8bf2c71600b2",
+      "name": "PARTNERS_WITH",
+      "fact": "Sandra Lee at Shopify profile.",
+      "source_node_uuid": "37d17340-b75a-4d5c-8aef-3c659da95206",
+      "target_node_uuid": "723ba2af-bee7-4be5-9808-32266526f8fc",
+      "attributes": {}
+    },
+    {
+      "uuid": "d2ee2046-84bf-4831-97e6-b5700baf3939",
+      "name": "PARTNERS_WITH",
+      "fact": "GenLayer's 30-120 second resolution is contrasted with VeritasProtocol's <5 second resolution in the technical barriers discussion.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "098c3946-382b-4987-bad4-a0e3593c3836",
+      "name": "DEVELOPS",
+      "fact": "Fix: evidence schema library for common use cases (code review, research quality, data annotation).",
+      "source_node_uuid": "6bd251c0-f2aa-494b-bc4d-bb3e80f30021",
+      "target_node_uuid": "66f7d5e6-5f06-4c58-8756-00c06e9a848b",
+      "attributes": {}
+    },
+    {
+      "uuid": "19c81bb5-a8bc-4cb0-8202-af3f805ccf1d",
+      "name": "DEVELOPS",
+      "fact": "Budget-conscious developers can't predict monthly costs and the text suggests GenLayer can fix this today partially.",
+      "source_node_uuid": "66f7d5e6-5f06-4c58-8756-00c06e9a848b",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "be26de1e-0764-4839-b0dc-a57434cc5c83",
+      "name": "BUYS_FROM",
+      "fact": "Most enterprise buyers require SOC 2 Type II for any vendor handling sensitive dispute data, and GenLayer has no certification.",
+      "source_node_uuid": "c8d5ee42-f869-4b76-844a-47dc8226253a",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "84b3d741-9345-434a-8686-616b0372588d",
+      "name": "PARTNERS_WITH",
+      "fact": "VeritasProtocol's 'no AI juries' positioning exploits GenLayer's trust challenge around AI deciding disputes.",
+      "source_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "cf6f1a05-231a-46eb-b4c6-65f2e70c0d57",
+      "name": "DEVELOPS",
+      "fact": "GenLayer fixes the liability fear today only partially, including allowing UNDETERMINED as a legitimate outcome.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "d0e5c7af-92f0-421a-8389-f6f2dc80775d",
+      "attributes": {}
+    },
+    {
+      "uuid": "0cdf1cab-1d66-4a8f-a023-1d03c5c95f3f",
+      "name": "REGULATES",
+      "fact": "Legal team blocks GenLayer adoption on principle, regardless of technical merit.",
+      "source_node_uuid": "f77fa010-13a2-43d1-8515-3c3473ee79b2",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "c5aa9c23-d5c5-4e30-9134-39657da9f667",
+      "name": "PARTNERS_WITH",
+      "fact": "GenLayer is discussed as potentially fixing the dispute resolution problem for growth-stage marketplaces.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "48602ba2-f88c-473d-818f-6a8b54bd6842",
+      "attributes": {}
+    },
+    {
+      "uuid": "1d74eb2b-2a19-409d-80e6-9d28e4a1eb4f",
+      "name": "PARTNERS_WITH",
+      "fact": "The text discusses GenLayer and VeritasProtocol in the context of hybrid positioning and framework lock-in.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "524c4700-75ad-4c5b-a33b-77a9e94666a3",
+      "name": "REPORTS_ON",
+      "fact": "Tom Okafor's analysis has already named this — the market is converging on this view",
+      "source_node_uuid": "eb18ad08-6c58-4abb-b0d3-aadb32987dfb",
+      "target_node_uuid": "925134f3-124b-4832-ac20-2e4aa956caf8",
+      "attributes": {}
+    },
+    {
+      "uuid": "30ce2077-f5d9-4e74-8811-3dc9d1e4d3a2",
+      "name": "PARTNERS_WITH",
+      "fact": "GenLayer could partner with VeritasProtocol to build the deterministic layer.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "6208b55a-86d6-438c-ad4c-216df29bd207",
+      "name": "PARTNERS_WITH",
+      "fact": "VeritasProtocol adds GenLayer as a fallback and routes its uncertain cases to GenLayer via API.",
+      "source_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "f9a979ae-72ee-4d9b-9f86-9bcce65d1c83",
+      "name": "PARTNERS_WITH",
+      "fact": "VeritasProtocol choosing to integrate GenLayer rather than build their own AI layer.",
+      "source_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "6482c0e0-7365-42a4-85bb-6933c10b2db9",
+      "name": "DEVELOPS",
+      "fact": "Alex Petrov has described an AI augmentation roadmap. He may build it himself instead.",
+      "source_node_uuid": "f4c02da4-b4cb-4f2f-83a0-e8e1e71dbd77",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "41801589-655a-4f16-943c-29d8c00bc36f",
+      "name": "DEVELOPS",
+      "fact": "Rachel Torres ships a dispute routing primitive in LangGraph 4.1.",
+      "source_node_uuid": "c658ae9f-c5e0-46dc-a7ee-115ae10a9157",
+      "target_node_uuid": "94fb42c1-01f8-4a0d-8a6f-f4eb07d81baf",
+      "attributes": {}
+    },
+    {
+      "uuid": "58731a3d-2d88-484e-abe7-ade74d6cf7a1",
+      "name": "PARTNERS_WITH",
+      "fact": "Rachel Torres ships a dispute routing primitive in LangGraph 4.1 that calls VeritasProtocol for simple disputes and GenLayer for complex.",
+      "source_node_uuid": "94fb42c1-01f8-4a0d-8a6f-f4eb07d81baf",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "32b1634c-d833-4d36-8411-b194dae07ef0",
+      "name": "PARTNERS_WITH",
+      "fact": "Rachel Torres ships a dispute routing primitive in LangGraph 4.1 that calls VeritasProtocol for simple disputes and GenLayer for complex.",
+      "source_node_uuid": "94fb42c1-01f8-4a0d-8a6f-f4eb07d81baf",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "2492299e-3317-49d8-bb71-7b47e6dc8597",
+      "name": "DEVELOPS",
+      "fact": "Accenture Digital builds 'Enterprise AI Dispute Manager' and uses GenLayer for AI jury.",
+      "source_node_uuid": "ae1337c9-f4ef-453d-be4d-9fcd8b489eae",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "809ac72e-c593-4fae-8812-b18bcfebf3e8",
+      "name": "DEVELOPS",
+      "fact": "Accenture Digital builds 'Enterprise AI Dispute Manager' and uses VeritasProtocol for rules.",
+      "source_node_uuid": "ae1337c9-f4ef-453d-be4d-9fcd8b489eae",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "4ba2d250-9396-442c-be00-0c4a91775a6a",
+      "name": "PARTNERS_WITH",
+      "fact": "GenLayer can partner with VeritasProtocol to build the deterministic layer.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "c2a4db48-d848-4b52-8c22-e25f2c9711e4",
+      "name": "DEVELOPS",
+      "fact": "VeritasProtocol building their own AI layer and no longer needing GenLayer",
+      "source_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "194df739-cf1d-409a-acdb-c1b93795b1ef",
+      "name": "PARTNERS_WITH",
+      "fact": "GenLayer's evidence schema becomes the standard that VeritasProtocol uses.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "04a462e9-f2e9-4e84-8998-cd12b8eb8e79",
+      "name": "PARTNERS_WITH",
+      "fact": "GenLayer's evidence schema becomes the standard that LangGraph uses.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "94fb42c1-01f8-4a0d-8a6f-f4eb07d81baf",
+      "attributes": {}
+    },
+    {
+      "uuid": "ca06b48e-4430-4dd7-9ef1-aa71425ab318",
+      "name": "PARTNERS_WITH",
+      "fact": "GenLayer's evidence schema becomes the standard that enterprise integrators use.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "15fea390-a840-469d-b541-7459eff872df",
+      "attributes": {}
+    },
+    {
+      "uuid": "930dc2ed-c2fc-44b4-ad2a-c187208cf41f",
+      "name": "BUYS_FROM",
+      "fact": "Build white-glove managed service for 5-10 enterprise clients at $50K-$500K/year.",
+      "source_node_uuid": "f9ef3f73-03bf-455d-981f-c64e4d62b30c",
+      "target_node_uuid": "16fabf94-5a22-4be3-9479-35de2d39d400",
+      "attributes": {}
+    },
+    {
+      "uuid": "7102ac85-fa62-412e-8fef-98084733ccc3",
+      "name": "PARTNERS_WITH",
+      "fact": "A routing system sends hard disputes to GenLayer.",
+      "source_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "target_node_uuid": "c2f00aa8-3b03-47b9-9d12-ef67b124e8da",
+      "attributes": {}
+    },
+    {
+      "uuid": "a8993855-ce42-4409-b1d0-3af74a4ab27d",
+      "name": "DEVELOPS",
+      "fact": "An indie developer discovers GenLayer through content or community and integrates the SDK.",
+      "source_node_uuid": "a40239e4-53c8-406c-9b2f-d2ac4c7f29e1",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "f0f02a45-ee39-411f-968a-fa738b639250",
+      "name": "DEVELOPS",
+      "fact": "An early-stage engineer discovers GenLayer through content or community and integrates the SDK.",
+      "source_node_uuid": "470739d2-4e5d-4f3a-a636-8901035079e6",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "6bb46d45-d281-4296-bcf9-dcc9204cf468",
+      "name": "DEVELOPS",
+      "fact": "Framework maintainers notice the adoption signal and consider integrating GenLayer.",
+      "source_node_uuid": "82b50d35-1edf-4f69-a569-9eaa1e3db7f1",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "fd97a4b3-ef6e-4b8d-bdab-a75b7399d86f",
+      "name": "REPORTS_ON",
+      "fact": "Yuki Tanaka's viral post is described as net-negative for GenLayer today.",
+      "source_node_uuid": "12f2251e-57d6-40b2-bb9d-ddf8d8e69827",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "570393b5-35d0-4818-9f05-19408389f6ed",
+      "name": "REPORTS_ON",
+      "fact": "Tom Okafor is routing developers to VeritasProtocol because of SDK simplicity.",
+      "source_node_uuid": "eb18ad08-6c58-4abb-b0d3-aadb32987dfb",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "c2909b2e-aaa9-4c29-b63e-c1d79f4b34c6",
+      "name": "PARTNERS_WITH",
+      "fact": "Get Yuki Tanaka to publish a successful GenLayer tutorial (she's signaled willingness)",
+      "source_node_uuid": "12f2251e-57d6-40b2-bb9d-ddf8d8e69827",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "fcec9f0f-e393-49d9-af2a-088349f3af39",
+      "name": "INVESTS_IN",
+      "fact": "Current GenLayer investment: Low",
+      "source_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "57e0df5f-96c1-4b41-9e04-524d7897d383",
+      "name": "DEVELOPS",
+      "fact": "Daniel Marin (Head of BD) contacts marketplace operators and they evaluate GenLayer.",
+      "source_node_uuid": "c2c31fb0-2791-4439-900e-6e0fe3e67a0c",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "9334c814-6318-4b85-8bf0-aca89b4137b6",
+      "name": "PARTNERS_WITH",
+      "fact": "Priya Nair (Rentahuman.ai) is the bottleneck.",
+      "source_node_uuid": "a04427c9-8925-4511-ad08-57c68a1c6b48",
+      "target_node_uuid": "6e157415-c721-499a-9ef3-f246b2c6773d",
+      "attributes": {}
+    },
+    {
+      "uuid": "f14c8984-185f-4d94-807a-ebbe5a8ef9a8",
+      "name": "PARTNERS_WITH",
+      "fact": "Zara Ahmed (DevSwarm) is mentioned in a briefing context, indicating an organizational association.",
+      "source_node_uuid": "dcc4b0b0-b834-4e0d-94fd-a9b300a299e2",
+      "target_node_uuid": "8682f65d-fa5b-4438-bd31-b97ee68eafbf",
+      "attributes": {}
+    },
+    {
+      "uuid": "005fbe19-00dc-4ba3-a69a-d1db3351895b",
+      "name": "PARTNERS_WITH",
+      "fact": "Marcus Chen is to be briefed on Sofia's urgency, indicating a direct association in the process.",
+      "source_node_uuid": "027f43fd-b8a7-4078-93e1-4905040b395c",
+      "target_node_uuid": "9f37a0ed-44a7-4053-b389-7b4f5626a7da",
+      "attributes": {}
+    },
+    {
+      "uuid": "b37f5608-df63-4179-8d01-063365b6405f",
+      "name": "PARTNERS_WITH",
+      "fact": "Daniel Marin is identified as being with GenLayer.",
+      "source_node_uuid": "c2c31fb0-2791-4439-900e-6e0fe3e67a0c",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "a9538f4a-6ef9-4286-ab8d-9b9531d397ce",
+      "name": "PARTNERS_WITH",
+      "fact": "The text describes a partnership with LangGraph as an entry point for framework integration, shipping GenLayer as the default or recommended dispute backend.",
+      "source_node_uuid": "94fb42c1-01f8-4a0d-8a6f-f4eb07d81baf",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "85e01f45-e252-4578-ace9-2ff7691dafa1",
+      "name": "PARTNERS_WITH",
+      "fact": "The text describes a partnership with CrewAI as an entry point for framework integration, shipping GenLayer as the default or recommended dispute backend.",
+      "source_node_uuid": "d60550c7-4d2f-4452-8f27-affe8f3eda68",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "84d4c9a7-2d5a-4b6d-b083-0fcc5643e8ae",
+      "name": "PARTNERS_WITH",
+      "fact": "The text describes a partnership with AutoAgent as an entry point for framework integration, shipping GenLayer as the default or recommended dispute backend.",
+      "source_node_uuid": "5e7cd9e0-3a53-41f6-a344-de2bcd4589a1",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "5362c64c-ff5f-4c80-86c5-ebb66bcfcdc7",
+      "name": "DEVELOPS",
+      "fact": "Rachel Torres has the formal VeritasProtocol offer ($200K developer credits + dedicated engineer).",
+      "source_node_uuid": "c658ae9f-c5e0-46dc-a7ee-115ae10a9157",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "4b90c2d4-8ff4-4fa8-a88b-645e2e473007",
+      "name": "DEVELOPS",
+      "fact": "Derek Walsh is building a competing open-source module for AutoAgent.",
+      "source_node_uuid": "8d310060-a244-4e92-bcf4-5f0146c9ba05",
+      "target_node_uuid": "5e7cd9e0-3a53-41f6-a344-de2bcd4589a1",
+      "attributes": {}
+    },
+    {
+      "uuid": "7d528d46-64c6-462e-9019-da7a4817c621",
+      "name": "INVESTS_IN",
+      "fact": "GenLayer must match VeritasProtocol's investment in Rachel Torres.",
+      "source_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "target_node_uuid": "c658ae9f-c5e0-46dc-a7ee-115ae10a9157",
+      "attributes": {}
+    },
+    {
+      "uuid": "e78fb52c-1e28-4782-88e7-40bf81de4f3d",
+      "name": "PARTNERS_WITH",
+      "fact": "Rachel recommends VeritasProtocol for simple.",
+      "source_node_uuid": "c658ae9f-c5e0-46dc-a7ee-115ae10a9157",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "1fb075aa-7b8d-47b9-b827-04542ac34011",
+      "name": "PARTNERS_WITH",
+      "fact": "Rachel recommends GenLayer for judgment.",
+      "source_node_uuid": "c658ae9f-c5e0-46dc-a7ee-115ae10a9157",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "e9a35211-006c-47a5-90ba-4ab467d70b57",
+      "name": "PARTNERS_WITH",
+      "fact": "Who controls this channel: Rachel Torres (LangGraph).",
+      "source_node_uuid": "c658ae9f-c5e0-46dc-a7ee-115ae10a9157",
+      "target_node_uuid": "94fb42c1-01f8-4a0d-8a6f-f4eb07d81baf",
+      "attributes": {}
+    },
+    {
+      "uuid": "496d4719-c963-4d14-ba4a-5235503f2b8c",
+      "name": "PARTNERS_WITH",
+      "fact": "Who controls this channel: Nina Patel (CrewAI).",
+      "source_node_uuid": "710e3386-5569-46a5-9b60-95f1180fc682",
+      "target_node_uuid": "d60550c7-4d2f-4452-8f27-affe8f3eda68",
+      "attributes": {}
+    },
+    {
+      "uuid": "90acfc11-74ef-4264-bc9b-e6f5d3cf4315",
+      "name": "BUYS_FROM",
+      "fact": "Klarna adds GenLayer to their vendor shortlist.",
+      "source_node_uuid": "fefc62b9-c706-4810-892b-68676816e766",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "aac401dc-6bfb-40a6-9707-bc8a7f91d89e",
+      "name": "BUYS_FROM",
+      "fact": "Aisha Okonkwo (Klarna) is waiting 6 months.",
+      "source_node_uuid": "8ed4627b-290c-4298-8695-1c07a1c1d2f3",
+      "target_node_uuid": "fefc62b9-c706-4810-892b-68676816e766",
+      "attributes": {}
+    },
+    {
+      "uuid": "5fb413af-311d-4333-9f13-a8168ce3d4f8",
+      "name": "PARTNERS_WITH",
+      "fact": "First meeting with Accenture's AI ventures team (Ben Nakamura) is suggested to accelerate progress.",
+      "source_node_uuid": "5aed0044-cd27-43dd-a282-4d5cbca368cf",
+      "target_node_uuid": "635e598a-6564-43ad-afcc-2cf7942b62fe",
+      "attributes": {}
+    },
+    {
+      "uuid": "c6f50e78-619b-44db-94ff-36554d2894ed",
+      "name": "PARTNERS_WITH",
+      "fact": "Fatima Al-Rashidi (Sequoia) is presented as a VC in the content / analyst narrative.",
+      "source_node_uuid": "743d6ce4-544c-4a05-956f-aa824948d640",
+      "target_node_uuid": "afd52d89-d246-4fc5-a2d8-676199402a2b",
+      "attributes": {}
+    },
+    {
+      "uuid": "baccce93-6560-4185-8af2-1a3a434e83dc",
+      "name": "REPORTS_ON",
+      "fact": "Jessica Park (The Information) is presented as a journalist in the content / analyst narrative.",
+      "source_node_uuid": "5a07e390-c60b-4778-8fdf-39221a9e1e47",
+      "target_node_uuid": "c27106ee-b2c3-4bf7-bedf-d99ed69b98bb",
+      "attributes": {}
+    },
+    {
+      "uuid": "02416a39-b753-4c0f-bc18-8252db206a0d",
+      "name": "INVESTS_IN",
+      "fact": "Lior Ben-David (a16z, VeritasProtocol investor) indicates an investor affiliation with a16z.",
+      "source_node_uuid": "c68494e5-7a9e-41f4-9b0d-6493553418bd",
+      "target_node_uuid": "d85f1dde-8c76-4c24-84d2-c540e3539b7e",
+      "attributes": {}
+    },
+    {
+      "uuid": "a992a568-088b-4d29-bfac-eb50e2ea9c36",
+      "name": "INVESTS_IN",
+      "fact": "Lior Ben-David is described as a VeritasProtocol investor.",
+      "source_node_uuid": "c68494e5-7a9e-41f4-9b0d-6493553418bd",
+      "target_node_uuid": "6b319923-b975-443b-b9f0-441380a66965",
+      "attributes": {}
+    },
+    {
+      "uuid": "83364c5f-452b-47c7-824a-af81114ece10",
+      "name": "REPORTS_ON",
+      "fact": "@AgentWatch comments on GenLayer technology and DX.",
+      "source_node_uuid": "824a3672-f902-45ed-9d4f-1a00e60a1c2e",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "2fb7ed87-410d-48d5-8e64-f002f8d6dbc6",
+      "name": "REPORTS_ON",
+      "fact": "Jessica Park is identified with The Information.",
+      "source_node_uuid": "d4920463-6833-4a23-b3a4-91a8ba8dec93",
+      "target_node_uuid": "c27106ee-b2c3-4bf7-bedf-d99ed69b98bb",
+      "attributes": {}
+    },
+    {
+      "uuid": "4955e23e-ab61-4821-8df7-d1ca3d60eb37",
+      "name": "REPORTS_ON",
+      "fact": "Jessica Park is discussing marketplace CEOs and public positions in the context of GenLayer-related market coverage.",
+      "source_node_uuid": "d4920463-6833-4a23-b3a4-91a8ba8dec93",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "abfcd545-8b6f-43d7-8e02-0d0517e9a231",
+      "name": "PARTNERS_WITH",
+      "fact": "Primary channel recommendation: Channel 2 (Marketplace Operator Direct Sales) + Channel 3 (Framework Integration) simultaneously.",
+      "source_node_uuid": "03b8057f-5803-4316-bb6a-eb4c1a53937a",
+      "target_node_uuid": "b257865d-43de-492f-ba22-7b8d7fab1dd6",
+      "attributes": {}
+    },
+    {
+      "uuid": "ce4dac88-d087-4082-a806-fa8be41b5363",
+      "name": "PARTNERS_WITH",
+      "fact": "Rachel Torres will recommend it only if the SDK works in 30 minutes, making Channel 1 a prerequisite for Channel 3.",
+      "source_node_uuid": "c658ae9f-c5e0-46dc-a7ee-115ae10a9157",
+      "target_node_uuid": "e41e98e9-ad67-4b51-814d-4df5c6091fea",
+      "attributes": {}
+    },
+    {
+      "uuid": "30e7187e-47dc-4474-b9fd-7b3ebe21a5f5",
+      "name": "BUYS_FROM",
+      "fact": "The managed REST API unblocks Sofia Eriksson and is associated with enterprise buyer use.",
+      "source_node_uuid": "17a751d9-ea33-4c1b-8def-e273b5781d93",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    },
+    {
+      "uuid": "5b65b647-b564-464c-9df8-39f096e4d413",
+      "name": "PARTNERS_WITH",
+      "fact": "The managed REST API makes the LangGraph integration trivially simple.",
+      "source_node_uuid": "94fb42c1-01f8-4a0d-8a6f-f4eb07d81baf",
+      "target_node_uuid": "50903c47-89bf-4010-a953-5ff8d5d41aa1",
+      "attributes": {}
+    }
+  ],
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "MarketplaceOperator",
+        "description": "An entity operating a marketplace for agent-to-agent transactions.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the marketplace operator."
+          },
+          {
+            "name": "marketplace_type",
+            "type": "text",
+            "description": "The type of marketplace operated (e.g., coding, research, creative)."
+          },
+          {
+            "name": "transaction_volume",
+            "type": "text",
+            "description": "The daily transaction volume of the marketplace."
+          }
+        ],
+        "examples": [
+          "DevSwarm",
+          "Rentahuman.ai"
+        ]
+      },
+      {
+        "name": "FrameworkBuilder",
+        "description": "An entity developing frameworks for agent-to-agent commerce.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the framework builder."
+          },
+          {
+            "name": "framework_name",
+            "type": "text",
+            "description": "The name of the framework being developed."
+          },
+          {
+            "name": "developer_count",
+            "type": "text",
+            "description": "The number of developers using the framework."
+          }
+        ],
+        "examples": [
+          "LangGraph",
+          "AutoAgent"
+        ]
+      },
+      {
+        "name": "EnterpriseBuyer",
+        "description": "An entity representing a company or organization purchasing agent services.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the enterprise buyer."
+          },
+          {
+            "name": "industry",
+            "type": "text",
+            "description": "The industry in which the enterprise operates."
+          },
+          {
+            "name": "annual_spending",
+            "type": "text",
+            "description": "The annual spending on agent services."
+          }
+        ],
+        "examples": [
+          "Shopify",
+          "Accenture"
+        ]
+      },
+      {
+        "name": "Developer",
+        "description": "An individual or entity developing AI agents or related software.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the developer."
+          },
+          {
+            "name": "project_name",
+            "type": "text",
+            "description": "The name of the project or agent being developed."
+          },
+          {
+            "name": "experience_level",
+            "type": "text",
+            "description": "The experience level of the developer (e.g., beginner, intermediate, expert)."
+          }
+        ],
+        "examples": [
+          "Kai Rodriguez",
+          "Mei Lin"
+        ]
+      },
+      {
+        "name": "MediaAnalyst",
+        "description": "An entity providing analysis or reporting on the agent economy.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the media analyst."
+          },
+          {
+            "name": "publication",
+            "type": "text",
+            "description": "The name of the publication or platform."
+          },
+          {
+            "name": "audience_size",
+            "type": "text",
+            "description": "The size of the audience reached by the analyst."
+          }
+        ],
+        "examples": [
+          "Jessica Park",
+          "@AgentWatch"
+        ]
+      },
+      {
+        "name": "Regulator",
+        "description": "An entity responsible for overseeing compliance and regulations in the agent economy.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the regulator."
+          },
+          {
+            "name": "agency_name",
+            "type": "text",
+            "description": "The name of the regulatory agency."
+          },
+          {
+            "name": "jurisdiction",
+            "type": "text",
+            "description": "The jurisdiction in which the regulator operates."
+          }
+        ],
+        "examples": [
+          "Sophie Leclerc",
+          "Michael Torres"
+        ]
+      },
+      {
+        "name": "Investor",
+        "description": "An entity providing funding or investment in the agent economy.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the investor."
+          },
+          {
+            "name": "investment_firm",
+            "type": "text",
+            "description": "The name of the investment firm or fund."
+          },
+          {
+            "name": "investment_amount",
+            "type": "text",
+            "description": "The amount of investment made."
+          }
+        ],
+        "examples": [
+          "Fatima Al-Rashidi",
+          "Lior Ben-David"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "A general type representing any individual not categorized above.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the person."
+          }
+        ],
+        "examples": [
+          "John Doe",
+          "Jane Smith"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "A general type representing any organization not categorized above.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          }
+        ],
+        "examples": [
+          "Generic Corp",
+          "Nonprofit Org"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "PARTNERS_WITH",
+        "description": "Indicates a partnership between two entities.",
+        "source_targets": [
+          {
+            "source": "FrameworkBuilder",
+            "target": "MarketplaceOperator"
+          },
+          {
+            "source": "Investor",
+            "target": "MarketplaceOperator"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "BUYS_FROM",
+        "description": "Indicates an enterprise buyer purchasing services from a marketplace operator.",
+        "source_targets": [
+          {
+            "source": "EnterpriseBuyer",
+            "target": "MarketplaceOperator"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "DEVELOPS",
+        "description": "Indicates a developer creating an agent or software.",
+        "source_targets": [
+          {
+            "source": "Developer",
+            "target": "MarketplaceOperator"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Indicates a media analyst providing coverage on a marketplace or framework.",
+        "source_targets": [
+          {
+            "source": "MediaAnalyst",
+            "target": "MarketplaceOperator"
+          },
+          {
+            "source": "MediaAnalyst",
+            "target": "FrameworkBuilder"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Indicates a regulator overseeing a marketplace or framework.",
+        "source_targets": [
+          {
+            "source": "Regulator",
+            "target": "MarketplaceOperator"
+          },
+          {
+            "source": "Regulator",
+            "target": "FrameworkBuilder"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INVESTS_IN",
+        "description": "Indicates an investor providing funding to a marketplace or framework.",
+        "source_targets": [
+          {
+            "source": "Investor",
+            "target": "MarketplaceOperator"
+          },
+          {
+            "source": "Investor",
+            "target": "FrameworkBuilder"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  }
+}

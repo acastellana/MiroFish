@@ -17,6 +17,7 @@ model_list:
 litellm_settings:
   # Budget limits to prevent runaway swarm costs
   max_budget: 20  # USD per day cap
+  drop_params: true  # Silently drop unsupported params (e.g. temperature for gpt-5 models)
 
 general_settings:
   master_key: os.environ/LITELLM_MASTER_KEY

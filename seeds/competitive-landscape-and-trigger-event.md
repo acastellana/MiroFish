@@ -79,3 +79,74 @@ FreshCargo has 600+ SME clients. If FreshCargo succeeds and becomes a GenLayer r
 If the FreshCargo pilot fails publicly (UNDETERMINED verdicts, technical issues, EscrowChain poaches them), it validates the skeptic thesis and sets GenLayer back 18 months.
 
 The simulation runs the 90 days after announcement. What actually happens?
+
+---
+
+## Substitutes: The Real Competition
+
+These are what customers actually do instead of GenLayer — and they represent the majority of the market today:
+
+**Do nothing (~40% of market)**
+Disputes fail silently. The marketplace absorbs the cost (refunds the buyer), eats the loss, and moves on. Switching cost to any solution: non-trivial engineering. *What breaks this:* dispute volume crosses a threshold where monthly loss exceeds $10K — typically at 500+ disputes/month.
+
+**Manual ops (~30% of market)**
+Human review queues, customer support tickets, marketplace staff making decisions. Cost: $15-50/dispute equivalent when fully loaded. Very slow (24-72 hours). *What breaks this:* scale — when dispute volume exceeds what 2-3 support staff can handle, the cost becomes visible to a CFO.
+
+**Refunds (always buyer wins) (~15% of market)**
+Marketplace policy defaults to refunding the buyer. Simple, fast, destroys seller trust. *What breaks this:* seller churn — when good sellers leave because buyers over-dispute, marketplace quality collapses.
+
+**Self-insurance (~5% of market)**
+Platform sets aside 5-10% of GMV as a dispute reserve. Treats disputes as a cost of business, not a solvable problem. *What breaks this:* reserve depletion during a dispute spike, or an investor who asks "why is 8% of revenue going to dispute losses?"
+
+**Deterministic rules only (~8% of market)**
+Accept 60% accuracy on judgment calls by only automating what can be ruled deterministically. Defer everything else to manual. *What breaks this:* the 40% that can't be ruled requires growing manual capacity; accuracy on complex cases remains unsatisfactory.
+
+**Human escalation always (~2% of market)**
+Route every judgment call to a human specialist. Expensive but defensible to enterprise legal. *What breaks this:* cost and latency — $50-200/dispute and 48-72 hours makes this unviable for high-frequency marketplace disputes.
+
+---
+
+## Hybrid Stack Competitors
+
+Combinations that could compete with GenLayer without directly matching it:
+
+**VeritasProtocol + human escalation tier**
+VeritasProtocol handles 80% of disputes deterministically. A marketplace adds an Upwork-style arbitration option for the remaining 20%. Cost: $5-15/dispute for the hard cases. Quality: adequate. Speed: 24-48 hours for judgment calls. *Why this is dangerous:* it's "good enough" for most buyers without requiring GenLayer's complexity. Alex Petrov has described this roadmap publicly.
+
+**Framework-native + custom rules**
+LangGraph or CrewAI ships a native dispute module that handles common patterns with simple rules. Framework developers add custom rules for their specific use case. GenLayer never gets in the door because the framework solved it adequately. *Why this is dangerous:* Rachel Torres has the leverage to make this happen with one PR.
+
+**Enterprise legal wrapper (Ironclad/DocuSign adds AI evaluation)**
+An existing enterprise SaaS (contract lifecycle management, e-signature) adds an AI quality evaluation module. Sells to enterprise buyers who already trust the vendor. GenLayer becomes irrelevant because the enterprise procurement relationship is owned by someone else. *Why this is dangerous:* enterprise buyers don't want to evaluate a new vendor for this — they want it from someone they already trust.
+
+---
+
+## The Customer Relationship Risk
+
+The scenario where GenLayer technically wins but strategically loses:
+
+A systems integrator (Accenture Digital) builds an enterprise-grade dispute infrastructure product. It uses GenLayer for the AI jury layer, VeritasProtocol for the deterministic layer, and adds their own evidence schema library, SLA guarantees, and compliance documentation. They sell this to 50 enterprise clients at $50K/year.
+
+In this world:
+- GenLayer earns $0.50/dispute in network fees
+- Accenture earns $50K/year per enterprise client
+- Enterprise clients know "Accenture AI Dispute Manager" — not GenLayer
+- GenLayer has no pricing power (Accenture can switch to any AI jury)
+- GenLayer has no brand with the customer
+- GenLayer is infrastructure. Accenture is the product.
+
+This is not hypothetical. It is the natural outcome if GenLayer doesn't build the Tier 2 API and Tier 3 managed service before a systems integrator does it for them.
+
+**How to prevent it:** Own the evidence schema standard. Build direct relationships with marketplace operators. Launch the managed API before someone else wraps GenLayer in it. Give developers a reason to say "GenLayer" not "dispute resolution."
+
+---
+
+## Regulatory Pressure: Explainability, Accountability, Auditability
+
+There is no binding regulation requiring AI dispute resolution mechanisms in 2027. The EU AI Liability Directive proposal (2022) was withdrawn in 2025 without being adopted. The EU AI Act (2024) addresses high-risk AI systems but does not mandate specific dispute resolution infrastructure for agentic commerce.
+
+What does exist is procurement pressure: enterprise legal and compliance teams are independently adding "verifiable decision audit trail" and "explainable verdict" requirements to vendor onboarding checklists — not because regulation requires it, but because legal exposure from unexplainable autonomous decisions is real. This is bottom-up institutional risk aversion, not top-down regulation. The distinction matters: it is slower and less predictable, but it is real and it does not disappear with a regulatory withdrawal.
+
+GenLayer's verdict reasoning (available via API) is a competitive advantage here IF GenLayer packages it as an "auditability export" product. Currently it is not packaged this way — the reasoning arrives as unstructured prose. VeritasProtocol's deterministic audit trail is better packaged (decision tree export, human-readable rule trace) even though GenLayer's reasoning is richer.
+
+The regulation framing is often overstated. There is no current law requiring AI-native dispute resolution. The real pressure is: enterprise procurement requires "verifiable mechanism" in RFPs, and "verifiable" means different things to different legal teams. GenLayer needs to define what "verifiable" means on its own terms before enterprise buyers define it as "deterministic."

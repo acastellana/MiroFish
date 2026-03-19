@@ -412,12 +412,12 @@ const truncateFilename = (filename, maxLength) => {
   return truncatedName + ext
 }
 
-// Open project details modal (on desktop); on mobile go directly to simulation
+// Open project details modal (on desktop); on mobile go to scenario overview (draft/brief)
 const navigateToProject = (simulation) => {
   if (isMobile.value) {
-    // Go directly to simulation view
+    // Go to Scenario Overview (the brief) — not the workbench
     router.push({
-      name: 'Simulation',
+      name: 'ScenarioOverview',
       params: { simulationId: simulation.simulation_id }
     })
   } else {
@@ -453,13 +453,9 @@ const goToSimulation = () => {
   }
 }
 
-// Default open: go to simulation if no report, else report
+// Default open: Scenario Overview (brief/draft) — workbench is reached from there
 const openDefault = (project) => {
-  if (project.report_id) {
-    router.push({ name: 'Report', params: { reportId: project.report_id } })
-  } else {
-    router.push({ name: 'Simulation', params: { simulationId: project.simulation_id } })
-  }
+  router.push({ name: 'ScenarioOverview', params: { simulationId: project.simulation_id } })
 }
 
 // Navigate to Analysis Report page (Report)

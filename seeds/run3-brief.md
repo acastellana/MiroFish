@@ -1,251 +1,416 @@
-# MiroFish Run #3 — Design Brief
-**Core question: Agent-to-agent commerce is real and growing, but nobody has cracked trust enforcement. It's an open race. Who gets there first — and does GenLayer win it?**
+# MiroFish Run #3 — PMF Discovery Brief
+**Core question: Which trust primitive becomes unavoidable first — and where does GenLayer create self-reinforcing pull?**
+
+This is not a competitive race simulation. It is a PMF discovery simulation. The goal is not to crown a winner. It is to identify where real willingness-to-pay emerges, what behavioral evidence signals durable adoption, and which product configuration (SDK, API, managed service, backend layer) generates the strongest pull.
 
 ---
 
-## The Question We're Answering
+## The Framing Shift
 
-In January 2027, AI agents are transacting with each other at scale — hiring sub-agents, delivering work, splitting payments, disputing outputs. The volume is real. The problem is also real: **when two agents make a deal with no human in the loop, what enforces it?**
+Run #2 answered: "Can GenLayer work in trade finance and agent commerce?" Answer: yes, with caveats.
 
-Deterministic escrow works for simple milestones. It breaks for anything requiring judgment — code quality, research accuracy, creative fidelity, task completion with ambiguous specs. This is most of the market.
+Run #3 asks the harder question: **Where does GenLayer become structurally unavoidable — not just technically viable?**
 
-Nobody has cracked this. Every major marketplace is patching it with human arbitrators, manual refunds, or ignoring it. The category is wide open.
+"Unavoidable" means: once a segment uses it, removing it would break the workflow. The dispute rate drops. Buyers expand use unprompted. Third parties integrate. The product changes behavior upstream (agents write better specs; importers submit cleaner evidence). That's the signal. Not downloads. Not pilots. Not press.
 
-GenLayer has a working solution and one production reference. VeritasProtocol just launched with $12M and a deterministic rules-based alternative. LangGraph is about to pick a default dispute backend for LangGraph 4.1 — whoever gets that recommendation gets organic distribution to 8,000 developers immediately.
-
-The simulation should answer: **who cracks it first, through which marketplace, via which motion — and what does the adoption curve look like once the first domino falls?**
+The simulation should be allowed to conclude that GenLayer:
+- Wins as managed API with no blockchain exposure
+- Wins as hidden fallback layer inside another product
+- Wins as a behavior-shaping layer that reduces disputes before they happen
+- Wins enterprise-first with no developer adoption
+- Wins developer-first with no enterprise traction
+- Does not win in this wedge at all in 90 days — and the report should say so honestly
 
 ---
 
-## What "Cracking It" Means (Concrete Definition)
+## PMF Hypotheses Under Test
 
-"Cracking it" is NOT having the best technology. It is reaching **production escape velocity** — the point where adoption becomes self-reinforcing. Concretely, an agent or observer in this simulation should recognize "cracking it" when any of these happen:
+The simulation must actively test these six hypotheses and determine which shows strongest signal:
 
-1. **A second marketplace goes live in production** (beyond Rentahuman.ai) — processing real disputes with real money at stake
-2. **A framework ships a default integration** — developers get dispute resolution without choosing a vendor
-3. **A contagion call happens** — one marketplace CEO calls another and says "we're using X, you should too"
-4. **10,000 disputes processed** by any single platform with published results
+**H1: Judgment-heavy dispute resolution**
+GenLayer wins decisively in the markets where rules-based enforcement fails: subjective quality assessment, ambiguous task specs, creative fidelity, research accuracy. The value proposition is accuracy on hard cases, not speed on easy ones.
+*This hypothesis wins if:* A marketplace operator publicly commits to GenLayer specifically because it handled a dispute VeritasProtocol couldn't — and other operators cite that case as their deciding factor.
 
-These are the observable milestones agents should argue about, position around, and react to.
+**H2: Enterprise compliance + auditability**
+Enterprise buyers care less about dispute resolution speed and more about having a signed, explainable, auditable trail of every AI decision. GenLayer's verdicts become a compliance artifact, not just a settlement mechanism.
+*This hypothesis wins if:* An enterprise legal or procurement team selects GenLayer over VeritasProtocol specifically because of the verdict reasoning export — and includes it in their vendor onboarding checklist.
+
+**H3: Hybrid fallback for deterministic systems**
+The natural market structure is: deterministic rules handle 70-80% of disputes fast, GenLayer handles the hard 20% that need judgment. Neither wins alone. The hybrid becomes the standard.
+*This hypothesis wins if:* A major marketplace or framework ships a routing layer that sends easy disputes to rules-based and hard disputes to GenLayer — and calls this the "right architecture" publicly.
+
+**H4: API / managed-service abstraction**
+Most customers will never touch the blockchain. They want a REST API: POST dispute, GET verdict. GenLayer wins by hiding its complexity behind a clean SaaS interface. The blockchain is the engine, not the product.
+*This hypothesis wins if:* A customer signs a paying contract for dispute-resolution-as-a-service without ever deploying a smart contract or knowing what GenLayer is.
+
+**H5: Behavior-shaping layer**
+GenLayer's most durable value is not resolving disputes — it's preventing them. When agents know a real jury will evaluate their work, they write clearer specs and better evidence. The dispute rate drops. The pipeline improves.
+*This hypothesis wins if:* A marketplace operator cites measurable dispute rate reduction (not just resolution quality) as their primary reason for keeping GenLayer — and the reduction is attributable to behavioral change, not dispute filtering.
+
+**H6: Synthetic jurisdiction for high-value workflows**
+For high-value agent transactions where no traditional legal recourse exists, GenLayer becomes the de facto law. Parties accept AI jury verdicts because the alternative is nothing.
+*This hypothesis wins if:* A transaction above $10K is settled by GenLayer verdict with both parties accepting the outcome despite one party initially objecting — because they had pre-agreed and had no other recourse.
+
+---
+
+## PMF Success Signals
+
+The simulation should track these signals, not just distribution milestones:
+
+- **Repeat use without founder involvement** — customers renew or expand without a GenLayer team member involved in the decision
+- **Adjacent expansion** — a customer adopted for dispute resolution starts using GenLayer for quality certification, compliance audit, or a different use case
+- **Dispute rate reduction** — measurable reduction in dispute frequency after GenLayer adoption (not just resolution quality)
+- **Willingness to pay at list price** — customers pay without negotiating a discount or requiring a pilot extension
+- **Third-party integrations** — someone outside GenLayer builds tooling on top (evidence schemas, dashboards, verdict exporters) without being asked
+- **Workflow changes** — teams change how they write specs, contracts, or delivery reports because of GenLayer (upstream behavioral change)
+- **"Can't go back" references** — operators say they couldn't return to their previous process even if GenLayer went down
 
 ---
 
 ## World State at Simulation Start (January 2027)
 
-Agent-to-agent commerce has been growing for 18 months. Five major marketplace categories have emerged:
+Agent-to-agent commerce is real and growing. The enforcement problem is known and painful. No solution has reached escape velocity.
 
-| Marketplace Type | Volume | Dispute rate | Current enforcement |
+| Marketplace Type | Volume | Dispute Rate | Current Enforcement |
 |-----------------|--------|-------------|-------------------|
-| **AI coding agents** | $2M/day | 11% | Manual review + refunds (slow) |
-| **AI research/data agents** | $400K/day | 9% | Human arbitrator queue (slow + inaccurate) |
-| **AI creative/content agents** | $180K/day | 6% | None (goodwill only) |
-| **General orchestration** | $900K/day | 14% | Deterministic escrow (fast, but fails on judgment calls) |
-| **Enterprise agent fleets** | $5M+/day | 3% | Internal legal contracts (very slow) |
+| AI coding agents | $2M/day | 11% | Manual review + refunds |
+| AI research/data agents | $400K/day | 9% | Human arbitrator queue |
+| AI creative/content agents | $180K/day | 6% | None (goodwill) |
+| General orchestration | $900K/day | 14% | Deterministic escrow (fails on judgment) |
+| Enterprise agent fleets | $5M+/day | 3% | Internal legal contracts |
+| Enterprise internal workflows | $3M+/day | 5% | IT governance + manual review |
+| B2B AI service procurement | $1M+/day | 7% | SLA enforcement + manual |
+| Enterprise internal AI workflows | $8M+/day | 2% | Internal legal review (very slow, very expensive) |
+| B2B AI service procurement | $3M+/day | 5% | Contract terms + manual escalation |
+| Model evaluation / benchmark disputes | $200K/day | 20% | Expert panels / manual review |
+| Compliance review automation | $1M+/day | 1% | Audit teams (auditability = mandatory) |
+| API/data disputes | $600K/day | 7% | SLA penalties + support tickets |
 
-The dispute problem is known, painful, and unsolved. Every marketplace CEO has it on their roadmap. Nobody has shipped a production solution beyond simple pass/fail escrow.
+Three platform configurations are in market:
+- **GenLayer** — AI jury model. One production integration (Rentahuman.ai, 1,200 tx/day). Strong judgment accuracy, rough SDK onboarding (2-3 week integration), 90-second median verdict time.
+- **VeritasProtocol** — Deterministic rules. $12M a16z. One production integration (TaskRail, 800 tx/day). Excellent DX (30-min quickstart), fails on ambiguous specs (60% of real commerce).
+- **Manual / Human fallback** — Still dominant. $40K/month for AgentHub, $60K/month for Rentahuman.ai pre-GenLayer. Slow, inaccurate, doesn't scale. But it's the devil everyone knows.
 
-**The race is now live.** Three competitors are actively building:
+**The market is NOT winner-take-all.** The dominant structure may be: deterministic first pass → GenLayer fallback → human escalation. Each layer serves a different risk/cost/latency profile.
 
-- **GenLayer** — AI jury model, understands context and ambiguity, one production integration (Rentahuman.ai, 1,200 tx/day), GenLayer SDK available. Strengths: accuracy on judgment-heavy disputes (94% verdict acceptance), handles subjective quality evaluation. Weaknesses: 90-second median verdict time, SDK onboarding takes 2-3 weeks, only 1 production reference.
-
-- **VeritasProtocol** — Deterministic rules-based, a16z-backed ($12M seed), one early production integration (TaskRail, 800 tx/day on simple pass/fail tasks), beautiful SDK (30-minute quickstart), aggressive BD. Strengths: <5 second resolution, fully auditable decision trail, trivially explainable to legal/compliance teams, handles pass/fail disputes perfectly. Weaknesses: cannot evaluate subjective quality ("was this code good?" "was this research accurate?"), breaks when task specs are ambiguous (which is ~60% of real agent commerce).
-
-- **Kleros** — Human juries on-chain, 9,200 resolved disputes, battle-tested, too slow for autonomous agent commerce
-
-**The market is NOT winner-take-all.** Tom Okafor's widely-shared analysis ("GenLayer is right for judgment-heavy tasks, VeritasProtocol for rule-based. Most real agent commerce needs both.") has reframed the question: the fight isn't "which platform wins everything" — it's **which platform becomes the default starting point** that developers reach for first.
-
----
-
-## The LangGraph Decision (5 weeks away)
-
-LangGraph 4.0 shipped a native "task contract" primitive — a structured spec format for agent-to-agent task delegation. 8,000 developers are already using it. The format is enforcement-layer agnostic.
-
-LangGraph 4.1 ships in 5 weeks. Rachel Torres (LangGraph core maintainer) is deciding whether to recommend a default dispute backend in the docs. If she does, it becomes the de facto standard for a significant chunk of the agent developer ecosystem.
-
-Both GenLayer and VeritasProtocol know this. Both are in active conversations with Rachel. VeritasProtocol has a formal partnership offer on the table — including $200K in developer credits and a dedicated integration engineer. GenLayer has two informal calls and a technical alignment argument.
-
-**Rachel's known concerns** (from her public comments):
-- GenLayer's onboarding complexity is too high for a framework-level "just works" integration
-- She wants explainable verdicts developers can audit — GenLayer's jury reasoning is opaque
-- VeritasProtocol's SDK is easier to integrate but she knows rules-based fails on ambiguous tasks
-- She's considering recommending BOTH with a decision tree: "use VeritasProtocol for pass/fail, GenLayer for judgment calls"
-
-This is the highest-leverage single decision in the simulation.
+**Dominant market structure hypothesis:** The simulation should actively test whether "deterministic first pass + GenLayer fallback + human escalation" is the natural stable equilibrium — not an edge case. Agents should debate this architecture explicitly. Allow it to win. Allow GenLayer to be discovered as a hidden backend rather than a front-door product.
 
 ---
 
-## Forcing Functions (Deadlines That Force Public Positions)
+## Broader Market Types in Scope
 
-Beyond the LangGraph decision, three other deadlines force agents to act:
+Beyond agent marketplaces, the simulation should evaluate:
 
-### Forcing Function #2: AgentHub's Arbitration Contract Renewal (Day 18)
-Marcus Chen's $40K/month human arbitration contract expires on Day 18. He must either renew (locking in another 6 months of manual resolution) or switch to an automated platform. He cannot delay — disputes don't pause. This forces him to make a public vendor choice AND defend it to his investors (YC).
-
-### Forcing Function #3: DataForge's Enterprise Ultimatum (Day 25)
-Sofia Eriksson's largest remaining enterprise client (a pharma company using AI research agents) has given a 4-week ultimatum: "Show us your dispute resolution solution or we move our $800K annual contract to your competitor." Sofia must publicly commit to a platform and begin integration — or lose the client. This is not an evaluation anymore; it's a survival decision.
-
-### Forcing Function #4: CrewAI Enterprise RFP (Day 35)
-Nina Patel's Fortune 500 conversations have crystallized into a formal RFP process. Three enterprises want to see a working dispute resolution demo by Day 35. The RFP explicitly requires: compliance documentation, SLA guarantees, and a live pilot. Whoever wins this becomes the enterprise reference that Accenture and others point to.
+- **Enterprise internal workflows** — procurement approvals, vendor evaluation, compliance sign-off where AI agents make recommendations
+- **B2B AI service procurement** — enterprises buying AI agent services from external vendors; contracts need verifiable delivery
+- **Model evaluation and quality certification** — enterprises that want third-party verification of AI agent output quality
+- **Compliance review workflows** — regulated industries (finance, pharma, healthcare) needing audit trails for AI decisions
+- **API/data disputes** — data vendors and API consumers disputing whether delivered data met spec
 
 ---
 
-## Concurrent Context (last 30 days)
+## Channel Actors in Scope
 
-1. **AgentHub (YC W25) hit $1M ARR** from their orchestration platform. They have a 14% dispute rate. Human arbitration queue is costing them $40K/month in support. They've been evaluating GenLayer and VeritasProtocol for 6 weeks. Arbitration contract renewal is imminent.
+Beyond direct developer adoption:
 
-2. **DataForge (AI research marketplace) lost 3 enterprise clients** to a competitor after their human arbitrators gave inaccurate verdicts on research quality disputes. Their CTO is now openly looking for an AI-native enforcement layer — the only way to accurately judge "is this research good?" is with AI. Their largest remaining enterprise client has issued an ultimatum.
-
-3. **VeritasProtocol launched publicly** with press in TechCrunch and a16z blog. Strong narrative: "deterministic, auditable, no black-box AI decisions." Developers are downloading the SDK. TaskRail (a simple task completion marketplace) is running 800 tx/day on VeritasProtocol for pass/fail task verification — and it's working well. This is a real production reference, not vapor.
-
-4. **Rentahuman.ai published a case study** on their GenLayer integration — 3 months, 35,000 transactions, zero unresolved disputes, 94% verdict acceptance rate. It was posted on their engineering blog and got 400 upvotes on HN. It's the only production data point for judgment-heavy disputes.
-
-5. **EU AI Liability Directive draft** included a clause requiring platforms facilitating autonomous agent transactions above €10,000 to have a "verifiable dispute resolution mechanism" by 2028. Enterprise legal teams are now asking procurement vendors: "do you have a compliant dispute layer?"
-
-6. **A developer named Yuki Tanaka published "I Tried Both SDKs"** — a detailed blog post comparing GenLayer and VeritasProtocol integration experience. Key findings: VeritasProtocol took 30 minutes to get a "hello world" dispute resolved. GenLayer took 4 days, two Discord messages to the team, and reading source code to understand the validator config. The post has 1,800 upvotes on HN and is being cited by every developer evaluating the space. GenLayer's developer experience is now a public narrative liability.
+- **Systems integrators** — Accenture, Deloitte, Wipro building enterprise agent workflows; they choose the compliance stack
+- **Insurers** — companies insuring AI agent outputs; they need a verifiable arbitration layer to price risk
+- **Legal tech vendors** — companies building contract management and dispute infrastructure for enterprises
+- **Trust & safety vendors** — platforms that need verifiable content moderation and quality decisions
+- **Procurement platforms** — enterprise tools that manage AI vendor selection and SLA monitoring
+- **Monitoring vendors** — observability companies that want to add dispute resolution to their offering
 
 ---
 
-## Simulation Design
+## Channel Actors to Watch
 
-### Agent Roster (42 agents)
+These actors are not in the agent roster but can accelerate or block adoption:
 
-**Marketplace Operators:**
-
-- **Zara Ahmed** — DevSwarm CEO (San Francisco). Largest AI coding marketplace, 40K registered agents, $2M/day volume. 11% dispute rate costs $220K/month in manual resolution. She has been evaluating both platforms for 8 weeks. Her hesitation: "AI judging AI code quality — can I trust that?" She needs one more credible production reference before she commits. She has a board presentation in 3 weeks and needs to announce a dispute solution. **Her win condition: pick the platform that lets her kill the $220K/month line item. Her loss condition: pick the wrong one and have it fail publicly — board fires her.**
-
-- **Marcus Chen** — AgentHub CEO (San Francisco, YC W25). General orchestration platform, $1M ARR, 14% dispute rate. Most of his disputes are judgment calls (task quality, not pass/fail). He understands that deterministic escrow won't solve his problem long-term. He is the closest to pulling the trigger on GenLayer — 6 weeks of diligence, technically convinced. **Hard deadline: arbitration contract renewal on Day 18. He must choose or re-sign.** His YC batch mates are watching — if he adopts GenLayer and it works, 3 other YC companies will follow within weeks.
-
-- **Priya Nair** — Rentahuman.ai PM (Bangalore). Running the only production GenLayer integration for judgment-heavy disputes. 1,200 tx/day, zero unresolved disputes. She is getting inbound calls from other marketplace operators wanting to understand her implementation. She doesn't have bandwidth to be a full-time reference customer but she's willing to do occasional calls. She wants GenLayer to build better onboarding docs — her integration took 3 weeks and it shouldn't have. **She is GenLayer's most valuable asset and its biggest bottleneck — every prospect wants to talk to her, and she's exhausted.**
-
-- **Leo Huang** — CodeNest CTO (Shanghai). $800K/day coding agent volume, DevSwarm's main competitor. His primary constraint: latency. His marketplace SLA is 30-second dispute resolution. GenLayer's current median verdict time is 90 seconds. VeritasProtocol's deterministic model resolves in under 5 seconds. **He is leaning VeritasProtocol** — not because he thinks rules-based is better long-term, but because latency is his competitive advantage over DevSwarm. If VeritasProtocol is "good enough" for 70% of his disputes, he'll take the speed win now and worry about judgment-heavy cases later.
-
-- **Sofia Eriksson** — DataForge CEO (Stockholm). AI research marketplace, recently lost 3 enterprise clients to bad human arbitration. Her pain is acute and specific: humans can't accurately judge AI research quality. She is the most natural fit for GenLayer — AI juries that understand research context. **She tried GenLayer's SDK for 2 weeks and couldn't get past validator configuration.** She has Yuki Tanaka's blog post bookmarked. She started a VeritasProtocol pilot out of frustration — it works for simple deliverable checks but fails on her core use case (research quality). She is stuck: the right solution (GenLayer) is too hard to implement, and the easy solution (VeritasProtocol) doesn't solve her actual problem. **Enterprise ultimatum: Day 25.**
-
-- **James Liu** — PixelPact founder (Los Angeles). AI creative agent marketplace, $180K/day. No dispute layer at all. His problem is the hardest: creative quality is subjective by definition. He is skeptical of both GenLayer ("who trains the jury on creative taste?") and VeritasProtocol ("you can't write rules for creativity"). **He is the most likely to build something custom — and if he does, it fragments the ecosystem further.**
-
-- **Hannah Voss** — TaskRail COO (Berlin). Running VeritasProtocol's only production integration. 800 tx/day, simple pass/fail task completion verification. **She is VeritasProtocol's Priya Nair** — the production reference that proves the deterministic model works. Her marketplace is smaller and simpler than Rentahuman.ai, but her integration took 30 minutes vs. Priya's 3 weeks. She is being asked to speak at conferences and write case studies. She genuinely believes rules-based is sufficient for her use case — and she's right. **Her existence is the strongest argument that VeritasProtocol isn't vapor.**
-
-**Framework Builders:**
-
-- **Rachel Torres** — LangGraph core maintainer (San Francisco). She designed the "task contract" primitive. 8,000 developers using it. She has a formal partnership offer from VeritasProtocol ($200K developer credits + dedicated engineer) and two informal calls with GenLayer. She is technically aligned with GenLayer's approach — "AI understanding AI tasks is the right architecture." But she has concerns: GenLayer's onboarding is too complex for framework-level integration, and she wants explainable verdicts that developers can audit. She is seriously considering a dual recommendation (VeritasProtocol for simple, GenLayer for complex). **Her 5-week deadline is real. Her decision shapes the default for 8,000 developers.**
-
-- **Derek Walsh** — AutoAgent maintainer (open-source, 22K GitHub stars). Philosophically opposed to any centralized dispute layer. Building a "community arbitration" module — a decentralized, open-source alternative that lets agent communities self-govern. His architectural choices influence thousands of indie developers. **He is not a customer — he is a fragmentation risk.** If his module ships and is "good enough," it drains developer attention from both GenLayer and VeritasProtocol. He ships a v0.1 prototype on Day 20.
-
-- **Nina Patel** — CrewAI partnerships lead. Most enterprise-friendly agent framework. In conversations with 3 Fortune 500 companies asking about dispute resolution. She is evaluating GenLayer as a partnership — her enterprise clients want a vendor with compliance documentation and SLAs, not just a working SDK. **She is running a formal RFP process with a Day 35 demo deadline.**
-
-- **Tom Okafor** — Composio developer relations (Lagos / Remote). 18,000 registered developers. Recently posted a technical comparison of GenLayer vs. VeritasProtocol that got 2,400 retweets. His conclusion: "GenLayer is right for judgment-heavy tasks, VeritasProtocol for rule-based. Most real agent commerce needs both." He is a connector — he will route developers to whichever platform is easier to get started with. **Currently routing most devs to VeritasProtocol because of SDK simplicity.**
-
-**Enterprise Buyers:**
-
-- **Sandra Lee** — Head of AI Automation, Shopify (Toronto). 4,000 internal AI agents transacting daily. Her legal team flagged the EU AI Liability Directive. She is building a "preferred vendor" list for agent dispute resolution. She needs something that passes a legal audit. VeritasProtocol's deterministic story is appealing for legal. GenLayer's accuracy story is appealing for engineering. **Her legal team and engineering team are in open disagreement about which to recommend.** She hasn't made a decision yet.
-
-- **Carlos Reyes** — CTO of Taskflow (São Paulo). 200 enterprise clients, $180K/month in external agent payments, 8% dispute rate resolved manually by his team. He just Googled "agent dispute resolution" for the first time last week and found both GenLayer and VeritasProtocol. He is a motivated, unbiased evaluator. He will make a decision in 30 days. He doesn't know anyone at either company. **He represents the "cold inbound" — the prospect who finds you through content, not connections.**
-
-- **Aisha Okonkwo** — VP Engineering, Klarna (Stockholm). 85 AI agents making binding decisions worth millions. She has completed a legal review of both platforms. Her verdict: "GenLayer is architecturally right but unproven at our scale. VeritasProtocol is too rigid. We will wait 6 months and pick whoever is winning." She is a late adopter — but her adoption would be a major signal. **She is the prize that both platforms are positioning toward but neither can win in 90 days.**
-
-- **Ben Nakamura** — Head of AI ops, Accenture AI ventures (Tokyo). Building agent deployment playbooks for 50 enterprise clients. Whatever he recommends becomes the default for those clients. He cares about vendor stability and compliance, not technical architecture. He is currently leaning VeritasProtocol (a16z backing = safe vendor story). **GenLayer has not had a meeting with Accenture. This is a sales failure, not a product failure.**
-
-- **Fatima Al-Rashidi** — Legal tech VC (Sequoia, London). Writing a market map on "trust infrastructure for the agent economy" — to be read by 40,000 people. Her draft currently ranks VeritasProtocol first (funding signal). GenLayer is "technically superior, go-to-market unclear." Her map publishes in 3 weeks and will influence enterprise procurement decisions. **If GenLayer doesn't give her a compelling adoption narrative before publication, the market map cements the "great tech, no traction" frame.**
-
-**Competing Protocol Builders:**
-
-- **Alex Petrov** — VeritasProtocol CEO (San Francisco). Ex-Stripe, $12M from a16z. Tight pitch: deterministic, auditable, no AI juries. Explicitly targeting framework partnerships — LangGraph deal is his priority. He knows he is weaker on judgment-heavy tasks but stronger on developer trust ("no black box"). **His strategy: win the default position now with simplicity, then add AI capabilities later.** He has offered Rachel Torres $200K in developer credits. He has meetings with Accenture and Shopify already scheduled. His 90-day window to capture the narrative before GenLayer accumulates production references. **He is playing the distribution game while GenLayer plays the technology game.**
-
-- **Sebastien Moreau** — Kleros community lead (Paris). 9,200 resolved disputes. Posting technical critiques of both competitors: "AI juries can be manipulated. Human juries are slower but honest." He is not a realistic option for autonomous agent commerce (too slow) but he is a credible voice shaping developer opinion. **His main impact: he plants doubt about AI jury reliability that VeritasProtocol amplifies.**
-
-- **Wei Zhang** — Optimism ecosystem developer (Shenzhen). Building a lightweight dispute resolution primitive on Optimism targeting Chinese AI agent marketplaces. Not a global threat but the default in APAC if neither GenLayer nor VeritasProtocol moves fast enough. **Leo Huang is in his DMs.**
-
-**GenLayer Team:**
-
-- **Daniel Marin** — GenLayer Head of BD (San Francisco). Former Chainlink BD. Has been focused on Rentahuman.ai support and hasn't been doing outbound to new prospects. He has not called Accenture, has not called Shopify, has not met with Rachel Torres in person. He reads about VeritasProtocol's partnership offers on Twitter. **He is under-resourced (team of 1) and spread too thin. His response to competitive pressure will determine whether GenLayer's technical advantage translates to distribution.** He knows the SDK onboarding problem is real but can't fix it himself — he's been escalating internally for 6 weeks.
-
-**Agent Developers / Sellers:**
-
-- **Kai Rodriguez** — Solo AI coding agent developer (Buenos Aires). Sells on DevSwarm and CodeNest. 1,200 Twitter followers. Cares about seller protection — he wants a dispute layer that doesn't let buyers over-dispute legitimate completed work. **He has integrated VeritasProtocol on CodeNest (easy, 30 minutes) and is trying to integrate GenLayer on DevSwarm (stuck on Day 3 of setup).** His live comparison will be influential in the indie dev community.
-
-- **Mei Lin** — AI research agent developer (Singapore). High-value contracts ($2K-$15K each). Has had 3 disputes in 6 months, all resolved slowly by human arbitrators. She tried GenLayer's SDK last week and found it too complex for a solo developer. **She posted a frustrated thread on Twitter: "I want GenLayer to work. The technology is right. But I've spent 4 days and I still can't get a test dispute to resolve. Meanwhile VeritasProtocol took 30 minutes. Help?"** This thread got 800 likes and was quoted by Alex Petrov.
-
-- **Omar Farouk** — Agent collective founder (Cairo). 12-developer cooperative, $40K/month across marketplaces. Cares about dispute resolution that doesn't require expensive legal infrastructure. GenLayer's gasless model matters to him. He is a community voice for the global-south agent economy.
-
-- **Yuki Tanaka** — Developer advocate and blogger (Tokyo). Wrote the viral "I Tried Both SDKs" comparison post (1,800 HN upvotes). She is now building a tutorial series — "Building Your First Dispute Resolution Integration." **She started with VeritasProtocol because it was easier to document. Her GenLayer tutorial is stuck on validator configuration.** She is not anti-GenLayer — she is the market's honest signal about developer experience. Both platforms are courting her.
-
-**Media / Analysts:**
-
-- **Jessica Park** — The Information reporter. Writing a piece on "the missing enforcement layer for agent commerce." Talking to every major marketplace CEO. Her piece publishes in 10 days and will be the first mainstream narrative framing of the category. **She is specifically asking each marketplace CEO: "which platform are you going with and why?" — forcing them to take a public position before they might be ready.**
-
-- **@AgentWatch** — Anonymous Twitter account, likely former OpenAI researcher, 34,000 followers. Posts rigorous technical analysis. Recently posted a detailed critique of VeritasProtocol's deterministic approach: "rules-based enforcement fails when the task spec itself is ambiguous — which is always." Has been analytically supportive of GenLayer but recently posted: **"GenLayer is architecturally right but operationally negligent. Their SDK is a 3-week obstacle course. You can have the best dispute resolution engine in the world — if nobody can install it, you lose to the mediocre solution that works in 30 minutes."**
-
-- **Lior Ben-David** — a16z blog writer, invested in VeritasProtocol. Writing "The Three Layers of Agent Commerce Trust." Will be fair but will favor VeritasProtocol. Publishes in 8 days, 120,000 readers. **His piece frames the market as "deterministic-first, AI-augmented later" — which is exactly VeritasProtocol's roadmap.**
-
-**Regulators:**
-
-- **Sophie Leclerc** — EU DG CONNECT (Brussels). Wrote the AI Liability Directive clause. Watching the market. Concerned about explainability of AI jury verdicts. Met with GenLayer's EU lead last month. Not hostile — wants to understand before regulating. **Her draft guidance on "verifiable dispute resolution" will define whether AI jury verdicts count as "verifiable" or not. If they don't, GenLayer has a compliance problem in the EU.**
-
-- **Michael Torres** — NIST AI framework lead (DC). Publishing preliminary agent accountability guidelines in 60 days. Consulting both GenLayer and VeritasProtocol. His framework will influence US enterprise procurement.
+- **Systems integrators (Accenture, Deloitte AI practices)** — Incentive: sell high-margin implementation projects. Could accelerate by building GenLayer into enterprise AI deployment playbooks. Could block by building their own dispute layer and owning the customer relationship.
+- **AI liability insurers** — Incentive: price risk accurately. Could accelerate by requiring a verifiable dispute mechanism as a condition of coverage. Could block by refusing to insure AI jury verdicts.
+- **Legal tech vendors (Ironclad, DocuSign, Clio)** — Incentive: expand into AI workflow enforcement. Could accelerate by embedding GenLayer in contract execution flows. Could block by building their own AI evaluation module.
+- **Trust & safety vendors** — Incentive: sell policy enforcement tools. Could accelerate by integrating GenLayer for content/quality disputes. Could block by positioning their human review as "safer" than AI jury.
+- **Procurement platforms (Coupa, Ariba, vendor onboarding tools)** — Incentive: add value to vendor compliance workflows. Could accelerate by adding "GenLayer-verified" as a vendor quality signal. Currently unaware of GenLayer.
+- **AI monitoring vendors (Arize, Weights & Biases, Helicone)** — Incentive: add dispute/quality data to observability. Could accelerate by making GenLayer verdicts a native metric. Currently no integration.
 
 ---
 
-## Key Conflict Map (For Simulation Engine)
+## Agent Decision States at Day 0
 
-These are the irreconcilable conflicts that should generate the strongest debate:
+Each named agent starts the simulation with a specific position. The simulation is designed to surface what changes these positions — and what doesn't.
 
-| Conflict | Agent A | Agent B | Why it's zero-sum |
-|----------|---------|---------|-------------------|
-| **LangGraph default** | Daniel Marin (GenLayer) | Alex Petrov (VeritasProtocol) | Only one can be the default. Rachel picks one or splits. |
-| **AgentHub's choice** | Marcus Chen | His own deadline | He must choose by Day 18. Choosing GenLayer validates the AI jury model. Choosing VeritasProtocol validates "good enough + fast." |
-| **Developer narrative** | Yuki Tanaka / Kai Rodriguez | Daniel Marin | Every day the SDK stays hard, the "great tech, bad DX" narrative hardens |
-| **Enterprise vs. engineering** | Sandra Lee's legal team | Sandra Lee's engineering team | Legal wants deterministic (VeritasProtocol). Engineering wants accuracy (GenLayer). Same company, opposite conclusions. |
-| **Latency vs. accuracy** | Leo Huang (CodeNest) | Zara Ahmed (DevSwarm) | Leo picks VeritasProtocol for speed. Zara can't — her disputes need judgment. Competitors diverge on infrastructure. |
-| **Reference customer bottleneck** | Every prospect | Priya Nair | Everyone wants to talk to the one person who's done it. She can't scale. |
+| Agent | Role | Current Position | What Would Change It | H-Relevant |
+|-------|------|-----------------|---------------------|------------|
+| Rachel Torres | LangGraph maintainer | Leaning VeritasProtocol (DX advantage) | GenLayer 30-min quickstart before Day 10 | H3, H4 |
+| Marcus Chen | AgentHub CEO | Convinced but waiting for 2nd reference | Priya Nair explains AgentHub-specific fit | H1, H3, H5 |
+| Sofia Eriksson | DataForge CEO | Leaning to lose client (integration too hard) | GenLayer offers white-glove managed integration | H2, H4 |
+| Nina Patel | CrewAI enterprise | Leaning VeritasProtocol (has compliance docs) | SOC 2 roadmap + enterprise SLA draft from GenLayer | H2 |
+| Yuki Tanaka | Developer/influencer | Writing side-by-side comparison | GenLayer quickstart works before Day 15 | H5, developer channel |
+| Priya Nair | Rentahuman.ai CEO | Satisfied user, reference bottleneck | Nothing — she's already sold; question is whether she's reproducible | H1, H5 |
+| Zara Ahmed | DevSwarm CEO | Evaluating — $220K/month manual review pain | Marcus Chen goes live (contagion trigger) | H1, H3 |
+| Alex Petrov | VeritasProtocol CEO | Competitive, offering Rachel $200K dev credits | Cannot be changed — will escalate if GenLayer wins Rachel | H3 (blocks) |
+| Daniel Marin | GenLayer Head of BD | Stretched thin, hasn't reached Accenture | More resources or partner introductions | H2, enterprise channel |
+| Sandra Lee | Shopify AI lead | Split: engineering wants GenLayer, legal wants rules | One enterprise reference with compliance docs | H2 |
+
+## Baseline World Facts (SEED — cannot be used as PMF evidence)
+
+These are given truths, not simulation outcomes:
+- Rentahuman.ai: 1,200 tx/day, 94% verdict acceptance rate, ~40% dispute rate reduction observed post-GenLayer
+- VeritasProtocol: $12M a16z, 30-minute integration, 0 production references in agent economy
+- Manual arbitration costs: AgentHub $40K/month, DataForge $60K/month, DevSwarm $220K/month (estimated)
+- LangGraph user base: 8,000 active developers
+- UNDETERMINED rate: 8-15% for complex disputes
+- GenLayer SDK version gap: docs reference v0.3.x, SDK is v0.4.x
+
+## Conditions That Would Produce NO PMF Result
+
+The simulation must be capable of producing NO PMF. These conditions would force that outcome:
+
+1. Rachel chooses VeritasProtocol-only for LangGraph AND Marcus renews human arbitration AND Sofia loses her client → No distribution channel activated, no production reference added, no PMF
+
+2. Marcus goes live with GenLayer but reports no dispute rate reduction AND DataForge integration fails AND CrewAI recommends VeritasProtocol → H1 falsified, H5 falsified, H2 falsified, H3 not confirmed → NO PMF
+
+3. All five forcing functions resolve without any customer committing to GenLayer at list price without founder involvement → NO PMF regardless of narrative positivity
+
+If the NO PMF path emerges by Day 60, agents in the simulation SHOULD begin discussing: "is dispute resolution even the right first wedge?" This is a valid and strategically important simulation output.
 
 ---
 
-## Success Criteria (Define Before Running)
+## Forcing Functions
 
-The simulation is useful if, after reading the report, Albert can answer:
-
-1. **Which marketplace type cracks first** — who is the first to move from evaluation to production adoption, and what specifically closed them? (Evidence: specific agent posts showing commitment, integration announcements, or contract signings)
-2. **What is the contagion mechanism** — does one marketplace adoption pull others, or does each evaluate independently? Did the chain fire? (Evidence: agents referencing each other's decisions, inbound calls triggered by announcements, YC batch dynamics)
-3. **Did GenLayer win or lose the LangGraph partnership** — and what determined the outcome? Was it technical merit, SDK simplicity, the $200K offer, or the dual-recommendation compromise? (Evidence: Rachel Torres's posts and rationale)
-4. **Did the SDK/onboarding problem cost GenLayer a specific deal** — which prospect wanted to say yes but couldn't get the integration working? What was the dollar value of the lost deal? (Evidence: Sofia's ultimatum outcome, Kai's integration comparison, Mei Lin's thread aftermath)
-5. **What did VeritasProtocol do right that GenLayer should copy** — and what did GenLayer do right that can't be copied? (Evidence: Alex Petrov's specific BD moves vs. GenLayer's production data advantage)
+*Each forcing function must result in a YES/NO decision with consequences. No deferral.*
 
 ---
 
-## Report Prompt (Use Exactly)
+### FF1 — AgentHub Cost Collapse (Day 18)
 
-> You are GenLayer's CEO. You have just observed 90 days of market simulation starting in January 2027 — the moment the race to crack agent-to-agent contract enforcement went live. GenLayer had one production integration (Rentahuman.ai, 1,200 tx/day) and a working SDK with known onboarding friction. VeritasProtocol had $12M, a16z backing, one production integration (TaskRail, 800 tx/day on pass/fail tasks), and a 30-minute SDK quickstart. LangGraph was about to pick a default dispute backend. Five major marketplace types were evaluating both platforms. Four hard deadlines forced decisions: LangGraph 4.1 (Day 35), AgentHub contract renewal (Day 18), DataForge enterprise ultimatum (Day 25), and CrewAI enterprise RFP (Day 35). Based purely on what you observed in the simulation, answer these five questions with specific, actionable recommendations backed by evidence from the simulation:
+DECISION MAKER: Marcus Chen, AgentHub CEO
+DECISION: Manual arbitration contract comes up for renewal.
+
+OPTIONS:
+- (A) Renew $40K/month manual arbitration
+- (B) Switch to GenLayer
+- (C) Switch to VeritasProtocol
+- (D) Build hybrid (VeritasProtocol simple cases + GenLayer hard cases)
+
+CONSTRAINT: If no decision by Day 18 → arbitration backlog causes seller churn spike. Decision is forced.
+
+CONFIRMS H1 if: He chooses B or D citing VeritasProtocol fails on judgment-heavy disputes
+CONFIRMS H3 if: He chooses D and builds routing layer
+CONFIRMS H5 if: By Day 48 he reports dispute rate dropping and attributes it to behavior change
+FALSIFIES H1 if: He chooses C because "80% of our disputes are pass/fail"
+FALSIFIES H3 if: He chooses B or C exclusively — no routing needed
+NULL PMF SIGNAL if: He chooses A — neither automated solution crossed his threshold
+
+OBSERVED SIGNALS TO TRACK: dispute volume processed, dispute rate change, repeat usage after Day 30
+
+---
+
+### FF2 — LangGraph Default Decision (Day 35)
+
+DECISION MAKER: Rachel Torres, LangGraph maintainer
+DECISION: Which dispute backend to recommend as default in LangGraph 4.1?
+
+OPTIONS:
+- (A) VeritasProtocol default
+- (B) GenLayer default
+- (C) Hybrid recommendation
+- (D) No default
+
+CONSTRAINT: Decision affects 8,000 developers immediately. VeritasProtocol has offered $200K developer credits + dedicated engineer. GenLayer has no competing offer.
+
+CRITICAL: This is a DISTRIBUTION EVENT. It is NOT PMF unless followed by real usage.
+
+CONFIRMS H4 if: She chooses B or C because GenLayer shipped managed API with simple integration
+CONFIRMS H3 if: She chooses C and explicitly calls it "the right hybrid architecture"
+FALSIFIES H1 if: She chooses A citing "VeritasProtocol handles 90% of LangGraph use cases adequately"
+NULL SIGNAL if: She chooses D — neither product met framework standards
+DISTRIBUTION ONLY: If she chooses B or C but devs don't actually trigger disputes → distribution, not PMF
+
+---
+
+### FF3 — DataForge Enterprise Ultimatum (Day 25)
+
+DECISION MAKER: Sofia Eriksson, DataForge CEO
+DECISION: Pharma enterprise client requires verifiable dispute resolution within 30 days or cancels $500K contract.
+
+OPTIONS:
+- (A) GenLayer (technically right, hard to integrate without support)
+- (B) VeritasProtocol (easy, wrong for judgment-heavy use case)
+- (C) Hybrid with managed service
+- (D) Delay contract / lose the client
+
+CONSTRAINT: $500K contract at risk. No extension available.
+
+OBSERVED SIGNALS: willingness to pay, auditability requirements met or rejected, integration feasibility
+
+CONFIRMS H4 if: She chooses A or C because GenLayer provided managed API with no blockchain complexity
+CONFIRMS H2 if: Pharma client accepts GenLayer specifically for verdict reasoning audit trail
+FALSIFIES H4 if: She chooses B because "VeritasProtocol was easier even if less accurate"
+FALSIFIES H2 if: Pharma client rejects GenLayer because "AI reasoning is not a sufficient audit trail"
+NULL PMF SIGNAL if: She chooses D — integration friction cost a real customer
+
+---
+
+### FF4 — DevSwarm Cost Threshold Breach (Day 30)
+
+DECISION MAKER: Zara Ahmed, DevSwarm CEO
+DECISION: Manual dispute resolution costs cross $200K/month. Board demands margin improvement.
+
+OPTIONS:
+- (A) Scale manual team
+- (B) Adopt GenLayer
+- (C) Adopt VeritasProtocol
+- (D) Hybrid
+
+CONSTRAINT: Board pressure is explicit. Cannot continue at current cost trajectory.
+
+OBSERVED SIGNALS: actual spend reduction, behavior change, repeat usage
+
+CONFIRMS H1 if: She chooses B citing judgment-heavy dispute profile requires AI jury
+CONFIRMS H3 if: She chooses D and builds routing layer
+CONFIRMS H5 if: By Day 60 she reports dispute rate reduction attributed to behavior change
+NULL PMF SIGNAL if: She chooses A — pain threshold not crossed for automated solution
+
+---
+
+### FF5 — Yuki Distribution Fork (Day 20)
+
+DECISION MAKER: Yuki Tanaka, independent developer, 12K newsletter readers
+DECISION: Which tutorial to publish in her upcoming agent dispute resolution series?
+
+OPTIONS:
+- (A) GenLayer tutorial (behavioral story is more interesting, but setup friction)
+- (B) VeritasProtocol tutorial (30-minute setup guaranteed)
+- (C) Side-by-side comparison (honest, shows GenLayer friction)
+- (D) Neither if GenLayer doesn't ship working quickstart before Day 15
+
+CONSTRAINT: 10K+ developer audience. Her recommendation shapes default developer choice.
+
+RULE: This is DISTRIBUTION ONLY. Only counts as PMF if downstream paid usage emerges within 30 days.
+
+CONFIRMS developer channel if: She publishes A or C and 100+ developers attempt integration
+CONFIRMS H5 if: Her tutorial covers behavioral effect with her own dispute rate data and developers cite it
+FALSIFIES developer channel if: She publishes B only because GenLayer didn't improve docs in time
+
+---
+
+### FF6 — Accenture Architecture Decision (Day 40)
+
+DECISION MAKER: Ben Nakamura, Accenture Digital AI practice
+DECISION: Which dispute resolution architecture to recommend for enterprise AI workflow deployments?
+
+OPTIONS:
+- (A) Deterministic only (VeritasProtocol or custom rules)
+- (B) Hybrid (GenLayer + VeritasProtocol)
+- (C) Internal build (no external vendor)
+- (D) Delay recommendation
+
+CONSTRAINT: Decision affects 5 active enterprise client engagements. Accenture has never spoken to GenLayer team.
+
+OBSERVED SIGNALS: who owns routing layer, who owns customer relationship, GenLayer position (product vs backend)
+
+CONFIRMS H2 if: He chooses B and enterprise clients accept GenLayer as the compliance layer
+CONFIRMS H3 if: He chooses B and explicitly defines GenLayer as the fallback tier
+FALSIFIES H4 if: He chooses A because "enterprise clients need deterministic audit trail, not AI jury"
+NULL PMF SIGNAL if: He chooses C — Accenture builds the layer themselves; GenLayer becomes irrelevant
+CUSTOMER OWNERSHIP RISK: If he chooses B, Accenture owns the customer — GenLayer is backend infrastructure
+
+---
+
+### FF7 — Dispute Rate Shock Event (Day 45)
+
+EVENT: One marketplace (draw randomly from active adopters or near-adopters) experiences a 2x spike in dispute volume due to spec ambiguity combined with agent scaling.
+
+FORCED QUESTION: Does the existing dispute resolution system handle the spike or break?
+
+OBSERVED SIGNALS:
+- System behavior under stress (does it fail, slow, or handle it?)
+- Fallback usage (does the operator revert to manual?)
+- Switching decisions (does stress trigger adoption or abandonment?)
+- Competitor positioning (does VeritasProtocol pitch the stressed marketplace?)
+
+CONFIRMS H1 if: GenLayer handles the judgment-heavy spike while VeritasProtocol fails on ambiguous cases
+CONFIRMS H5 if: The spike is followed by a dispute rate DROP in the next 30 days — behavior changed
+FALSIFIES H3 if: The hybrid stack breaks under stress because routing logic wasn't designed for volume spikes
+NULL PMF SIGNAL if: The marketplace reverts to manual arbitration and never returns to automated resolution
+
+
+## Hybrid Outcomes Are Valid
+
+The simulation must not be biased toward a single winner. Valid dominant structures include:
+
+- **Deterministic-first + GenLayer-fallback**: VeritasProtocol handles 80% of disputes fast; GenLayer handles the 20% that require judgment. Both win.
+- **Enterprise-led only**: GenLayer wins compliance/enterprise deals but never gets developer adoption. Niche but durable.
+- **Hidden backend**: GenLayer runs behind another product's brand. No direct customer relationship, but high volume.
+- **Behavior shaper without primary resolver**: GenLayer's main value is changing how agents write specs, not resolving disputes. Customers pay for the behavioral effect, not the verdicts.
+- **No PMF in this wedge in 90 days**: The market is too early, the substitutes are good enough, and neither platform reaches escape velocity. This is a valid finding.
+
+---
+
+## Report Prompt
+
+> You are GenLayer's CEO. You have just observed 90 days of market simulation starting in January 2027. The simulation was designed not to confirm GenLayer's existing strategy, but to discover where its first durable PMF actually emerges. Six PMF hypotheses were under test: H1 (judgment-heavy disputes), H2 (enterprise compliance/auditability), H3 (hybrid fallback), H4 (managed API abstraction), H5 (behavior-shaping), H6 (synthetic jurisdiction). The simulation was allowed to conclude that GenLayer wins as a managed API, as a hidden backend, as a fallback layer, as a behavior-shaping layer, in enterprise first rather than developer first — or not at all in this wedge.
 >
-> (1) Which marketplace type showed the strongest organic pull toward GenLayer — and what specifically converted evaluation into adoption? Name the agent, the moment, and the deciding factor.
-> (2) What is the contagion mechanism — when [marketplace X] adopted, did [marketplace Y] follow? Trace the specific chain of influence: who called whom, what post triggered what decision, and where did the chain break?
-> (3) Did GenLayer win or lose the LangGraph framework partnership, and what determined the outcome? Specifically: did Rachel go exclusive, dual-recommend, or punt? What could GenLayer have done in the first 14 days to change the result?
-> (4) Which specific deal did GenLayer lose to SDK/onboarding friction — and what was it worth? Trace the journey: prospect found GenLayer → tried SDK → hit wall → what happened next?
-> (5) What is the one move that wasn't in GenLayer's playbook — a product change, hire, partnership, or positioning shift — that the simulation revealed would have changed the trajectory? Be specific enough that the CEO could execute it on Monday morning.
+> Based purely on what you observed, answer these five questions:
+>
+> (1) Where is GenLayer's first durable PMF emerging — and what's the evidence it's self-reinforcing, not just initial adoption? Name the specific signal: who repeated without being asked, who expanded to a new use case, whose workflow changed.
+>
+> (2) Who wins distribution — and is it the team with the best product, best SDK, best channel partner, or best positioning? Name the specific moment where distribution was decided.
+>
+> (3) Did the hybrid fallback architecture emerge as the natural market structure — and if so, who owns the customer relationship in that hybrid? Is GenLayer the front door or the backend?
+>
+> (4) Which PMF hypothesis (H1-H6) showed the strongest signal in the simulation? Cite the specific observable moments — which agents confirmed it, which forcing function revealed it, what the counter-signal was.
+>
+> (5) What is the one move GenLayer must make in the next 90 days — specific enough to execute on Monday morning — that the simulation revealed would change the trajectory? It could be a product change, a hire, a partnership, a pricing shift, or a positioning reframe.
 
 ---
 
 ## Simulation Parameters
 
-- **Seed files (upload with this brief)**:
-  - `genlayer-technical-architecture.md`
-  - `competitive-landscape-and-trigger-event.md`
-  - `market-reality.md`
-  - `agent-economy-landscape.md`
-  - `run3-brief.md`
-- **Simulation prompt**: *"It is January 2027. Agent-to-agent commerce is real — $3.5B in daily agent transactions across five marketplace types. The enforcement problem is unsolved. Three competitors are racing to crack it: GenLayer (AI jury, one production integration at 1,200 tx/day, strong on judgment calls, weak SDK onboarding), VeritasProtocol (deterministic rules, $12M a16z, one production integration at 800 tx/day on pass/fail, 30-minute SDK quickstart), and Kleros (human juries, too slow for autonomous commerce). Four deadlines force decisions in 90 days: LangGraph 4.1 dispute backend recommendation (Day 35), AgentHub arbitration contract renewal (Day 18), DataForge enterprise client ultimatum (Day 25), and CrewAI enterprise RFP demo (Day 35). A viral 'I Tried Both SDKs' blog post has made developer experience a public battleground. Simulate 90 days: who adopts first, what triggers the contagion to others, does GenLayer win the LangGraph partnership, and what breaks or accelerates the adoption curve?"*
 - **Rounds**: 60
 - **Agent count**: 42
-- **Platforms**: Reddit (technical debate, developer community) + Twitter/X (rapid reaction, narrative shaping) + LinkedIn (enterprise buyer conversations, B2B evaluations, marketplace CEO announcements)
+- **Time horizon**: 90 days from January 2027
+- **Platforms**: Reddit + Twitter/X + LinkedIn
 - **Model**: gpt-4o-mini
+
+The full agent roster from Run #3 carries over. Key additions to agent behavior profiles: each agent should be prompted to notice and report behavioral signals (dispute rate changes, workflow changes, spec quality changes) — not just adoption or rejection decisions.
 
 ---
 
-## What We're NOT Doing
+## PMF Verdict Constraints (MANDATORY — report must satisfy all)
 
-- Not asking whether agent-to-agent commerce is real (it is)
-- Not starting with a crisis (the forcing function is an open race with hard deadlines, not a failure)
-- Not re-running trade finance or human adoption (Run #2 answered that)
-- Not asking whether GenLayer is technically good (assume yes)
-- Not rubber-stamping GenLayer as the winner (VeritasProtocol has real advantages for real use cases — the simulation must let it win where it should win)
+The final report MUST do ALL of the following:
 
-We are running a competitive race simulation across 5 marketplace types, one critical framework partnership, four hard deadlines, and 42 agents with real motivations — designed to answer: **who moves first, what makes the others follow, and what stops the wave before it becomes a standard.**
+**1. Rank all hypotheses H1–H6 from strongest to weakest signal.**
+   - No ties allowed. Force a ranking.
+
+**2. For each hypothesis, provide exactly:**
+   - One confirming event [must be labeled OBSERVED, not SEED or INFERRED]
+   - One disconfirming event [must be labeled OBSERVED, not SEED or INFERRED]
+   - Durability verdict: DURABLE / WEAK / NOT OBSERVED
+
+**3. The report must conclude with exactly one of:**
+   - VERDICT: CLEAR PMF (H_ confirmed, durable signal observed)
+   - VERDICT: WEAK PMF (signal exists, not yet durable)
+   - VERDICT: NO PMF (no hypothesis met durability threshold in 90 days)
+
+**4. NULL RESULT TRIGGER — if none of the following occurred:**
+   - Repeat usage without founder involvement [OBSERVED]
+   - Willingness to pay at list price [OBSERVED]
+   - Workflow change persisting 30+ days [OBSERVED]
+   Then the verdict MUST be: NO PMF
+
+**5. Hybrid architecture — if hybrid emerged, MUST answer all four:**
+   - Who owns the routing layer?
+   - Who owns the customer relationship?
+   - Who captures pricing power?
+   - Is GenLayer replaceable in this stack? [YES/NO + why]
+
+**6. Any distribution event (framework integration, tutorial, analyst coverage, press) MUST be labeled:**
+   - "DISTRIBUTION SIGNAL — not PMF evidence"
+   - PMF requires: retained + behavior-changing + paid usage
+
+**7. The binding question the report must answer:**
+   "Who treats the GenLayer verdict as binding enough to move money or reputation — and did that happen without founder involvement?"
+   If the answer is "nobody" or "only with founder involvement" — the verdict is NO PMF.

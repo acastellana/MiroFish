@@ -1,0 +1,3065 @@
+{
+  "nodes": {
+    "90a34f63-0816-4b75-a75d-d88b610745f8": {
+      "uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "name": "GenLayer",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "production_references": "1",
+        "production_reference": "Rentahuman.ai",
+        "behavioral_effect_on_dispute_rates": "observed",
+        "third_party_measurement": "none",
+        "note": "has advantage on ambiguous cases",
+        "context": "mentioned in core question",
+        "mentioned_as": "competitor",
+        "option": "exclusive"
+      }
+    },
+    "725d15c4-c49b-42a7-ab18-85ddc1322a61": {
+      "uuid": "725d15c4-c49b-42a7-ab18-85ddc1322a61",
+      "name": "Marcus Chen",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "Decision Owner",
+        "note": "holds escrow keys",
+        "position": "AgentHub CEO",
+        "stance": "Watching GenLayer; skeptical of async overhead",
+        "organization": "AgentHub",
+        "incentive_alignment": "Neutral",
+        "day_0_position": "Skeptical of GenLayer's async overhead and integration complexity"
+      }
+    },
+    "963c088e-e2fd-49f8-b6b3-a0e38e59ad98": {
+      "uuid": "963c088e-e2fd-49f8-b6b3-a0e38e59ad98",
+      "name": "AgentHub",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "segment": "1+8"
+      }
+    },
+    "9ea97f8e-fc96-40e7-b125-28996c7570df": {
+      "uuid": "9ea97f8e-fc96-40e7-b125-28996c7570df",
+      "name": "Procurement",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "b5ee540e-ba5d-41bd-885a-7aff566c889c": {
+      "uuid": "b5ee540e-ba5d-41bd-885a-7aff566c889c",
+      "name": "Compliance",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "5416e59b-9f2e-473d-a30b-75322d770340": {
+      "uuid": "5416e59b-9f2e-473d-a30b-75322d770340",
+      "name": "Enterprise",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "f74f213a-5836-4ec4-affa-0274d7419a37": {
+      "uuid": "f74f213a-5836-4ec4-affa-0274d7419a37",
+      "name": "Buyer",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "fc7128cc-01f2-4ec7-8fe0-5acdbf03bc94": {
+      "uuid": "fc7128cc-01f2-4ec7-8fe0-5acdbf03bc94",
+      "name": "Vendor",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "11f357af-b43d-4fe7-9a57-ea8cab1ac934": {
+      "uuid": "11f357af-b43d-4fe7-9a57-ea8cab1ac934",
+      "name": "Workflow",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "4a18eef5-7d94-4b5e-a2ab-86339537b2d2": {
+      "uuid": "4a18eef5-7d94-4b5e-a2ab-86339537b2d2",
+      "name": "Sofia Eriksson",
+      "entity_type": "ChiefExecutiveOfficer",
+      "labels": [
+        "Entity",
+        "ChiefExecutiveOfficer"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "DataForge CEO",
+        "organization": "DataForge"
+      }
+    },
+    "4c345196-d582-4391-87e6-2aef81b4d4da": {
+      "uuid": "4c345196-d582-4391-87e6-2aef81b4d4da",
+      "name": "Elena Marchetti",
+      "entity_type": "ProcurementLead",
+      "labels": [
+        "Entity",
+        "ProcurementLead"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "Global Procurement Lead (AI Systems)",
+        "organization": "the pharma client",
+        "position": "pharma procurement lead",
+        "requirement": "Requires adjudication artifact",
+        "incentive_alignment": "Neutral",
+        "day_0_position": "Has issued a formal vendor requirement"
+      }
+    },
+    "71c6d589-198d-46d0-b899-d203cdeaaa87": {
+      "uuid": "71c6d589-198d-46d0-b899-d203cdeaaa87",
+      "name": "Candidate C",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "domain": "insurance/underwriting"
+      }
+    },
+    "e994a17f-3a9a-4e1b-a3a4-4a17da8f5625": {
+      "uuid": "e994a17f-3a9a-4e1b-a3a4-4a17da8f5625",
+      "name": "Insurance / Underwriting",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "fd0cf58f-3f3d-4ec9-8620-3e66d59e7555": {
+      "uuid": "fd0cf58f-3f3d-4ec9-8620-3e66d59e7555",
+      "name": "Nexus AI Risk",
+      "entity_type": "Actuary",
+      "labels": [
+        "Entity",
+        "Actuary"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "0d01fe7f-064b-416c-94b9-59611b8c74ed": {
+      "uuid": "0d01fe7f-064b-416c-94b9-59611b8c74ed",
+      "name": "Zara Ahmed",
+      "entity_type": "ChiefExecutiveOfficer",
+      "labels": [
+        "Entity",
+        "ChiefExecutiveOfficer"
+      ],
+      "summary": "",
+      "attributes": {
+        "organization": "DevSwarm",
+        "role_detail": "CEO",
+        "state": "On VeritasProtocol; satisfied for now"
+      }
+    },
+    "406da44b-cfd2-43c6-8241-5199ac57090a": {
+      "uuid": "406da44b-cfd2-43c6-8241-5199ac57090a",
+      "name": "Rachel Torres",
+      "entity_type": "FrameworkArchitect",
+      "labels": [
+        "Entity",
+        "FrameworkArchitect"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "Framework Architect",
+        "organization": "LangGraph"
+      }
+    },
+    "7164c89f-88d9-4ba0-89a2-821211aa02be": {
+      "uuid": "7164c89f-88d9-4ba0-89a2-821211aa02be",
+      "name": "LangGraph",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "open-source agent framework",
+        "active_developers": "12000"
+      }
+    },
+    "2522c1f1-bdf8-40a7-8ff2-ad1ca1b4d5a9": {
+      "uuid": "2522c1f1-bdf8-40a7-8ff2-ad1ca1b4d5a9",
+      "name": "12,000 developers",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "9e31f0d5-4b97-4437-a097-a08e275d1aae": {
+      "uuid": "9e31f0d5-4b97-4437-a097-a08e275d1aae",
+      "name": "Third party",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "a63fc3ea-8bca-4700-b351-028b0212aaa7": {
+      "uuid": "a63fc3ea-8bca-4700-b351-028b0212aaa7",
+      "name": "TechVault Inc.",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "62b00b30-e2d9-4ce0-ad03-a4648a84e2e3": {
+      "uuid": "62b00b30-e2d9-4ce0-ad03-a4648a84e2e3",
+      "name": "VeritasProtocol",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "production_references": "1",
+        "production_reference": "TaskRail",
+        "stake_gaming_vulnerability": "known",
+        "staking_caps_roadmap": "announced but not shipped",
+        "description": "leading example of deterministic rule engine",
+        "status": "architectural credibility breaks",
+        "context": "Option B",
+        "option": "exclusive",
+        "category": "competitor/substitute"
+      }
+    },
+    "fd0177c7-4307-4a59-8b70-316a7587fbe7": {
+      "uuid": "fd0177c7-4307-4a59-8b70-316a7587fbe7",
+      "name": "Priya Nair",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "Pressure Source",
+        "note": "In escrow dispute; needs resolution by Day 10",
+        "organization": "Self-employed; uses AgentHub platform",
+        "incentive_alignment": "Aligned",
+        "day_0_position": "$50K in escrow, disputed",
+        "status": "Payroll due",
+        "context": "payroll"
+      }
+    },
+    "3e7a65b5-a22f-452d-bc96-a075951c4b2e": {
+      "uuid": "3e7a65b5-a22f-452d-bc96-a075951c4b2e",
+      "name": "Day 10",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "note": "deadline mentioned in text"
+      }
+    },
+    "0e251092-ad23-4e2a-ad3c-a0320d99c0b9": {
+      "uuid": "0e251092-ad23-4e2a-ad3c-a0320d99c0b9",
+      "name": "Candidate A",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "6bd1c83c-d49b-4ca5-b4ab-f51a52bd194d": {
+      "uuid": "6bd1c83c-d49b-4ca5-b4ab-f51a52bd194d",
+      "name": "buyer",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "9e0866b1-d0e0-4a80-9a4f-d7f5fd37fc56": {
+      "uuid": "9e0866b1-d0e0-4a80-9a4f-d7f5fd37fc56",
+      "name": "seller",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "9192016d-7c8f-4465-91d5-81a9328ddc1f": {
+      "uuid": "9192016d-7c8f-4465-91d5-81a9328ddc1f",
+      "name": "Marcus",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "decision-maker",
+        "decision_day": "Day 10",
+        "context": "platform"
+      }
+    },
+    "c66194ba-87b7-4629-b429-3ce20fe3d883": {
+      "uuid": "c66194ba-87b7-4629-b429-3ce20fe3d883",
+      "name": "DataForge",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "AI services provider",
+        "type": "company",
+        "employees": "~80"
+      }
+    },
+    "e8871fac-d674-4f6e-b1b0-ddb0db6cb257": {
+      "uuid": "e8871fac-d674-4f6e-b1b0-ddb0db6cb257",
+      "name": "global pharma company",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "pharma company"
+      }
+    },
+    "c0b597d5-90ae-4ff9-aa9b-0a06e0675456": {
+      "uuid": "c0b597d5-90ae-4ff9-aa9b-0a06e0675456",
+      "name": "pharma procurement team",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "procurement team"
+      }
+    },
+    "025dcbf3-ac4e-442a-ae3e-aabf06d2f87a": {
+      "uuid": "025dcbf3-ac4e-442a-ae3e-aabf06d2f87a",
+      "name": "all AI service vendors",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "a1cde589-57c5-4d4b-9195-5b1ed221ebab": {
+      "uuid": "a1cde589-57c5-4d4b-9195-5b1ed221ebab",
+      "name": "pharma company",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "type": "company"
+      }
+    },
+    "a6b35140-a4d9-4562-9931-98f79e6e9fb9": {
+      "uuid": "a6b35140-a4d9-4562-9931-98f79e6e9fb9",
+      "name": "Elena",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "acceptance decision-maker",
+        "decision_deadline": "Day 20",
+        "standard": "can I defend this to an auditor?"
+      }
+    },
+    "f69bbbbf-9f12-482e-9df2-134a580dc978": {
+      "uuid": "f69bbbbf-9f12-482e-9df2-134a580dc978",
+      "name": "Elena Marchetti",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "procurement"
+      }
+    },
+    "9ef1e2d9-9b28-48ee-b99e-d582c6265138": {
+      "uuid": "9ef1e2d9-9b28-48ee-b99e-d582c6265138",
+      "name": "Nexus AI Risk",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "AI liability insurer"
+      }
+    },
+    "80ac58e0-632d-44a2-992b-0e7b8c918629": {
+      "uuid": "80ac58e0-632d-44a2-992b-0e7b8c918629",
+      "name": "AI liability insurer",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "0056bb11-4726-4954-95b2-ef933e4ef6dd": {
+      "uuid": "0056bb11-4726-4954-95b2-ef933e4ef6dd",
+      "name": "actuarial model",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "17a88335-854b-4112-aacf-fec405166cf8": {
+      "uuid": "17a88335-854b-4112-aacf-fec405166cf8",
+      "name": "marketplaces",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c5ad2b05-968e-4154-971d-2ca342d0072e": {
+      "uuid": "c5ad2b05-968e-4154-971d-2ca342d0072e",
+      "name": "DevSwarm",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "AI agent marketplace, Segment 1+8",
+        "note": "mentioned as lacking the reserve"
+      }
+    },
+    "aaa4cf7c-87af-4fcc-a1f3-377347c54383": {
+      "uuid": "aaa4cf7c-87af-4fcc-a1f3-377347c54383",
+      "name": "David Okonkwo",
+      "entity_type": "CFO",
+      "labels": [
+        "Entity",
+        "CFO"
+      ],
+      "summary": "",
+      "attributes": {
+        "organization": "DevSwarm",
+        "role_detail": "CFO",
+        "state": "Margin-focused; cheapest qualifying solution wins",
+        "incentive_alignment": "Neutral",
+        "day_0_position": "Flagging insurance exposure to board",
+        "coverage_limit": "$500K/event max insurance"
+      }
+    },
+    "dead17a3-f914-4b02-b55e-2b16fb21975f": {
+      "uuid": "dead17a3-f914-4b02-b55e-2b16fb21975f",
+      "name": "Marco Fiore",
+      "entity_type": "Actuary",
+      "labels": [
+        "Entity",
+        "Actuary"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "b4601290-ce91-4501-bf64-3e6251415637": {
+      "uuid": "b4601290-ce91-4501-bf64-3e6251415637",
+      "name": "BoardMember",
+      "entity_type": "BoardMember",
+      "labels": [
+        "Entity",
+        "BoardMember"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "f3c76315-4197-424e-b624-e9c0dc02a5aa": {
+      "uuid": "f3c76315-4197-424e-b624-e9c0dc02a5aa",
+      "name": "David Okonkwo",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "Pressure Source",
+        "context": "board"
+      }
+    },
+    "af37dc7e-b006-43ef-85b5-da5cb0889189": {
+      "uuid": "af37dc7e-b006-43ef-85b5-da5cb0889189",
+      "name": "Zara",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "ce44f869-1eb6-4d89-9dee-c020218216a9": {
+      "uuid": "ce44f869-1eb6-4d89-9dee-c020218216a9",
+      "name": "Marco Fiore",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "Decision Owner",
+        "note": "mentioned in insurance underwriting context",
+        "organization": "Nexus AI Risk",
+        "incentive_alignment": "Neutral",
+        "day_0_position": "Building the pricing model for AI adjudication mechanisms"
+      }
+    },
+    "e031150a-fa3e-4232-8f86-61440825fe07": {
+      "uuid": "e031150a-fa3e-4232-8f86-61440825fe07",
+      "name": "board",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "3a0f42f3-15ec-4a44-93ba-30d47d3e4a3c": {
+      "uuid": "3a0f42f3-15ec-4a44-93ba-30d47d3e4a3c",
+      "name": "Alex Petrov",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "organization": "VeritasProtocol",
+        "role": "staking caps",
+        "deal_value": "$300K",
+        "context": "FF4 (Day 35)",
+        "amount": "$300K",
+        "context_2": "FF5 (Day 45–47)"
+      }
+    },
+    "ada2f859-02d9-46fe-a4f8-529b219225e7": {
+      "uuid": "ada2f859-02d9-46fe-a4f8-529b219225e7",
+      "name": "Derek Walsh",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "AutoAgent representative",
+        "organization": "AutoAgent (open-source project)",
+        "incentive_alignment": "Adversarial to both GenLayer and VeritasProtocol",
+        "day_0_position": "Building an open-source dispute routing module for agent frameworks",
+        "context": "OSS module"
+      }
+    },
+    "22bb21cc-4800-4d9e-bc17-e6c4bde24949": {
+      "uuid": "22bb21cc-4800-4d9e-bc17-e6c4bde24949",
+      "name": "AutoAgent",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "option": "module",
+        "category": "competitor/substitute"
+      }
+    },
+    "10f28d7d-a890-42b3-a2ca-69ba2787de21": {
+      "uuid": "10f28d7d-a890-42b3-a2ca-69ba2787de21",
+      "name": "Rachel",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "47ad19ab-738f-4b89-8164-7c9a74522fa3": {
+      "uuid": "47ad19ab-738f-4b89-8164-7c9a74522fa3",
+      "name": "Rachel Torres",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "LangGraph architect",
+        "context": "FF4 (Day 35)"
+      }
+    },
+    "44d6583a-553f-44c4-a252-364e2d2feff1": {
+      "uuid": "44d6583a-553f-44c4-a252-364e2d2feff1",
+      "name": "Candidate D",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "178b4823-117f-455b-9ea6-07428133323c": {
+      "uuid": "178b4823-117f-455b-9ea6-07428133323c",
+      "name": "Alex",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "3996cd82-0324-4dfc-a7e0-e6c5fbbeb942": {
+      "uuid": "3996cd82-0324-4dfc-a7e0-e6c5fbbeb942",
+      "name": "module",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "17fe2290-30b0-4ea6-ac4e-3ea912146ffc": {
+      "uuid": "17fe2290-30b0-4ea6-ac4e-3ea912146ffc",
+      "name": "DevSwarm's board",
+      "entity_type": "BoardMember",
+      "labels": [
+        "Entity",
+        "BoardMember"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "d9f0476d-27f2-46e2-9286-dd1bdb43a677": {
+      "uuid": "d9f0476d-27f2-46e2-9286-dd1bdb43a677",
+      "name": "Helen Reyes",
+      "entity_type": "BoardMember",
+      "labels": [
+        "Entity",
+        "BoardMember"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "board",
+        "organization": "DevSwarm",
+        "role_detail": "board",
+        "state": "Liability-focused; wants documented risk mitigation"
+      }
+    },
+    "d0e71c11-989b-4a5c-9562-c253c4de20d5": {
+      "uuid": "d0e71c11-989b-4a5c-9562-c253c4de20d5",
+      "name": "Zara Ahmed",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "Decision Owner",
+        "context": "FF5 (Day 45–47)"
+      }
+    },
+    "440f38ac-c635-4518-adbe-2b74075c2a12": {
+      "uuid": "440f38ac-c635-4518-adbe-2b74075c2a12",
+      "name": "Helen Reyes",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "FF5 (Day 45–47)",
+        "role": "board-level scrutiny flagger"
+      }
+    },
+    "7eef4c9d-b1e3-403d-bdf3-8ba3ff44c3ad": {
+      "uuid": "7eef4c9d-b1e3-403d-bdf3-8ba3ff44c3ad",
+      "name": "Board",
+      "entity_type": "BoardMember",
+      "labels": [
+        "Entity",
+        "BoardMember"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "12d81f15-0a80-405f-9d54-38b1c7a0be68": {
+      "uuid": "12d81f15-0a80-405f-9d54-38b1c7a0be68",
+      "name": "TaskRail",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "relation_to_VeritasProtocol": "production reference"
+      }
+    },
+    "3ac2f7da-93ed-48cd-88fc-65f695e0bf8e": {
+      "uuid": "3ac2f7da-93ed-48cd-88fc-65f695e0bf8e",
+      "name": "Rentahuman.ai",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "relation_to_GenLayer": "production reference"
+      }
+    },
+    "40a4a20f-ea1c-4323-9d4c-3ceedda81520": {
+      "uuid": "40a4a20f-ea1c-4323-9d4c-3ceedda81520",
+      "name": "Sofia Eriksson",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "position": "DataForge CEO",
+        "stance": "Open to any compliance solution that clears procurement",
+        "role": "Pressure Source",
+        "context": "contract"
+      }
+    },
+    "164a438a-9844-4c1f-bba5-6c30173d8b14": {
+      "uuid": "164a438a-9844-4c1f-bba5-6c30173d8b14",
+      "name": "Ben Nakamura",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "Wildcard",
+        "note": "Building enterprise integration layer; GenLayer as backend candidate; wraps it and owns the relationship",
+        "organization": "Accenture",
+        "incentive_alignment": "Neutral / commercially adversarial",
+        "day_0_position": "Evaluating dispute resolution infrastructure for enterprise AI deployments",
+        "context": "FF4 (Day 35)"
+      }
+    },
+    "dd0213f1-da94-47de-bd64-fd98a10c856c": {
+      "uuid": "dd0213f1-da94-47de-bd64-fd98a10c856c",
+      "name": "Accenture",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "managed service"
+      }
+    },
+    "4bc27ac1-462f-4f47-83be-28dd8a4a9930": {
+      "uuid": "4bc27ac1-462f-4f47-83be-28dd8a4a9930",
+      "name": "Segment 9",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "cross-border autonomous",
+        "dispute_rate": "highest",
+        "enforcement": "effectively no enforcement"
+      }
+    },
+    "be40e8c9-bf4c-4454-8850-f0d3240a911c": {
+      "uuid": "be40e8c9-bf4c-4454-8850-f0d3240a911c",
+      "name": "parties",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "the parties absorb losses or accept chargebacks"
+      }
+    },
+    "3d97a701-1a39-4004-9d31-59700daf5418": {
+      "uuid": "3d97a701-1a39-4004-9d31-59700daf5418",
+      "name": "platform ops teams",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "d5ffd05d-f415-4fa1-bd88-83186283ded6": {
+      "uuid": "d5ffd05d-f415-4fa1-bd88-83186283ded6",
+      "name": "January 2027",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "a1f113a4-e024-46b7-9420-1b6435ac4f83": {
+      "uuid": "a1f113a4-e024-46b7-9420-1b6435ac4f83",
+      "name": "AI liability insurance",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "8d97e4f7-437f-4dbb-886d-81b097df13a6": {
+      "uuid": "8d97e4f7-437f-4dbb-886d-81b097df13a6",
+      "name": "engineering team",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "competence": "competent",
+        "duration": "2-6 weeks"
+      }
+    },
+    "5034bb9a-9653-4264-9af8-b22135ddcf52": {
+      "uuid": "5034bb9a-9653-4264-9af8-b22135ddcf52",
+      "name": "CoverAI",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "5e5dac8f-4ded-4022-b304-abb9dd1ea482": {
+      "uuid": "5e5dac8f-4ded-4022-b304-abb9dd1ea482",
+      "name": "Helios Underwriters",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "a64ac52f-230a-47d9-ae93-ab0a9a96c461": {
+      "uuid": "a64ac52f-230a-47d9-ae93-ab0a9a96c461",
+      "name": "Marsh AI Solutions",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "28185b82-7dc3-4438-913b-7e5123bc48c9": {
+      "uuid": "28185b82-7dc3-4438-913b-7e5123bc48c9",
+      "name": "EU AI Act",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "923944a6-0152-493c-b164-16b2fd1584df": {
+      "uuid": "923944a6-0152-493c-b164-16b2fd1584df",
+      "name": "Annex III",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "44159e40-cea9-470c-bf2a-11b8c0c354c9": {
+      "uuid": "44159e40-cea9-470c-bf2a-11b8c0c354c9",
+      "name": "FF3",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "status": "project",
+        "note": "described as forcing a decision"
+      }
+    },
+    "e3db84a6-ee5c-45ff-8e4f-4d2499fcf83b": {
+      "uuid": "e3db84a6-ee5c-45ff-8e4f-4d2499fcf83b",
+      "name": "AI agent marketplaces",
+      "entity_type": "MarketplaceOperator",
+      "labels": [
+        "Entity",
+        "MarketplaceOperator"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "cf1f976c-afcd-46c3-ade4-dd72343b5133": {
+      "uuid": "cf1f976c-afcd-46c3-ade4-dd72343b5133",
+      "name": "enterprise buyers",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "Compliance functions interpreting the Act broadly"
+      }
+    },
+    "6e28b388-41c1-4400-b005-6ed9eea50d8d": {
+      "uuid": "6e28b388-41c1-4400-b005-6ed9eea50d8d",
+      "name": "Act",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "Referenced legal act"
+      }
+    },
+    "1e3ad48c-0ad1-48ec-9cbb-a20c8fa37c56": {
+      "uuid": "1e3ad48c-0ad1-48ec-9cbb-a20c8fa37c56",
+      "name": "FTC",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "e2b5d370-4a42-4a58-9fb4-c53a1c26078e": {
+      "uuid": "e2b5d370-4a42-4a58-9fb4-c53a1c26078e",
+      "name": "EU",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "0e9b58fc-a092-4d64-8445-ad1baa8b7dfb": {
+      "uuid": "0e9b58fc-a092-4d64-8445-ad1baa8b7dfb",
+      "name": "AI",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "ed599abc-7668-48ef-b6cc-7489b11426d9": {
+      "uuid": "ed599abc-7668-48ef-b6cc-7489b11426d9",
+      "name": "$300K offer",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "84829988-250d-4262-b17f-eae41f150e10": {
+      "uuid": "84829988-250d-4262-b17f-eae41f150e10",
+      "name": "AgentHub platform",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "47a9ec27-b019-4392-8983-33c823083bc3": {
+      "uuid": "47a9ec27-b019-4392-8983-33c823083bc3",
+      "name": "Priya",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "payroll"
+      }
+    },
+    "08197a84-bd5c-4bbb-a4db-7eaf6ff7b7c7": {
+      "uuid": "08197a84-bd5c-4bbb-a4db-7eaf6ff7b7c7",
+      "name": "Sofia",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "execution-focused"
+      }
+    },
+    "276a43a2-91c2-465c-a68a-74def0153c1f": {
+      "uuid": "276a43a2-91c2-465c-a68a-74def0153c1f",
+      "name": "Priya Nair dispute",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "a0301df5-fb36-42eb-985c-06cc03046597": {
+      "uuid": "a0301df5-fb36-42eb-985c-06cc03046597",
+      "name": "$50K escrow",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "363ece32-aca9-45c8-98bd-94bcb941ebe7": {
+      "uuid": "363ece32-aca9-45c8-98bd-94bcb941ebe7",
+      "name": "AutoAgent module",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "a5915212-459b-4084-9122-8a971dd3a62c": {
+      "uuid": "a5915212-459b-4084-9122-8a971dd3a62c",
+      "name": "the pharma client",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "Pharma company, name withheld per NDA"
+      }
+    },
+    "82311dd0-2d64-459a-86c6-a74bdd2e5c91": {
+      "uuid": "82311dd0-2d64-459a-86c6-a74bdd2e5c91",
+      "name": "FF2",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "type": "acceptance decision-maker context",
+        "note": "mentioned in pharma procurement context"
+      }
+    },
+    "3aed2cb3-9b78-4fcf-8770-0fcbf6cb0260": {
+      "uuid": "3aed2cb3-9b78-4fcf-8770-0fcbf6cb0260",
+      "name": "Candidate B",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "status": "candidate"
+      }
+    },
+    "535fb918-25d9-49d2-9b3c-62ffabde35a1": {
+      "uuid": "535fb918-25d9-49d2-9b3c-62ffabde35a1",
+      "name": "Marco",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "gating decision-maker"
+      }
+    },
+    "dd98300a-0832-4150-b095-8647395c20b1": {
+      "uuid": "dd98300a-0832-4150-b095-8647395c20b1",
+      "name": "Ben",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "customer relationship risk"
+      }
+    },
+    "09aa9593-72c1-4b86-8ca0-6a37c2bb8faf": {
+      "uuid": "09aa9593-72c1-4b86-8ca0-6a37c2bb8faf",
+      "name": "Board",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "class action risk"
+      }
+    },
+    "655bc15d-f1f1-4ccf-af84-241c707cb99d": {
+      "uuid": "655bc15d-f1f1-4ccf-af84-241c707cb99d",
+      "name": "insurance",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "eedaa3bf-a6ce-4988-b783-abc312098fcd": {
+      "uuid": "eedaa3bf-a6ce-4988-b783-abc312098fcd",
+      "name": "David",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "financial veto"
+      }
+    },
+    "82d655d4-0916-4c70-8e14-4d2af341eece": {
+      "uuid": "82d655d4-0916-4c70-8e14-4d2af341eece",
+      "name": "class-action exposure",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "ba0008fe-7d98-401c-acb7-63476d0480aa": {
+      "uuid": "ba0008fe-7d98-401c-acb7-63476d0480aa",
+      "name": "Helen",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "7b3911ef-7fac-422c-8d7f-c56fd7ea1892": {
+      "uuid": "7b3911ef-7fac-422c-8d7f-c56fd7ea1892",
+      "name": "FF5",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "amount": "$180K",
+        "note": "mentioned in board-level scrutiny context"
+      }
+    },
+    "c8df09a1-8d97-4711-a582-44fad3e15ac5": {
+      "uuid": "c8df09a1-8d97-4711-a582-44fad3e15ac5",
+      "name": "Derek",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "timeline": "No hard deadline; ships when it's ready",
+        "estimated": "3–6 weeks from Day 0 depending on scope"
+      }
+    },
+    "25b12f43-1d36-4239-aaec-f4a1425f54e7": {
+      "uuid": "25b12f43-1d36-4239-aaec-f4a1425f54e7",
+      "name": "David Okonkwo",
+      "entity_type": "BoardMember",
+      "labels": [
+        "Entity",
+        "BoardMember"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "board"
+      }
+    },
+    "5864ea20-e14a-49b6-b1ce-8157b16645e9": {
+      "uuid": "5864ea20-e14a-49b6-b1ce-8157b16645e9",
+      "name": "workflow",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "e2dd9eff-7869-4cb2-bd80-e94b79ada4af": {
+      "uuid": "e2dd9eff-7869-4cb2-bd80-e94b79ada4af",
+      "name": "Answer all 7 report questions",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "64a778ba-a777-49d8-8a22-3ace00d89e4f": {
+      "uuid": "64a778ba-a777-49d8-8a22-3ace00d89e4f",
+      "name": "Identify the strongest near-miss",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "ec0bc3db-7911-4e7a-8d20-7514780fecf4": {
+      "uuid": "ec0bc3db-7911-4e7a-8d20-7514780fecf4",
+      "name": "Explain what condition 3 failure looked like — what substitute remained \"good enough\"",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "24ed3ad2-e723-4e0c-8d68-510194b02afe": {
+      "uuid": "24ed3ad2-e723-4e0c-8d68-510194b02afe",
+      "name": "Answer report question 7: what single workflow to attack next",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "1df17827-6c79-40cb-bf8d-ed0307fda33b": {
+      "uuid": "1df17827-6c79-40cb-bf8d-ed0307fda33b",
+      "name": "attestation artifact",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "87f564b2-ef7c-4a8b-98c0-7013bf7fddae": {
+      "uuid": "87f564b2-ef7c-4a8b-98c0-7013bf7fddae",
+      "name": "OBSERVED",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "24f514be-c320-43eb-815d-295efbfb3f3a": {
+      "uuid": "24f514be-c320-43eb-815d-295efbfb3f3a",
+      "name": "Evidence Log Format",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c77fe6ec-b47f-4ffa-93b9-a54e5dfb7aa4": {
+      "uuid": "c77fe6ec-b47f-4ffa-93b9-a54e5dfb7aa4",
+      "name": "Named enterprise buyer",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "5d7bcf8b-165c-474b-b88e-67dd92caa9b7": {
+      "uuid": "5d7bcf8b-165c-474b-b88e-67dd92caa9b7",
+      "name": "FF1",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "amount": "$50K"
+      }
+    },
+    "8da80cca-44c7-4fc4-a616-28f86de3e4fb": {
+      "uuid": "8da80cca-44c7-4fc4-a616-28f86de3e4fb",
+      "name": "Candidate E window",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "15452f96-2b33-485e-bc3a-da88962e2d19": {
+      "uuid": "15452f96-2b33-485e-bc3a-da88962e2d19",
+      "name": "procurement requirement",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "244aee26-5116-4b86-816c-34962abb3e52": {
+      "uuid": "244aee26-5116-4b86-816c-34962abb3e52",
+      "name": "lena Marchetti",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "215f62a7-3249-4556-a3ed-0a60b79947a8": {
+      "uuid": "215f62a7-3249-4556-a3ed-0a60b79947a8",
+      "name": "procurement requirement",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "651fb4eb-5d8b-4f82-a526-92c1146138b3": {
+      "uuid": "651fb4eb-5d8b-4f82-a526-92c1146138b3",
+      "name": "FF4",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "simulation_fork": "If the module ships before Day 35, FF4 becomes a three-option choice"
+      }
+    },
+    "390baa08-2bb9-45c8-8e34-11016233278f": {
+      "uuid": "390baa08-2bb9-45c8-8e34-11016233278f",
+      "name": "$300K integration deal",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "938b3449-77de-4f6a-a6b7-0ba0818fcd28": {
+      "uuid": "938b3449-77de-4f6a-a6b7-0ba0818fcd28",
+      "name": "Candidate B",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "1f538028-ab2b-4604-88c8-17014d650daa": {
+      "uuid": "1f538028-ab2b-4604-88c8-17014d650daa",
+      "name": "customer relationship",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "ceface73-6e83-41f0-9769-858684f62827": {
+      "uuid": "ceface73-6e83-41f0-9769-858684f62827",
+      "name": "enterprise compliance service",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c9f89887-18da-449f-aff9-582cb9b89320": {
+      "uuid": "c9f89887-18da-449f-aff9-582cb9b89320",
+      "name": "Candidate E",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "209a1b77-9dfb-47ca-ac84-77efc3475ebe": {
+      "uuid": "209a1b77-9dfb-47ca-ac84-77efc3475ebe",
+      "name": "Helen Re",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "note": "mentioned in board-level scrutiny context"
+      }
+    },
+    "46046e77-ba9e-4755-b3fc-1412115684f7": {
+      "uuid": "46046e77-ba9e-4755-b3fc-1412115684f7",
+      "name": "Run #5",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "dfc0f034-0a2b-4703-a30e-99f997ea6c55": {
+      "uuid": "dfc0f034-0a2b-4703-a30e-99f997ea6c55",
+      "name": "Run #4",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c7215cab-8cb4-490a-9329-a98ec5b36113": {
+      "uuid": "c7215cab-8cb4-490a-9329-a98ec5b36113",
+      "name": "FF5",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "e1696dd7-5049-4640-8407-853b4e8bd24a": {
+      "uuid": "e1696dd7-5049-4640-8407-853b4e8bd24a",
+      "name": "FF2",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "0872fa43-3ccc-4e2a-9020-ae8cd29e32cd": {
+      "uuid": "0872fa43-3ccc-4e2a-9020-ae8cd29e32cd",
+      "name": "K",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    }
+  },
+  "edges": [
+    {
+      "uuid": "be345451-ee59-45cd-bf85-be6385c5b03e",
+      "name": "REPRESENTS",
+      "fact": "Marcus Chen is identified as AgentHub CEO, escrow controller.",
+      "source_node_uuid": "725d15c4-c49b-42a7-ab18-85ddc1322a61",
+      "target_node_uuid": "963c088e-e2fd-49f8-b6b3-a0e38e59ad98",
+      "attributes": {}
+    },
+    {
+      "uuid": "180b2422-2166-453a-8d93-4fc7b28bc85e",
+      "name": "APPROVES_VENDOR",
+      "fact": "An enterprise buyer or compliance function requires a reasoning-backed adjudication artifact before approving a vendor.",
+      "source_node_uuid": "9ea97f8e-fc96-40e7-b125-28996c7570df",
+      "target_node_uuid": "fc7128cc-01f2-4ec7-8fe0-5acdbf03bc94",
+      "attributes": {}
+    },
+    {
+      "uuid": "f301edb4-3a5e-4a29-9720-dd5c5d8757f6",
+      "name": "REPRESENTS",
+      "fact": "Decision owner: Sofia Eriksson (DataForge CEO) + Elena Marchetti (pharma procurement lead)",
+      "source_node_uuid": "4a18eef5-7d94-4b5e-a2ab-86339537b2d2",
+      "target_node_uuid": "4c345196-d582-4391-87e6-2aef81b4d4da",
+      "attributes": {}
+    },
+    {
+      "uuid": "61eb0df9-5a89-4391-917c-c66c2821f156",
+      "name": "REQUIRES_ATTESTATION_FROM",
+      "fact": "An insurer prices or conditions AI liability coverage based on whether a verifiable adjudication mechanism exists.",
+      "source_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "target_node_uuid": "e994a17f-3a9a-4e1b-a3a4-4a17da8f5625",
+      "attributes": {}
+    },
+    {
+      "uuid": "f7333b72-83f5-4cd6-a50a-b44f10789e28",
+      "name": "PRICES_RISK_FOR",
+      "fact": "An insurer explicitly prices GenLayer integration as a risk reduction factor.",
+      "source_node_uuid": "fd0cf58f-3f3d-4ec9-8620-3e66d59e7555",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "221c1d38-3f67-4b87-b413-f6abfbf222b3",
+      "name": "PRICES_RISK_FOR",
+      "fact": "Decision owner Zara Ahmed is associated with the pricing decision regarding GenLayer integration as a risk reduction factor.",
+      "source_node_uuid": "0d01fe7f-064b-416c-94b9-59611b8c74ed",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "27a71515-3343-457e-be34-43e195758090",
+      "name": "REPRESENTS",
+      "fact": "Rachel Torres is identified as the LangGraph framework architect and decision owner.",
+      "source_node_uuid": "406da44b-cfd2-43c6-8241-5199ac57090a",
+      "target_node_uuid": "7164c89f-88d9-4ba0-89a2-821211aa02be",
+      "attributes": {}
+    },
+    {
+      "uuid": "9476885c-0290-4889-b416-e929496d2d21",
+      "name": "REQUIRES_ATTESTATION_FROM",
+      "fact": "A third party requires independent quality attestation before accepting output, releasing work, or ranking a model, and GenLayer provides the attestation artifact.",
+      "source_node_uuid": "9e31f0d5-4b97-4437-a097-a08e275d1aae",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "0212577e-4c38-4b01-ae3a-e17806e1aa17",
+      "name": "REQUIRES_ATTESTATION_FROM",
+      "fact": "A named enterprise buyer (TechVault Inc.) explicitly requires a GenLayer attestation certificate before accepting a deliverable.",
+      "source_node_uuid": "a63fc3ea-8bca-4700-b351-028b0212aaa7",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "c2d11469-3909-42a4-8cd4-ca1a4cf9181e",
+      "name": "CONTRACTS_WITH",
+      "fact": "The buyer (TechVault Inc.) disputes an AI agent task delivery and the AgentHub escrow contract holds funds until the ambiguity is resolved.",
+      "source_node_uuid": "a63fc3ea-8bca-4700-b351-028b0212aaa7",
+      "target_node_uuid": "963c088e-e2fd-49f8-b6b3-a0e38e59ad98",
+      "attributes": {}
+    },
+    {
+      "uuid": "21a372d9-1c81-4520-9de9-bb6954dbf287",
+      "name": "REPRESENTS",
+      "fact": "Marcus Chen is identified as AgentHub CEO.",
+      "source_node_uuid": "725d15c4-c49b-42a7-ab18-85ddc1322a61",
+      "target_node_uuid": "963c088e-e2fd-49f8-b6b3-a0e38e59ad98",
+      "attributes": {}
+    },
+    {
+      "uuid": "03bb9031-eec4-4bff-bcf3-31210a62bbcf",
+      "name": "REPRESENTS",
+      "fact": "Priya Nair has named the date explicitly in the context of the AgentHub scenario.",
+      "source_node_uuid": "fd0177c7-4307-4a59-8b70-316a7587fbe7",
+      "target_node_uuid": "963c088e-e2fd-49f8-b6b3-a0e38e59ad98",
+      "attributes": {}
+    },
+    {
+      "uuid": "7372ca2e-8cb8-465e-a290-914eddd2274a",
+      "name": "ESCALATES_TO_BOARD",
+      "fact": "In Option B, the buyer escalates after a VeritasProtocol error, contributing to AgentHub liability exposure.",
+      "source_node_uuid": "6bd1c83c-d49b-4ca5-b4ab-f51a52bd194d",
+      "target_node_uuid": "963c088e-e2fd-49f8-b6b3-a0e38e59ad98",
+      "attributes": {}
+    },
+    {
+      "uuid": "41563965-dd95-4bad-b222-cf6e6796635e",
+      "name": "REQUIRES_ATTESTATION_FROM",
+      "fact": "The pharma procurement team requires all AI service vendors to submit a verifiable adjudication artifact as part of their AI systems risk classification process.",
+      "source_node_uuid": "c0b597d5-90ae-4ff9-aa9b-0a06e0675456",
+      "target_node_uuid": "025dcbf3-ac4e-442a-ae3e-aabf06d2f87a",
+      "attributes": {}
+    },
+    {
+      "uuid": "552169b7-1f28-4ac8-8bdd-57e2e2e83a3c",
+      "name": "APPROVES_VENDOR",
+      "fact": "Elena Marchetti (pharma procurement lead) is the acceptance decision owner for DataForge.",
+      "source_node_uuid": "4c345196-d582-4391-87e6-2aef81b4d4da",
+      "target_node_uuid": "c66194ba-87b7-4629-b429-3ce20fe3d883",
+      "attributes": {}
+    },
+    {
+      "uuid": "c95b2e11-9880-4af9-8eac-36a92871a18d",
+      "name": "REJECTS_ARTIFACT",
+      "fact": "Elena likely rejects; manual docs don't prove ongoing adjudication capability.",
+      "source_node_uuid": "a6b35140-a4d9-4562-9931-98f79e6e9fb9",
+      "target_node_uuid": "c66194ba-87b7-4629-b429-3ce20fe3d883",
+      "attributes": {}
+    },
+    {
+      "uuid": "64cdebb9-2c22-4f15-aee5-6c55821b9c9e",
+      "name": "REJECTS_ARTIFACT",
+      "fact": "Elena Marchetti accepts GenLayer artifact and explicitly rejects VeritasProtocol trace as insufficient.",
+      "source_node_uuid": "f69bbbbf-9f12-482e-9df2-134a580dc978",
+      "target_node_uuid": "62b00b30-e2d9-4ce0-ad03-a4648a84e2e3",
+      "attributes": {}
+    },
+    {
+      "uuid": "a5ef20f6-218e-4b78-aa23-a2e7c1e9a820",
+      "name": "REPRESENTS",
+      "fact": "DevSwarm (Zara Ahmed, CEO) is currently in category 1 via VeritasProtocol.",
+      "source_node_uuid": "0d01fe7f-064b-416c-94b9-59611b8c74ed",
+      "target_node_uuid": "c5ad2b05-968e-4154-971d-2ca342d0072e",
+      "attributes": {}
+    },
+    {
+      "uuid": "cbf71339-2c3d-4358-bdf6-71b11ee799f9",
+      "name": "REPRESENTS",
+      "fact": "Their CFO, David Okonkwo, is flagging that uninsured exposure above $500K is a board-level risk item for Q2.",
+      "source_node_uuid": "aaa4cf7c-87af-4fcc-a1f3-377347c54383",
+      "target_node_uuid": "c5ad2b05-968e-4154-971d-2ca342d0072e",
+      "attributes": {}
+    },
+    {
+      "uuid": "432d57bc-9777-4b89-a025-b4b583413a05",
+      "name": "PRICES_RISK_FOR",
+      "fact": "Nexus AI Risk actuary (Marco Fiore) — pricing decision.",
+      "source_node_uuid": "dead17a3-f914-4b02-b55e-2b16fb21975f",
+      "target_node_uuid": "9ef1e2d9-9b28-48ee-b99e-d582c6265138",
+      "attributes": {}
+    },
+    {
+      "uuid": "513b7b8a-aa8b-43d0-bfd7-cf7906a33828",
+      "name": "DECIDES_ROUTING",
+      "fact": "Zara Ahmed — adoption decision.",
+      "source_node_uuid": "0d01fe7f-064b-416c-94b9-59611b8c74ed",
+      "target_node_uuid": "c5ad2b05-968e-4154-971d-2ca342d0072e",
+      "attributes": {}
+    },
+    {
+      "uuid": "54eac329-08ac-4f1f-9ad7-6a85fb2bf349",
+      "name": "DECIDES_ROUTING",
+      "fact": "David Okonkwo — financial feasibility gate.",
+      "source_node_uuid": "aaa4cf7c-87af-4fcc-a1f3-377347c54383",
+      "target_node_uuid": "c5ad2b05-968e-4154-971d-2ca342d0072e",
+      "attributes": {}
+    },
+    {
+      "uuid": "7886da22-db66-4a65-95e7-c853e57bf17b",
+      "name": "ESCALATES_TO_BOARD",
+      "fact": "uninsured exposure above $500K is a board-level risk item for Q2.",
+      "source_node_uuid": "aaa4cf7c-87af-4fcc-a1f3-377347c54383",
+      "target_node_uuid": "b4601290-ce91-4501-bf64-3e6251415637",
+      "attributes": {}
+    },
+    {
+      "uuid": "a2d58afb-8fa0-4a1c-9f26-d72fb5bbac6a",
+      "name": "DECIDES_ROUTING",
+      "fact": "Marco Fiore decides if VeritasProtocol qualifies as judgment-capable.",
+      "source_node_uuid": "ce44f869-1eb6-4d89-9dee-c020218216a9",
+      "target_node_uuid": "62b00b30-e2d9-4ce0-ad03-a4648a84e2e3",
+      "attributes": {}
+    },
+    {
+      "uuid": "1fa7b48c-656d-4c98-9d9f-49e76232c158",
+      "name": "ESCALATES_TO_BOARD",
+      "fact": "David Okonkwo must explain to board why $500K+ events are uncovered.",
+      "source_node_uuid": "f3c76315-4197-424e-b624-e9c0dc02a5aa",
+      "target_node_uuid": "e031150a-fa3e-4232-8f86-61440825fe07",
+      "attributes": {}
+    },
+    {
+      "uuid": "b1403a36-06cb-4ae8-a52d-d354475027c4",
+      "name": "DECIDES_ROUTING",
+      "fact": "Marco Fiore decides — VeritasProtocol either qualifies or it doesn't",
+      "source_node_uuid": "ce44f869-1eb6-4d89-9dee-c020218216a9",
+      "target_node_uuid": "62b00b30-e2d9-4ce0-ad03-a4648a84e2e3",
+      "attributes": {}
+    },
+    {
+      "uuid": "88712b9d-516c-47f4-a448-fd9fa057b7c8",
+      "name": "PRICES_RISK_FOR",
+      "fact": "Marco Fiore explicitly prices GenLayer as the qualifying mechanism and rules VeritasProtocol insufficient",
+      "source_node_uuid": "ce44f869-1eb6-4d89-9dee-c020218216a9",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "a30c5368-5072-4edd-8719-b9c97733afc5",
+      "name": "REJECTS_ARTIFACT",
+      "fact": "Marco Fiore explicitly prices GenLayer as the qualifying mechanism and rules VeritasProtocol insufficient",
+      "source_node_uuid": "ce44f869-1eb6-4d89-9dee-c020218216a9",
+      "target_node_uuid": "62b00b30-e2d9-4ce0-ad03-a4648a84e2e3",
+      "attributes": {}
+    },
+    {
+      "uuid": "cda9bef8-0abd-4135-a244-ffea2a99efaf",
+      "name": "REPRESENTS",
+      "fact": "Alex Petrov (VeritasProtocol) has offered a $300K integration deal for exclusive default routing.",
+      "source_node_uuid": "406da44b-cfd2-43c6-8241-5199ac57090a",
+      "target_node_uuid": "62b00b30-e2d9-4ce0-ad03-a4648a84e2e3",
+      "attributes": {}
+    },
+    {
+      "uuid": "2663ba32-4b1b-4182-940e-26d909f0acc0",
+      "name": "REPRESENTS",
+      "fact": "Derek Walsh (AutoAgent) is building an open-source routing module.",
+      "source_node_uuid": "ada2f859-02d9-46fe-a4f8-529b219225e7",
+      "target_node_uuid": "22bb21cc-4800-4d9e-bc17-e6c4bde24949",
+      "attributes": {}
+    },
+    {
+      "uuid": "74db76ee-dc6f-444e-8442-c2130f84f15b",
+      "name": "REPRESENTS",
+      "fact": "Derek Walsh's module gains ground.",
+      "source_node_uuid": "ada2f859-02d9-46fe-a4f8-529b219225e7",
+      "target_node_uuid": "3996cd82-0324-4dfc-a7e0-e6c5fbbeb942",
+      "attributes": {}
+    },
+    {
+      "uuid": "d3e057cf-f67b-44ef-b5b9-f69dfbe31b74",
+      "name": "REPRESENTS",
+      "fact": "Derek Walsh's module fills the vacuum.",
+      "source_node_uuid": "ada2f859-02d9-46fe-a4f8-529b219225e7",
+      "target_node_uuid": "3996cd82-0324-4dfc-a7e0-e6c5fbbeb942",
+      "attributes": {}
+    },
+    {
+      "uuid": "fb91c5b6-e04d-4513-9e4f-50fd5efd3add",
+      "name": "DECIDES_ROUTING",
+      "fact": "Rachel ships hybrid routing layer with GenLayer as the explicit ambiguous-case handler.",
+      "source_node_uuid": "10f28d7d-a890-42b3-a2ca-69ba2787de21",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "bb47b051-78e6-48c3-9656-474188a58f15",
+      "name": "DECIDES_ROUTING",
+      "fact": "Rachel ships VeritasProtocol as single default or defers to developer choice.",
+      "source_node_uuid": "10f28d7d-a890-42b3-a2ca-69ba2787de21",
+      "target_node_uuid": "62b00b30-e2d9-4ce0-ad03-a4648a84e2e3",
+      "attributes": {}
+    },
+    {
+      "uuid": "830833b9-b9a5-47ac-91d8-568a44f71d9c",
+      "name": "ESCALATES_TO_BOARD",
+      "fact": "DevSwarm's board convenes in response to the fraud spike.",
+      "source_node_uuid": "17fe2290-30b0-4ea6-ac4e-3ea912146ffc",
+      "target_node_uuid": "c5ad2b05-968e-4154-971d-2ca342d0072e",
+      "attributes": {}
+    },
+    {
+      "uuid": "7cfebcae-399b-4439-b51d-47dcee1c9194",
+      "name": "REPRESENTS",
+      "fact": "David Okonkwo (CFO) states a position on DevSwarm's dispute architecture and seller onboarding.",
+      "source_node_uuid": "aaa4cf7c-87af-4fcc-a1f3-377347c54383",
+      "target_node_uuid": "c5ad2b05-968e-4154-971d-2ca342d0072e",
+      "attributes": {}
+    },
+    {
+      "uuid": "bf42d50a-ca49-40e0-a4d3-b34be662809e",
+      "name": "ESCALATES_TO_BOARD",
+      "fact": "Board member Helen Reyes comments on DevSwarm's exposure and the need to address the issue.",
+      "source_node_uuid": "d9f0476d-27f2-46e2-9286-dd1bdb43a677",
+      "target_node_uuid": "c5ad2b05-968e-4154-971d-2ca342d0072e",
+      "attributes": {}
+    },
+    {
+      "uuid": "60c4b292-681e-4222-9e6f-e9ca3dc17a46",
+      "name": "MIGRATES_TO",
+      "fact": "Option A proposes migrating to GenLayer.",
+      "source_node_uuid": "d0e71c11-989b-4a5c-9562-c253c4de20d5",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "5a1589bf-7bed-46b6-a0a7-cd3ea4cadfcf",
+      "name": "MIGRATES_TO",
+      "fact": "The decision owner group includes David Okonkwo, and option A proposes migrating to GenLayer.",
+      "source_node_uuid": "f3c76315-4197-424e-b624-e9c0dc02a5aa",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "dfc70e6a-cbab-4305-9729-1083162b2b9b",
+      "name": "MIGRATES_TO",
+      "fact": "The decision owner group includes Helen Reyes, and option A proposes migrating to GenLayer.",
+      "source_node_uuid": "d9f0476d-27f2-46e2-9286-dd1bdb43a677",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "718ca432-0974-421e-8f17-ec34c1619010",
+      "name": "ESCALATES_TO_BOARD",
+      "fact": "Helen Reyes escalates",
+      "source_node_uuid": "440f38ac-c635-4518-adbe-2b74075c2a12",
+      "target_node_uuid": "7eef4c9d-b1e3-403d-bdf3-8ba3ff44c3ad",
+      "attributes": {}
+    },
+    {
+      "uuid": "48a116a8-a938-45c0-a317-90ddb70b7e92",
+      "name": "MIGRATES_TO",
+      "fact": "Zara migrates to GenLayer under board pressure",
+      "source_node_uuid": "af37dc7e-b006-43ef-85b5-da5cb0889189",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "51c91cd3-4312-47aa-adf5-dd182a0f8147",
+      "name": "REPRESENTS",
+      "fact": "Marcus Chen (AgentHub CEO)",
+      "source_node_uuid": "725d15c4-c49b-42a7-ab18-85ddc1322a61",
+      "target_node_uuid": "963c088e-e2fd-49f8-b6b3-a0e38e59ad98",
+      "attributes": {}
+    },
+    {
+      "uuid": "0c799e04-f3db-4b86-af79-006548349f23",
+      "name": "REPRESENTS",
+      "fact": "Sofia Eriksson (DataForge CEO)",
+      "source_node_uuid": "40a4a20f-ea1c-4323-9d4c-3ceedda81520",
+      "target_node_uuid": "c66194ba-87b7-4629-b429-3ce20fe3d883",
+      "attributes": {}
+    },
+    {
+      "uuid": "722f23a0-9fcd-4495-bb5e-f02cf47f63eb",
+      "name": "REPRESENTS",
+      "fact": "Ben Nakamura is an Accenture partner.",
+      "source_node_uuid": "164a438a-9844-4c1f-bba5-6c30173d8b14",
+      "target_node_uuid": "dd0213f1-da94-47de-bd64-fd98a10c856c",
+      "attributes": {}
+    },
+    {
+      "uuid": "73c33f30-cb1c-4a68-8705-bcd4eb8290e4",
+      "name": "REPRESENTS",
+      "fact": "Marco Fiore is a Nexus AI Risk actuary.",
+      "source_node_uuid": "ce44f869-1eb6-4d89-9dee-c020218216a9",
+      "target_node_uuid": "9ef1e2d9-9b28-48ee-b99e-d582c6265138",
+      "attributes": {}
+    },
+    {
+      "uuid": "bf410bcf-6471-47f2-9ca5-5c9f87ed27e0",
+      "name": "REQUIRES_ATTESTATION_FROM",
+      "fact": "Procurement leads like Elena Marchetti are creating internal requirements that exceed what the Act explicitly requires.",
+      "source_node_uuid": "f69bbbbf-9f12-482e-9df2-134a580dc978",
+      "target_node_uuid": "6e28b388-41c1-4400-b005-6ed9eea50d8d",
+      "attributes": {}
+    },
+    {
+      "uuid": "5772ef65-4cad-43c0-823b-cee768ca11c2",
+      "name": "REPRESENTS",
+      "fact": "Alex Petrov is aware of GenLayer's advantage on ambiguous cases.",
+      "source_node_uuid": "3a0f42f3-15ec-4a44-93ba-30d47d3e4a3c",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "7fa444f4-3a11-427d-82c2-eb344a0841a8",
+      "name": "CONTRACTS_WITH",
+      "fact": "No integration deals equivalent to VeritasProtocol's $300K offer.",
+      "source_node_uuid": "62b00b30-e2d9-4ce0-ad03-a4648a84e2e3",
+      "target_node_uuid": "ed599abc-7668-48ef-b6cc-7489b11426d9",
+      "attributes": {}
+    },
+    {
+      "uuid": "df67c551-b5a8-4149-b2f2-53b06e93aeb3",
+      "name": "MIGRATES_TO",
+      "fact": "the bar for FF5 (DevSwarm migration is 60 days).",
+      "source_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "target_node_uuid": "c5ad2b05-968e-4154-971d-2ca342d0072e",
+      "attributes": {}
+    },
+    {
+      "uuid": "fba75075-61fd-48fc-80dd-c7351ea3aaca",
+      "name": "REPRESENTS",
+      "fact": "Priya Nair uses AgentHub platform.",
+      "source_node_uuid": "fd0177c7-4307-4a59-8b70-316a7587fbe7",
+      "target_node_uuid": "84829988-250d-4262-b17f-eae41f150e10",
+      "attributes": {}
+    },
+    {
+      "uuid": "ad397a34-d566-45fc-be83-01d2b39fbbfc",
+      "name": "REQUIRES_ATTESTATION_FROM",
+      "fact": "Priya has explicitly asked Marcus Chen for resolution by Day 10 and is the pressure that forces Marcus Chen's decision.",
+      "source_node_uuid": "47a9ec27-b019-4392-8983-33c823083bc3",
+      "target_node_uuid": "725d15c4-c49b-42a7-ab18-85ddc1322a61",
+      "attributes": {}
+    },
+    {
+      "uuid": "54dc72a6-1957-4072-bf95-e16d767123fb",
+      "name": "REPRESENTS",
+      "fact": "Sofia Eriksson is the CEO of DataForge.",
+      "source_node_uuid": "40a4a20f-ea1c-4323-9d4c-3ceedda81520",
+      "target_node_uuid": "c66194ba-87b7-4629-b429-3ce20fe3d883",
+      "attributes": {}
+    },
+    {
+      "uuid": "7924e695-f857-4883-bd88-17b2d7a95699",
+      "name": "REQUIRES_ATTESTATION_FROM",
+      "fact": "Sofia defers the acceptance decision to Elena Marchetti.",
+      "source_node_uuid": "08197a84-bd5c-4bbb-a4db-7eaf6ff7b7c7",
+      "target_node_uuid": "f69bbbbf-9f12-482e-9df2-134a580dc978",
+      "attributes": {}
+    },
+    {
+      "uuid": "34ed7868-52f5-4ac6-a098-b01975c1b8b4",
+      "name": "CONTRACTS_WITH",
+      "fact": "Sofia would choose GenLayer if it can deliver SOC 2 documentation and meet the 20-day timeline.",
+      "source_node_uuid": "08197a84-bd5c-4bbb-a4db-7eaf6ff7b7c7",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "7ccc20e0-6693-456a-84d8-9ca79d416151",
+      "name": "CONTRACTS_WITH",
+      "fact": "Sofia would try VeritasProtocol if GenLayer cannot deliver SOC 2 documentation or meet the 20-day timeline.",
+      "source_node_uuid": "08197a84-bd5c-4bbb-a4db-7eaf6ff7b7c7",
+      "target_node_uuid": "62b00b30-e2d9-4ce0-ad03-a4648a84e2e3",
+      "attributes": {}
+    },
+    {
+      "uuid": "181b86df-bb85-48b8-b79f-69a5a88dda70",
+      "name": "REPRESENTS",
+      "fact": "Marcus Chen is the CEO of AgentHub.",
+      "source_node_uuid": "725d15c4-c49b-42a7-ab18-85ddc1322a61",
+      "target_node_uuid": "963c088e-e2fd-49f8-b6b3-a0e38e59ad98",
+      "attributes": {}
+    },
+    {
+      "uuid": "78741771-18c0-41f1-a8c4-fe0e358e88ba",
+      "name": "OWNS_ESCROW",
+      "fact": "Marcus Chen is holding the $50K escrow in the Priya Nair dispute.",
+      "source_node_uuid": "725d15c4-c49b-42a7-ab18-85ddc1322a61",
+      "target_node_uuid": "276a43a2-91c2-465c-a68a-74def0153c1f",
+      "attributes": {}
+    },
+    {
+      "uuid": "d22e589d-a568-4f76-bcd8-3dbcd575b857",
+      "name": "OWNS_ESCROW",
+      "fact": "The text mentions holding the $50K escrow in the Priya Nair dispute.",
+      "source_node_uuid": "fd0177c7-4307-4a59-8b70-316a7587fbe7",
+      "target_node_uuid": "a0301df5-fb36-42eb-985c-06cc03046597",
+      "attributes": {}
+    },
+    {
+      "uuid": "8b4ad059-f6e4-4b4d-8768-24819b166f5c",
+      "name": "REPRESENTS",
+      "fact": "Zara Ahmed is the CEO of DevSwarm.",
+      "source_node_uuid": "d0e71c11-989b-4a5c-9562-c253c4de20d5",
+      "target_node_uuid": "c5ad2b05-968e-4154-971d-2ca342d0072e",
+      "attributes": {}
+    },
+    {
+      "uuid": "352c632f-328a-4c62-a00d-3e4ec8ec5a48",
+      "name": "REQUIRES_ATTESTATION_FROM",
+      "fact": "CFO David Okonkwo is flagging insurance exposure for DevSwarm.",
+      "source_node_uuid": "aaa4cf7c-87af-4fcc-a1f3-377347c54383",
+      "target_node_uuid": "c5ad2b05-968e-4154-971d-2ca342d0072e",
+      "attributes": {}
+    },
+    {
+      "uuid": "cd0c005b-22f1-4465-b907-caca7bbcab1a",
+      "name": "REPRESENTS",
+      "fact": "Rachel Torres is listed as the Framework Architect for LangGraph.",
+      "source_node_uuid": "406da44b-cfd2-43c6-8241-5199ac57090a",
+      "target_node_uuid": "7164c89f-88d9-4ba0-89a2-821211aa02be",
+      "attributes": {}
+    },
+    {
+      "uuid": "4fabf2fc-1602-4086-9efa-a5c628780981",
+      "name": "REPRESENTS",
+      "fact": "Derek Walsh's AutoAgent module",
+      "source_node_uuid": "ada2f859-02d9-46fe-a4f8-529b219225e7",
+      "target_node_uuid": "363ece32-aca9-45c8-98bd-94bcb941ebe7",
+      "attributes": {}
+    },
+    {
+      "uuid": "0452196f-9bac-4feb-b0c7-b34cc575143f",
+      "name": "REPRESENTS",
+      "fact": "Elena Marchetti is the Global Procurement Lead (AI Systems) for the pharma client.",
+      "source_node_uuid": "4c345196-d582-4391-87e6-2aef81b4d4da",
+      "target_node_uuid": "a5915212-459b-4084-9122-8a971dd3a62c",
+      "attributes": {}
+    },
+    {
+      "uuid": "d1bef247-aa4b-42f6-a9ba-6cce60504951",
+      "name": "REQUIRES_ATTESTATION_FROM",
+      "fact": "Elena is the acceptance decision-maker for FF2.",
+      "source_node_uuid": "a6b35140-a4d9-4562-9931-98f79e6e9fb9",
+      "target_node_uuid": "82311dd0-2d64-459a-86c6-a74bdd2e5c91",
+      "attributes": {}
+    },
+    {
+      "uuid": "5f33e7d2-1fd5-449e-bbf4-06d0bc5b3f02",
+      "name": "REJECTS_ARTIFACT",
+      "fact": "If Elena accepts the deterministic trace, Candidate B is falsified.",
+      "source_node_uuid": "a6b35140-a4d9-4562-9931-98f79e6e9fb9",
+      "target_node_uuid": "3aed2cb3-9b78-4fcf-8770-0fcbf6cb0260",
+      "attributes": {}
+    },
+    {
+      "uuid": "e626d463-52cc-47c1-b4e0-8ed928b42518",
+      "name": "REPRESENTS",
+      "fact": "Marco Fiore is described as having role Senior Actuary at Nexus AI Risk.",
+      "source_node_uuid": "ce44f869-1eb6-4d89-9dee-c020218216a9",
+      "target_node_uuid": "9ef1e2d9-9b28-48ee-b99e-d582c6265138",
+      "attributes": {}
+    },
+    {
+      "uuid": "31cf0dc4-91e0-40e8-9323-2926a606e261",
+      "name": "PRICES_RISK_FOR",
+      "fact": "Marco Fiore will price any qualifying mechanism as part of building the pricing model for AI adjudication mechanisms at Nexus AI Risk.",
+      "source_node_uuid": "ce44f869-1eb6-4d89-9dee-c020218216a9",
+      "target_node_uuid": "9ef1e2d9-9b28-48ee-b99e-d582c6265138",
+      "attributes": {}
+    },
+    {
+      "uuid": "432cb65b-f383-4430-a843-cb378b2f9a8e",
+      "name": "DECIDES_ROUTING",
+      "fact": "Marco is the gating decision-maker for FF3.",
+      "source_node_uuid": "535fb918-25d9-49d2-9b3c-62ffabde35a1",
+      "target_node_uuid": "44159e40-cea9-470c-bf2a-11b8c0c354c9",
+      "attributes": {}
+    },
+    {
+      "uuid": "aeb5ac4d-f970-48f4-ad16-077357235950",
+      "name": "REQUIRES_ATTESTATION_FROM",
+      "fact": "Marco's classification of VeritasProtocol determines whether Candidate C is confirmed or falsified.",
+      "source_node_uuid": "535fb918-25d9-49d2-9b3c-62ffabde35a1",
+      "target_node_uuid": "62b00b30-e2d9-4ce0-ad03-a4648a84e2e3",
+      "attributes": {}
+    },
+    {
+      "uuid": "20f31db5-75b1-48ac-a0d1-9253917d0b1f",
+      "name": "REPRESENTS",
+      "fact": "Ben Nakamura is a Partner, AI Services Practice at Accenture.",
+      "source_node_uuid": "164a438a-9844-4c1f-bba5-6c30173d8b14",
+      "target_node_uuid": "dd0213f1-da94-47de-bd64-fd98a10c856c",
+      "attributes": {}
+    },
+    {
+      "uuid": "e81ce650-9906-40c2-b8ec-5519946f7fe0",
+      "name": "MIGRATES_TO",
+      "fact": "DataForge implements GenLayer directly, indicating a migration/implementation relationship to GenLayer.",
+      "source_node_uuid": "c66194ba-87b7-4629-b429-3ce20fe3d883",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "e5ab08f6-844b-4703-b400-ff9a2b51d255",
+      "name": "REPRESENTS",
+      "fact": "Ben is the customer relationship risk for GenLayer.",
+      "source_node_uuid": "dd98300a-0832-4150-b095-8647395c20b1",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "3348e4be-c040-44e6-bf39-e81856bcb76e",
+      "name": "CONTRACTS_WITH",
+      "fact": "Ben may wrap GenLayer in an Accenture managed service.",
+      "source_node_uuid": "dd98300a-0832-4150-b095-8647395c20b1",
+      "target_node_uuid": "dd0213f1-da94-47de-bd64-fd98a10c856c",
+      "attributes": {}
+    },
+    {
+      "uuid": "bdbc7c01-a86f-4c6d-ab9e-f8b8829d0d57",
+      "name": "REPRESENTS",
+      "fact": "David Okonkwo is CFO of DevSwarm.",
+      "source_node_uuid": "aaa4cf7c-87af-4fcc-a1f3-377347c54383",
+      "target_node_uuid": "c5ad2b05-968e-4154-971d-2ca342d0072e",
+      "attributes": {}
+    },
+    {
+      "uuid": "1155cff1-f05f-41b1-8006-4116fcd9cdec",
+      "name": "ESCALATES_TO_BOARD",
+      "fact": "David Okonkwo is flagging insurance exposure to board.",
+      "source_node_uuid": "aaa4cf7c-87af-4fcc-a1f3-377347c54383",
+      "target_node_uuid": "09aa9593-72c1-4b86-8ca0-6a37c2bb8faf",
+      "attributes": {}
+    },
+    {
+      "uuid": "d49b71b0-73f4-412d-845c-9a210a8541f9",
+      "name": "ESCALATES_TO_BOARD",
+      "fact": "board pressure following a fraud event.",
+      "source_node_uuid": "e031150a-fa3e-4232-8f86-61440825fe07",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "5447d9f6-543d-4b36-b2cc-8e1d24f2e965",
+      "name": "REJECTS_ARTIFACT",
+      "fact": "David is the financial veto. If GenLayer costs more than the insurance savings justify, he blocks adoption even if Zara wants to move.",
+      "source_node_uuid": "eedaa3bf-a6ce-4988-b783-abc312098fcd",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "3b09f241-2f82-420d-9b3f-41e98e3a357d",
+      "name": "REPRESENTS",
+      "fact": "Helen Reyes is listed as Board Member at DevSwarm.",
+      "source_node_uuid": "d9f0476d-27f2-46e2-9286-dd1bdb43a677",
+      "target_node_uuid": "c5ad2b05-968e-4154-971d-2ca342d0072e",
+      "attributes": {}
+    },
+    {
+      "uuid": "3b154a1f-4ca1-463f-8b0e-e832216c8785",
+      "name": "REQUIRES_ATTESTATION_FROM",
+      "fact": "legal counsel advising that DevSwarm's current dispute architecture creates class-action exposure.",
+      "source_node_uuid": "c5ad2b05-968e-4154-971d-2ca342d0072e",
+      "target_node_uuid": "82d655d4-0916-4c70-8e14-4d2af341eece",
+      "attributes": {}
+    },
+    {
+      "uuid": "52cc2b21-7f85-4acc-a819-18e719129e1c",
+      "name": "ESCALATES_TO_BOARD",
+      "fact": "Helen's intervention in FF5 converts the board from a passive oversight body to an active forcing function.",
+      "source_node_uuid": "ba0008fe-7d98-401c-acb7-63476d0480aa",
+      "target_node_uuid": "7b3911ef-7fac-422c-8d7f-c56fd7ea1892",
+      "attributes": {}
+    },
+    {
+      "uuid": "1291664d-9c35-45b1-8c9b-07939cd42236",
+      "name": "REPRESENTS",
+      "fact": "Alex Petrov is listed as CEO of VeritasProtocol.",
+      "source_node_uuid": "3a0f42f3-15ec-4a44-93ba-30d47d3e4a3c",
+      "target_node_uuid": "62b00b30-e2d9-4ce0-ad03-a4648a84e2e3",
+      "attributes": {}
+    },
+    {
+      "uuid": "ea03a411-76c7-4f54-bca9-25097a380eba",
+      "name": "CONTRACTS_WITH",
+      "fact": "The text describes GenLayer's subjective-case advantage and says it is actively countering VeritasProtocol.",
+      "source_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "target_node_uuid": "62b00b30-e2d9-4ce0-ad03-a4648a84e2e3",
+      "attributes": {}
+    },
+    {
+      "uuid": "286d5e05-a05d-4377-8a9d-cf4d92a9dae7",
+      "name": "REPRESENTS",
+      "fact": "Derek Walsh is the Founder / Lead Developer of AutoAgent (open-source project).",
+      "source_node_uuid": "ada2f859-02d9-46fe-a4f8-529b219225e7",
+      "target_node_uuid": "22bb21cc-4800-4d9e-bc17-e6c4bde24949",
+      "attributes": {}
+    },
+    {
+      "uuid": "09c08bbb-2d58-4e26-8036-8c549357f580",
+      "name": "REPRESENTS",
+      "fact": "If it ships, Rachel Torres has a third option that costs nothing.",
+      "source_node_uuid": "c8df09a1-8d97-4711-a582-44fad3e15ac5",
+      "target_node_uuid": "47ad19ab-738f-4b89-8164-7c9a74522fa3",
+      "attributes": {}
+    },
+    {
+      "uuid": "2862cdb0-1d51-402f-b21a-58504af0e589",
+      "name": "REPRESENTS",
+      "fact": "In FF1 (Day 10), Marcus Chen is listed as Decision Owner and Priya Nair as Pressure Source (payroll).",
+      "source_node_uuid": "725d15c4-c49b-42a7-ab18-85ddc1322a61",
+      "target_node_uuid": "fd0177c7-4307-4a59-8b70-316a7587fbe7",
+      "attributes": {}
+    },
+    {
+      "uuid": "08c1f092-afa4-4b26-9a32-6e9c6ad75dd9",
+      "name": "REPRESENTS",
+      "fact": "In FF2 (Day 20), Elena Marchetti is listed as Decision Owner and Sofia Eriksson as Pressure Source (contract).",
+      "source_node_uuid": "f69bbbbf-9f12-482e-9df2-134a580dc978",
+      "target_node_uuid": "40a4a20f-ea1c-4323-9d4c-3ceedda81520",
+      "attributes": {}
+    },
+    {
+      "uuid": "0755efaf-af64-416c-83e3-d07ed2cbd227",
+      "name": "CONTRACTS_WITH",
+      "fact": "In FF3 (Day 30), Marco Fiore and Zara Ahmed are jointly listed as Decision Owners.",
+      "source_node_uuid": "ce44f869-1eb6-4d89-9dee-c020218216a9",
+      "target_node_uuid": "d0e71c11-989b-4a5c-9562-c253c4de20d5",
+      "attributes": {}
+    },
+    {
+      "uuid": "255b823a-8d2f-4741-bb24-f5eec566b7bc",
+      "name": "REPRESENTS",
+      "fact": "David Okonkwo (board) is listed alongside VeritasProtocol (Option B).",
+      "source_node_uuid": "25b12f43-1d36-4239-aaec-f4a1425f54e7",
+      "target_node_uuid": "62b00b30-e2d9-4ce0-ad03-a4648a84e2e3",
+      "attributes": {}
+    },
+    {
+      "uuid": "c38e87a1-4491-42d6-8d0e-c7ef2fb4a9bc",
+      "name": "REPRESENTS",
+      "fact": "Rachel Torres is listed in the same FF4 row as Alex Petrov ($300K).",
+      "source_node_uuid": "47ad19ab-738f-4b89-8164-7c9a74522fa3",
+      "target_node_uuid": "3a0f42f3-15ec-4a44-93ba-30d47d3e4a3c",
+      "attributes": {}
+    },
+    {
+      "uuid": "71813017-7f8a-4e3c-a764-35cc735980b0",
+      "name": "REPRESENTS",
+      "fact": "Derek Walsh (OSS module) is listed in the same FF4 row as Ben Nakamura.",
+      "source_node_uuid": "ada2f859-02d9-46fe-a4f8-529b219225e7",
+      "target_node_uuid": "164a438a-9844-4c1f-bba5-6c30173d8b14",
+      "attributes": {}
+    },
+    {
+      "uuid": "9a2134cd-2bf6-4d7f-9a03-c1f5ccba9ffd",
+      "name": "ESCALATES_TO_BOARD",
+      "fact": "Zara Ahmed + Helen Reyes are listed with Board (class action risk) in FF5.",
+      "source_node_uuid": "d0e71c11-989b-4a5c-9562-c253c4de20d5",
+      "target_node_uuid": "09aa9593-72c1-4b86-8ca0-6a37c2bb8faf",
+      "attributes": {}
+    },
+    {
+      "uuid": "6fa39a1f-05aa-4d78-b941-f934257f98a3",
+      "name": "ESCALATES_TO_BOARD",
+      "fact": "Zara Ahmed + Helen Reyes are listed with Board (class action risk) in FF5.",
+      "source_node_uuid": "440f38ac-c635-4518-adbe-2b74075c2a12",
+      "target_node_uuid": "09aa9593-72c1-4b86-8ca0-6a37c2bb8faf",
+      "attributes": {}
+    },
+    {
+      "uuid": "7fa72033-d12a-4321-bbe0-a92b65cd502d",
+      "name": "DECIDES_ROUTING",
+      "fact": "Marcus Chen routed the escrow dispute to GenLayer on Day 9",
+      "source_node_uuid": "725d15c4-c49b-42a7-ab18-85ddc1322a61",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "7116c2e1-8f4a-4e77-a211-3c881732d230",
+      "name": "REJECTS_ARTIFACT",
+      "fact": "Elena Marchetti rejected the VeritasProtocol deterministic trace on Day 19",
+      "source_node_uuid": "f69bbbbf-9f12-482e-9df2-134a580dc978",
+      "target_node_uuid": "62b00b30-e2d9-4ce0-ad03-a4648a84e2e3",
+      "attributes": {}
+    },
+    {
+      "uuid": "244a2549-23f0-4267-82ef-edaf4b65ec96",
+      "name": "MIGRATES_TO",
+      "fact": "Marcus chose GenLayer because no other mechanism could clear the dispute in time.",
+      "source_node_uuid": "9192016d-7c8f-4465-91d5-81a9328ddc1f",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "0912f959-6fea-4ff5-8296-24926d790975",
+      "name": "REQUIRES_ATTESTATION_FROM",
+      "fact": "GenLayer was the mechanism that cleared the block in the workflow.",
+      "source_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "target_node_uuid": "5864ea20-e14a-49b6-b1ce-8157b16645e9",
+      "attributes": {}
+    },
+    {
+      "uuid": "9ab0f1e1-d818-4353-abc0-7addecff7497",
+      "name": "REQUIRES_ATTESTATION_FROM",
+      "fact": "Candidate E confirmation requires two or more independent buyers each making an unsolicited demand for a GenLayer attestation artifact before GenLayer's commercial team has pitched attestation as a product feature.",
+      "source_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "target_node_uuid": "1df17827-6c79-40cb-bf8d-ed0307fda33b",
+      "attributes": {}
+    },
+    {
+      "uuid": "8be0e0dd-cfbf-4e04-a9c4-9e192de5da0f",
+      "name": "DECIDES_ROUTING",
+      "fact": "Day 10 lists 'FF1 — Blocked Payment' with decision owner Marcus Chen.",
+      "source_node_uuid": "725d15c4-c49b-42a7-ab18-85ddc1322a61",
+      "target_node_uuid": "5d7bcf8b-165c-474b-b88e-67dd92caa9b7",
+      "attributes": {}
+    },
+    {
+      "uuid": "6b4ab104-a137-4301-a85b-fe299650f5b7",
+      "name": "DECIDES_ROUTING",
+      "fact": "Day 20 lists 'FF2 — Enterprise Vendor Block' with decision owner Elena Marchetti.",
+      "source_node_uuid": "f69bbbbf-9f12-482e-9df2-134a580dc978",
+      "target_node_uuid": "82311dd0-2d64-459a-86c6-a74bdd2e5c91",
+      "attributes": {}
+    },
+    {
+      "uuid": "4fc6a974-9a72-4e08-887f-da867d161550",
+      "name": "DECIDES_ROUTING",
+      "fact": "Day 25 lists 'Candidate E window' with decision owner Named enterprise buyer.",
+      "source_node_uuid": "c77fe6ec-b47f-4ffa-93b9-a54e5dfb7aa4",
+      "target_node_uuid": "8da80cca-44c7-4fc4-a616-28f86de3e4fb",
+      "attributes": {}
+    },
+    {
+      "uuid": "91918f5d-f415-4b07-98fa-648fd4f86bdc",
+      "name": "DECIDES_ROUTING",
+      "fact": "Day 30 lists 'FF3 — Insurance Pricing' with decision owner Marco Fiore + Zara Ahmed.",
+      "source_node_uuid": "ce44f869-1eb6-4d89-9dee-c020218216a9",
+      "target_node_uuid": "44159e40-cea9-470c-bf2a-11b8c0c354c9",
+      "attributes": {}
+    },
+    {
+      "uuid": "98ee6c27-7921-41fe-802e-11be20c8eb3f",
+      "name": "DECIDES_ROUTING",
+      "fact": "Day 30 lists 'FF3 — Insurance Pricing' with decision owner Marco Fiore + Zara Ahmed.",
+      "source_node_uuid": "d0e71c11-989b-4a5c-9562-c253c4de20d5",
+      "target_node_uuid": "44159e40-cea9-470c-bf2a-11b8c0c354c9",
+      "attributes": {}
+    },
+    {
+      "uuid": "28d8d433-126c-4f43-bfa0-1ff9e4aa38f0",
+      "name": "ESCALATES_TO_BOARD",
+      "fact": "FF5 closes — Board Decision | Helen Reyes + Zara Ahmed | Hard (board meeting)",
+      "source_node_uuid": "440f38ac-c635-4518-adbe-2b74075c2a12",
+      "target_node_uuid": "d0e71c11-989b-4a5c-9562-c253c4de20d5",
+      "attributes": {}
+    },
+    {
+      "uuid": "74f6010b-cc2a-42d0-830a-8c7c79362fac",
+      "name": "REPRESENTS",
+      "fact": "This is the gap that Elena Marchetti's procurement requirement exposes.",
+      "source_node_uuid": "f69bbbbf-9f12-482e-9df2-134a580dc978",
+      "target_node_uuid": "15452f96-2b33-485e-bc3a-da88962e2d19",
+      "attributes": {}
+    },
+    {
+      "uuid": "2a211586-1254-474c-bec9-51e424c89c91",
+      "name": "REQUIRES_ATTESTATION_FROM",
+      "fact": "lena Marchetti's procurement requirement exposes.",
+      "source_node_uuid": "244aee26-5116-4b86-816c-34962abb3e52",
+      "target_node_uuid": "215f62a7-3249-4556-a3ed-0a60b79947a8",
+      "attributes": {}
+    },
+    {
+      "uuid": "772abd59-54e0-4de4-9156-1f3840d500fc",
+      "name": "REPRESENTS",
+      "fact": "Alex Petrov will offer this as the FF5 counter-move.",
+      "source_node_uuid": "3a0f42f3-15ec-4a44-93ba-30d47d3e4a3c",
+      "target_node_uuid": "7b3911ef-7fac-422c-8d7f-c56fd7ea1892",
+      "attributes": {}
+    },
+    {
+      "uuid": "eca444fd-9f71-423b-a713-28ee45903599",
+      "name": "CONTRACTS_WITH",
+      "fact": "The announcement is described as strategic pre-emption to create doubt about GenLayer's differentiation.",
+      "source_node_uuid": "62b00b30-e2d9-4ce0-ad03-a4648a84e2e3",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "1d26ef5c-3934-4f02-a1a7-8c9cd3b83f21",
+      "name": "REPRESENTS",
+      "fact": "Alex Petrov may announce it; the context refers to GenLayer's differentiation.",
+      "source_node_uuid": "3a0f42f3-15ec-4a44-93ba-30d47d3e4a3c",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "b1311bdd-1bdd-4cd2-9bd7-a1fb2fac791e",
+      "name": "DECIDES_ROUTING",
+      "fact": "Alex Petrov's incentive is to win LangGraph default routing before GenLayer builds any enterprise sales motion.",
+      "source_node_uuid": "3a0f42f3-15ec-4a44-93ba-30d47d3e4a3c",
+      "target_node_uuid": "7164c89f-88d9-4ba0-89a2-821211aa02be",
+      "attributes": {}
+    },
+    {
+      "uuid": "d5eb9485-b939-43ff-9ae0-7abe170890f6",
+      "name": "REJECTS_ARTIFACT",
+      "fact": "Rachel may reject the $300K deal because it forecloses the hybrid routing architecture.",
+      "source_node_uuid": "47ad19ab-738f-4b89-8164-7c9a74522fa3",
+      "target_node_uuid": "390baa08-2bb9-45c8-8e34-11016233278f",
+      "attributes": {}
+    },
+    {
+      "uuid": "3160af91-108e-4ea9-add9-578408c5fb0e",
+      "name": "REPRESENTS",
+      "fact": "Derek Walsh is associated with AutoAgent.",
+      "source_node_uuid": "ada2f859-02d9-46fe-a4f8-529b219225e7",
+      "target_node_uuid": "22bb21cc-4800-4d9e-bc17-e6c4bde24949",
+      "attributes": {}
+    },
+    {
+      "uuid": "398caa76-ba1e-4ae4-ad87-4910f3dfeb1f",
+      "name": "DECIDES_ROUTING",
+      "fact": "The module routes disputes to adjudication backends including GenLayer.",
+      "source_node_uuid": "22bb21cc-4800-4d9e-bc17-e6c4bde24949",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "921736f6-57d3-4314-90d6-453caac49036",
+      "name": "DECIDES_ROUTING",
+      "fact": "The module routes disputes to adjudication backends including VeritasProtocol.",
+      "source_node_uuid": "22bb21cc-4800-4d9e-bc17-e6c4bde24949",
+      "target_node_uuid": "62b00b30-e2d9-4ce0-ad03-a4648a84e2e3",
+      "attributes": {}
+    },
+    {
+      "uuid": "32629c5e-0d8a-4e76-a857-d7d2ec084883",
+      "name": "REPRESENTS",
+      "fact": "Derek's timeline is described in relation to FF4's simulation fork and module shipping window.",
+      "source_node_uuid": "c8df09a1-8d97-4711-a582-44fad3e15ac5",
+      "target_node_uuid": "651fb4eb-5d8b-4f82-a526-92c1146138b3",
+      "attributes": {}
+    },
+    {
+      "uuid": "8797b648-9186-4d16-904c-e53c196d82b5",
+      "name": "REJECTS_ARTIFACT",
+      "fact": "Enterprise buyers (Elena Marchetti, Marco Fiore) may not accept a community-maintained routing layer as a qualifying adjudication mechanism.",
+      "source_node_uuid": "f69bbbbf-9f12-482e-9df2-134a580dc978",
+      "target_node_uuid": "938b3449-77de-4f6a-a6b7-0ba0818fcd28",
+      "attributes": {}
+    },
+    {
+      "uuid": "d5e40f6a-a782-41fd-af28-62c2e928da33",
+      "name": "REJECTS_ARTIFACT",
+      "fact": "Enterprise buyers (Elena Marchetti, Marco Fiore) may not accept a community-maintained routing layer as a qualifying adjudication mechanism.",
+      "source_node_uuid": "ce44f869-1eb6-4d89-9dee-c020218216a9",
+      "target_node_uuid": "938b3449-77de-4f6a-a6b7-0ba0818fcd28",
+      "attributes": {}
+    },
+    {
+      "uuid": "1c7fbde1-0729-4905-90a9-4deaee945669",
+      "name": "REPRESENTS",
+      "fact": "Ben Nakamura / Accenture",
+      "source_node_uuid": "164a438a-9844-4c1f-bba5-6c30173d8b14",
+      "target_node_uuid": "dd0213f1-da94-47de-bd64-fd98a10c856c",
+      "attributes": {}
+    },
+    {
+      "uuid": "1d8cb441-1874-4062-aaa5-f47e96393158",
+      "name": "REQUIRES_ATTESTATION_FROM",
+      "fact": "Ben Nakamura is evaluating GenLayer for an Accenture-managed AI compliance service.",
+      "source_node_uuid": "164a438a-9844-4c1f-bba5-6c30173d8b14",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "baa88e44-1054-4774-ae66-1e535055504a",
+      "name": "CONTRACTS_WITH",
+      "fact": "Enterprise buyers like DataForge contract with Accenture, not GenLayer.",
+      "source_node_uuid": "c66194ba-87b7-4629-b429-3ce20fe3d883",
+      "target_node_uuid": "dd0213f1-da94-47de-bd64-fd98a10c856c",
+      "attributes": {}
+    },
+    {
+      "uuid": "e0a15588-0dea-477c-bc1b-32ff180e6d63",
+      "name": "CONTRACTS_WITH",
+      "fact": "Sofia Eriksson works directly with GenLayer.",
+      "source_node_uuid": "40a4a20f-ea1c-4323-9d4c-3ceedda81520",
+      "target_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "attributes": {}
+    },
+    {
+      "uuid": "7382c52f-fc70-4605-b4ae-48d8a1b0fc48",
+      "name": "REQUIRES_ATTESTATION_FROM",
+      "fact": "Elena Marchetti's requirement is met by GenLayer's artifact directly.",
+      "source_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "target_node_uuid": "f69bbbbf-9f12-482e-9df2-134a580dc978",
+      "attributes": {}
+    },
+    {
+      "uuid": "3d0fe57c-01ad-440e-9429-6d4299e093e4",
+      "name": "CONTRACTS_WITH",
+      "fact": "Accenture loses the integration opportunity.",
+      "source_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "target_node_uuid": "dd0213f1-da94-47de-bd64-fd98a10c856c",
+      "attributes": {}
+    },
+    {
+      "uuid": "d4755682-823f-4036-9f9f-ff50e4c4d633",
+      "name": "OWNS_ESCROW",
+      "fact": "GenLayer owns the customer relationship",
+      "source_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "target_node_uuid": "1f538028-ab2b-4604-88c8-17014d650daa",
+      "attributes": {}
+    },
+    {
+      "uuid": "787e2871-419a-43aa-8def-1f45bb9d7313",
+      "name": "MIGRATES_TO",
+      "fact": "If GenLayer cannot deliver SOC 2 or the integration timeline for FF2, Ben defaults to VeritasProtocol",
+      "source_node_uuid": "90a34f63-0816-4b75-a75d-d88b610745f8",
+      "target_node_uuid": "62b00b30-e2d9-4ce0-ad03-a4648a84e2e3",
+      "attributes": {}
+    },
+    {
+      "uuid": "5ce3abcb-c005-4f81-a269-c650537d0479",
+      "name": "OWNS_ESCROW",
+      "fact": "Accenture owns the enterprise compliance service",
+      "source_node_uuid": "dd0213f1-da94-47de-bd64-fd98a10c856c",
+      "target_node_uuid": "ceface73-6e83-41f0-9769-858684f62827",
+      "attributes": {}
+    },
+    {
+      "uuid": "a74acbd9-3eff-490c-b979-64de08115ef7",
+      "name": "REPRESENTS",
+      "fact": "FF1: $50K is Priya's payroll",
+      "source_node_uuid": "47a9ec27-b019-4392-8983-33c823083bc3",
+      "target_node_uuid": "5d7bcf8b-165c-474b-b88e-67dd92caa9b7",
+      "attributes": {}
+    },
+    {
+      "uuid": "a40d2e9c-9301-488b-8355-0dad8dbad0ea",
+      "name": "REPRESENTS",
+      "fact": "Marcus's platform",
+      "source_node_uuid": "9192016d-7c8f-4465-91d5-81a9328ddc1f",
+      "target_node_uuid": "7b3911ef-7fac-422c-8d7f-c56fd7ea1892",
+      "attributes": {}
+    },
+    {
+      "uuid": "3176c45d-de56-4766-804b-da1a8606d77f",
+      "name": "DECIDES_ROUTING",
+      "fact": "In Run #4, DevSwarm does not have the reserve, and if they did, FF3 would not force a decision.",
+      "source_node_uuid": "c5ad2b05-968e-4154-971d-2ca342d0072e",
+      "target_node_uuid": "44159e40-cea9-470c-bf2a-11b8c0c354c9",
+      "attributes": {}
+    },
+    {
+      "uuid": "5af264d1-9651-4ca2-aa7f-780643405b98",
+      "name": "ESCALATES_TO_BOARD",
+      "fact": "Helen Reyes flags class-action exposure, indicating board-level scrutiny.",
+      "source_node_uuid": "440f38ac-c635-4518-adbe-2b74075c2a12",
+      "target_node_uuid": "b4601290-ce91-4501-bf64-3e6251415637",
+      "attributes": {}
+    },
+    {
+      "uuid": "3f76ed55-6bb7-4065-bb6e-652285310e8f",
+      "name": "REPRESENTS",
+      "fact": "Derek Walsh is listed with AutoAgent in the competitive dynamics table.",
+      "source_node_uuid": "ada2f859-02d9-46fe-a4f8-529b219225e7",
+      "target_node_uuid": "22bb21cc-4800-4d9e-bc17-e6c4bde24949",
+      "attributes": {}
+    },
+    {
+      "uuid": "2fa3d7b1-184f-4ec5-9d6d-eca88185a912",
+      "name": "REPRESENTS",
+      "fact": "Ben Nakamura / Accenture",
+      "source_node_uuid": "164a438a-9844-4c1f-bba5-6c30173d8b14",
+      "target_node_uuid": "dd0213f1-da94-47de-bd64-fd98a10c856c",
+      "attributes": {}
+    }
+  ],
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "ChiefExecutiveOfficer",
+        "description": "Company head making strategic decisions",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The person's full legal name"
+          },
+          {
+            "name": "organization",
+            "type": "text",
+            "description": "Organization they lead"
+          },
+          {
+            "name": "position",
+            "type": "text",
+            "description": "Executive role title"
+          }
+        ],
+        "examples": [
+          "Marcus Chen",
+          "Sofia Eriksson"
+        ]
+      },
+      {
+        "name": "ProcurementLead",
+        "description": "Buyer-side lead approving vendors and compliance",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The person's full legal name"
+          },
+          {
+            "name": "organization",
+            "type": "text",
+            "description": "Buying organization or company"
+          },
+          {
+            "name": "compliance_scope",
+            "type": "text",
+            "description": "Area of procurement or compliance responsibility"
+          }
+        ],
+        "examples": [
+          "Elena Marchetti"
+        ]
+      },
+      {
+        "name": "CFO",
+        "description": "Finance leader focused on margin, cost, and board risk",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The person's full legal name"
+          },
+          {
+            "name": "organization",
+            "type": "text",
+            "description": "Organization they finance"
+          },
+          {
+            "name": "risk_focus",
+            "type": "text",
+            "description": "Primary financial risk concern"
+          }
+        ],
+        "examples": [
+          "David Okonkwo"
+        ]
+      },
+      {
+        "name": "BoardMember",
+        "description": "Governance actor influencing risk and oversight decisions",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The person's full legal name"
+          },
+          {
+            "name": "organization",
+            "type": "text",
+            "description": "Organization they serve"
+          },
+          {
+            "name": "oversight_focus",
+            "type": "text",
+            "description": "Main oversight concern"
+          }
+        ],
+        "examples": [
+          "Helen Reyes"
+        ]
+      },
+      {
+        "name": "Actuary",
+        "description": "Insurance pricing specialist evaluating coverage and risk",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The person's full legal name"
+          },
+          {
+            "name": "organization",
+            "type": "text",
+            "description": "Insurance carrier or firm"
+          },
+          {
+            "name": "pricing_domain",
+            "type": "text",
+            "description": "Coverage or risk domain"
+          }
+        ],
+        "examples": [
+          "Marco Fiore"
+        ]
+      },
+      {
+        "name": "FrameworkArchitect",
+        "description": "Technical platform architect deciding routing or integration design",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The person's full legal name"
+          },
+          {
+            "name": "organization",
+            "type": "text",
+            "description": "Framework or platform organization"
+          },
+          {
+            "name": "technical_domain",
+            "type": "text",
+            "description": "Architectural area of responsibility"
+          }
+        ],
+        "examples": [
+          "Rachel Torres"
+        ]
+      },
+      {
+        "name": "MarketplaceOperator",
+        "description": "Operator of an agent marketplace handling disputes and escrow",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The person's full legal name"
+          },
+          {
+            "name": "organization",
+            "type": "text",
+            "description": "Marketplace or platform they run"
+          },
+          {
+            "name": "managed_workflow",
+            "type": "text",
+            "description": "Primary workflow they control"
+          }
+        ],
+        "examples": [
+          "Marcus Chen",
+          "Priya Nair"
+        ]
+      },
+      {
+        "name": "IndependentAgentOperator",
+        "description": "Self-employed seller or operator using a platform to deliver work",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The person's full legal name"
+          },
+          {
+            "name": "platform",
+            "type": "text",
+            "description": "Platform used for work delivery"
+          },
+          {
+            "name": "service_focus",
+            "type": "text",
+            "description": "Type of work performed"
+          }
+        ],
+        "examples": [
+          "Priya Nair"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Fallback for any natural person not covered by a specific type",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The person's full legal name"
+          },
+          {
+            "name": "role_title",
+            "type": "text",
+            "description": "Current role or public title"
+          },
+          {
+            "name": "organization",
+            "type": "text",
+            "description": "Affiliated organization if any"
+          }
+        ],
+        "examples": [
+          "Alex Petrov",
+          "Derek Walsh"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Fallback for any organization not covered by a specific type",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The organization's public name"
+          },
+          {
+            "name": "org_type",
+            "type": "text",
+            "description": "General organization category"
+          },
+          {
+            "name": "domain",
+            "type": "text",
+            "description": "Primary business or institutional domain"
+          }
+        ],
+        "examples": [
+          "GenLayer",
+          "VeritasProtocol"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "OWNS_ESCROW",
+        "description": "Controls escrow funds for a disputed workflow",
+        "source_targets": [
+          {
+            "source": "MarketplaceOperator",
+            "target": "IndependentAgentOperator"
+          },
+          {
+            "source": "Person",
+            "target": "Person"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "APPROVES_VENDOR",
+        "description": "Approves or rejects a vendor for onboarding",
+        "source_targets": [
+          {
+            "source": "ProcurementLead",
+            "target": "Organization"
+          },
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "PRICES_RISK_FOR",
+        "description": "Sets insurance pricing or coverage terms for a customer",
+        "source_targets": [
+          {
+            "source": "Actuary",
+            "target": "Organization"
+          },
+          {
+            "source": "Actuary",
+            "target": "Person"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "DECIDES_ROUTING",
+        "description": "Chooses dispute or workflow routing architecture",
+        "source_targets": [
+          {
+            "source": "FrameworkArchitect",
+            "target": "Organization"
+          },
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "CONTRACTS_WITH",
+        "description": "Establishes a commercial contract or integration deal",
+        "source_targets": [
+          {
+            "source": "Organization",
+            "target": "Organization"
+          },
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REJECTS_ARTIFACT",
+        "description": "Rejects a compliance, attestation, or audit artifact",
+        "source_targets": [
+          {
+            "source": "ProcurementLead",
+            "target": "Organization"
+          },
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REQUIRES_ATTESTATION_FROM",
+        "description": "Demands an attestation or reasoning artifact before acceptance",
+        "source_targets": [
+          {
+            "source": "ProcurementLead",
+            "target": "Organization"
+          },
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "MIGRATES_TO",
+        "description": "Moves workflow or operations to another platform or mechanism",
+        "source_targets": [
+          {
+            "source": "MarketplaceOperator",
+            "target": "Organization"
+          },
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "ESCALATES_TO_BOARD",
+        "description": "Raises an issue to board oversight for decision",
+        "source_targets": [
+          {
+            "source": "CFO",
+            "target": "BoardMember"
+          },
+          {
+            "source": "Person",
+            "target": "BoardMember"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPRESENTS",
+        "description": "Acts on behalf of an organization in external decisions",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  }
+}

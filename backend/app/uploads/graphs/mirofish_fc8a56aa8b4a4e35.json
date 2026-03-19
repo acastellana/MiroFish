@@ -1,0 +1,297 @@
+{
+  "nodes": {},
+  "edges": [],
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "MarketplaceOperator",
+        "description": "An entity operating a marketplace for agent-to-agent transactions.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the marketplace operator."
+          },
+          {
+            "name": "marketplace_type",
+            "type": "text",
+            "description": "The type of marketplace operated (e.g., coding, research, creative)."
+          },
+          {
+            "name": "transaction_volume",
+            "type": "text",
+            "description": "The daily transaction volume of the marketplace."
+          }
+        ],
+        "examples": [
+          "DevSwarm",
+          "Rentahuman.ai"
+        ]
+      },
+      {
+        "name": "FrameworkBuilder",
+        "description": "An entity developing frameworks for agent-to-agent commerce.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the framework builder."
+          },
+          {
+            "name": "framework_name",
+            "type": "text",
+            "description": "The name of the framework being developed."
+          },
+          {
+            "name": "developer_count",
+            "type": "text",
+            "description": "The number of developers using the framework."
+          }
+        ],
+        "examples": [
+          "LangGraph",
+          "AutoAgent"
+        ]
+      },
+      {
+        "name": "EnterpriseBuyer",
+        "description": "An entity representing a company or organization purchasing agent services.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the enterprise buyer."
+          },
+          {
+            "name": "industry",
+            "type": "text",
+            "description": "The industry in which the enterprise operates."
+          },
+          {
+            "name": "annual_spending",
+            "type": "text",
+            "description": "The annual spending on agent services."
+          }
+        ],
+        "examples": [
+          "Shopify",
+          "Accenture"
+        ]
+      },
+      {
+        "name": "Developer",
+        "description": "An individual or entity developing AI agents or related software.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the developer."
+          },
+          {
+            "name": "project_name",
+            "type": "text",
+            "description": "The name of the project or agent being developed."
+          },
+          {
+            "name": "experience_level",
+            "type": "text",
+            "description": "The experience level of the developer (e.g., beginner, intermediate, expert)."
+          }
+        ],
+        "examples": [
+          "Kai Rodriguez",
+          "Mei Lin"
+        ]
+      },
+      {
+        "name": "MediaAnalyst",
+        "description": "An entity providing analysis or reporting on the agent economy.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the media analyst."
+          },
+          {
+            "name": "publication",
+            "type": "text",
+            "description": "The name of the publication or platform."
+          },
+          {
+            "name": "audience_size",
+            "type": "text",
+            "description": "The size of the audience reached by the analyst."
+          }
+        ],
+        "examples": [
+          "Jessica Park",
+          "@AgentWatch"
+        ]
+      },
+      {
+        "name": "Regulator",
+        "description": "An entity responsible for overseeing compliance and regulations in the agent economy.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the regulator."
+          },
+          {
+            "name": "agency_name",
+            "type": "text",
+            "description": "The name of the regulatory agency."
+          },
+          {
+            "name": "jurisdiction",
+            "type": "text",
+            "description": "The jurisdiction in which the regulator operates."
+          }
+        ],
+        "examples": [
+          "Sophie Leclerc",
+          "Michael Torres"
+        ]
+      },
+      {
+        "name": "Investor",
+        "description": "An entity providing funding or investment in the agent economy.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the investor."
+          },
+          {
+            "name": "investment_firm",
+            "type": "text",
+            "description": "The name of the investment firm or fund."
+          },
+          {
+            "name": "investment_amount",
+            "type": "text",
+            "description": "The amount of investment made."
+          }
+        ],
+        "examples": [
+          "Fatima Al-Rashidi",
+          "Lior Ben-David"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "A general type representing any individual not categorized above.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the person."
+          }
+        ],
+        "examples": [
+          "John Doe",
+          "Jane Smith"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "A general type representing any organization not categorized above.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          }
+        ],
+        "examples": [
+          "Generic Corp",
+          "Nonprofit Org"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "PARTNERS_WITH",
+        "description": "Indicates a partnership between two entities.",
+        "source_targets": [
+          {
+            "source": "FrameworkBuilder",
+            "target": "MarketplaceOperator"
+          },
+          {
+            "source": "Investor",
+            "target": "MarketplaceOperator"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "BUYS_FROM",
+        "description": "Indicates an enterprise buyer purchasing services from a marketplace operator.",
+        "source_targets": [
+          {
+            "source": "EnterpriseBuyer",
+            "target": "MarketplaceOperator"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "DEVELOPS",
+        "description": "Indicates a developer creating an agent or software.",
+        "source_targets": [
+          {
+            "source": "Developer",
+            "target": "MarketplaceOperator"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Indicates a media analyst providing coverage on a marketplace or framework.",
+        "source_targets": [
+          {
+            "source": "MediaAnalyst",
+            "target": "MarketplaceOperator"
+          },
+          {
+            "source": "MediaAnalyst",
+            "target": "FrameworkBuilder"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Indicates a regulator overseeing a marketplace or framework.",
+        "source_targets": [
+          {
+            "source": "Regulator",
+            "target": "MarketplaceOperator"
+          },
+          {
+            "source": "Regulator",
+            "target": "FrameworkBuilder"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INVESTS_IN",
+        "description": "Indicates an investor providing funding to a marketplace or framework.",
+        "source_targets": [
+          {
+            "source": "Investor",
+            "target": "MarketplaceOperator"
+          },
+          {
+            "source": "Investor",
+            "target": "FrameworkBuilder"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  }
+}
