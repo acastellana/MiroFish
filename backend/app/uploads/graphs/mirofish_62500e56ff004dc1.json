@@ -1,0 +1,1279 @@
+{
+  "nodes": {
+    "d290ecdc-f4b7-49a6-ab29-5a216214f92e": {
+      "uuid": "d290ecdc-f4b7-49a6-ab29-5a216214f92e",
+      "name": "GenLayer",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "status": "Draft v1",
+        "date": "2026-03-14",
+        "description": "implied company/platform with a moat based on subjective judgment"
+      }
+    },
+    "60b14310-4109-41de-87df-78dfed9c4ade": {
+      "uuid": "60b14310-4109-41de-87df-78dfed9c4ade",
+      "name": "MiroFish",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "a9621d67-1433-4e48-aedd-aebdadd0f02b": {
+      "uuid": "a9621d67-1433-4e48-aedd-aebdadd0f02b",
+      "name": "AI agents",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "transacting on behalf of consumers"
+      }
+    },
+    "9b0c7ee7-0901-49d6-af88-0e9d5d6431cb": {
+      "uuid": "9b0c7ee7-0901-49d6-af88-0e9d5d6431cb",
+      "name": "B2B cross-border trade",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "annual cross-border trade"
+      }
+    },
+    "8c9362b2-3272-4105-981c-1ea69ef997c0": {
+      "uuid": "8c9362b2-3272-4105-981c-1ea69ef997c0",
+      "name": "agentic commerce",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "8a9118fe-ddff-477e-ac0f-426bc01645ca": {
+      "uuid": "8a9118fe-ddff-477e-ac0f-426bc01645ca",
+      "name": "OpenAI Operator",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "47678a20-dc6f-491d-b14b-e003d58d0a8e": {
+      "uuid": "47678a20-dc6f-491d-b14b-e003d58d0a8e",
+      "name": "Perplexity Buy",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "24d6c190-5627-495b-90cc-52f0fe928e97": {
+      "uuid": "24d6c190-5627-495b-90cc-52f0fe928e97",
+      "name": "enterprise agent platforms",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c5a053e7-d6bf-409d-a1d1-6a1c60c8da4b": {
+      "uuid": "c5a053e7-d6bf-409d-a1d1-6a1c60c8da4b",
+      "name": "Traditional escrow",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "e3ee8ec1-9695-4e11-8155-6a2ecbcc65d9": {
+      "uuid": "e3ee8ec1-9695-4e11-8155-6a2ecbcc65d9",
+      "name": "Traditional courts",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "f9b215bb-520e-4eef-a9d1-2a795e836534": {
+      "uuid": "f9b215bb-520e-4eef-a9d1-2a795e836534",
+      "name": "Crypto escrow",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "b7b7533b-c609-4561-80c8-e78d9f8c1a54": {
+      "uuid": "b7b7533b-c609-4561-80c8-e78d9f8c1a54",
+      "name": "ERC-8183",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "63f06707-8fee-4e97-8bfb-8a1ecafc277a": {
+      "uuid": "63f06707-8fee-4e97-8bfb-8a1ecafc277a",
+      "name": "ERC-8004",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "proposed a registry + escrow"
+      }
+    },
+    "7bac4981-91d6-4196-98dc-cfdaa0296635": {
+      "uuid": "7bac4981-91d6-4196-98dc-cfdaa0296635",
+      "name": "SME exporters",
+      "entity_type": "SMEExporter",
+      "labels": [
+        "Entity",
+        "SMEExporter"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "in emerging markets"
+      }
+    },
+    "a01e0255-d796-47f4-8060-c361d423ffef": {
+      "uuid": "a01e0255-d796-47f4-8060-c361d423ffef",
+      "name": "Letters of credit",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "cost": "$500–2000",
+        "time": "7–14 days"
+      }
+    },
+    "eff90615-cfd8-445a-8a64-7396c69a0516": {
+      "uuid": "eff90615-cfd8-445a-8a64-7396c69a0516",
+      "name": "AI validator",
+      "entity_type": "AIValidator",
+      "labels": [
+        "Entity",
+        "AIValidator"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "165e07bc-b938-4d81-9b40-ab10cc7d0cd4": {
+      "uuid": "165e07bc-b938-4d81-9b40-ab10cc7d0cd4",
+      "name": "SMEs",
+      "entity_type": "SMEExporter",
+      "labels": [
+        "Entity",
+        "SMEExporter"
+      ],
+      "summary": "",
+      "attributes": {
+        "regions": "LatAm, SEA, Africa"
+      }
+    },
+    "d6253b82-0477-43aa-87bb-f91717aec227": {
+      "uuid": "d6253b82-0477-43aa-87bb-f91717aec227",
+      "name": "conditional-payment-cross-border-trade",
+      "entity_type": "Marketplace",
+      "labels": [
+        "Entity",
+        "Marketplace"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "8c93e892-6160-4f27-976f-076ce8e093f5": {
+      "uuid": "8c93e892-6160-4f27-976f-076ce8e093f5",
+      "name": "shipment documents",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "bf99fb52-dfff-433b-8c9c-0576e23b7d4c": {
+      "uuid": "bf99fb52-dfff-433b-8c9c-0576e23b7d4c",
+      "name": "photos",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "760d2596-908b-4330-b078-8cdb7996a7d9": {
+      "uuid": "760d2596-908b-4330-b078-8cdb7996a7d9",
+      "name": "quality certifications",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "25377607-8f95-436c-afbe-a6db348e5bb2": {
+      "uuid": "25377607-8f95-436c-afbe-a6db348e5bb2",
+      "name": "Intelligent Letter of Credit",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "Wedge product resolved by AI consensus, not bank bureaucracy",
+        "cost": "90% less",
+        "settlement_time": "<1 hour"
+      }
+    },
+    "26324ec7-940d-4b39-af80-801f4b9117de": {
+      "uuid": "26324ec7-940d-4b39-af80-801f4b9117de",
+      "name": "Cross-border SaaS platforms",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "domain": "freight, logistics, trade finance"
+      }
+    },
+    "aca87de7-f018-4d43-b073-ac9308318a55": {
+      "uuid": "aca87de7-f018-4d43-b073-ac9308318a55",
+      "name": "SME merchants",
+      "entity_type": "SMEExporter",
+      "labels": [
+        "Entity",
+        "SMEExporter"
+      ],
+      "summary": "",
+      "attributes": {
+        "adoption_stage": "directly after platforms"
+      }
+    },
+    "82a7c9a1-132d-43d6-84e8-d315bb375f06": {
+      "uuid": "82a7c9a1-132d-43d6-84e8-d315bb375f06",
+      "name": "Flexport",
+      "entity_type": "FreightForwarder",
+      "labels": [
+        "Entity",
+        "FreightForwarder"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "ecbdb15b-faee-48ff-bbee-33c9dc548dc8": {
+      "uuid": "ecbdb15b-faee-48ff-bbee-33c9dc548dc8",
+      "name": "Cargonaut",
+      "entity_type": "FreightForwarder",
+      "labels": [
+        "Entity",
+        "FreightForwarder"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "86693ec3-ce78-450e-9005-edd1bd05e003": {
+      "uuid": "86693ec3-ce78-450e-9005-edd1bd05e003",
+      "name": "AI Agent Marketplace",
+      "entity_type": "Marketplace",
+      "labels": [
+        "Entity",
+        "Marketplace"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "4767fef9-69e5-4f95-bcbd-b5f472cc1baa": {
+      "uuid": "4767fef9-69e5-4f95-bcbd-b5f472cc1baa",
+      "name": "GenLayer",
+      "entity_type": "AIAgentDeveloper",
+      "labels": [
+        "Entity",
+        "AIAgentDeveloper"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "e0b268f7-c1c7-4042-9229-64513b7679cb": {
+      "uuid": "e0b268f7-c1c7-4042-9229-64513b7679cb",
+      "name": "Virtuals Protocol",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "6fb179e4-b897-4ad1-ae1e-982404e6d2f8": {
+      "uuid": "6fb179e4-b897-4ad1-ae1e-982404e6d2f8",
+      "name": "AI developers",
+      "entity_type": "AIAgentDeveloper",
+      "labels": [
+        "Entity",
+        "AIAgentDeveloper"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "95947894-ddf4-4db7-90e8-a0a27375e789": {
+      "uuid": "95947894-ddf4-4db7-90e8-a0a27375e789",
+      "name": "Intelligent Task Escrow SDK",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "58093878-0920-441c-9c56-c38a4780df23": {
+      "uuid": "58093878-0920-441c-9c56-c38a4780df23",
+      "name": "AI validators",
+      "entity_type": "AIValidator",
+      "labels": [
+        "Entity",
+        "AIValidator"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "5915df60-214e-45f3-81ed-5ac1746e8188": {
+      "uuid": "5915df60-214e-45f3-81ed-5ac1746e8188",
+      "name": "AI agent developers",
+      "entity_type": "AIAgentDeveloper",
+      "labels": [
+        "Entity",
+        "AIAgentDeveloper"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "Fetch.ai ecosystem defectors, crypto-native builders"
+      }
+    },
+    "7e6be240-dfb1-4003-ad26-2f8efa189a0a": {
+      "uuid": "7e6be240-dfb1-4003-ad26-2f8efa189a0a",
+      "name": "LangChain",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "4200c589-aa64-4743-91a8-62341c09a038": {
+      "uuid": "4200c589-aa64-4743-91a8-62341c09a038",
+      "name": "AutoGPT",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "495e245a-5cb1-41d8-9e3e-ac044978cf6c": {
+      "uuid": "495e245a-5cb1-41d8-9e3e-ac044978cf6c",
+      "name": "CrewAI",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "73232c0b-e0a1-4680-b574-4d96df545e36": {
+      "uuid": "73232c0b-e0a1-4680-b574-4d96df545e36",
+      "name": "consumers",
+      "entity_type": "Consumer",
+      "labels": [
+        "Entity",
+        "Consumer"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "ae08d2c8-4f56-4773-9abb-bf90c00210ce": {
+      "uuid": "ae08d2c8-4f56-4773-9abb-bf90c00210ce",
+      "name": "marketplaces",
+      "entity_type": "Marketplace",
+      "labels": [
+        "Entity",
+        "Marketplace"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "f48639a5-9ffd-4665-9b93-29d73c26e31e": {
+      "uuid": "f48639a5-9ffd-4665-9b93-29d73c26e31e",
+      "name": "sellers",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "5cbc81e2-e943-4dc4-a6f2-b9f5d9b4dc45": {
+      "uuid": "5cbc81e2-e943-4dc4-a6f2-b9f5d9b4dc45",
+      "name": "platform",
+      "entity_type": "Marketplace",
+      "labels": [
+        "Entity",
+        "Marketplace"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "trust erosion context"
+      }
+    },
+    "25015feb-f163-4dba-b4a6-376f119380a3": {
+      "uuid": "25015feb-f163-4dba-b4a6-376f119380a3",
+      "name": "Marketplace",
+      "entity_type": "Marketplace",
+      "labels": [
+        "Entity",
+        "Marketplace"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "integrates GenLayer as a dispute engine via API"
+      }
+    },
+    "9c0bff9c-e5c3-4ba5-b4c7-c960f898126d": {
+      "uuid": "9c0bff9c-e5c3-4ba5-b4c7-c960f898126d",
+      "name": "Dispute Resolution API",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "wedge product, SaaS wrapper over GenLayer's Intelligent Contracts"
+      }
+    },
+    "58cc58a9-d816-42f6-949f-5059b4836b88": {
+      "uuid": "58cc58a9-d816-42f6-949f-5059b4836b88",
+      "name": "mid-market crypto/NFT marketplaces",
+      "entity_type": "Marketplace",
+      "labels": [
+        "Entity",
+        "Marketplace"
+      ],
+      "summary": "",
+      "attributes": {
+        "segment": "mid-market",
+        "domain": "crypto/NFT"
+      }
+    },
+    "0a96694e-e2c9-4a11-9d32-a6bfc6b0e2eb": {
+      "uuid": "0a96694e-e2c9-4a11-9d32-a6bfc6b0e2eb",
+      "name": "traditional marketplaces",
+      "entity_type": "Marketplace",
+      "labels": [
+        "Entity",
+        "Marketplace"
+      ],
+      "summary": "",
+      "attributes": {
+        "segment": "traditional"
+      }
+    },
+    "0b7f5e5f-e591-45da-9314-1ac489ae2a38": {
+      "uuid": "0b7f5e5f-e591-45da-9314-1ac489ae2a38",
+      "name": "traditional escrow",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "escrow"
+      }
+    },
+    "bd67ee30-6318-4193-9918-b9e99580b1b3": {
+      "uuid": "bd67ee30-6318-4193-9918-b9e99580b1b3",
+      "name": "InternetCourt",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "cross-chain bridge"
+      }
+    },
+    "19530140-ab81-494c-bd5a-72dc6eb598b5": {
+      "uuid": "19530140-ab81-494c-bd5a-72dc6eb598b5",
+      "name": "Optimistic Democracy",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c1eae3ed-300e-4d51-89a4-d37a4014a9a1": {
+      "uuid": "c1eae3ed-300e-4d51-89a4-d37a4014a9a1",
+      "name": "AI judge",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "903b257f-a2f9-49de-a834-59c3ab933b1b": {
+      "uuid": "903b257f-a2f9-49de-a834-59c3ab933b1b",
+      "name": "CrewAI",
+      "entity_type": "AIAgentDeveloper",
+      "labels": [
+        "Entity",
+        "AIAgentDeveloper"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "feca332e-dbee-4937-8618-25e753774fea": {
+      "uuid": "feca332e-dbee-4937-8618-25e753774fea",
+      "name": "Marketplace Dispute Resolution API",
+      "entity_type": "Marketplace",
+      "labels": [
+        "Entity",
+        "Marketplace"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "de9f99ab-e004-4b8f-8b62-32fa552bbe2d": {
+      "uuid": "de9f99ab-e004-4b8f-8b62-32fa552bbe2d",
+      "name": "Scenario A",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "label": "Base",
+        "description": "Simulate 18-month stakeholder adoption curve, normal timeline"
+      }
+    },
+    "92e17256-2045-420a-a72f-dd7d6314d25c": {
+      "uuid": "92e17256-2045-420a-a72f-dd7d6314d25c",
+      "name": "Scenario B",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "label": "Slow",
+        "description": "Competitor fills gap during mainnet delay"
+      }
+    },
+    "36fbb034-d4f9-49d7-8d2b-f698bb7981b6": {
+      "uuid": "36fbb034-d4f9-49d7-8d2b-f698bb7981b6",
+      "name": "Scenario C",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "label": "Catalyst",
+        "description": "Major platform integration triggers developer network effect"
+      }
+    },
+    "05978da8-3a17-4dc8-9cd3-dc2a05909a42": {
+      "uuid": "05978da8-3a17-4dc8-9cd3-dc2a05909a42",
+      "name": "Scenario D",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "label": "Regulatory",
+        "description": "EU mandate creates compliance demand spike"
+      }
+    },
+    "1a347175-f6d0-4d35-b201-a62430c9b6fb": {
+      "uuid": "1a347175-f6d0-4d35-b201-a62430c9b6fb",
+      "name": "EU",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "jurisdiction"
+      }
+    }
+  },
+  "edges": [
+    {
+      "uuid": "b23566f6-94b6-493c-a3c7-4923b7e65a39",
+      "name": "VALIDATES",
+      "fact": "The document states GenLayer is ready for MiroFish simulation validation.",
+      "source_node_uuid": "d290ecdc-f4b7-49a6-ab29-5a216214f92e",
+      "target_node_uuid": "60b14310-4109-41de-87df-78dfed9c4ade",
+      "attributes": {}
+    },
+    {
+      "uuid": "b0ba3984-627c-42f8-9239-fba622632f12",
+      "name": "SUPPORTS",
+      "fact": "The analysis is about GenLayer PMF in agentic commerce.",
+      "source_node_uuid": "d290ecdc-f4b7-49a6-ab29-5a216214f92e",
+      "target_node_uuid": "8c9362b2-3272-4105-981c-1ea69ef997c0",
+      "attributes": {}
+    },
+    {
+      "uuid": "4ab8a618-bf3c-411b-97fa-063296b4a3b8",
+      "name": "SUPPORTS",
+      "fact": "The highest-conviction PMF wedge for GenLayer is B2B cross-border trade escrow + dispute resolution for AI agents.",
+      "source_node_uuid": "d290ecdc-f4b7-49a6-ab29-5a216214f92e",
+      "target_node_uuid": "9b0c7ee7-0901-49d6-af88-0e9d5d6431cb",
+      "attributes": {}
+    },
+    {
+      "uuid": "48cb8cd0-0943-4e49-b464-1bfa554d6aed",
+      "name": "CHALLENGES",
+      "fact": "Every major agentic commerce initiative, including OpenAI Operator, runs into the same wall of liability when the agent is wrong.",
+      "source_node_uuid": "8a9118fe-ddff-477e-ac0f-426bc01645ca",
+      "target_node_uuid": "24d6c190-5627-495b-90cc-52f0fe928e97",
+      "attributes": {}
+    },
+    {
+      "uuid": "d588e543-be06-4092-95f9-26db350f64c4",
+      "name": "CHALLENGES",
+      "fact": "Every major agentic commerce initiative, including Perplexity Buy, runs into the same wall of liability when the agent is wrong.",
+      "source_node_uuid": "47678a20-dc6f-491d-b14b-e003d58d0a8e",
+      "target_node_uuid": "24d6c190-5627-495b-90cc-52f0fe928e97",
+      "attributes": {}
+    },
+    {
+      "uuid": "bc3a0e24-8ec7-4fc7-8d2e-a7a98974ff36",
+      "name": "SUPPORTS",
+      "fact": "Crypto escrow (ERC-8183, ERC-8004) uses smart contract logic.",
+      "source_node_uuid": "f9b215bb-520e-4eef-a9d1-2a795e836534",
+      "target_node_uuid": "b7b7533b-c609-4561-80c8-e78d9f8c1a54",
+      "attributes": {}
+    },
+    {
+      "uuid": "4b5d6e3f-ac1d-46e1-a9b6-2b83ad5d765a",
+      "name": "SUPPORTS",
+      "fact": "Crypto escrow (ERC-8183, ERC-8004) uses smart contract logic.",
+      "source_node_uuid": "f9b215bb-520e-4eef-a9d1-2a795e836534",
+      "target_node_uuid": "63f06707-8fee-4e97-8bfb-8a1ecafc277a",
+      "attributes": {}
+    },
+    {
+      "uuid": "acf4866c-daaf-44e3-b3f3-1d6960161d7b",
+      "name": "CHALLENGES",
+      "fact": "SME exporters in emerging markets have zero leverage in disputes in B2B cross-border trade.",
+      "source_node_uuid": "7bac4981-91d6-4196-98dc-cfdaa0296635",
+      "target_node_uuid": "9b0c7ee7-0901-49d6-af88-0e9d5d6431cb",
+      "attributes": {}
+    },
+    {
+      "uuid": "6b6a8960-beb4-4f40-9e82-979c14c19d3b",
+      "name": "VALIDATES",
+      "fact": "AI validator can evaluate shipment documents.",
+      "source_node_uuid": "eff90615-cfd8-445a-8a64-7396c69a0516",
+      "target_node_uuid": "8c93e892-6160-4f27-976f-076ce8e093f5",
+      "attributes": {}
+    },
+    {
+      "uuid": "dd59824f-eddd-4d1c-9ca8-5bc2c9de1554",
+      "name": "VALIDATES",
+      "fact": "AI validator can evaluate photos.",
+      "source_node_uuid": "eff90615-cfd8-445a-8a64-7396c69a0516",
+      "target_node_uuid": "bf99fb52-dfff-433b-8c9c-0576e23b7d4c",
+      "attributes": {}
+    },
+    {
+      "uuid": "2a1d196c-5b38-4b92-bb30-2c93c6b43c57",
+      "name": "VALIDATES",
+      "fact": "AI validator can evaluate quality certifications.",
+      "source_node_uuid": "eff90615-cfd8-445a-8a64-7396c69a0516",
+      "target_node_uuid": "760d2596-908b-4330-b078-8cdb7996a7d9",
+      "attributes": {}
+    },
+    {
+      "uuid": "a175eea7-cdab-4c26-87c0-3802109fe178",
+      "name": "SUPPORTS",
+      "fact": "GenLayer wins here and the conditional-payment-cross-border-trade demo proves the pattern works end-to-end.",
+      "source_node_uuid": "d290ecdc-f4b7-49a6-ab29-5a216214f92e",
+      "target_node_uuid": "d6253b82-0477-43aa-87bb-f91717aec227",
+      "attributes": {}
+    },
+    {
+      "uuid": "a9752081-c248-41c6-b4da-fa200afa10d5",
+      "name": "ADOPTS",
+      "fact": "Cross-border SaaS platforms adopt the Intelligent Letter of Credit as infrastructure.",
+      "source_node_uuid": "26324ec7-940d-4b39-af80-801f4b9117de",
+      "target_node_uuid": "25377607-8f95-436c-afbe-a6db348e5bb2",
+      "attributes": {}
+    },
+    {
+      "uuid": "253121ee-dd31-4e57-bb21-ef9b7b0a5b78",
+      "name": "ADOPTS",
+      "fact": "SME merchants adopt the Intelligent Letter of Credit directly.",
+      "source_node_uuid": "aca87de7-f018-4d43-b073-ac9308318a55",
+      "target_node_uuid": "25377607-8f95-436c-afbe-a6db348e5bb2",
+      "attributes": {}
+    },
+    {
+      "uuid": "0672b774-b766-48e1-99f1-ff0e027ab171",
+      "name": "INTERACTS_WITH",
+      "fact": "One large freight forwarder or trade platform (e.g., Flexport, Cargonaut, or a LatAm challenger) integrates as default settlement.",
+      "source_node_uuid": "82a7c9a1-132d-43d6-84e8-d315bb375f06",
+      "target_node_uuid": "ecbdb15b-faee-48ff-bbee-33c9dc548dc8",
+      "attributes": {}
+    },
+    {
+      "uuid": "34b0fae2-324e-4d4c-8fc5-64512c17ecd0",
+      "name": "CHALLENGES",
+      "fact": "ERC-8004 proposed a registry + escrow, but it's rules-based and can't verify quality of delivered work.",
+      "source_node_uuid": "63f06707-8fee-4e97-8bfb-8a1ecafc277a",
+      "target_node_uuid": "86693ec3-ce78-450e-9005-edd1bd05e003",
+      "attributes": {}
+    },
+    {
+      "uuid": "8ff7c0b9-9a57-40ae-980b-89cc274d48f3",
+      "name": "CHALLENGES",
+      "fact": "GenLayer wins here and is positioned as solving exactly what ERC-8183 (Virtuals Protocol) is trying to solve.",
+      "source_node_uuid": "4767fef9-69e5-4f95-bcbd-b5f472cc1baa",
+      "target_node_uuid": "b7b7533b-c609-4561-80c8-e78d9f8c1a54",
+      "attributes": {}
+    },
+    {
+      "uuid": "fc605487-9e0e-4194-912f-b5b8f656b68a",
+      "name": "CHALLENGES",
+      "fact": "GenLayer wins here and is positioned as solving exactly what ERC-8183 (Virtuals Protocol) is trying to solve.",
+      "source_node_uuid": "4767fef9-69e5-4f95-bcbd-b5f472cc1baa",
+      "target_node_uuid": "e0b268f7-c1c7-4042-9229-64513b7679cb",
+      "attributes": {}
+    },
+    {
+      "uuid": "222ce468-dcbf-42a1-a870-ffaf40e16968",
+      "name": "ADOPTS",
+      "fact": "AI developers build agent economy apps using the Intelligent Task Escrow SDK.",
+      "source_node_uuid": "6fb179e4-b897-4ad1-ae1e-982404e6d2f8",
+      "target_node_uuid": "95947894-ddf4-4db7-90e8-a0a27375e789",
+      "attributes": {}
+    },
+    {
+      "uuid": "8603fb47-336a-4653-b580-7fe82c1bd43b",
+      "name": "SUPPORTS",
+      "fact": "The Intelligent Task Escrow SDK releases payment only when AI validators agree the work is done.",
+      "source_node_uuid": "95947894-ddf4-4db7-90e8-a0a27375e789",
+      "target_node_uuid": "58093878-0920-441c-9c56-c38a4780df23",
+      "attributes": {}
+    },
+    {
+      "uuid": "323f8848-4335-487b-956b-b6d3a99f38fb",
+      "name": "VALIDATES",
+      "fact": "AI validators agree the work is done for payment release in the Intelligent Task Escrow SDK.",
+      "source_node_uuid": "58093878-0920-441c-9c56-c38a4780df23",
+      "target_node_uuid": "95947894-ddf4-4db7-90e8-a0a27375e789",
+      "attributes": {}
+    },
+    {
+      "uuid": "6760f1eb-d792-481a-8878-0f84eedecf81",
+      "name": "ADOPTS",
+      "fact": "AI agent developers adopt after SDK launch and one reference integration with a known agent framework such as LangChain.",
+      "source_node_uuid": "5915df60-214e-45f3-81ed-5ac1746e8188",
+      "target_node_uuid": "7e6be240-dfb1-4003-ad26-2f8efa189a0a",
+      "attributes": {}
+    },
+    {
+      "uuid": "28a278f3-1dd8-405e-a5a5-0b01a8a6d15c",
+      "name": "ADOPTS",
+      "fact": "AI agent developers adopt after SDK launch and one reference integration with a known agent framework such as AutoGPT.",
+      "source_node_uuid": "5915df60-214e-45f3-81ed-5ac1746e8188",
+      "target_node_uuid": "4200c589-aa64-4743-91a8-62341c09a038",
+      "attributes": {}
+    },
+    {
+      "uuid": "d64fda38-3f45-479c-ad95-227fd5ccde60",
+      "name": "ADOPTS",
+      "fact": "AI agent developers adopt after SDK launch and one reference integration with a known agent framework such as CrewAI.",
+      "source_node_uuid": "5915df60-214e-45f3-81ed-5ac1746e8188",
+      "target_node_uuid": "495e245a-5cb1-41d8-9e3e-ac044978cf6c",
+      "attributes": {}
+    },
+    {
+      "uuid": "f7a34e04-2cb1-446f-8350-3f7b43b8abd2",
+      "name": "INTERACTS_WITH",
+      "fact": "AI agents transact on behalf of consumers.",
+      "source_node_uuid": "a9621d67-1433-4e48-aedd-aebdadd0f02b",
+      "target_node_uuid": "73232c0b-e0a1-4680-b574-4d96df545e36",
+      "attributes": {}
+    },
+    {
+      "uuid": "06d36cf2-2671-4acf-aa33-8f73b286aadb",
+      "name": "CHALLENGES",
+      "fact": "Marketplaces face surging dispute volume from AI agents transacting on behalf of consumers.",
+      "source_node_uuid": "ae08d2c8-4f56-4773-9abb-bf90c00210ce",
+      "target_node_uuid": "a9621d67-1433-4e48-aedd-aebdadd0f02b",
+      "attributes": {}
+    },
+    {
+      "uuid": "9993e227-9981-43e4-9ce6-85c1194e5881",
+      "name": "CHALLENGES",
+      "fact": "The current solution is to charge back to sellers.",
+      "source_node_uuid": "ae08d2c8-4f56-4773-9abb-bf90c00210ce",
+      "target_node_uuid": "f48639a5-9ffd-4665-9b93-29d73c26e31e",
+      "attributes": {}
+    },
+    {
+      "uuid": "c0bcf1cd-94ee-482d-a30b-7581efa8149c",
+      "name": "CHALLENGES",
+      "fact": "Charge-backs to sellers erode platform trust.",
+      "source_node_uuid": "5cbc81e2-e943-4dc4-a6f2-b9f5d9b4dc45",
+      "target_node_uuid": "f48639a5-9ffd-4665-9b93-29d73c26e31e",
+      "attributes": {}
+    },
+    {
+      "uuid": "44c90a69-351d-41f7-b836-bbffc303f758",
+      "name": "ADOPTS",
+      "fact": "Marketplace integrates GenLayer as their 'dispute engine' via API.",
+      "source_node_uuid": "25015feb-f163-4dba-b4a6-376f119380a3",
+      "target_node_uuid": "d290ecdc-f4b7-49a6-ab29-5a216214f92e",
+      "attributes": {}
+    },
+    {
+      "uuid": "35aa528a-8a27-4d92-a30d-2209d1ba4c82",
+      "name": "SUPPORTS",
+      "fact": "'Dispute Resolution API' is described as a SaaS wrapper over GenLayer's Intelligent Contracts.",
+      "source_node_uuid": "9c0bff9c-e5c3-4ba5-b4c7-c960f898126d",
+      "target_node_uuid": "d290ecdc-f4b7-49a6-ab29-5a216214f92e",
+      "attributes": {}
+    },
+    {
+      "uuid": "22de15be-eb6b-44ef-810b-8c1ef5c519f8",
+      "name": "ADOPTS",
+      "fact": "Mid-market crypto/NFT marketplaces first adopt GenLayer.",
+      "source_node_uuid": "58cc58a9-d816-42f6-949f-5059b4836b88",
+      "target_node_uuid": "d290ecdc-f4b7-49a6-ab29-5a216214f92e",
+      "attributes": {}
+    },
+    {
+      "uuid": "41fdaa36-681d-48ec-ab2b-8f5968bd7748",
+      "name": "ADOPTS",
+      "fact": "Traditional marketplaces with high agent-initiated dispute rates adopt GenLayer after mid-market crypto/NFT marketplaces.",
+      "source_node_uuid": "0a96694e-e2c9-4a11-9d32-a6bfc6b0e2eb",
+      "target_node_uuid": "d290ecdc-f4b7-49a6-ab29-5a216214f92e",
+      "attributes": {}
+    },
+    {
+      "uuid": "e58829e8-4e5f-448e-93dc-a38560bbc20f",
+      "name": "CHALLENGES",
+      "fact": "A high-profile publicly verifiable dispute showed that traditional escrow failed and GenLayer would have solved it better.",
+      "source_node_uuid": "0b7f5e5f-e591-45da-9314-1ac489ae2a38",
+      "target_node_uuid": "d290ecdc-f4b7-49a6-ab29-5a216214f92e",
+      "attributes": {}
+    },
+    {
+      "uuid": "06020d9e-4aeb-4ad7-81d9-c7e57e2473c0",
+      "name": "CHALLENGES",
+      "fact": "\"AI judge\" trust gap; Optimistic Democracy already does this by allowing a challenge period.",
+      "source_node_uuid": "19530140-ab81-494c-bd5a-72dc6eb598b5",
+      "target_node_uuid": "c1eae3ed-300e-4d51-89a4-d37a4014a9a1",
+      "attributes": {}
+    },
+    {
+      "uuid": "9f274b0f-8e3f-4cde-87ea-213168d1140d",
+      "name": "SUPPORTS",
+      "fact": "CrewAI) → InternetCourt handles 10k+ live cases",
+      "source_node_uuid": "903b257f-a2f9-49de-a834-59c3ab933b1b",
+      "target_node_uuid": "bd67ee30-6318-4193-9918-b9e99580b1b3",
+      "attributes": {}
+    },
+    {
+      "uuid": "5314b851-da71-4441-94f5-ddc4555944df",
+      "name": "SUPPORTS",
+      "fact": "Phase 3 (2027): Platform plays → Marketplace Dispute Resolution API: enterprise tier",
+      "source_node_uuid": "bd67ee30-6318-4193-9918-b9e99580b1b3",
+      "target_node_uuid": "feca332e-dbee-4937-8618-25e753774fea",
+      "attributes": {}
+    },
+    {
+      "uuid": "487cc20e-115b-4584-82b5-06069484a7b2",
+      "name": "INTERACTS_WITH",
+      "fact": "The following simulation runs are prepared in seeds/genlayer-agentic-commerce-seed.md.",
+      "source_node_uuid": "60b14310-4109-41de-87df-78dfed9c4ade",
+      "target_node_uuid": "feca332e-dbee-4937-8618-25e753774fea",
+      "attributes": {}
+    },
+    {
+      "uuid": "b69ad5c5-d8aa-44c0-a7af-9dc45658d0fd",
+      "name": "REGULATES",
+      "fact": "Scenario D (Regulatory) mentions an EU mandate creating a compliance demand spike.",
+      "source_node_uuid": "05978da8-3a17-4dc8-9cd3-dc2a05909a42",
+      "target_node_uuid": "1a347175-f6d0-4d35-b201-a62430c9b6fb",
+      "attributes": {}
+    }
+  ],
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "SMEExporter",
+        "description": "Small and medium-sized enterprises engaged in exporting goods.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the SME exporter."
+          },
+          {
+            "name": "location",
+            "type": "text",
+            "description": "The location of the SME exporter."
+          }
+        ],
+        "examples": [
+          "ABC Exports",
+          "XYZ Traders"
+        ]
+      },
+      {
+        "name": "FreightForwarder",
+        "description": "Companies that arrange the transportation of goods for exporters.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the freight forwarding company."
+          },
+          {
+            "name": "service_area",
+            "type": "text",
+            "description": "The geographical area served by the freight forwarder."
+          }
+        ],
+        "examples": [
+          "Flexport",
+          "Cargonaut"
+        ]
+      },
+      {
+        "name": "Bank",
+        "description": "Financial institutions providing services like escrow and financing.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the bank."
+          },
+          {
+            "name": "services_offered",
+            "type": "text",
+            "description": "The financial services offered by the bank."
+          }
+        ],
+        "examples": [
+          "Bank of America",
+          "HSBC"
+        ]
+      },
+      {
+        "name": "AIAgentDeveloper",
+        "description": "Developers creating AI agents for various applications.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the AI agent developer."
+          },
+          {
+            "name": "specialization",
+            "type": "text",
+            "description": "The area of expertise in AI development."
+          }
+        ],
+        "examples": [
+          "Fetch.ai",
+          "OpenAI"
+        ]
+      },
+      {
+        "name": "Marketplace",
+        "description": "Platforms facilitating transactions between buyers and sellers.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the marketplace."
+          },
+          {
+            "name": "transaction_volume",
+            "type": "text",
+            "description": "The volume of transactions handled by the marketplace."
+          }
+        ],
+        "examples": [
+          "eBay",
+          "Amazon"
+        ]
+      },
+      {
+        "name": "RegulatoryAgency",
+        "description": "Government bodies overseeing trade and commerce regulations.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the regulatory agency."
+          },
+          {
+            "name": "jurisdiction",
+            "type": "text",
+            "description": "The jurisdiction under which the agency operates."
+          }
+        ],
+        "examples": [
+          "SEC",
+          "FCA"
+        ]
+      },
+      {
+        "name": "Consumer",
+        "description": "Individuals purchasing goods or services in the marketplace.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the consumer."
+          },
+          {
+            "name": "location",
+            "type": "text",
+            "description": "The location of the consumer."
+          }
+        ],
+        "examples": [
+          "John Doe",
+          "Jane Smith"
+        ]
+      },
+      {
+        "name": "AIValidator",
+        "description": "AI systems that validate transactions and agreements.",
+        "attributes": [
+          {
+            "name": "model_name",
+            "type": "text",
+            "description": "The name of the AI validation model."
+          },
+          {
+            "name": "capabilities",
+            "type": "text",
+            "description": "The capabilities of the AI validator."
+          }
+        ],
+        "examples": [
+          "GenLayer Validator",
+          "OpenAI Validator"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Any individual who can express opinions or interact on social media.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the person."
+          },
+          {
+            "name": "location",
+            "type": "text",
+            "description": "The location of the person."
+          }
+        ],
+        "examples": [
+          "Alice Johnson",
+          "Bob Lee"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Any group or entity that can express opinions or interact on social media.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization."
+          },
+          {
+            "name": "type",
+            "type": "text",
+            "description": "The type of organization (e.g., NGO, corporation)."
+          }
+        ],
+        "examples": [
+          "World Wildlife Fund",
+          "Tech Innovators Inc."
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "ADOPTS",
+        "description": "Indicates an entity adopts a technology or service.",
+        "source_targets": [
+          {
+            "source": "SMEExporter",
+            "target": "GenLayer"
+          },
+          {
+            "source": "FreightForwarder",
+            "target": "GenLayer"
+          },
+          {
+            "source": "Bank",
+            "target": "GenLayer"
+          },
+          {
+            "source": "AIAgentDeveloper",
+            "target": "GenLayer"
+          },
+          {
+            "source": "Marketplace",
+            "target": "GenLayer"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INTERACTS_WITH",
+        "description": "Indicates interaction between entities.",
+        "source_targets": [
+          {
+            "source": "Consumer",
+            "target": "Marketplace"
+          },
+          {
+            "source": "FreightForwarder",
+            "target": "SMEExporter"
+          },
+          {
+            "source": "RegulatoryAgency",
+            "target": "Marketplace"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "VALIDATES",
+        "description": "Indicates an AI validator validates a transaction.",
+        "source_targets": [
+          {
+            "source": "AIValidator",
+            "target": "Marketplace"
+          },
+          {
+            "source": "AIValidator",
+            "target": "SMEExporter"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Indicates a regulatory agency regulates an organization.",
+        "source_targets": [
+          {
+            "source": "RegulatoryAgency",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "SUPPORTS",
+        "description": "Indicates an entity supports another entity's initiative.",
+        "source_targets": [
+          {
+            "source": "AIAgentDeveloper",
+            "target": "GenLayer"
+          },
+          {
+            "source": "Bank",
+            "target": "SMEExporter"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "CHALLENGES",
+        "description": "Indicates an entity challenges another entity's initiative.",
+        "source_targets": [
+          {
+            "source": "Consumer",
+            "target": "Marketplace"
+          },
+          {
+            "source": "FreightForwarder",
+            "target": "Bank"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  }
+}

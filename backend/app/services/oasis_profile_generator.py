@@ -201,19 +201,33 @@ class OasisProfileGenerator:
         self.zep_client = None
         self.graph_id = graph_id
     
+    # Mandatory decision block appended to persona when entity is a decision owner
+    MANDATORY_DECISION_FORMAT_BLOCK = (
+        "\n\n[MANDATORY DECISION FORMAT] When you receive a direct decision prompt, "
+        "you MUST include a JSON block in your response: "
+        '{\"decision\": \"...\", \"reason\": \"...\", \"substitute_rejected\": \"...\", '
+        '\"consequence\": \"...\", \"classification\": \"confirm|falsify|near-miss\"}'
+    )
+
     def generate_profile_from_entity(
         self, 
         entity: EntityNode, 
         user_id: int,
-        use_llm: bool = True
+        use_llm: bool = True,
+        decision_role: Optional[str] = None,
+        agent_stance: Optional[str] = None,
     ) -> OasisAgentProfile:
         """
         从Zep实体生成OASIS Agent Profile
-        
+
         Args:
             entity: Zep实体节点
             user_id: 用户ID（用于OASIS）
             use_llm: 是否使用LLM生成详细人设
+            decision_role: Optional role tag, e.g. "decision_owner_ff1".
+                If set to "decision_owner_*", the mandatory decision format
+                block is appended to the generated persona.
+            agent_stance: Optional stance override (e.g. "supportive", "adversary").
             
         Returns:
             OasisAgentProfile
@@ -234,7 +248,9 @@ class OasisProfileGenerator:
                 entity_type=entity_type,
                 entity_summary=entity.summary,
                 entity_attributes=entity.attributes,
-                context=context
+                context=context,
+                decision_role=decision_role,
+                agent_stance=agent_stance,
             )
         else:
             # 使用规则生成基础人设
@@ -244,7 +260,16 @@ class OasisProfileGenerator:
                 entity_summary=entity.summary,
                 entity_attributes=entity.attributes
             )
-        
+            if decision_role:
+                profile_data["decision_role"] = decision_role
+            if agent_stance:
+                profile_data["stance"] = agent_stance
+
+        # If entity is a decision owner, append mandatory decision format block
+        if decision_role and decision_role.startswith("decision_owner"):
+            persona = profile_data.get("persona", "")
+            profile_data["persona"] = persona + self.MANDATORY_DECISION_FORMAT_BLOCK
+
         return OasisAgentProfile(
             user_id=user_id,
             user_name=user_name,
@@ -492,7 +517,9 @@ class OasisProfileGenerator:
         entity_type: str,
         entity_summary: str,
         entity_attributes: Dict[str, Any],
-        context: str
+        context: str,
+        decision_role: Optional[str] = None,
+        agent_stance: Optional[str] = None,
     ) -> Dict[str, Any]:
         """
         使用LLM生成非常详细的人设
@@ -500,18 +527,25 @@ class OasisProfileGenerator:
         根据实体类型区分：
         - 个人实体：生成具体的人物设定
         - 群体/机构实体：生成代表性账号设定
+
+        decision_role and agent_stance are appended to the prompt when present.
         """
         
         is_individual = self._is_individual_entity(entity_type)
         
         if is_individual:
             prompt = self._build_individual_persona_prompt(
-                entity_name, entity_type, entity_summary, entity_attributes, context
+                entity_name, entity_type, entity_summary, entity_attributes, context,
+                decision_role=decision_role, agent_stance=agent_stance,
             )
         else:
             prompt = self._build_group_persona_prompt(
                 entity_name, entity_type, entity_summary, entity_attributes, context
             )
+            if decision_role:
+                prompt += f"\n\ndecision_role: {decision_role}"
+            if agent_stance:
+                prompt += f"\nagent_stance: {agent_stance}"
 
         # 尝试多次生成，直到成功或达到最大重试次数
         max_attempts = 3
@@ -672,19 +706,28 @@ class OasisProfileGenerator:
         entity_type: str,
         entity_summary: str,
         entity_attributes: Dict[str, Any],
-        context: str
+        context: str,
+        decision_role: Optional[str] = None,
+        agent_stance: Optional[str] = None,
     ) -> str:
         """构建个人实体的详细人设提示词"""
         
         attrs_str = json.dumps(entity_attributes, ensure_ascii=False) if entity_attributes else "无"
         context_str = context[:3000] if context else "无额外上下文"
+
+        # Build optional role/stance block
+        role_block = ""
+        if decision_role:
+            role_block += f"\ndecision_role: {decision_role}"
+        if agent_stance:
+            role_block += f"\nagent_stance: {agent_stance}"
         
         return f"""为实体生成详细的社交媒体用户人设,最大程度还原已有现实情况。
 
 实体名称: {entity_name}
 实体类型: {entity_type}
 实体摘要: {entity_summary}
-实体属性: {attrs_str}
+实体属性: {attrs_str}{role_block}
 
 上下文信息:
 {context_str}
@@ -706,6 +749,8 @@ class OasisProfileGenerator:
 6. country: 国家（使用中文，如"中国"）
 7. profession: 职业
 8. interested_topics: 感兴趣话题数组
+9. decision_role: 决策角色标签（如 "decision_owner_ff1" 或 "adversary" 或 "neutral"，可选）
+10. stance: 立场标签（如 "supportive", "adversary", "neutral", "observer"，可选）
 
 重要:
 - 所有字段值必须是字符串或数字，不要使用换行符

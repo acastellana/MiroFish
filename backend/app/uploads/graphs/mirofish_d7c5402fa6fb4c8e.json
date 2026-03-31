@@ -1,0 +1,444 @@
+{
+  "nodes": {},
+  "edges": [],
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "Theologian",
+        "description": "Scholar of theology or religious doctrine",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Person's full name"
+          },
+          {
+            "name": "tradition",
+            "type": "text",
+            "description": "Religious or academic tradition"
+          },
+          {
+            "name": "position",
+            "type": "text",
+            "description": "Current role or title"
+          }
+        ],
+        "examples": [
+          "Alister McGrath",
+          "Karen Armstrong"
+        ]
+      },
+      {
+        "name": "Philosopher",
+        "description": "Public thinker specializing in metaphysics or epistemology",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Person's full name"
+          },
+          {
+            "name": "school",
+            "type": "text",
+            "description": "Philosophical school or tradition"
+          },
+          {
+            "name": "position",
+            "type": "text",
+            "description": "Current role or title"
+          }
+        ],
+        "examples": [
+          "William Lane Craig",
+          "J. L. Mackie"
+        ]
+      },
+      {
+        "name": "ReligiousLeader",
+        "description": "Cleric or faith leader who speaks publicly",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Person's full name"
+          },
+          {
+            "name": "faith_tradition",
+            "type": "text",
+            "description": "Religious affiliation or denomination"
+          },
+          {
+            "name": "office",
+            "type": "text",
+            "description": "Held religious office"
+          }
+        ],
+        "examples": [
+          "Pope Francis",
+          "Desmond Tutu"
+        ]
+      },
+      {
+        "name": "AtheistActivist",
+        "description": "Public advocate for atheism or secularism",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Person's full name"
+          },
+          {
+            "name": "orientation",
+            "type": "text",
+            "description": "Secular or atheist orientation"
+          },
+          {
+            "name": "role",
+            "type": "text",
+            "description": "Public advocacy role"
+          }
+        ],
+        "examples": [
+          "Richard Dawkins",
+          "Christopher Hitchens"
+        ]
+      },
+      {
+        "name": "Apologist",
+        "description": "Public defender of religious belief",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Person's full name"
+          },
+          {
+            "name": "apologetic_tradition",
+            "type": "text",
+            "description": "Belief system or apologetic approach"
+          },
+          {
+            "name": "platform",
+            "type": "text",
+            "description": "Main public platform"
+          }
+        ],
+        "examples": [
+          "C. S. Lewis",
+          "John Lennox"
+        ]
+      },
+      {
+        "name": "ScienceCommunicator",
+        "description": "Scientist or educator speaking on science and belief",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Person's full name"
+          },
+          {
+            "name": "discipline",
+            "type": "text",
+            "description": "Scientific discipline"
+          },
+          {
+            "name": "position",
+            "type": "text",
+            "description": "Current role or title"
+          }
+        ],
+        "examples": [
+          "Neil deGrasse Tyson",
+          "Francis Collins"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "News or content outlet publishing coverage or commentary",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "Organization name"
+          },
+          {
+            "name": "outlet_type",
+            "type": "text",
+            "description": "Media format or channel"
+          },
+          {
+            "name": "location",
+            "type": "text",
+            "description": "Base location"
+          }
+        ],
+        "examples": [
+          "BBC",
+          "The New York Times"
+        ]
+      },
+      {
+        "name": "ReligiousOrganization",
+        "description": "Church, mosque, temple, denomination, or faith group",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "Organization name"
+          },
+          {
+            "name": "tradition",
+            "type": "text",
+            "description": "Religious tradition or denomination"
+          },
+          {
+            "name": "location",
+            "type": "text",
+            "description": "Primary location"
+          }
+        ],
+        "examples": [
+          "Catholic Church",
+          "Southern Baptist Convention"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Any natural person not covered by a specific type",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Person's full name"
+          },
+          {
+            "name": "role",
+            "type": "text",
+            "description": "Public role or identity"
+          },
+          {
+            "name": "location",
+            "type": "text",
+            "description": "Associated location"
+          }
+        ],
+        "examples": [
+          "A concerned user",
+          "A student commenter"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Any organization not covered by a specific type",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "Organization name"
+          },
+          {
+            "name": "category",
+            "type": "text",
+            "description": "General organization category"
+          },
+          {
+            "name": "location",
+            "type": "text",
+            "description": "Base location"
+          }
+        ],
+        "examples": [
+          "A local association",
+          "An online community"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "COMMENTS_ON",
+        "description": "Publicly comments on a post or statement",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Person"
+          },
+          {
+            "source": "Person",
+            "target": "Organization"
+          },
+          {
+            "source": "Theologian",
+            "target": "Philosopher"
+          },
+          {
+            "source": "AtheistActivist",
+            "target": "ReligiousLeader"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "RESPONDS_TO",
+        "description": "Issues a direct reply or rebuttal",
+        "source_targets": [
+          {
+            "source": "Theologian",
+            "target": "AtheistActivist"
+          },
+          {
+            "source": "Philosopher",
+            "target": "Philosopher"
+          },
+          {
+            "source": "ReligiousLeader",
+            "target": "MediaOutlet"
+          },
+          {
+            "source": "Person",
+            "target": "Person"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "SUPPORTS",
+        "description": "Expresses support for a view or statement",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Person"
+          },
+          {
+            "source": "Theologian",
+            "target": "ReligiousLeader"
+          },
+          {
+            "source": "Apologist",
+            "target": "Theologian"
+          },
+          {
+            "source": "ReligiousOrganization",
+            "target": "ReligiousLeader"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "OPPOSES",
+        "description": "Expresses disagreement or criticism",
+        "source_targets": [
+          {
+            "source": "AtheistActivist",
+            "target": "ReligiousLeader"
+          },
+          {
+            "source": "Philosopher",
+            "target": "Apologist"
+          },
+          {
+            "source": "ReligiousLeader",
+            "target": "AtheistActivist"
+          },
+          {
+            "source": "Person",
+            "target": "Person"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Publishes coverage or reportage about an entity",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "Person"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "Organization"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "Theologian"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "Philosopher"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "AFFILIATED_WITH",
+        "description": "Belongs to or is formally connected with",
+        "source_targets": [
+          {
+            "source": "Theologian",
+            "target": "ReligiousOrganization"
+          },
+          {
+            "source": "ReligiousLeader",
+            "target": "ReligiousOrganization"
+          },
+          {
+            "source": "Apologist",
+            "target": "Organization"
+          },
+          {
+            "source": "ScienceCommunicator",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPRESENTS",
+        "description": "Speaks on behalf of a group or institution",
+        "source_targets": [
+          {
+            "source": "ReligiousLeader",
+            "target": "ReligiousOrganization"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "Organization"
+          },
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "COLLABORATES_WITH",
+        "description": "Cooperates in content, debate, or outreach",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "MediaOutlet"
+          },
+          {
+            "source": "Organization",
+            "target": "Organization"
+          },
+          {
+            "source": "Theologian",
+            "target": "ScienceCommunicator"
+          },
+          {
+            "source": "Apologist",
+            "target": "MediaOutlet"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  }
+}

@@ -3,6 +3,7 @@
 Step2: Zep实体读取与过滤、OASIS模拟准备与运行（全程自动化）
 """
 
+import json
 import os
 import traceback
 from flask import request, jsonify, send_file
@@ -937,6 +938,13 @@ def get_simulation_history():
             # 获取关联的 report_id（查找该 simulation 最新的 report）
             sim_dict["report_id"] = _get_report_id_for_simulation(sim.simulation_id)
             
+            # 添加模型名称（从config或env读取）
+            sim_dict["model_name"] = (
+                (config.get("llm_model") if config else None)
+                or Config.LLM_MODEL_NAME
+                or "unknown"
+            )
+
             # 添加版本号
             sim_dict["version"] = "v1.0.2"
             
@@ -2691,3 +2699,191 @@ def close_simulation_env():
             "error": str(e),
             "traceback": traceback.format_exc()
         }), 500
+
+
+# ============================================================
+# Decision Artifacts endpoint — Point 5a
+# ============================================================
+
+@simulation_bp.route('/<simulation_id>/decision-artifacts', methods=['GET'])
+def get_decision_artifacts(simulation_id: str):
+    """
+    GET /api/simulation/<simulation_id>/decision-artifacts
+
+    Returns decision artifacts persisted by forcing functions during the
+    simulation run, together with a NOT_EXECUTED list and an execution_summary
+    per forcing function id.
+
+    Response shape:
+    {
+      "success": true,
+      "data": {
+        "simulation_id": "...",
+        "artifacts": [...],          // EXECUTED records (parse_success=true)
+        "failed_artifacts": [...],   // EXECUTED_PARSE_FAILED records
+        "not_executed": ["FF2", ...],
+        "execution_summary": {
+          "FF1": "EXECUTED",
+          "FF2": "NOT_EXECUTED"
+        }
+      }
+    }
+    """
+    try:
+        from ..services.decision_artifact_store import DecisionArtifactStore
+
+        simulation_dir = os.path.join(Config.OASIS_SIMULATION_DATA_DIR, simulation_id)
+
+        if not os.path.exists(simulation_dir):
+            return jsonify({
+                "success": False,
+                "error": f"Simulation directory not found: {simulation_id}"
+            }), 404
+
+        store = DecisionArtifactStore(simulation_dir=simulation_dir)
+        all_records = store.read_all()
+
+        # Read forcing_functions from simulation_config.json to know all expected FF ids
+        config_path = os.path.join(simulation_dir, "simulation_config.json")
+        known_ff_ids: list = []
+        if os.path.exists(config_path):
+            try:
+                with open(config_path, "r", encoding="utf-8") as f:
+                    cfg = json.load(f)
+                ffs = cfg.get("event_config", {}).get("forcing_functions", [])
+                known_ff_ids = [ff["id"] for ff in ffs if "id" in ff]
+            except Exception:
+                pass
+
+        # Separate records by status
+        artifacts = [r for r in all_records if r.get("parse_success") is True]
+        failed_artifacts = [r for r in all_records if r.get("parse_success") is False]
+
+        execution_summary = store.execution_summary(known_ff_ids)
+        not_executed = [fid for fid, status in execution_summary.items()
+                        if status == "NOT_EXECUTED"]
+
+        return jsonify({
+            "success": True,
+            "data": {
+                "simulation_id": simulation_id,
+                "artifacts": artifacts,
+                "failed_artifacts": failed_artifacts,
+                "not_executed": not_executed,
+                "execution_summary": execution_summary,
+            }
+        })
+
+    except Exception as e:
+        logger.error(f"get_decision_artifacts failed: {str(e)}")
+        return jsonify({
+            "success": False,
+            "error": str(e),
+            "traceback": traceback.format_exc()
+        }), 500
+
+
+@simulation_bp.route('/<simulation_id>/decision-artifacts/aggregation', methods=['GET'])
+def get_decision_artifacts_aggregation(simulation_id: str):
+    """
+    GET /api/simulation/<simulation_id>/decision-artifacts/aggregation
+
+    Returns per-candidate structured aggregation totals.
+    Do not ask the report to infer these from prose — use this endpoint.
+
+    Response shape:
+    {
+      "success": true,
+      "data": {
+        "simulation_id": "...",
+        "candidates": {
+          "A": {
+            "verdict": "FALSIFIED",
+            "confirms": 0, "falsifies": 2, "near_misses": 0, "total_samples": 2,
+            "ff_ids": ["FF1", "FF5"],
+            "substitutes": {"manual": 1, "VeritasProtocol": 1},
+            "examples": [...]
+          },
+          ...
+        },
+        "overall": "NULL RESULT | POSITIVE PMF | WEAK SIGNAL"
+      }
+    }
+    """
+    try:
+        from ..services.decision_artifact_store import DecisionArtifactStore
+
+        simulation_dir = os.path.join(Config.OASIS_SIMULATION_DATA_DIR, simulation_id)
+        if not os.path.exists(simulation_dir):
+            return jsonify({"success": False, "error": f"Simulation directory not found: {simulation_id}"}), 404
+
+        store = DecisionArtifactStore(simulation_dir=simulation_dir)
+        candidates = store.candidate_aggregation()
+
+        if candidates:
+            any_confirmed = any(b.get("confirms", 0) > 0 for b in candidates.values())
+            any_near_miss = any(b.get("near_misses", 0) > 0 for b in candidates.values())
+            if any_confirmed:
+                overall = "POSITIVE PMF"
+            elif any_near_miss:
+                overall = "WEAK SIGNAL"
+            else:
+                overall = "NULL RESULT"
+        else:
+            overall = "NO_DATA"
+
+        return jsonify({
+            "success": True,
+            "data": {
+                "simulation_id": simulation_id,
+                "candidates": candidates,
+                "overall": overall,
+            }
+        })
+
+    except Exception as e:
+        logger.error(f"get_decision_artifacts_aggregation failed: {str(e)}")
+        return jsonify({"success": False, "error": str(e), "traceback": traceback.format_exc()}), 500
+
+
+@simulation_bp.route('/<simulation_id>/decision-artifacts/reclassify', methods=['POST'])
+def reclassify_decision_artifacts(simulation_id: str):
+    """
+    POST /api/simulation/<simulation_id>/decision-artifacts/reclassify
+
+    Re-applies pmf_outcome_rules from the simulation config to all stored artifacts.
+    Use this whenever rules change so historical artifacts stay authoritative.
+
+    Response shape:
+    {
+      "success": true,
+      "data": {"reclassified": N, "unchanged": M, "total": N+M}
+    }
+    """
+    try:
+        from ..services.decision_artifact_store import DecisionArtifactStore
+
+        simulation_dir = os.path.join(Config.OASIS_SIMULATION_DATA_DIR, simulation_id)
+        if not os.path.exists(simulation_dir):
+            return jsonify({"success": False, "error": f"Simulation directory not found: {simulation_id}"}), 404
+
+        # Load pmf_outcome_rules from config
+        config_path = os.path.join(simulation_dir, "simulation_config.json")
+        ff_rules: dict = {}
+        if os.path.exists(config_path):
+            with open(config_path, "r", encoding="utf-8") as f:
+                cfg = json.load(f)
+            for ff in cfg.get("event_config", {}).get("forcing_functions", []):
+                fid = ff.get("id")
+                rules = ff.get("pmf_outcome_rules")
+                if fid and rules:
+                    ff_rules[fid] = rules
+
+        store = DecisionArtifactStore(simulation_dir=simulation_dir)
+        result = store.retroactive_reclassify(ff_rules)
+
+        return jsonify({"success": True, "data": result})
+
+    except Exception as e:
+        logger.error(f"reclassify_decision_artifacts failed: {str(e)}")
+        return jsonify({"success": False, "error": str(e), "traceback": traceback.format_exc()}), 500

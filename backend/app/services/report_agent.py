@@ -577,21 +577,40 @@ PLAN_USER_PROMPT_TEMPLATE = """\
 SIMULATION REQUIREMENT (assumed world state injected at start):
 {simulation_requirement}
 
+DECISION ARTIFACTS (forcing function outcomes — first-class evidence, not inferred):
+{decision_artifacts_summary}
+
 SIMULATION SCALE:
 - Entities: {total_nodes}
 - Relationships: {total_edges}
 - Entity types: {entity_types}
 - Active agents: {total_entities}
 
+EXECUTION QUALITY PRE-ANALYSIS (fill this before designing the outline):
+Before evaluating PMF hypotheses, assess whether the simulation actually executed the forcing functions.
+For each forcing function named in the simulation requirement, answer:
+  - Was a decision event [OBSERVED] in the agent behavior below? (YES / NO)
+  - If NO: was it because (a) a substitute won, or (b) no observable event was generated at all?
+
+This distinction is critical:
+  - NULL_TYPE_A = "no evidence generated" → report must flag execution failure, not PMF failure
+  - NULL_TYPE_B = "substitute won" → report must name the substitute and the reason
+
 OBSERVED AGENT BEHAVIOR SAMPLE (things that actually happened — distinguish from assumed world state):
 {related_facts_json}
 
-Your job: Design exactly 6 report sections as specified in the system prompt.
+Your job: Design exactly 5 report sections as specified in the system prompt.
 Rank hypotheses H1-H6 by what you actually observed, not by what the world setup implied.
 If H5 (behavior-shaping) has any signal at all, prioritize it — it is the most strategically important.
-If no hypothesis has strong signal, the report must say so clearly. That is a valid and valuable result.
+If no hypothesis has strong signal, the report must say so clearly AND classify the null type (A or B).
 
-Output the JSON outline with exactly 6 sections."""
+CRITICAL OUTPUT RULE:
+- If a forcing function produced zero observable events → do NOT fill its fields with "NONE".
+  Instead, write: "FORCING FUNCTION NOT EXECUTED — null type A (no observable event generated)"
+- If a forcing function ran but GenLayer lost → write: "FORCING FUNCTION EXECUTED — null type B (substitute won: [name reason])"
+- Never conflate these two cases. A run with all null-type-A results is an execution failure, not a PMF signal.
+
+Output the JSON outline with exactly 5 sections."""
 
 # ── 章节生成 prompt ──
 
@@ -632,10 +651,15 @@ DURABILITY COUNT: ___ / 6 thresholds met
 DURABILITY VERDICT: [STRUCTURAL (4+) | PARTIAL (2-3) | WEAK (1) | NONE (0)]
 
 If CONFIRMED: cite the single earliest [OBSERVED] event that crossed into structural territory.
-If NOT OBSERVED or INSUFFICIENT: state — "No durable PMF in this wedge within 90 days." Then:
-  Closest signal: ___ [OBSERVED/INFERRED]
-  Threshold that was NOT met: ___
-  Why it does not qualify: ___ (one sentence max)
+If NOT OBSERVED or INSUFFICIENT: FIRST classify the null type before any other field:
+  NULL TYPE: [A — execution failure (forcing functions produced no observable events) | B — substitutes won | MIXED]
+  If type A: state — "Execution failure: this run did not generate observable forcing function events. PMF cannot be evaluated from this data. Fix the simulation design."
+  If type B: state — "No durable PMF in this wedge within 90 days. Substitutes won." Then:
+    Closest signal: ___ [OBSERVED/INFERRED]
+    Threshold that was NOT met: ___
+    Why it does not qualify: ___ (one sentence max)
+    Which substitute won: ___
+  NEVER conflate type A and type B. They require completely different follow-up actions.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 SECTION: Distribution Ownership
@@ -748,23 +772,38 @@ H6 — Synthetic jurisdiction for high-value workflows
   [same 11 fields as H1-H4]
 
 FORCING FUNCTION SCORECARDS:
+CRITICAL RULE FOR FORCING FUNCTIONS:
+  - If a forcing function produced ZERO observable agent events → write exactly:
+    "FORCING FUNCTION NOT EXECUTED — null type A (no observable event generated)"
+    Do NOT fill the 7 fields with NONE. This is an execution failure, not a PMF result.
+  - If it ran but GenLayer lost → fill all 7 fields normally AND add:
+    "null type B — substitute won: [name the substitute and reason]"
+  - Only if it ran AND GenLayer won → fill all 7 fields as positive signal.
+
 LangGraph Day 5:
+  Execution status: [EXECUTED | NOT EXECUTED — null type A | NOT EXECUTED — null type B: ___]
   Decision: [chose X | delayed | NOT OBSERVED]
-  Stated reason [OBSERVED]: ___ (or NONE)
+  Stated reason [OBSERVED]: ___ (or FORCING FUNCTION NOT EXECUTED)
   Real reason [INFERRED]: ___
   Product form: [SDK | API | managed | backend | NONE]
   Founder dependency: [YES | NO]
   Workflow change: [YES — describe | NO]
   Durability: [STRUCTURAL | TEMPORARY | UNKNOWN]
 
-AgentHub Day 18: [same 7 fields]
-DataForge Day 25: [same 7 fields]
-CrewAI Day 35: [same 7 fields]
+AgentHub Day 18: [same 8 fields]
+DataForge Day 25: [same 8 fields]
+CrewAI Day 35: [same 8 fields]
 
 NULL RESULT — required if no hypothesis scores Signal ≥ 3:
-  VERDICT: "No durable PMF signal observed in this wedge within 90 days."
+  NULL TYPE: [A — no observable events generated | B — substitutes won | MIXED]
+  VERDICT: [
+    Type A: "Execution failure — forcing functions did not produce observable events. This run does not evaluate PMF."
+    Type B: "No durable PMF signal — substitutes won in observed decision events."
+    Mixed: state which forcing functions were type A vs B.
+  ]
   Highest signal observed: H_ at Signal=_
   Primary blocker: ___
+  DO NOT INTERPRET TYPE A AS PMF FAILURE. It means the simulation design needs fixing.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 SECTION: Monday Move
@@ -927,6 +966,186 @@ class ReportAgent:
         self.console_logger: Optional[ReportConsoleLogger] = None
         
         logger.info(f"ReportAgent 初始化完成: graph_id={graph_id}, simulation_id={simulation_id}")
+
+    # ------------------------------------------------------------------ #
+    # Point 5b — Decision artifact ingestion                               #
+    # ------------------------------------------------------------------ #
+
+    def _fetch_decision_artifacts_summary(self) -> str:
+        """
+        Fetch decision artifacts from the /api/simulation/<id>/decision-artifacts
+        endpoint and format them as a text block for injection into the outline
+        planning prompt.
+
+        Returns an empty string if the simulation has no artifacts or if the
+        call fails (non-fatal).
+        """
+        if not self.simulation_id:
+            return ""
+
+        try:
+            import urllib.request
+            url = f"http://localhost:5001/api/simulation/{self.simulation_id}/decision-artifacts"
+            req = urllib.request.Request(url, headers={"Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                body = json.loads(resp.read().decode("utf-8"))
+        except Exception as exc:
+            logger.warning(f"Could not fetch decision artifacts: {exc}")
+            return ""
+
+        if not body.get("success"):
+            return ""
+
+        data = body.get("data", {})
+        artifacts = data.get("artifacts", [])
+        failed = data.get("failed_artifacts", [])
+        not_executed = data.get("not_executed", [])
+        summary = data.get("execution_summary", {})
+
+        lines = ["=== DECISION ARTIFACTS (first-class evidence) ==="]
+        lines.append(
+            "CLASSIFICATION RULE: 'confirm' means GenLayer directly unblocked the workflow "
+            "(rule-based, not agent self-report). 'falsify' means GenLayer was rejected, "
+            "bypassed, or a substitute won. 'near-miss' means GenLayer was close but not the "
+            "final unblocking mechanism. [PMF-RULE] = authoritative. "
+            "[AGENT-SELF-REPORT] = unreliable, verify manually."
+        )
+
+        # ── Section 1: Per-artifact detail ──────────────────────────────────
+        for a in artifacts:
+            art = a.get("artifact", {})
+            pmf_cls = art.get("pmf_classification") or art.get("classification", "N/A")
+            pmf_authoritative = art.get("pmf_rule_applied", False)
+            classification_label = (
+                f"{pmf_cls} [PMF-RULE]" if pmf_authoritative
+                else f"{pmf_cls} [AGENT-SELF-REPORT — verify manually]"
+            )
+
+            decision = art.get("decision", "N/A")
+            reason = art.get("reason", "N/A")
+            substitute = art.get("substitute_used") or art.get("substitute_rejected", "none")
+            consequence = art.get("consequence", "N/A")
+            candidate = art.get("candidate_targeted", "?")
+            observed_event = art.get(
+                "observed_event_text",
+                f"{a.get('owner_name')} chose '{decision}' — {reason} "
+                f"(substitute: {substitute}; consequence: {consequence})"
+            )
+            consistency_note = art.get("consistency_correction", "")
+
+            lines.append(
+                f"\n[FF: {a.get('ff_id')}] round={a.get('round_num')} "
+                f"owner={a.get('owner_name')} candidate={candidate} status=EXECUTED"
+            )
+            lines.append(f"  decision: {decision}")
+            lines.append(f"  reason [OBSERVED]: {reason}")
+            lines.append(f"  substitute_used: {substitute}")
+            lines.append(f"  consequence [OBSERVED]: {consequence}")
+            lines.append(f"  PMF classification: {classification_label}")
+            if consistency_note:
+                lines.append(f"  CONSISTENCY CORRECTION: {consistency_note}")
+            lines.append(f"  [OBSERVED] event (for FF scorecard): {observed_event}")
+            lines.append(
+                f"  INSTRUCTION FOR REPORT: In the Forcing Function Scorecard for {a.get('ff_id')}, "
+                f"set Execution status=EXECUTED, Candidate={candidate}, "
+                f"Decision='{decision}', Stated reason [OBSERVED]='{reason}', "
+                f"PMF classification={classification_label}, "
+                f"Substitute={'none' if pmf_cls == 'confirm' else substitute}. "
+                f"DO NOT write 'NOT OBSERVED' for this forcing function."
+            )
+
+        for a in failed:
+            lines.append(
+                f"\n[FF: {a.get('ff_id')}] round={a.get('round_num')} "
+                f"owner={a.get('owner_name')} status=EXECUTED_PARSE_FAILED"
+            )
+            lines.append(f"  raw_response (first 300 chars): {str(a.get('raw_response', ''))[:300]}")
+            lines.append(
+                f"  INSTRUCTION FOR REPORT: Set Execution status=EXECUTED_PARSE_FAILED. "
+                f"Do not classify as NOT OBSERVED — the FF ran but the response was malformed."
+            )
+
+        for fid in not_executed:
+            lines.append(f"\n[FF: {fid}] status=NOT_EXECUTED — forcing function did not run")
+            lines.append(
+                f"  INSTRUCTION FOR REPORT: Write exactly "
+                f"'FORCING FUNCTION NOT EXECUTED — null type A (no observable event generated)'"
+            )
+
+        # ── Section 2: Per-candidate aggregation ────────────────────────────
+        # Build aggregation directly from artifacts in this response
+        # (avoids a second API call; mirrors candidate_aggregation() in the store)
+        from collections import defaultdict
+        buckets: dict = defaultdict(lambda: {
+            "confirms": 0, "falsifies": 0, "near_misses": 0, "total_samples": 0,
+            "substitutes": {}, "ff_ids": [], "verdict": None,
+        })
+
+        all_records = artifacts + failed
+        for a in all_records:
+            art = a.get("artifact", {})
+            candidate = art.get("candidate_targeted", "")
+            if not candidate:
+                continue
+            pmf_cls = art.get("pmf_classification") or art.get("classification", "unknown")
+            sub = art.get("substitute_used", "unknown")
+            ff_id = a.get("ff_id", "?")
+            b = buckets[candidate]
+            b["total_samples"] += 1
+            if pmf_cls == "confirm":
+                b["confirms"] += 1
+            elif pmf_cls == "falsify":
+                b["falsifies"] += 1
+                b["substitutes"][sub] = b["substitutes"].get(sub, 0) + 1
+            elif pmf_cls == "near-miss":
+                b["near_misses"] += 1
+            if ff_id not in b["ff_ids"]:
+                b["ff_ids"].append(ff_id)
+
+        # Derive per-candidate verdict
+        for cand, b in buckets.items():
+            if b["confirms"] > 0:
+                b["verdict"] = "CONFIRMED"
+            elif b["near_misses"] > 0 and b["confirms"] == 0:
+                b["verdict"] = "NEAR-MISS"
+            elif b["falsifies"] > 0:
+                b["verdict"] = "FALSIFIED"
+            else:
+                b["verdict"] = "UNTESTED"
+
+        if buckets:
+            lines.append("\n=== CANDIDATE AGGREGATION (do not infer from prose — use these totals) ===")
+            lines.append(
+                "RULE: Use these aggregated counts directly in the Hypothesis Scorecard. "
+                "Do NOT re-derive from the narrative. "
+                "A candidate with confirms=0 and falsifies>0 is FALSIFIED. "
+                "A candidate with confirms>=1 is CONFIRMED regardless of falsify count."
+            )
+            for cand in sorted(buckets.keys()):
+                b = buckets[cand]
+                subs_str = json.dumps(b["substitutes"]) if b["substitutes"] else "none"
+                lines.append(
+                    f"  Candidate {cand}: verdict={b['verdict']} | "
+                    f"confirms={b['confirms']} falsifies={b['falsifies']} "
+                    f"near_misses={b['near_misses']} total_samples={b['total_samples']} | "
+                    f"ff_ids={b['ff_ids']} | substitutes={subs_str}"
+                )
+            lines.append(
+                "OVERALL: "
+                + (
+                    "POSITIVE PMF — at least one candidate confirmed."
+                    if any(b["verdict"] == "CONFIRMED" for b in buckets.values())
+                    else (
+                        "WEAK SIGNAL — near-miss present, no confirm."
+                        if any(b["verdict"] == "NEAR-MISS" for b in buckets.values())
+                        else "NULL RESULT — no confirms, no near-misses."
+                    )
+                )
+            )
+
+        lines.append(f"\n=== EXECUTION SUMMARY: {json.dumps(summary)} ===")
+
+        return "\n".join(lines)
     
     def _define_tools(self) -> Dict[str, Dict[str, Any]]:
         """定义可用工具"""
@@ -1171,6 +1390,13 @@ class ReportAgent:
             graph_id=self.graph_id,
             simulation_requirement=self.simulation_requirement
         )
+
+        # ── Point 5b: Fetch decision artifacts as first-class evidence ──
+        decision_artifacts_summary = self._fetch_decision_artifacts_summary()
+        if decision_artifacts_summary:
+            logger.info(f"Decision artifacts injected into plan_outline prompt")
+        else:
+            decision_artifacts_summary = "No decision artifacts found for this simulation."
         
         if progress_callback:
             progress_callback("planning", 30, "正在生成报告大纲...")
@@ -1182,7 +1408,8 @@ class ReportAgent:
             total_edges=context.get('graph_statistics', {}).get('total_edges', 0),
             entity_types=list(context.get('graph_statistics', {}).get('entity_types', {}).keys()),
             total_entities=context.get('total_entities', 0),
-            related_facts_json=json.dumps(context.get('related_facts', [])[:10], ensure_ascii=False, indent=2),
+            related_facts_json=json.dumps(context.get('related_facts', [])[:30], ensure_ascii=False, indent=2),
+            decision_artifacts_summary=decision_artifacts_summary,
         )
 
         try:

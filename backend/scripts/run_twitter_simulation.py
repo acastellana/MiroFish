@@ -18,6 +18,7 @@ import asyncio
 import json
 import logging
 import os
+import re
 import random
 import signal
 import sys
@@ -129,6 +130,14 @@ except ImportError as e:
     print(f"错误: 缺少依赖 {e}")
     print("请先安装: pip install oasis-ai camel-ai")
     sys.exit(1)
+
+# Decision artifact store (imported lazily to avoid circular issues at module level)
+try:
+    from app.services.decision_artifact_store import DecisionArtifactStore
+    _ARTIFACT_STORE_AVAILABLE = True
+except ImportError:
+    _ARTIFACT_STORE_AVAILABLE = False
+    print("警告: DecisionArtifactStore 未找到，forcing function artifact 将不会被持久化")
 
 
 # IPC相关常量
@@ -405,7 +414,22 @@ class TwitterSimulationRunner:
         """
         self.config_path = config_path
         self.config = self._load_config()
-        self.simulation_dir = os.path.dirname(config_path)
+        # Use canonical uploads/simulations/<sim_id>/ dir if simulation_id is in config,
+        # otherwise fall back to the directory containing the config file.
+        _sim_id = self.config.get("simulation_id")
+        if _sim_id:
+            try:
+                import sys as _sys
+                _backend_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+                if _backend_dir not in _sys.path:
+                    _sys.path.insert(0, _backend_dir)
+                from app.config import Config as _Cfg
+                self.simulation_dir = os.path.join(_Cfg.OASIS_SIMULATION_DATA_DIR, _sim_id)
+            except Exception:
+                self.simulation_dir = os.path.dirname(config_path)
+        else:
+            self.simulation_dir = os.path.dirname(config_path)
+        os.makedirs(self.simulation_dir, exist_ok=True)
         self.wait_for_commands = wait_for_commands
         self.env = None
         self.agent_graph = None
@@ -629,12 +653,229 @@ class TwitterSimulationRunner:
         # 主模拟循环
         print("\n开始模拟循环...")
         start_time = datetime.now()
+
+        # Forcing functions — indexed by trigger_round for O(1) lookup
+        forcing_functions = event_config.get("forcing_functions", [])
+        ff_by_round: Dict[int, List[Dict[str, Any]]] = {}
+        for ff in forcing_functions:
+            tr = ff.get("trigger_round", -1)
+            ff_by_round.setdefault(tr, []).append(ff)
         
+        # DecisionArtifactStore — one per simulation run, lives in simulation_dir
+        artifact_store = None
+        if _ARTIFACT_STORE_AVAILABLE and forcing_functions:
+            artifact_store = DecisionArtifactStore(simulation_dir=self.simulation_dir)
+            print(f"  DecisionArtifactStore 初始化: {artifact_store.store_path}")
+        
+        agent_configs = self.config.get("agent_configs", [])
+
         for round_num in range(total_rounds):
             # 计算当前模拟时间
             simulated_minutes = round_num * minutes_per_round
             simulated_hour = (simulated_minutes // 60) % 24
             simulated_day = simulated_minutes // (60 * 24) + 1
+
+            # ── Forcing function check ──────────────────────────────────
+            triggered_ffs = ff_by_round.get(round_num, [])
+            for ff in triggered_ffs:
+                ff_id = ff.get("id", "FF?")
+                owner_name = ff.get("owner_entity_name", "")
+                prompt_tmpl = ff.get("prompt_template", "")
+
+                print(f"\n[FF] Forcing function triggered: {ff_id} (round {round_num})")
+                print(f"     Owner: {owner_name}")
+
+                # Find the owner agent by entity name in agent_configs
+                owner_cfg = next(
+                    (cfg for cfg in agent_configs
+                     if cfg.get("entity_name", "").strip().lower() == owner_name.strip().lower()),
+                    None
+                )
+                if owner_cfg is None:
+                    print(f"  [FF] WARNING: owner agent '{owner_name}' not found in agent_configs, skipping FF {ff_id}")
+                    if artifact_store:
+                        artifact_store.write(
+                            ff_id=ff_id,
+                            round_num=round_num,
+                            owner_name=owner_name,
+                            owner_agent_id=-1,
+                            raw_response="<owner agent not found>",
+                            parsed=None,
+                            parse_success=False,
+                        )
+                    continue
+
+                owner_agent_id = owner_cfg["agent_id"]
+                try:
+                    owner_agent = self.env.agent_graph.get_agent(owner_agent_id)
+                except Exception as exc:
+                    print(f"  [FF] WARNING: cannot get agent object for id={owner_agent_id}: {exc}")
+                    if artifact_store:
+                        artifact_store.write(
+                            ff_id=ff_id,
+                            round_num=round_num,
+                            owner_name=owner_name,
+                            owner_agent_id=owner_agent_id,
+                            raw_response=f"<agent object not found: {exc}>",
+                            parsed=None,
+                            parse_success=False,
+                        )
+                    continue
+
+                # Deliver FF as a ManualAction INTERVIEW to the owner agent
+                ff_action = ManualAction(
+                    action_type=ActionType.INTERVIEW,
+                    action_args={"prompt": prompt_tmpl},
+                )
+                print(f"  [FF] Dispatching ManualAction INTERVIEW to agent_id={owner_agent_id}...")
+                try:
+                    await self.env.step({owner_agent: ff_action})
+                except Exception as exc:
+                    print(f"  [FF] env.step() failed: {exc}")
+                    if artifact_store:
+                        artifact_store.write(
+                            ff_id=ff_id,
+                            round_num=round_num,
+                            owner_name=owner_name,
+                            owner_agent_id=owner_agent_id,
+                            raw_response=f"<env.step error: {exc}>",
+                            parsed=None,
+                            parse_success=False,
+                        )
+                    continue
+
+                # Read interview result from SQLite
+                ipc = IPCHandler(self.simulation_dir, self.env, self.agent_graph)
+                result_dict = ipc._get_interview_result(owner_agent_id)
+                raw_response = result_dict.get("response", "") or ""
+                if isinstance(raw_response, dict):
+                    raw_response = json.dumps(raw_response, ensure_ascii=False)
+
+                print(f"  [FF] Raw response preview: {str(raw_response)[:200]}")
+
+                # Parse JSON artifact from response (with regex fallback)
+                parsed = None
+                parse_success = False
+                try:
+                    # Try direct parse first
+                    parsed = json.loads(raw_response)
+                    parse_success = True
+                except (json.JSONDecodeError, TypeError):
+                    # Regex fallback — find first {...} block in the text
+                    match = re.search(r'\{[^{}]*\}', raw_response, re.DOTALL)
+                    if match:
+                        try:
+                            parsed = json.loads(match.group(0))
+                            parse_success = True
+                        except json.JSONDecodeError:
+                            pass
+
+                if parse_success:
+                    # Validate required schema fields
+                    required = ff.get("required_schema", [])
+                    missing = [k for k in required if k not in parsed]
+                    if missing:
+                        print(f"  [FF] WARNING: parsed artifact missing fields: {missing}")
+                    else:
+                        print(f"  [FF] Artifact parsed OK: {list(parsed.keys())}")
+
+                    # ── PMF re-classifier ─────────────────────────────────────
+                    # Override the agent's self-reported classification using the
+                    # pmf_outcome_rules block in the FF config, which defines
+                    # which decision values count as confirm / falsify / near-miss
+                    # by PMF criteria (not by whether a decision was made at all).
+                    #
+                    # Also enriches the artifact with the v2 structured fields:
+                    #   pmf_classification, pmf_rule_applied, observed_event_text,
+                    #   candidate_targeted, substitute_used
+                    pmf_rules = ff.get("pmf_outcome_rules")
+                    if parsed is not None:
+                        decision_val = parsed.get("decision", "")
+                        reason_val = parsed.get("reason", "")
+                        consequence_val = parsed.get("consequence", "")
+                        substitute_val = parsed.get("substitute_rejected", "none") or "none"
+
+                        # PMF classification from rules (if present) or agent self-report
+                        if pmf_rules:
+                            confirm_values = pmf_rules.get("confirm_if", [])
+                            near_miss_values = pmf_rules.get("near_miss_if", [])
+                            if decision_val in confirm_values:
+                                pmf_classification = "confirm"
+                            elif decision_val in near_miss_values:
+                                pmf_classification = "near-miss"
+                            else:
+                                pmf_classification = "falsify"
+
+                            original = parsed.get("classification", "unknown")
+                            if pmf_classification != original:
+                                print(
+                                    f"  [FF] PMF re-classifier: '{original}' → '{pmf_classification}' "
+                                    f"(decision='{decision_val}')"
+                                )
+                            parsed["pmf_rule_applied"] = True
+                        else:
+                            # No rules defined — keep agent self-report but flag it
+                            pmf_classification = parsed.get("classification", "unknown")
+                            parsed["pmf_rule_applied"] = False
+                            print(f"  [FF] WARNING: no pmf_outcome_rules for {ff_id} — "
+                                  f"using agent self-report classification='{pmf_classification}'")
+
+                        parsed["pmf_classification"] = pmf_classification
+                        parsed["classification"] = pmf_classification  # keep legacy field in sync
+
+                        # Observed event text for FF scorecard injection
+                        observed_event_text = (
+                            f"{owner_name} chose '{decision_val}'"
+                            + (f" — {reason_val}" if reason_val else "")
+                            + (f" (substitute: {substitute_val}; consequence: {consequence_val})"
+                               if consequence_val else "")
+                        )
+                        parsed["observed_event_text"] = observed_event_text
+
+                        # Candidate targeted — from FF config
+                        parsed["candidate_targeted"] = ff.get("candidate_targeted", "")
+
+                        # Substitute tracking for falsify outcomes
+                        if pmf_classification == "falsify":
+                            # Map substitute_rejected + consequence text to a substitute category
+                            substitute_lower = substitute_val.lower()
+                            consequence_lower = consequence_val.lower()
+                            all_text = substitute_lower + " " + consequence_lower
+
+                            if "manual" in all_text or "arbitration" in all_text or "human" in all_text:
+                                parsed["substitute_used"] = "manual"
+                            elif "veritas" in all_text or "veritasprotocol" in all_text:
+                                parsed["substitute_used"] = "VeritasProtocol"
+                            elif "clearrule" in all_text or "clear rule" in all_text:
+                                parsed["substitute_used"] = "ClearRule"
+                            elif "refund" in all_text or "loss absorption" in all_text or "absorb" in all_text:
+                                parsed["substitute_used"] = "refund_or_absorption"
+                            elif "delay" in all_text or "no decision" in all_text or "defer" in all_text:
+                                parsed["substitute_used"] = "delay_or_no_decision"
+                            elif "wrap" in all_text or "intermediary" in all_text or "accenture" in all_text:
+                                parsed["substitute_used"] = "wrapper_intermediary"
+                            elif substitute_val and substitute_val != "none":
+                                parsed["substitute_used"] = substitute_val
+                            else:
+                                parsed["substitute_used"] = "unknown"
+                        else:
+                            parsed["substitute_used"] = "none"
+                    # ── End PMF re-classifier ─────────────────────────────────
+                else:
+                    print(f"  [FF] WARNING: could not parse JSON artifact from response")
+
+                if artifact_store:
+                    artifact_store.write(
+                        ff_id=ff_id,
+                        round_num=round_num,
+                        owner_name=owner_name,
+                        owner_agent_id=owner_agent_id,
+                        raw_response=raw_response,
+                        parsed=parsed,
+                        parse_success=parse_success,
+                    )
+                    print(f"  [FF] Artifact written to {artifact_store.store_path}")
+            # ── End forcing function block ──────────────────────────────
             
             # 获取本轮激活的Agent
             active_agents = self._get_active_agents_for_round(

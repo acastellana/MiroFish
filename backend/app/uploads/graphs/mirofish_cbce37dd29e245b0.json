@@ -1,0 +1,2800 @@
+{
+  "nodes": {
+    "0594be4d-1378-4dae-b120-8a34dbb7ec99": {
+      "uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "name": "GenLayer",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "unique capability AI consensus on subjective questions with on-chain verifiability",
+        "deal": "$2M integration pilot",
+        "compliance_status": "not seen",
+        "speed": "100x faster than Kleros",
+        "cost": "50x cheaper per resolution than Kleros",
+        "limitation": "lacks Kleros's brand recognition",
+        "advantage in this market": "speed, cost, and API-nativity",
+        "role": "dispute resolution layer",
+        "document": "GenLayer PMF in Agentic Commerce — Analysis"
+      }
+    },
+    "a08e3a26-10f0-48a5-b74b-32ef68789e06": {
+      "uuid": "a08e3a26-10f0-48a5-b74b-32ef68789e06",
+      "name": "Base",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "layer": "L2 on Ethereum",
+        "description": "L2 on Ethereum"
+      }
+    },
+    "6dd5bd8a-915f-4572-94a0-38ed434ed8c5": {
+      "uuid": "6dd5bd8a-915f-4572-94a0-38ed434ed8c5",
+      "name": "The Validator Network",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "1094b905-9871-448a-b14d-18390defabe7": {
+      "uuid": "1094b905-9871-448a-b14d-18390defabe7",
+      "name": "GenVM",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "sandboxed WASM VM"
+      }
+    },
+    "0ebd2c96-8c96-46d3-bac4-a416efe73298": {
+      "uuid": "0ebd2c96-8c96-46d3-bac4-a416efe73298",
+      "name": "GPT-5",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c155d965-497c-459b-ab16-18e430c0cca2": {
+      "uuid": "c155d965-497c-459b-ab16-18e430c0cca2",
+      "name": "Claude",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "f3e15a90-fd4c-4a7f-8366-b513f9cd8583": {
+      "uuid": "f3e15a90-fd4c-4a7f-8366-b513f9cd8583",
+      "name": "Gemini",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "233e85ed-5089-4f7b-8360-e9b07dd4c2c5": {
+      "uuid": "233e85ed-5089-4f7b-8360-e9b07dd4c2c5",
+      "name": "Equivalence Principle",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "71a3e8aa-ef8d-4777-bd13-bebed0a21374": {
+      "uuid": "71a3e8aa-ef8d-4777-bd13-bebed0a21374",
+      "name": "strict_eq",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "results must be character-identic"
+      }
+    },
+    "c8f16a58-abdd-4bd8-8edb-a31b28498c32": {
+      "uuid": "c8f16a58-abdd-4bd8-8edb-a31b28498c32",
+      "name": "InternetCourt",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "website": "internetcourt.org"
+      }
+    },
+    "b9c700de-fe42-4b4b-a44a-e87a0aaca3fc": {
+      "uuid": "b9c700de-fe42-4b4b-a44a-e87a0aaca3fc",
+      "name": "LayerZero V2 Bridge",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "Bridge in the architecture"
+      }
+    },
+    "e97bce58-7755-45b7-819b-e0fd84feafde": {
+      "uuid": "e97bce58-7755-45b7-819b-e0fd84feafde",
+      "name": "USDC",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "stablecoin",
+        "total_supply": "~$45B",
+        "date": "March 2026"
+      }
+    },
+    "5474d615-e460-440d-afd1-19c50de6f606": {
+      "uuid": "5474d615-e460-440d-afd1-19c50de6f606",
+      "name": "Minera Andina SRL",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "Exporter",
+        "product": "lithium carbonate producer"
+      }
+    },
+    "713d04de-3480-4d34-afa7-f8f5031dc79c": {
+      "uuid": "713d04de-3480-4d34-afa7-f8f5031dc79c",
+      "name": "Peruvian buyer",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "Importer"
+      }
+    },
+    "1e1ba07a-3bca-4a91-948d-158888a05ee6": {
+      "uuid": "1e1ba07a-3bca-4a91-948d-158888a05ee6",
+      "name": "AI validators",
+      "entity_type": "Agent",
+      "labels": [
+        "Entity",
+        "Agent"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "validators",
+        "description": "validators that agree the work is done"
+      }
+    },
+    "86ee483f-b86c-4523-8f6a-85dd5362a799": {
+      "uuid": "86ee483f-b86c-4523-8f6a-85dd5362a799",
+      "name": "GenLayer FxBenchmarkOracle",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "3023b27a-70be-4a10-98c1-3b758d330595": {
+      "uuid": "3023b27a-70be-4a10-98c1-3b758d330595",
+      "name": "BOB/PEN",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "00f26569-a2d3-4b90-be6e-ee2788bc6677": {
+      "uuid": "00f26569-a2d3-4b90-be6e-ee2788bc6677",
+      "name": "InternetCourt",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "the product"
+      }
+    },
+    "c6d0fb81-3c3f-4191-a95e-0e6760f3749d": {
+      "uuid": "c6d0fb81-3c3f-4191-a95e-0e6760f3749d",
+      "name": "Conditional Payment",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "a use case"
+      }
+    },
+    "af0697c8-4b5b-4557-a441-b106e5b44735": {
+      "uuid": "af0697c8-4b5b-4557-a441-b106e5b44735",
+      "name": "Resolution cost",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "83182f5e-efc8-46df-90f1-cc2cdca0f2e3": {
+      "uuid": "83182f5e-efc8-46df-90f1-cc2cdca0f2e3",
+      "name": "World Bank",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "year": "2024"
+      }
+    },
+    "9f6c17cd-7ff1-4912-8b2e-99fb19557990": {
+      "uuid": "9f6c17cd-7ff1-4912-8b2e-99fb19557990",
+      "name": "SME",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "f920d1b4-2951-4937-8569-c0d991eee8f7": {
+      "uuid": "f920d1b4-2951-4937-8569-c0d991eee8f7",
+      "name": "LayerZero V2",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "note": "same as argue.fun"
+      }
+    },
+    "c8c646c9-a113-4035-8389-4f6b5547cc8f": {
+      "uuid": "c8c646c9-a113-4035-8389-4f6b5547cc8f",
+      "name": "Base Sepolia",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "note": "testnet"
+      }
+    },
+    "cf794bd9-8ca5-4575-9e56-3bed0a150e94": {
+      "uuid": "cf794bd9-8ca5-4575-9e56-3bed0a150e94",
+      "name": "GenLayer testnet",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "note": "testnet"
+      }
+    },
+    "24ce1384-a69b-4e2f-92ab-a338269664be": {
+      "uuid": "24ce1384-a69b-4e2f-92ab-a338269664be",
+      "name": "GenLayer testnet",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c0cdaa83-65a2-4f7b-897c-9e059e371b5e": {
+      "uuid": "c0cdaa83-65a2-4f7b-897c-9e059e371b5e",
+      "name": "MiroFish",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "simulation",
+        "document": "MiroFish simulation validation",
+        "description": "mentioned as producing reports"
+      }
+    },
+    "58dacfb7-c671-4df0-89cb-8f170d62d29d": {
+      "uuid": "58dacfb7-c671-4df0-89cb-8f170d62d29d",
+      "name": "FreshCargo",
+      "entity_type": "FreightForwarder",
+      "labels": [
+        "Entity",
+        "FreightForwarder"
+      ],
+      "summary": "",
+      "attributes": {
+        "region": "LatAm",
+        "countries": "Bolivia, Peru, and Chile",
+        "clients": "600+ SME exporter clients",
+        "role": "CEO",
+        "scale": "600+ SME clients"
+      }
+    },
+    "b1068b70-a727-4bf5-b179-772ff6e5a5a7": {
+      "uuid": "b1068b70-a727-4bf5-b179-772ff6e5a5a7",
+      "name": "Maria Quispe",
+      "entity_type": "CEO",
+      "labels": [
+        "Entity",
+        "CEO"
+      ],
+      "summary": "",
+      "attributes": {
+        "organization": "FreshCargo"
+      }
+    },
+    "4446bf9b-2d3e-42e3-8970-97d796f1dfc7": {
+      "uuid": "4446bf9b-2d3e-42e3-8970-97d796f1dfc7",
+      "name": "LinkedIn",
+      "entity_type": "MediaOutlet",
+      "labels": [
+        "Entity",
+        "MediaOutlet"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "bcbe41b8-0851-423b-850c-4da976ead923": {
+      "uuid": "bcbe41b8-0851-423b-850c-4da976ead923",
+      "name": "EscrowChain",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "Primary Competitor",
+        "what_they_do": "Rule-based smart contract escrow for B2B trade"
+      }
+    },
+    "59b1327e-e12c-453f-aaef-aacc01aa592a": {
+      "uuid": "59b1327e-e12c-453f-aaef-aacc01aa592a",
+      "name": "Stripe",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "strategic investor"
+      }
+    },
+    "43679795-2113-4789-b352-66b07f00556b": {
+      "uuid": "43679795-2113-4789-b352-66b07f00556b",
+      "name": "rule-based smart contracts",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "35572914-f367-45ec-8aaf-cf0970e58833": {
+      "uuid": "35572914-f367-45ec-8aaf-cf0970e58833",
+      "name": "Bloomberg Businessweek",
+      "entity_type": "MediaOutlet",
+      "labels": [
+        "Entity",
+        "MediaOutlet"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c520efe1-109f-4a01-9642-234f5643cfa4": {
+      "uuid": "c520efe1-109f-4a01-9642-234f5643cfa4",
+      "name": "AI in the Courtroom: When Your Trade Dispute Is Decided by a Chatbot",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "35fcc9fe-3d85-4761-9366-6a3851612186": {
+      "uuid": "35fcc9fe-3d85-4761-9366-6a3851612186",
+      "name": "UNDETERMINED failure mode",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "hidden risk"
+      }
+    },
+    "66bc32e0-9dd6-4b90-b0dd-ca210c2be68f": {
+      "uuid": "66bc32e0-9dd6-4b90-b0dd-ca210c2be68f",
+      "name": "Flexport",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "bb7f973b-a804-4da6-9834-52332248ce66": {
+      "uuid": "bb7f973b-a804-4da6-9834-52332248ce66",
+      "name": "FreshCargo",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "0a3b853a-a544-4ee0-82e3-f387b48a096e": {
+      "uuid": "0a3b853a-a544-4ee0-82e3-f387b48a096e",
+      "name": "EscrowChain",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "0fcd7078-78e1-4511-b5bc-27fc2bde5ca0": {
+      "uuid": "0fcd7078-78e1-4511-b5bc-27fc2bde5ca0",
+      "name": "Stripe PM",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "6cbd71fe-f459-4f47-b5c9-f26969e22290": {
+      "uuid": "6cbd71fe-f459-4f47-b5c9-f26969e22290",
+      "name": "AI",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "introduces variance merchants can't price"
+      }
+    },
+    "d8532ec3-84de-4013-b368-170eab00314a": {
+      "uuid": "d8532ec3-84de-4013-b368-170eab00314a",
+      "name": "Letters of Credit",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "abbreviation": "LC",
+        "market": "$2.5T annual volume",
+        "cost": "$500–$2,000 per transaction",
+        "processing_time": "7–14 day processing",
+        "legal_enforceability": "190 countries"
+      }
+    },
+    "06d3dbd0-e7b4-409f-bf59-9ae364ca8d29": {
+      "uuid": "06d3dbd0-e7b4-409f-bf59-9ae364ca8d29",
+      "name": "Fortune 500",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "Large enterprises"
+      }
+    },
+    "c412345a-41d2-4afa-b134-0eef693fd337": {
+      "uuid": "c412345a-41d2-4afa-b134-0eef693fd337",
+      "name": "on-chain escrow",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "alternative payment/escrow mechanism"
+      }
+    },
+    "35932fd9-bfa0-4bca-9329-5d17d0ac6c9d": {
+      "uuid": "35932fd9-bfa0-4bca-9329-5d17d0ac6c9d",
+      "name": "SMEs",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "5c583c91-c705-4d0c-8b3e-8a2828f6fce3": {
+      "uuid": "5c583c91-c705-4d0c-8b3e-8a2828f6fce3",
+      "name": "Ripple",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "10069331-a670-40e0-bd9a-d045905f5480": {
+      "uuid": "10069331-a670-40e0-bd9a-d045905f5480",
+      "name": "ODL",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "expanded_name": "On-Demand Liquidity"
+      }
+    },
+    "2865023f-6b5b-4637-8963-9a568dd412e2": {
+      "uuid": "2865023f-6b5b-4637-8963-9a568dd412e2",
+      "name": "The Compliance Lawyer",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "location": "London"
+      }
+    },
+    "2cba396d-eed6-4815-8047-2605c55a2d8d": {
+      "uuid": "2cba396d-eed6-4815-8047-2605c55a2d8d",
+      "name": "EU Regulatory Officer",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "Regulatory Officer",
+        "location": "DG FISMA, Brussels"
+      }
+    },
+    "a1d1c508-8eb8-45ba-83d7-753de2f5f0df": {
+      "uuid": "a1d1c508-8eb8-45ba-83d7-753de2f5f0df",
+      "name": "DG FISMA",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "location": "Brussels"
+      }
+    },
+    "cfa3d092-ba10-42dc-9f7d-5bc8ca37750c": {
+      "uuid": "cfa3d092-ba10-42dc-9f7d-5bc8ca37750c",
+      "name": "EU AI Act",
+      "entity_type": "RegulatoryAgency",
+      "labels": [
+        "Entity",
+        "RegulatoryAgency"
+      ],
+      "summary": "",
+      "attributes": {
+        "article": "Article 6",
+        "risk_level": "high-risk",
+        "description": "mentioned as a regulatory timeline reference"
+      }
+    },
+    "80c88523-2e20-43a6-bdbc-8afb616c5cfc": {
+      "uuid": "80c88523-2e20-43a6-bdbc-8afb616c5cfc",
+      "name": "EU-based entities",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "jurisdiction": "EU"
+      }
+    },
+    "5e1adf06-198a-4207-a728-001c810291af": {
+      "uuid": "5e1adf06-198a-4207-a728-001c810291af",
+      "name": "BBVA",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "Traditional Bank"
+      }
+    },
+    "8c37c3d5-cfa7-4bbf-a3ca-faa4339f3096": {
+      "uuid": "8c37c3d5-cfa7-4bbf-a3ca-faa4339f3096",
+      "name": "EU",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "region-based entities",
+        "description": "Mandate creates compliance demand spike"
+      }
+    },
+    "8b42bd3c-4cc5-4685-b820-27733f3c1813": {
+      "uuid": "8b42bd3c-4cc5-4685-b820-27733f3c1813",
+      "name": "AI",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "3eb585fe-7d7d-4d66-8f23-8ccc5099ed90": {
+      "uuid": "3eb585fe-7d7d-4d66-8f23-8ccc5099ed90",
+      "name": "customs",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "ea8b3ad7-73b0-4e7c-9a06-309db882bcd1": {
+      "uuid": "ea8b3ad7-73b0-4e7c-9a06-309db882bcd1",
+      "name": "traditional freight forwarder",
+      "entity_type": "FreightForwarder",
+      "labels": [
+        "Entity",
+        "FreightForwarder"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "626b4e99-8825-419e-85c8-58b0ac3ee158": {
+      "uuid": "626b4e99-8825-419e-85c8-58b0ac3ee158",
+      "name": "VC Partner",
+      "entity_type": "Investor",
+      "labels": [
+        "Entity",
+        "Investor"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "7e0eec41-3b20-464e-ad0a-5d260493b2c8": {
+      "uuid": "7e0eec41-3b20-464e-ad0a-5d260493b2c8",
+      "name": "agent personas",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "d20db078-aacb-40d6-bd76-9bed8c03d816": {
+      "uuid": "d20db078-aacb-40d6-bd76-9bed8c03d816",
+      "name": "Bolivian exporters",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "10519bc4-ae1c-4f63-8390-1df2e4f43541": {
+      "uuid": "10519bc4-ae1c-4f63-8390-1df2e4f43541",
+      "name": "BVA",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "f28ae4fc-bbcb-419c-8e3f-fe306c5029e4": {
+      "uuid": "f28ae4fc-bbcb-419c-8e3f-fe306c5029e4",
+      "name": "Geneva-Based Trade Finance Lawyer",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "313a027f-f853-463b-b127-55fa39a3a7ca": {
+      "uuid": "313a027f-f853-463b-b127-55fa39a3a7ca",
+      "name": "Switzerland",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "b5a09313-d8a9-4c7e-9e44-b2fa4668f447": {
+      "uuid": "b5a09313-d8a9-4c7e-9e44-b2fa4668f447",
+      "name": "Singapore",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "109a7111-c5b4-4806-b615-9bd6e5bf6eda": {
+      "uuid": "109a7111-c5b4-4806-b615-9bd6e5bf6eda",
+      "name": "Cargonaut",
+      "entity_type": "FreightForwarder",
+      "labels": [
+        "Entity",
+        "FreightForwarder"
+      ],
+      "summary": "",
+      "attributes": {
+        "region": "LatAm",
+        "coverage": "Bolivia/Peru/Chile"
+      }
+    },
+    "d2ce0c9c-eceb-4307-a363-ccdf2bd14327": {
+      "uuid": "d2ce0c9c-eceb-4307-a363-ccdf2bd14327",
+      "name": "Flexport LatAm",
+      "entity_type": "FreightForwarder",
+      "labels": [
+        "Entity",
+        "FreightForwarder"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "e707f340-1809-49a6-ac61-d71f958dc99c": {
+      "uuid": "e707f340-1809-49a6-ac61-d71f958dc99c",
+      "name": "Bloomberg",
+      "entity_type": "MediaOutlet",
+      "labels": [
+        "Entity",
+        "MediaOutlet"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "7b6a21d1-82a5-446c-b84f-7d4657ffd589": {
+      "uuid": "7b6a21d1-82a5-446c-b84f-7d4657ffd589",
+      "name": "FreshCargo",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "6a3ad318-dd53-4b4e-a55a-6759f4f500cd": {
+      "uuid": "6a3ad318-dd53-4b4e-a55a-6759f4f500cd",
+      "name": "Freight Forwarders",
+      "entity_type": "FreightForwarder",
+      "labels": [
+        "Entity",
+        "FreightForwarder"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "intermediaries that manage international shipping logistics for exporters",
+        "services": "customs clearance, documentation, carrier booking, insurance, warehousing"
+      }
+    },
+    "03aa98f5-1388-4c9b-8c54-54688c4652f6": {
+      "uuid": "03aa98f5-1388-4c9b-8c54-54688c4652f6",
+      "name": "Freight forwarders",
+      "entity_type": "FreightForwarder",
+      "labels": [
+        "Entity",
+        "FreightForwarder"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "a54ddd56-d8f4-462f-a9f8-68053d865b1c": {
+      "uuid": "a54ddd56-d8f4-462f-a9f8-68053d865b1c",
+      "name": "DHL Global Forwarding",
+      "entity_type": "FreightForwarder",
+      "labels": [
+        "Entity",
+        "FreightForwarder"
+      ],
+      "summary": "",
+      "attributes": {
+        "region": "Global"
+      }
+    },
+    "4d9afab5-8235-42f6-ad0c-ccdb3bb1411e": {
+      "uuid": "4d9afab5-8235-42f6-ad0c-ccdb3bb1411e",
+      "name": "Kuehne+Nagel",
+      "entity_type": "FreightForwarder",
+      "labels": [
+        "Entity",
+        "FreightForwarder"
+      ],
+      "summary": "",
+      "attributes": {
+        "region": "Global"
+      }
+    },
+    "35020915-14a0-4a49-824e-1cb08440cbdb": {
+      "uuid": "35020915-14a0-4a49-824e-1cb08440cbdb",
+      "name": "DB Schenker",
+      "entity_type": "FreightForwarder",
+      "labels": [
+        "Entity",
+        "FreightForwarder"
+      ],
+      "summary": "",
+      "attributes": {
+        "region": "Global"
+      }
+    },
+    "731a5f95-1dca-45c5-b0dc-bf4f0f228839": {
+      "uuid": "731a5f95-1dca-45c5-b0dc-bf4f0f228839",
+      "name": "Flexport",
+      "entity_type": "FreightForwarder",
+      "labels": [
+        "Entity",
+        "FreightForwarder"
+      ],
+      "summary": "",
+      "attributes": {
+        "region": "Global",
+        "descriptor": "US-first, tech-native"
+      }
+    },
+    "f9ea2619-5593-41be-9904-147e5bdb86ad": {
+      "uuid": "f9ea2619-5593-41be-9904-147e5bdb86ad",
+      "name": "Copa Cargo",
+      "entity_type": "FreightForwarder",
+      "labels": [
+        "Entity",
+        "FreightForwarder"
+      ],
+      "summary": "",
+      "attributes": {
+        "region": "LatAm"
+      }
+    },
+    "c3a43dad-89c0-4879-a319-b0983b86d9fd": {
+      "uuid": "c3a43dad-89c0-4879-a319-b0983b86d9fd",
+      "name": "Avianca Cargo",
+      "entity_type": "FreightForwarder",
+      "labels": [
+        "Entity",
+        "FreightForwarder"
+      ],
+      "summary": "",
+      "attributes": {
+        "region": "LatAm"
+      }
+    },
+    "5c710172-fd26-4e59-a3c1-2ee6f517923d": {
+      "uuid": "5c710172-fd26-4e59-a3c1-2ee6f517923d",
+      "name": "Kerry Logistics",
+      "entity_type": "FreightForwarder",
+      "labels": [
+        "Entity",
+        "FreightForwarder"
+      ],
+      "summary": "",
+      "attributes": {
+        "region": "SEA"
+      }
+    },
+    "4aa3dd13-5ffd-4ac5-8bbc-09323aabc0c4": {
+      "uuid": "4aa3dd13-5ffd-4ac5-8bbc-09323aabc0c4",
+      "name": "Agility",
+      "entity_type": "FreightForwarder",
+      "labels": [
+        "Entity",
+        "FreightForwarder"
+      ],
+      "summary": "",
+      "attributes": {
+        "region": "SEA"
+      }
+    },
+    "e58b3085-69a7-432b-8633-2c4bf0bb1d26": {
+      "uuid": "e58b3085-69a7-432b-8633-2c4bf0bb1d26",
+      "name": "Nippon Express",
+      "entity_type": "FreightForwarder",
+      "labels": [
+        "Entity",
+        "FreightForwarder"
+      ],
+      "summary": "",
+      "attributes": {
+        "region": "SEA"
+      }
+    },
+    "4a99b460-3424-4edd-8afa-72646b0b2dee": {
+      "uuid": "4a99b460-3424-4edd-8afa-72646b0b2dee",
+      "name": "GenLayer/InternetCourt",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "a4280527-d5c4-48f0-9f09-9013f04dacc7": {
+      "uuid": "a4280527-d5c4-48f0-9f09-9013f04dacc7",
+      "name": "bank LC",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "8136bd51-5595-4fec-b831-785c1ab484b0": {
+      "uuid": "8136bd51-5595-4fec-b831-785c1ab484b0",
+      "name": "SME clients",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "aec68eba-d2a1-40fd-bb50-d1c60b8ff72a": {
+      "uuid": "aec68eba-d2a1-40fd-bb50-d1c60b8ff72a",
+      "name": "freight forwarder",
+      "entity_type": "FreightForwarder",
+      "labels": [
+        "Entity",
+        "FreightForwarder"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "0890abbe-c91c-4a15-9818-9f88f9fd21bc": {
+      "uuid": "0890abbe-c91c-4a15-9818-9f88f9fd21bc",
+      "name": "Intelligent Letter of Credit",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "same as traditional LC but resolved by AI consensus, not bank bureaucracy",
+        "cost": "90% less",
+        "settlement": "<1 hour"
+      }
+    },
+    "9cc19762-5990-4867-8d3e-0eb2eeec8532": {
+      "uuid": "9cc19762-5990-4867-8d3e-0eb2eeec8532",
+      "name": "AI-powered equivalent",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "5c91d459-737f-41ad-863a-e09093b945c3": {
+      "uuid": "5c91d459-737f-41ad-863a-e09093b945c3",
+      "name": "Traditional LC",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "a0d6747d-bf87-450c-8b6c-a4c7aba1d005": {
+      "uuid": "a0d6747d-bf87-450c-8b6c-a4c7aba1d005",
+      "name": "Emerging Markets",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "adoption market"
+      }
+    },
+    "c0469507-b977-41c9-adcd-6a926a827c55": {
+      "uuid": "c0469507-b977-41c9-adcd-6a926a827c55",
+      "name": "LatAm",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "USDC_usage": "growing rapidly"
+      }
+    },
+    "1ff0e6a6-c79f-429c-947b-76fd267719f9": {
+      "uuid": "1ff0e6a6-c79f-429c-947b-76fd267719f9",
+      "name": "Argentina",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "USDC_usage": "inflation hedge"
+      }
+    },
+    "adf2a7bb-8979-4f29-ab58-f99d8dc40191": {
+      "uuid": "adf2a7bb-8979-4f29-ab58-f99d8dc40191",
+      "name": "Brazil",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "95d47220-c7f8-49ad-9dd0-a8aeec0b1ed2": {
+      "uuid": "95d47220-c7f8-49ad-9dd0-a8aeec0b1ed2",
+      "name": "Mexico",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "cc776708-8dc2-4e81-ab41-0872043018d4": {
+      "uuid": "cc776708-8dc2-4e81-ab41-0872043018d4",
+      "name": "Bolivia",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "exchange_access": "limited",
+        "economy": "USD-denominated",
+        "peg": "stable informal"
+      }
+    },
+    "767e7b3b-84cd-4101-a274-40eaeb602e2f": {
+      "uuid": "767e7b3b-84cd-4101-a274-40eaeb602e2f",
+      "name": "Peru",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "banking_penetration": "55%",
+        "crypto_awareness": "growing in commercial sector"
+      }
+    },
+    "f4d51941-fa95-4834-8743-860e9eb8a173": {
+      "uuid": "f4d51941-fa95-4834-8743-860e9eb8a173",
+      "name": "Products B, C, D",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "context": "grounding"
+      }
+    },
+    "85a22b24-80fe-4336-a474-dfd3d0a6e7ea": {
+      "uuid": "85a22b24-80fe-4336-a474-dfd3d0a6e7ea",
+      "name": "AI agents",
+      "entity_type": "Agent",
+      "labels": [
+        "Entity",
+        "Agent"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "f02679bd-9a2d-4b9d-a217-5018bd54a8a3": {
+      "uuid": "f02679bd-9a2d-4b9d-a217-5018bd54a8a3",
+      "name": "Humans",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "eb37048d-d947-4c81-84c2-0abbaec8c19c": {
+      "uuid": "eb37048d-d947-4c81-84c2-0abbaec8c19c",
+      "name": "Businesses",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "9cb31d02-b2f0-4f8c-bbc1-eb93d952bab7": {
+      "uuid": "9cb31d02-b2f0-4f8c-bbc1-eb93d952bab7",
+      "name": "Rentahuman.ai",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "Marketplace where humans and AI agents post tasks; other AI agents complete them"
+      }
+    },
+    "57388dbd-d21b-409b-b5b5-0893bfd0015a": {
+      "uuid": "57388dbd-d21b-409b-b5b5-0893bfd0015a",
+      "name": "AgentHub",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "batch": "YC W25"
+      }
+    },
+    "2661d4ed-f864-4304-bdc5-567bb5666176": {
+      "uuid": "2661d4ed-f864-4304-bdc5-567bb5666176",
+      "name": "autonomous agents",
+      "entity_type": "Agent",
+      "labels": [
+        "Entity",
+        "Agent"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "cfebe574-9118-4c6e-992e-8ac170fc78ac": {
+      "uuid": "cfebe574-9118-4c6e-992e-8ac170fc78ac",
+      "name": "Kleros",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "existing solution, web3",
+        "resolved_disputes": "8000+ since 2018",
+        "issues_for_ai_agent_use_case": "slow; expensive; not API-native"
+      }
+    },
+    "61ae33b4-c83b-4dd6-8bff-13bfd1b05f38": {
+      "uuid": "61ae33b4-c83b-4dd6-8bff-13bfd1b05f38",
+      "name": "ICC Arbitration",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c7f4ccec-dd5a-422b-bd75-91f4e9478dea": {
+      "uuid": "c7f4ccec-dd5a-422b-bd75-91f4e9478dea",
+      "name": "GenLayer InternetCourt",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "f7b2e86e-66a4-4468-b6ca-cf477fa0d5fc": {
+      "uuid": "f7b2e86e-66a4-4468-b6ca-cf477fa0d5fc",
+      "name": "AI agent",
+      "entity_type": "Agent",
+      "labels": [
+        "Entity",
+        "Agent"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "e8ff2080-7199-4326-8f5a-cda81db63e21": {
+      "uuid": "e8ff2080-7199-4326-8f5a-cda81db63e21",
+      "name": "Product C: AI Task Escrow SDK",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "An npm/pip package that wraps GenLayer InternetCourt contracts."
+      }
+    },
+    "50a35cb0-ecfe-4f53-95f4-f4eed3df08ca": {
+      "uuid": "50a35cb0-ecfe-4f53-95f4-f4eed3df08ca",
+      "name": "GenLayer InternetCourt contracts",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "1a0ca4c6-3b30-43b7-b9b4-46b144aa1553": {
+      "uuid": "1a0ca4c6-3b30-43b7-b9b4-46b144aa1553",
+      "name": "AI agent developer",
+      "entity_type": "Agent",
+      "labels": [
+        "Entity",
+        "Agent"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "cb552364-c211-41fa-a1a1-08d5bd9d7143": {
+      "uuid": "cb552364-c211-41fa-a1a1-08d5bd9d7143",
+      "name": "AI agent marketplace",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "role": "marketplace"
+      }
+    },
+    "46fbebe2-a9ba-4cd1-8c4d-00225d0d2c0b": {
+      "uuid": "46fbebe2-a9ba-4cd1-8c4d-00225d0d2c0b",
+      "name": "LangChain",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "bf59dea4-f3bd-42fa-8577-c4439e4b1b61": {
+      "uuid": "bf59dea4-f3bd-42fa-8577-c4439e4b1b61",
+      "name": "CrewAI",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "4da8d540-c151-4952-adda-f240cdd590e8": {
+      "uuid": "4da8d540-c151-4952-adda-f240cdd590e8",
+      "name": "AutoGPT",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "30646229-611c-47f0-bdd3-9c1c62c5388b": {
+      "uuid": "30646229-611c-47f0-bdd3-9c1c62c5388b",
+      "name": "Product D",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "Dispute Resolution API (SaaS)",
+        "details": "A REST API wrapper over GenLayer, abstracting away all blockchain complexity."
+      }
+    },
+    "32877420-9437-4d55-bff3-165aa4e1a578": {
+      "uuid": "32877420-9437-4d55-bff3-165aa4e1a578",
+      "name": "dispute",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "501e07bd-6397-4eb7-9d9d-a60944a45261": {
+      "uuid": "501e07bd-6397-4eb7-9d9d-a60944a45261",
+      "name": "project brief",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "dc423c9c-ba7e-40e3-a131-f7ff8b8b0f25": {
+      "uuid": "dc423c9c-ba7e-40e3-a131-f7ff8b8b0f25",
+      "name": "Products C and D",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "d48c9566-2df6-48de-a2d5-55769238fc76": {
+      "uuid": "d48c9566-2df6-48de-a2d5-55769238fc76",
+      "name": "SDK",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "70436692-a44d-4cdd-a2f2-ee40e71e69a0": {
+      "uuid": "70436692-a44d-4cdd-a2f2-ee40e71e69a0",
+      "name": "agent frameworks",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "147fa11c-ef6e-4e65-a3d4-1108f1a30634": {
+      "uuid": "147fa11c-ef6e-4e65-a3d4-1108f1a30634",
+      "name": "Product A",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "trade escrow market",
+        "properties": "larger",
+        "requires": "USDC onboarding",
+        "geographic concentration": "yes"
+      }
+    },
+    "31cf6a2b-10aa-4f32-b3f9-f391fc045edb": {
+      "uuid": "31cf6a2b-10aa-4f32-b3f9-f391fc045edb",
+      "name": "Products B/C/D",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "agent economy products",
+        "properties": "smaller",
+        "technically simpler": "yes",
+        "developer-native": "yes",
+        "global from day one": "yes"
+      }
+    },
+    "7f8af001-43ff-4bb4-8ce6-1b9913456373": {
+      "uuid": "7f8af001-43ff-4bb4-8ce6-1b9913456373",
+      "name": "MiroFish",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "a843a9cc-e3fb-4af0-bf69-ad9fb79bb7a0": {
+      "uuid": "a843a9cc-e3fb-4af0-bf69-ad9fb79bb7a0",
+      "name": "OpenAI Operator",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "0c0098d7-dd41-4746-bdd3-3a010e85f90b": {
+      "uuid": "0c0098d7-dd41-4746-bdd3-3a010e85f90b",
+      "name": "Perplexity Buy",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "c5850716-1244-4164-a0ea-68af11bf3a35": {
+      "uuid": "c5850716-1244-4164-a0ea-68af11bf3a35",
+      "name": "enterprise agent platforms",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "06ada517-26aa-4277-9e2a-b757fd45b83c": {
+      "uuid": "06ada517-26aa-4277-9e2a-b757fd45b83c",
+      "name": "ERC-8183",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "e5c6d367-a95a-46cb-b527-ff19b404d9f5": {
+      "uuid": "e5c6d367-a95a-46cb-b527-ff19b404d9f5",
+      "name": "ERC-8004",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "2f4544e5-3f0d-4335-92fe-dbd50c8f4a37": {
+      "uuid": "2f4544e5-3f0d-4335-92fe-dbd50c8f4a37",
+      "name": "Crypto escrow",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "4aab14a3-e24e-4ce7-ae95-98978663a902": {
+      "uuid": "4aab14a3-e24e-4ce7-ae95-98978663a902",
+      "name": "Traditional escrow",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "78ca9db5-c593-4922-ba43-213be4c20821": {
+      "uuid": "78ca9db5-c593-4922-ba43-213be4c20821",
+      "name": "Traditional courts",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "cd82a83e-795c-424b-b6a2-13bd3793375e": {
+      "uuid": "cd82a83e-795c-424b-b6a2-13bd3793375e",
+      "name": "LatAm challenger",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "68e60dd7-7a77-461d-b596-49f0db0bb891": {
+      "uuid": "68e60dd7-7a77-461d-b596-49f0db0bb891",
+      "name": "Virtuals Protocol",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "f50f996b-7e52-46e3-8947-f6740f612d62": {
+      "uuid": "f50f996b-7e52-46e3-8947-f6740f612d62",
+      "name": "Intelligent Task Escrow SDK",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "one npm package for agent developers to add verifiable delivery conditions to any agent task",
+        "wedge product": true
+      }
+    },
+    "441815a8-7f13-4818-a880-68324b419a81": {
+      "uuid": "441815a8-7f13-4818-a880-68324b419a81",
+      "name": "Fetch.ai",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {
+        "description": "AI ecosystem"
+      }
+    },
+    "81a6480c-c490-45ad-9a1d-493a78e1c41d": {
+      "uuid": "81a6480c-c490-45ad-9a1d-493a78e1c41d",
+      "name": "consumers",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "395897bb-6b17-4c9f-beff-b45881c1465e": {
+      "uuid": "395897bb-6b17-4c9f-beff-b45881c1465e",
+      "name": "marketplaces",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "b562668d-8e21-4d59-9386-7ea30faf1021": {
+      "uuid": "b562668d-8e21-4d59-9386-7ea30faf1021",
+      "name": "sellers",
+      "entity_type": "Person",
+      "labels": [
+        "Entity",
+        "Person"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "54990ffe-ccae-4589-803b-339bda1c8a4d": {
+      "uuid": "54990ffe-ccae-4589-803b-339bda1c8a4d",
+      "name": "Dispute Resolution API",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "da8b78a8-3db6-4643-a30e-1471a9fb95b4": {
+      "uuid": "da8b78a8-3db6-4643-a30e-1471a9fb95b4",
+      "name": "Intelligent Contracts",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "57e67c3e-7394-4631-9918-4337c2db542b": {
+      "uuid": "57e67c3e-7394-4631-9918-4337c2db542b",
+      "name": "Marketplace",
+      "entity_type": "Organization",
+      "labels": [
+        "Entity",
+        "Organization"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "00c0ea01-73ca-4c37-a1cf-1fe43399c1d8": {
+      "uuid": "00c0ea01-73ca-4c37-a1cf-1fe43399c1d8",
+      "name": "API",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    },
+    "b71f714c-71b3-4030-82c6-3d89a4e60af2": {
+      "uuid": "b71f714c-71b3-4030-82c6-3d89a4e60af2",
+      "name": "Scenario A",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "label": "Base",
+        "description": "Simulate 18-month stakeholder adoption curve, normal timeline"
+      }
+    },
+    "2066ac85-f1b3-4087-b57e-f786859fe002": {
+      "uuid": "2066ac85-f1b3-4087-b57e-f786859fe002",
+      "name": "Scenario B",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "label": "Slow",
+        "description": "Competitor fills gap during mainnet delay"
+      }
+    },
+    "aa543181-8ad9-45a7-99a4-78f92d2ae789": {
+      "uuid": "aa543181-8ad9-45a7-99a4-78f92d2ae789",
+      "name": "Scenario C",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "label": "Catalyst",
+        "description": "Major platform integration triggers developer network effect"
+      }
+    },
+    "8673ae17-966e-44c6-b522-4f5d1ad11cb5": {
+      "uuid": "8673ae17-966e-44c6-b522-4f5d1ad11cb5",
+      "name": "Scenario D",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {
+        "label": "Regulatory",
+        "description": "EU mandate creates compliance demand spike"
+      }
+    },
+    "83aceea2-dcc3-4930-827b-7d6c95414398": {
+      "uuid": "83aceea2-dcc3-4930-827b-7d6c95414398",
+      "name": "reports",
+      "entity_type": "Product",
+      "labels": [
+        "Entity",
+        "Product"
+      ],
+      "summary": "",
+      "attributes": {}
+    }
+  },
+  "edges": [
+    {
+      "uuid": "3ba4d649-6ea3-4090-b67d-264b652ba81d",
+      "name": "USES",
+      "fact": "Everything else (fund custody, user wallets, DeFi primitives) stays on Base (L2 on Ethereum).",
+      "source_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "target_node_uuid": "a08e3a26-10f0-48a5-b74b-32ef68789e06",
+      "attributes": {}
+    },
+    {
+      "uuid": "7d3b4ba0-cd7e-43e1-9c3c-0b11df8d96a6",
+      "name": "USES",
+      "fact": "Each validator runs the contract's Python code in a sandboxed WASM VM (GenVM).",
+      "source_node_uuid": "6dd5bd8a-915f-4572-94a0-38ed434ed8c5",
+      "target_node_uuid": "1094b905-9871-448a-b14d-18390defabe7",
+      "attributes": {}
+    },
+    {
+      "uuid": "2fc2ddee-f089-4111-a7e6-f84f20ae7695",
+      "name": "USES",
+      "fact": "Validators use different underlying LLMs (GPT-5, Claude, Gemini, etc.).",
+      "source_node_uuid": "6dd5bd8a-915f-4572-94a0-38ed434ed8c5",
+      "target_node_uuid": "0ebd2c96-8c96-46d3-bac4-a416efe73298",
+      "attributes": {}
+    },
+    {
+      "uuid": "3fac5fc6-909a-44f9-aabc-ca59783124f1",
+      "name": "USES",
+      "fact": "Validators use different underlying LLMs (GPT-5, Claude, Gemini, etc.).",
+      "source_node_uuid": "6dd5bd8a-915f-4572-94a0-38ed434ed8c5",
+      "target_node_uuid": "c155d965-497c-459b-ab16-18e430c0cca2",
+      "attributes": {}
+    },
+    {
+      "uuid": "4087475b-d066-4feb-b09b-2187cf29c09d",
+      "name": "USES",
+      "fact": "Validators use different underlying LLMs (GPT-5, Claude, Gemini, etc.).",
+      "source_node_uuid": "6dd5bd8a-915f-4572-94a0-38ed434ed8c5",
+      "target_node_uuid": "f3e15a90-fd4c-4a7f-8366-b513f9cd8583",
+      "attributes": {}
+    },
+    {
+      "uuid": "59cbe349-e857-4ba7-ae82-5ee5dd1ff9bc",
+      "name": "USES",
+      "fact": "InternetCourt is the court system built on top of GenLayer.",
+      "source_node_uuid": "c8f16a58-abdd-4bd8-8edb-a31b28498c32",
+      "target_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "attributes": {}
+    },
+    {
+      "uuid": "99fce8f3-5ffd-454a-a0a0-9f048c00452d",
+      "name": "USES",
+      "fact": "The architecture routes disputed cases through the LayerZero V2 Bridge to GenLayer.",
+      "source_node_uuid": "b9c700de-fe42-4b4b-a44a-e87a0aaca3fc",
+      "target_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "attributes": {}
+    },
+    {
+      "uuid": "d1795b0b-fd2e-4fd8-8959-58e48fdcf636",
+      "name": "USES",
+      "fact": "AI validators fetch live forex rate at settlement for the conditional payment cross-border trade flow.",
+      "source_node_uuid": "1e1ba07a-3bca-4a91-948d-158888a05ee6",
+      "target_node_uuid": "5474d615-e460-440d-afd1-19c50de6f606",
+      "attributes": {}
+    },
+    {
+      "uuid": "d1eb8479-728f-4140-a966-e645fba87420",
+      "name": "USES",
+      "fact": "AI validators (GenLayer FxBenchmarkOracle) fetch live BOB/PEN rate.",
+      "source_node_uuid": "86ee483f-b86c-4523-8f6a-85dd5362a799",
+      "target_node_uuid": "3023b27a-70be-4a10-98c1-3b758d330595",
+      "attributes": {}
+    },
+    {
+      "uuid": "557c5d7d-85a8-4930-b6bf-b6a813b30306",
+      "name": "COMPETES_WITH",
+      "fact": "GenLayer ≠ InternetCourt.",
+      "source_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "target_node_uuid": "00f26569-a2d3-4b90-be6e-ee2788bc6677",
+      "attributes": {}
+    },
+    {
+      "uuid": "80b66929-bf2f-47bc-9a80-5b9e26debb02",
+      "name": "COMPETES_WITH",
+      "fact": "GenLayer ≠ Conditional Payment.",
+      "source_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "target_node_uuid": "c6d0fb81-3c3f-4191-a95e-0e6760f3749d",
+      "attributes": {}
+    },
+    {
+      "uuid": "0d7b3cb1-2cae-4cf7-a2fa-0ca52d7cfc12",
+      "name": "COMPETES_WITH",
+      "fact": "InternetCourt ≠ Conditional Payment.",
+      "source_node_uuid": "00f26569-a2d3-4b90-be6e-ee2788bc6677",
+      "target_node_uuid": "c6d0fb81-3c3f-4191-a95e-0e6760f3749d",
+      "attributes": {}
+    },
+    {
+      "uuid": "9372ea54-80ed-4c2a-a9e4-0a26ed946665",
+      "name": "USES",
+      "fact": "Conditional Payment is a use case.",
+      "source_node_uuid": "c6d0fb81-3c3f-4191-a95e-0e6760f3749d",
+      "target_node_uuid": "af0697c8-4b5b-4557-a441-b106e5b44735",
+      "attributes": {}
+    },
+    {
+      "uuid": "17a28d3d-f4ee-4811-8943-c3571e984401",
+      "name": "REPORTS_ON",
+      "fact": "Trade finance gap (World Bank, 2024): $2.5T annually, 45% of SME applications rejected.",
+      "source_node_uuid": "83182f5e-efc8-46df-90f1-cc2cdca0f2e3",
+      "target_node_uuid": "9f6c17cd-7ff1-4912-8b2e-99fb19557990",
+      "attributes": {}
+    },
+    {
+      "uuid": "9b611726-d673-4abf-ad7f-03617c657729",
+      "name": "LEADS",
+      "fact": "FreshCargo's CEO, Maria Quispe, posts on LinkedIn.",
+      "source_node_uuid": "b1068b70-a727-4bf5-b179-772ff6e5a5a7",
+      "target_node_uuid": "58dacfb7-c671-4df0-89cb-8f170d62d29d",
+      "attributes": {}
+    },
+    {
+      "uuid": "c5cb2861-97fd-4ca2-a748-2a9f843ed866",
+      "name": "REPORTS_ON",
+      "fact": "FreshCargo's CEO, Maria Quispe, posts on LinkedIn.",
+      "source_node_uuid": "b1068b70-a727-4bf5-b179-772ff6e5a5a7",
+      "target_node_uuid": "4446bf9b-2d3e-42e3-8970-97d796f1dfc7",
+      "attributes": {}
+    },
+    {
+      "uuid": "9669ed59-529b-425e-a829-6b1c53c35593",
+      "name": "INVESTS_IN",
+      "fact": "EscrowChain announces a $10M Series A with Stripe as strategic investor.",
+      "source_node_uuid": "59b1327e-e12c-453f-aaef-aacc01aa592a",
+      "target_node_uuid": "bcbe41b8-0851-423b-850c-4da976ead923",
+      "attributes": {}
+    },
+    {
+      "uuid": "6be799f2-be8b-4605-872c-39300c32b5c9",
+      "name": "USES",
+      "fact": "EscrowChain uses rule-based smart contracts for trade escrow.",
+      "source_node_uuid": "bcbe41b8-0851-423b-850c-4da976ead923",
+      "target_node_uuid": "43679795-2113-4789-b352-66b07f00556b",
+      "attributes": {}
+    },
+    {
+      "uuid": "e4a2d032-b8a6-4f9c-b29c-24112814019a",
+      "name": "REPORTS_ON",
+      "fact": "Bloomberg Businessweek publishes: 'AI in the Courtroom: When Your Trade Dispute Is Decided by a Chatbot'.",
+      "source_node_uuid": "35572914-f367-45ec-8aaf-cf0970e58833",
+      "target_node_uuid": "c520efe1-109f-4a01-9642-234f5643cfa4",
+      "attributes": {}
+    },
+    {
+      "uuid": "a2d672da-262f-4fa2-b736-9c7164d901b8",
+      "name": "USES",
+      "fact": "The text describes the UNDETERMINED failure mode as a hidden risk in the competitive landscape context.",
+      "source_node_uuid": "bcbe41b8-0851-423b-850c-4da976ead923",
+      "target_node_uuid": "35fcc9fe-3d85-4761-9366-6a3851612186",
+      "attributes": {}
+    },
+    {
+      "uuid": "32271d2e-b861-4ad2-8d37-03ca33aa0526",
+      "name": "COMPETES_WITH",
+      "fact": "The text compares Stripe's approach with GenLayer's, indicating a competitive context.",
+      "source_node_uuid": "59b1327e-e12c-453f-aaef-aacc01aa592a",
+      "target_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "attributes": {}
+    },
+    {
+      "uuid": "209a3361-8912-4295-b473-d8e30848778e",
+      "name": "COMPETES_WITH",
+      "fact": "orwarders and B2B platforms as GenLayer — they are directly competing for FreshCargo-type deals",
+      "source_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "target_node_uuid": "bb7f973b-a804-4da6-9834-52332248ce66",
+      "attributes": {}
+    },
+    {
+      "uuid": "ee4a935f-62f7-4b41-9418-91553a82b9d4",
+      "name": "INVESTS_IN",
+      "fact": "as EscrowChain's investor, Stripe gives EscrowChain distribution to its 10M+ business customers",
+      "source_node_uuid": "59b1327e-e12c-453f-aaef-aacc01aa592a",
+      "target_node_uuid": "bcbe41b8-0851-423b-850c-4da976ead923",
+      "attributes": {}
+    },
+    {
+      "uuid": "6cf4650b-8ca1-4cf0-80fb-5ceddc5fbb02",
+      "name": "INVESTS_IN",
+      "fact": "We invested in EscrowChain because B2B trade escrow needs certainty, not probability.",
+      "source_node_uuid": "59b1327e-e12c-453f-aaef-aacc01aa592a",
+      "target_node_uuid": "0a3b853a-a544-4ee0-82e3-f387b48a096e",
+      "attributes": {}
+    },
+    {
+      "uuid": "2be1dae7-bce5-4e5b-a805-dd09d4ead06b",
+      "name": "COMPETES_WITH",
+      "fact": "AI introduces variance merchants can't price, in the context of traditional Letters of Credit.",
+      "source_node_uuid": "6cbd71fe-f459-4f47-b5c9-f26969e22290",
+      "target_node_uuid": "d8532ec3-84de-4013-b368-170eab00314a",
+      "attributes": {}
+    },
+    {
+      "uuid": "54af7dc4-5f3b-4ce0-aa85-3cef3dd7f91d",
+      "name": "COMPETES_WITH",
+      "fact": "Large enterprises (Fortune 500) will not switch to on-chain escrow anytime soon, indicating Letters of Credit remain preferred over on-chain escrow.",
+      "source_node_uuid": "d8532ec3-84de-4013-b368-170eab00314a",
+      "target_node_uuid": "c412345a-41d2-4afa-b134-0eef693fd337",
+      "attributes": {}
+    },
+    {
+      "uuid": "4be3c93c-60da-444f-be08-1a028f35db10",
+      "name": "LEADS",
+      "fact": "EU Regulatory Officer is associated with DG FISMA, Brussels.",
+      "source_node_uuid": "2cba396d-eed6-4815-8047-2605c55a2d8d",
+      "target_node_uuid": "a1d1c508-8eb8-45ba-83d7-753de2f5f0df",
+      "attributes": {}
+    },
+    {
+      "uuid": "bd57d95d-baf3-468b-a3f5-d5c9950e5d24",
+      "name": "REGULATES",
+      "fact": "AI systems making financial decisions fall under the EU AI Act, and the officer says this applies to EU-based entities.",
+      "source_node_uuid": "cfa3d092-ba10-42dc-9f7d-5bc8ca37750c",
+      "target_node_uuid": "80c88523-2e20-43a6-bdbc-8afb616c5cfc",
+      "attributes": {}
+    },
+    {
+      "uuid": "0c1e6cd6-ef5b-4db0-99e9-c94e0560a6e1",
+      "name": "USES",
+      "fact": "The AI was used to read the customs stamp.",
+      "source_node_uuid": "8b42bd3c-4cc5-4685-b820-27733f3c1813",
+      "target_node_uuid": "3eb585fe-7d7d-4d66-8f23-8ccc5099ed90",
+      "attributes": {}
+    },
+    {
+      "uuid": "ebac1993-70df-44c2-962e-561901945758",
+      "name": "INVESTS_IN",
+      "fact": "VC Partner passed on GenLayer's last round.",
+      "source_node_uuid": "626b4e99-8825-419e-85c8-58b0ac3ee158",
+      "target_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "attributes": {}
+    },
+    {
+      "uuid": "a41055ee-e786-4fe5-b6b0-b12cacd0fd9d",
+      "name": "LEADS",
+      "fact": "FreshCargo CEO (Maria Quispe)",
+      "source_node_uuid": "58dacfb7-c671-4df0-89cb-8f170d62d29d",
+      "target_node_uuid": "b1068b70-a727-4bf5-b179-772ff6e5a5a7",
+      "attributes": {}
+    },
+    {
+      "uuid": "306aae10-ef92-4d1c-ae45-1070ab9dc7af",
+      "name": "COMPETES_WITH",
+      "fact": "We're not competing with BBVA.",
+      "source_node_uuid": "b1068b70-a727-4bf5-b179-772ff6e5a5a7",
+      "target_node_uuid": "5e1adf06-198a-4207-a728-001c810291af",
+      "attributes": {}
+    },
+    {
+      "uuid": "237fdb09-3fed-4597-bf1c-07fd40b8fec0",
+      "name": "COMPETES_WITH",
+      "fact": "We're not competing with BBVA.",
+      "source_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "target_node_uuid": "5e1adf06-198a-4207-a728-001c810291af",
+      "attributes": {}
+    },
+    {
+      "uuid": "c614a448-d88b-4469-b34f-ec2d1f81e706",
+      "name": "COMPETES_WITH",
+      "fact": "\"We're serving customers BBVA doesn't want.\"",
+      "source_node_uuid": "10519bc4-ae1c-4f63-8390-1df2e4f43541",
+      "target_node_uuid": "5e1adf06-198a-4207-a728-001c810291af",
+      "attributes": {}
+    },
+    {
+      "uuid": "5a768172-1846-4b68-a888-9ab639249617",
+      "name": "COMPETES_WITH",
+      "fact": "The text compares GenLayer and InternetCourt in the context of dispute resolution and agent-to-agent commerce.",
+      "source_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "target_node_uuid": "c8f16a58-abdd-4bd8-8edb-a31b28498c32",
+      "attributes": {}
+    },
+    {
+      "uuid": "1e824ce6-581c-438a-8f14-d1ffc420f6cc",
+      "name": "COMPETES_WITH",
+      "fact": "The text compares GenLayer and EscrowChain as options for agent-to-agent commerce.",
+      "source_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "target_node_uuid": "bcbe41b8-0851-423b-850c-4da976ead923",
+      "attributes": {}
+    },
+    {
+      "uuid": "4ef3e927-1871-4a43-aa75-3e7895e9eae2",
+      "name": "COMPETES_WITH",
+      "fact": "The text compares InternetCourt and EscrowChain as options for agent-to-agent commerce.",
+      "source_node_uuid": "c8f16a58-abdd-4bd8-8edb-a31b28498c32",
+      "target_node_uuid": "bcbe41b8-0851-423b-850c-4da976ead923",
+      "attributes": {}
+    },
+    {
+      "uuid": "350cb0f1-7cd1-45fd-89e8-7745ca5fd050",
+      "name": "REPORTS_ON",
+      "fact": "The Geneva-Based Trade Finance Lawyer says private arbitration enforced by smart contract is a stronger position in Switzerland.",
+      "source_node_uuid": "f28ae4fc-bbcb-419c-8e3f-fe306c5029e4",
+      "target_node_uuid": "313a027f-f853-463b-b127-55fa39a3a7ca",
+      "attributes": {}
+    },
+    {
+      "uuid": "73dd33e1-0c18-4e9f-8060-61687695d09f",
+      "name": "REPORTS_ON",
+      "fact": "The Geneva-Based Trade Finance Lawyer says private arbitration enforced by smart contract is a stronger position in Singapore.",
+      "source_node_uuid": "f28ae4fc-bbcb-419c-8e3f-fe306c5029e4",
+      "target_node_uuid": "b5a09313-d8a9-4c7e-9e44-b2fa4668f447",
+      "attributes": {}
+    },
+    {
+      "uuid": "47423dcd-768f-4992-bad9-14cd003f57dc",
+      "name": "USES",
+      "fact": "If FreshCargo succeeds and becomes a GenLayer reference customer.",
+      "source_node_uuid": "58dacfb7-c671-4df0-89cb-8f170d62d29d",
+      "target_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "attributes": {}
+    },
+    {
+      "uuid": "dd477d79-f776-4390-95be-bd6020073483",
+      "name": "COMPETES_WITH",
+      "fact": "Other LatAm freight forwarders follow — Cargonaut, Flexport LatAm, regional players.",
+      "source_node_uuid": "109a7111-c5b4-4806-b615-9bd6e5bf6eda",
+      "target_node_uuid": "58dacfb7-c671-4df0-89cb-8f170d62d29d",
+      "attributes": {}
+    },
+    {
+      "uuid": "9289661e-d99b-4c38-8953-0eaa6b66540c",
+      "name": "COMPETES_WITH",
+      "fact": "Other LatAm freight forwarders follow — Cargonaut, Flexport LatAm, regional players.",
+      "source_node_uuid": "d2ce0c9c-eceb-4307-a363-ccdf2bd14327",
+      "target_node_uuid": "58dacfb7-c671-4df0-89cb-8f170d62d29d",
+      "attributes": {}
+    },
+    {
+      "uuid": "026628a9-3046-4d7d-b82b-1d68b6e94a17",
+      "name": "REPORTS_ON",
+      "fact": "The Bloomberg narrative flips to 'GenLayer powers the supply chain backbone for emerging market trade'.",
+      "source_node_uuid": "e707f340-1809-49a6-ac61-d71f958dc99c",
+      "target_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "attributes": {}
+    },
+    {
+      "uuid": "6a8c4223-96aa-494d-ad9f-6161441f03f9",
+      "name": "COMPETES_WITH",
+      "fact": "EscrowChain poaches them, implying competition with FreshCargo.",
+      "source_node_uuid": "bcbe41b8-0851-423b-850c-4da976ead923",
+      "target_node_uuid": "7b6a21d1-82a5-446c-b84f-7d4657ffd589",
+      "attributes": {}
+    },
+    {
+      "uuid": "b7ce07ca-3226-460d-9b6d-413c54561ed0",
+      "name": "COMPETES_WITH",
+      "fact": "Major players by region: Global: DHL Global Forwarding, Kuehne+Nagel, DB Schenker, Flexport (US-first, tech-native)",
+      "source_node_uuid": "a54ddd56-d8f4-462f-a9f8-68053d865b1c",
+      "target_node_uuid": "4d9afab5-8235-42f6-ad0c-ccdb3bb1411e",
+      "attributes": {}
+    },
+    {
+      "uuid": "245909bf-ad7e-4a6a-aa78-2cb547e6fed4",
+      "name": "COMPETES_WITH",
+      "fact": "Major players by region: Global: DHL Global Forwarding, Kuehne+Nagel, DB Schenker, Flexport (US-first, tech-native)",
+      "source_node_uuid": "a54ddd56-d8f4-462f-a9f8-68053d865b1c",
+      "target_node_uuid": "35020915-14a0-4a49-824e-1cb08440cbdb",
+      "attributes": {}
+    },
+    {
+      "uuid": "a3011849-fc20-4e62-acd4-411e46b1b56c",
+      "name": "COMPETES_WITH",
+      "fact": "Major players by region: Global: DHL Global Forwarding, Kuehne+Nagel, DB Schenker, Flexport (US-first, tech-native)",
+      "source_node_uuid": "a54ddd56-d8f4-462f-a9f8-68053d865b1c",
+      "target_node_uuid": "731a5f95-1dca-45c5-b0dc-bf4f0f228839",
+      "attributes": {}
+    },
+    {
+      "uuid": "071c147c-ec7b-4b97-a44b-6f5c9271f08a",
+      "name": "COMPETES_WITH",
+      "fact": "Major players by region: Global: DHL Global Forwarding, Kuehne+Nagel, DB Schenker, Flexport (US-first, tech-native)",
+      "source_node_uuid": "4d9afab5-8235-42f6-ad0c-ccdb3bb1411e",
+      "target_node_uuid": "35020915-14a0-4a49-824e-1cb08440cbdb",
+      "attributes": {}
+    },
+    {
+      "uuid": "64207ac0-abb5-49c5-869b-4b5cf6afedde",
+      "name": "COMPETES_WITH",
+      "fact": "Major players by region: Global: DHL Global Forwarding, Kuehne+Nagel, DB Schenker, Flexport (US-first, tech-native)",
+      "source_node_uuid": "4d9afab5-8235-42f6-ad0c-ccdb3bb1411e",
+      "target_node_uuid": "731a5f95-1dca-45c5-b0dc-bf4f0f228839",
+      "attributes": {}
+    },
+    {
+      "uuid": "af1dfdd7-4116-4ec8-b234-816b4f4bee31",
+      "name": "COMPETES_WITH",
+      "fact": "Major players by region: Global: DHL Global Forwarding, Kuehne+Nagel, DB Schenker, Flexport (US-first, tech-native)",
+      "source_node_uuid": "35020915-14a0-4a49-824e-1cb08440cbdb",
+      "target_node_uuid": "731a5f95-1dca-45c5-b0dc-bf4f0f228839",
+      "attributes": {}
+    },
+    {
+      "uuid": "1185b556-7211-4d1b-9eac-dca4b83b27fc",
+      "name": "COMPETES_WITH",
+      "fact": "Major players by region: LatAm: Cargonaut (Bolivia/Peru/Chile), Copa Cargo, Avianca Cargo",
+      "source_node_uuid": "109a7111-c5b4-4806-b615-9bd6e5bf6eda",
+      "target_node_uuid": "f9ea2619-5593-41be-9904-147e5bdb86ad",
+      "attributes": {}
+    },
+    {
+      "uuid": "a8b6e0e0-ad86-4af1-96d7-01b00e5f78d0",
+      "name": "COMPETES_WITH",
+      "fact": "Major players by region: LatAm: Cargonaut (Bolivia/Peru/Chile), Copa Cargo, Avianca Cargo",
+      "source_node_uuid": "109a7111-c5b4-4806-b615-9bd6e5bf6eda",
+      "target_node_uuid": "c3a43dad-89c0-4879-a319-b0983b86d9fd",
+      "attributes": {}
+    },
+    {
+      "uuid": "f70dc676-8f6e-4697-87ef-65d3075b873f",
+      "name": "COMPETES_WITH",
+      "fact": "Major players by region: LatAm: Cargonaut (Bolivia/Peru/Chile), Copa Cargo, Avianca Cargo",
+      "source_node_uuid": "f9ea2619-5593-41be-9904-147e5bdb86ad",
+      "target_node_uuid": "c3a43dad-89c0-4879-a319-b0983b86d9fd",
+      "attributes": {}
+    },
+    {
+      "uuid": "28975122-e972-4552-9227-cd80be5c1a3d",
+      "name": "COMPETES_WITH",
+      "fact": "Major players by region: SEA: Kerry Logistics, Agility, Nippon Express",
+      "source_node_uuid": "5c710172-fd26-4e59-a3c1-2ee6f517923d",
+      "target_node_uuid": "4aa3dd13-5ffd-4ac5-8bbc-09323aabc0c4",
+      "attributes": {}
+    },
+    {
+      "uuid": "805e099f-235a-41bc-b9d9-fef8f7b8f4cf",
+      "name": "COMPETES_WITH",
+      "fact": "Major players by region: SEA: Kerry Logistics, Agility, Nippon Express",
+      "source_node_uuid": "5c710172-fd26-4e59-a3c1-2ee6f517923d",
+      "target_node_uuid": "e58b3085-69a7-432b-8633-2c4bf0bb1d26",
+      "attributes": {}
+    },
+    {
+      "uuid": "a932b461-f823-479e-a7af-9ab7ae5ffc21",
+      "name": "COMPETES_WITH",
+      "fact": "Major players by region: SEA: Kerry Logistics, Agility, Nippon Express",
+      "source_node_uuid": "4aa3dd13-5ffd-4ac5-8bbc-09323aabc0c4",
+      "target_node_uuid": "e58b3085-69a7-432b-8633-2c4bf0bb1d26",
+      "attributes": {}
+    },
+    {
+      "uuid": "f53ead01-37a3-4f69-8a3c-a3bfb12ad72d",
+      "name": "USES",
+      "fact": "A freight forwarder integrating GenLayer/InternetCourt becomes a one-stop shop.",
+      "source_node_uuid": "aec68eba-d2a1-40fd-bb50-d1c60b8ff72a",
+      "target_node_uuid": "4a99b460-3424-4edd-8afa-72646b0b2dee",
+      "attributes": {}
+    },
+    {
+      "uuid": "a58e1581-4989-4713-aeac-80af39362b47",
+      "name": "COMPETES_WITH",
+      "fact": "This is a fundamentally better product than a bank LC for the freight forwarder's existing customers.",
+      "source_node_uuid": "aec68eba-d2a1-40fd-bb50-d1c60b8ff72a",
+      "target_node_uuid": "a4280527-d5c4-48f0-9f09-9013f04dacc7",
+      "attributes": {}
+    },
+    {
+      "uuid": "b9f9591a-f761-4b11-b74b-570289f35793",
+      "name": "USES",
+      "fact": "GenLayer's AI cannot evaluate physical quality without a trusted inspector submitting a structured report as evidence.",
+      "source_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "target_node_uuid": "6cbd71fe-f459-4f47-b5c9-f26969e22290",
+      "attributes": {}
+    },
+    {
+      "uuid": "8f9fde27-c01b-4bd0-80bb-3001d1271efc",
+      "name": "COMPETES_WITH",
+      "fact": "An AI-powered equivalent is presented as the alternative to a traditional LC flow.",
+      "source_node_uuid": "9cc19762-5990-4867-8d3e-0eb2eeec8532",
+      "target_node_uuid": "5c91d459-737f-41ad-863a-e09093b945c3",
+      "attributes": {}
+    },
+    {
+      "uuid": "0943f450-b8e5-41ef-bca5-a30edf0f4498",
+      "name": "USES",
+      "fact": "The text discusses USDC adoption in emerging markets.",
+      "source_node_uuid": "e97bce58-7755-45b7-819b-e0fd84feafde",
+      "target_node_uuid": "a0d6747d-bf87-450c-8b6c-a4c7aba1d005",
+      "attributes": {}
+    },
+    {
+      "uuid": "8c26212c-aa6b-4f3f-b10c-af3d8e960e3f",
+      "name": "USES",
+      "fact": "For GenLayer to work in cross-border trade, importers or their banks must hold USDC at transaction time.",
+      "source_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "target_node_uuid": "e97bce58-7755-45b7-819b-e0fd84feafde",
+      "attributes": {}
+    },
+    {
+      "uuid": "b5f15858-1840-4a80-82c4-c3cef579e8ad",
+      "name": "USES",
+      "fact": "For GenLayer specifically, the FreshCargo pilot is the reference customer moment.",
+      "source_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "target_node_uuid": "bb7f973b-a804-4da6-9834-52332248ce66",
+      "attributes": {}
+    },
+    {
+      "uuid": "7bb3f0d5-048a-44af-9ccc-9033ac2b8e87",
+      "name": "USES",
+      "fact": "Humans hire AI agents for work (coding, research, content, operations).",
+      "source_node_uuid": "f02679bd-9a2d-4b9d-a217-5018bd54a8a3",
+      "target_node_uuid": "85a22b24-80fe-4336-a474-dfd3d0a6e7ea",
+      "attributes": {}
+    },
+    {
+      "uuid": "2e6cde26-7ae4-40de-b776-34dc23b4ee05",
+      "name": "USES",
+      "fact": "AI agents hire other AI agents to complete subtasks.",
+      "source_node_uuid": "85a22b24-80fe-4336-a474-dfd3d0a6e7ea",
+      "target_node_uuid": "85a22b24-80fe-4336-a474-dfd3d0a6e7ea",
+      "attributes": {}
+    },
+    {
+      "uuid": "79fac751-da98-4191-8e45-a65937d61de5",
+      "name": "USES",
+      "fact": "AI agents transact with businesses (buying APIs, data, services).",
+      "source_node_uuid": "85a22b24-80fe-4336-a474-dfd3d0a6e7ea",
+      "target_node_uuid": "eb37048d-d947-4c81-84c2-0abbaec8c19c",
+      "attributes": {}
+    },
+    {
+      "uuid": "eaf13827-1fc8-474f-836a-f39704bfaa4f",
+      "name": "USES",
+      "fact": "AgentHub is infrastructure for deploying autonomous agents on behalf of businesses.",
+      "source_node_uuid": "57388dbd-d21b-409b-b5b5-0893bfd0015a",
+      "target_node_uuid": "2661d4ed-f864-4304-bdc5-567bb5666176",
+      "attributes": {}
+    },
+    {
+      "uuid": "7cd4a55c-3faf-43d6-bcc8-fbc6359a4b62",
+      "name": "COMPETES_WITH",
+      "fact": "GenLayer is 100x faster and 50x cheaper per resolution than Kleros, indicating competition in the dispute resolution layer space.",
+      "source_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "target_node_uuid": "cfebe574-9118-4c6e-992e-8ac170fc78ac",
+      "attributes": {}
+    },
+    {
+      "uuid": "246347e8-7840-43c8-ada3-9c6324dc1f95",
+      "name": "COMPETES_WITH",
+      "fact": "The table compares Kleros and ICC Arbitration as existing solutions.",
+      "source_node_uuid": "cfebe574-9118-4c6e-992e-8ac170fc78ac",
+      "target_node_uuid": "61ae33b4-c83b-4dd6-8bff-13bfd1b05f38",
+      "attributes": {}
+    },
+    {
+      "uuid": "d753d02f-3e4e-4b5f-b575-de01145ea1f8",
+      "name": "COMPETES_WITH",
+      "fact": "The table compares Kleros and GenLayer InternetCourt as existing solutions.",
+      "source_node_uuid": "cfebe574-9118-4c6e-992e-8ac170fc78ac",
+      "target_node_uuid": "c7f4ccec-dd5a-422b-bd75-91f4e9478dea",
+      "attributes": {}
+    },
+    {
+      "uuid": "5f8d2ef6-6858-4bee-88c6-fe8cec5869af",
+      "name": "COMPETES_WITH",
+      "fact": "The table compares ICC Arbitration and GenLayer InternetCourt as existing solutions.",
+      "source_node_uuid": "61ae33b4-c83b-4dd6-8bff-13bfd1b05f38",
+      "target_node_uuid": "c7f4ccec-dd5a-422b-bd75-91f4e9478dea",
+      "attributes": {}
+    },
+    {
+      "uuid": "2eaa2fae-4abb-476c-ab47-4f744231fa17",
+      "name": "USES",
+      "fact": "It's the only dispute resolution system that an AI agent can call programmatically, get a verdict in under 2 minutes, and continue operating — without human intervention.",
+      "source_node_uuid": "f7b2e86e-66a4-4468-b6ca-cf477fa0d5fc",
+      "target_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "attributes": {}
+    },
+    {
+      "uuid": "2cc8c015-3751-4001-8d96-157456e0d040",
+      "name": "USES",
+      "fact": "An AI agent developer imports the SDK.",
+      "source_node_uuid": "1a0ca4c6-3b30-43b7-b9b4-46b144aa1553",
+      "target_node_uuid": "e8ff2080-7199-4326-8f5a-cda81db63e21",
+      "attributes": {}
+    },
+    {
+      "uuid": "28574eb1-0efa-4ef1-b4cd-13bda9028815",
+      "name": "USES",
+      "fact": "There are two possible GTM motions for Products C and D: Developer-led (bottom-up) release the SDK open source.",
+      "source_node_uuid": "dc423c9c-ba7e-40e3-a131-f7ff8b8b0f25",
+      "target_node_uuid": "d48c9566-2df6-48de-a2d5-55769238fc76",
+      "attributes": {}
+    },
+    {
+      "uuid": "56bd5f93-22c6-4609-b7d9-5ed0d9273616",
+      "name": "COMPETES_WITH",
+      "fact": "Sign 2-3 high-volume agent marketplaces (Rentahuman.ai, AgentHub) as design partners.",
+      "source_node_uuid": "9cb31d02-b2f0-4f8c-bbc1-eb93d952bab7",
+      "target_node_uuid": "57388dbd-d21b-409b-b5b5-0893bfd0015a",
+      "attributes": {}
+    },
+    {
+      "uuid": "a7a1e060-95ad-406f-a00f-3b712f43e9ee",
+      "name": "COMPETES_WITH",
+      "fact": "The agent economy (Products B/C/D) is smaller but technically simpler, developer-native, and global from day one, while the trade escrow market (Product A) is larger but requires USDC onboarding and geographic concentration.",
+      "source_node_uuid": "31cf6a2b-10aa-4f32-b3f9-f391fc045edb",
+      "target_node_uuid": "147fa11c-ef6e-4e65-a3d4-1108f1a30634",
+      "attributes": {}
+    },
+    {
+      "uuid": "87492f05-b04b-414d-b650-f56595d8a0fa",
+      "name": "USES",
+      "fact": "Crypto escrow (ERC-8183, ERC-8004): smart contract logic, but binary — can't evaluate subjective fulfillment conditions.",
+      "source_node_uuid": "2f4544e5-3f0d-4335-92fe-dbd50c8f4a37",
+      "target_node_uuid": "06ada517-26aa-4277-9e2a-b757fd45b83c",
+      "attributes": {}
+    },
+    {
+      "uuid": "2afeacb7-504f-4461-b129-fd58f3077111",
+      "name": "USES",
+      "fact": "Crypto escrow (ERC-8183, ERC-8004): smart contract logic, but binary — can't evaluate subjective fulfillment conditions.",
+      "source_node_uuid": "2f4544e5-3f0d-4335-92fe-dbd50c8f4a37",
+      "target_node_uuid": "e5c6d367-a95a-46cb-b527-ff19b404d9f5",
+      "attributes": {}
+    },
+    {
+      "uuid": "2c6ed578-82ec-41f6-a343-cae4e3c7e284",
+      "name": "COMPETES_WITH",
+      "fact": "One large freight forwarder or trade platform (e.g., Flexport, Cargonaut, or a LatAm challenger) integrates as default settlement.",
+      "source_node_uuid": "731a5f95-1dca-45c5-b0dc-bf4f0f228839",
+      "target_node_uuid": "109a7111-c5b4-4806-b615-9bd6e5bf6eda",
+      "attributes": {}
+    },
+    {
+      "uuid": "732bb58d-cc1d-430a-9b07-c39bde41ad2a",
+      "name": "COMPETES_WITH",
+      "fact": "One large freight forwarder or trade platform (e.g., Flexport, Cargonaut, or a LatAm challenger) integrates as default settlement.",
+      "source_node_uuid": "731a5f95-1dca-45c5-b0dc-bf4f0f228839",
+      "target_node_uuid": "cd82a83e-795c-424b-b6a2-13bd3793375e",
+      "attributes": {}
+    },
+    {
+      "uuid": "22e611fb-695d-4406-91f5-86310738906d",
+      "name": "COMPETES_WITH",
+      "fact": "One large freight forwarder or trade platform (e.g., Flexport, Cargonaut, or a LatAm challenger) integrates as default settlement.",
+      "source_node_uuid": "109a7111-c5b4-4806-b615-9bd6e5bf6eda",
+      "target_node_uuid": "cd82a83e-795c-424b-b6a2-13bd3793375e",
+      "attributes": {}
+    },
+    {
+      "uuid": "3c7eda4d-7c84-439d-9b7c-c6fa9e51cdec",
+      "name": "USES",
+      "fact": "GenLayer has the AI judgment layer.",
+      "source_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "target_node_uuid": "6cbd71fe-f459-4f47-b5c9-f26969e22290",
+      "attributes": {}
+    },
+    {
+      "uuid": "74621b0b-ef06-4920-a01c-a8c5d7b1491f",
+      "name": "USES",
+      "fact": "AI validators are used in the product workflow to agree whether the work is done.",
+      "source_node_uuid": "1e1ba07a-3bca-4a91-948d-158888a05ee6",
+      "target_node_uuid": "f50f996b-7e52-46e3-8947-f6740f612d62",
+      "attributes": {}
+    },
+    {
+      "uuid": "037ba77d-7601-4e60-a096-b5e2540dfb2e",
+      "name": "USES",
+      "fact": "AI agents transact on behalf of consumers.",
+      "source_node_uuid": "85a22b24-80fe-4336-a474-dfd3d0a6e7ea",
+      "target_node_uuid": "81a6480c-c490-45ad-9a1d-493a78e1c41d",
+      "attributes": {}
+    },
+    {
+      "uuid": "faa5ebd3-76d9-4aff-ad8b-a067a335132e",
+      "name": "USES",
+      "fact": "Marketplace integrates GenLayer as their 'dispute engine' via API.",
+      "source_node_uuid": "57e67c3e-7394-4631-9918-4337c2db542b",
+      "target_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "attributes": {}
+    },
+    {
+      "uuid": "5c7df187-9fdb-444f-a0c4-cdac76004182",
+      "name": "USES",
+      "fact": "The marketplace posts a dispute using the Dispute Resolution API.",
+      "source_node_uuid": "57e67c3e-7394-4631-9918-4337c2db542b",
+      "target_node_uuid": "54990ffe-ccae-4589-803b-339bda1c8a4d",
+      "attributes": {}
+    },
+    {
+      "uuid": "2e731f74-8858-4e18-84f2-1acdcdc6a89b",
+      "name": "USES",
+      "fact": "The Dispute Resolution API is described as a SaaS wrapper over GenLayer's Intelligent Contracts.",
+      "source_node_uuid": "54990ffe-ccae-4589-803b-339bda1c8a4d",
+      "target_node_uuid": "da8b78a8-3db6-4643-a30e-1471a9fb95b4",
+      "attributes": {}
+    },
+    {
+      "uuid": "6ffc37a5-1f92-441f-90b5-0634552f51a2",
+      "name": "COMPETES_WITH",
+      "fact": "The text mentions partner options 'LangChain / CrewAI' in the context of developer network effect, indicating a relationship with LangChain.",
+      "source_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "target_node_uuid": "46fbebe2-a9ba-4cd1-8c4d-00225d0d2c0b",
+      "attributes": {}
+    },
+    {
+      "uuid": "01460f16-b078-4ffe-80e9-832ac5f103b3",
+      "name": "COMPETES_WITH",
+      "fact": "The text mentions partner options 'LangChain / CrewAI' in the context of developer network effect, indicating a relationship with CrewAI.",
+      "source_node_uuid": "0594be4d-1378-4dae-b120-8a34dbb7ec99",
+      "target_node_uuid": "bf59dea4-f3bd-42fa-8577-c4439e4b1b61",
+      "attributes": {}
+    },
+    {
+      "uuid": "405853dc-5f45-4326-af30-110845d18321",
+      "name": "COMPETES_WITH",
+      "fact": "CrewAI and InternetCourt are presented in the same context as platform plays and live cases, indicating a competitive relationship.",
+      "source_node_uuid": "bf59dea4-f3bd-42fa-8577-c4439e4b1b61",
+      "target_node_uuid": "c8f16a58-abdd-4bd8-8edb-a31b28498c32",
+      "attributes": {}
+    },
+    {
+      "uuid": "0004696c-27a7-4123-8148-0bde48a6b104",
+      "name": "REPORTS_ON",
+      "fact": "This document is the output of Task 4 (PMF synthesis). Updated as MiroFish simulations produce reports.",
+      "source_node_uuid": "c0cdaa83-65a2-4f7b-897c-9e059e371b5e",
+      "target_node_uuid": "83aceea2-dcc3-4930-827b-7d6c95414398",
+      "attributes": {}
+    }
+  ],
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "FreightForwarder",
+        "description": "Companies that manage logistics for exporters and importers.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The official name of the freight forwarder."
+          },
+          {
+            "name": "location",
+            "type": "text",
+            "description": "The primary location of the freight forwarder's operations."
+          },
+          {
+            "name": "client_count",
+            "type": "integer",
+            "description": "The number of clients served by the freight forwarder."
+          }
+        ],
+        "examples": [
+          "FreshCargo",
+          "Cargonaut"
+        ]
+      },
+      {
+        "name": "Product",
+        "description": "Specific offerings from companies in the trade and logistics sector.",
+        "attributes": [
+          {
+            "name": "product_name",
+            "type": "text",
+            "description": "The name of the product."
+          },
+          {
+            "name": "product_type",
+            "type": "text",
+            "description": "The type of product (e.g., escrow service, API)."
+          },
+          {
+            "name": "price",
+            "type": "float",
+            "description": "The price of the product."
+          }
+        ],
+        "examples": [
+          "Trade Escrow",
+          "Dispute Resolution API"
+        ]
+      },
+      {
+        "name": "CEO",
+        "description": "Chief Executive Officers of companies involved in trade and logistics.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the CEO."
+          },
+          {
+            "name": "company",
+            "type": "text",
+            "description": "The company the CEO leads."
+          },
+          {
+            "name": "experience_years",
+            "type": "integer",
+            "description": "Years of experience in the industry."
+          }
+        ],
+        "examples": [
+          "Maria Quispe",
+          "John Doe"
+        ]
+      },
+      {
+        "name": "Agent",
+        "description": "AI agents that perform tasks and engage in transactions.",
+        "attributes": [
+          {
+            "name": "agent_id",
+            "type": "text",
+            "description": "Unique identifier for the agent."
+          },
+          {
+            "name": "capabilities",
+            "type": "text",
+            "description": "Description of the agent's capabilities."
+          },
+          {
+            "name": "transaction_volume",
+            "type": "float",
+            "description": "The total value of transactions handled by the agent."
+          }
+        ],
+        "examples": [
+          "Rentahuman.ai Agent",
+          "OpenAgents Protocol Agent"
+        ]
+      },
+      {
+        "name": "Investor",
+        "description": "Individuals or entities that invest in companies within the trade and logistics sector.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the investor."
+          },
+          {
+            "name": "investment_amount",
+            "type": "float",
+            "description": "The amount invested in the company."
+          },
+          {
+            "name": "company_invested",
+            "type": "text",
+            "description": "The company in which the investment is made."
+          }
+        ],
+        "examples": [
+          "Stripe",
+          "Venture Capital Firm"
+        ]
+      },
+      {
+        "name": "RegulatoryAgency",
+        "description": "Government bodies that oversee trade and logistics regulations.",
+        "attributes": [
+          {
+            "name": "agency_name",
+            "type": "text",
+            "description": "The name of the regulatory agency."
+          },
+          {
+            "name": "jurisdiction",
+            "type": "text",
+            "description": "The geographical area the agency oversees."
+          },
+          {
+            "name": "regulation_focus",
+            "type": "text",
+            "description": "The specific regulations the agency is responsible for."
+          }
+        ],
+        "examples": [
+          "EU Regulatory Agency",
+          "US Trade Commission"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "Organizations that report on news and events in the trade and logistics sector.",
+        "attributes": [
+          {
+            "name": "outlet_name",
+            "type": "text",
+            "description": "The name of the media outlet."
+          },
+          {
+            "name": "outlet_type",
+            "type": "text",
+            "description": "Type of media outlet (e.g., newspaper, online publication)."
+          },
+          {
+            "name": "audience_size",
+            "type": "integer",
+            "description": "The size of the audience that the outlet reaches."
+          }
+        ],
+        "examples": [
+          "Bloomberg Businessweek",
+          "Financial Times"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Any individual who can express opinions or interact on social media.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the person."
+          },
+          {
+            "name": "location",
+            "type": "text",
+            "description": "The location of the person."
+          }
+        ],
+        "examples": [
+          "John Smith",
+          "Jane Doe"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Any formal group or entity that can express opinions or interact on social media.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The official name of the organization."
+          },
+          {
+            "name": "type",
+            "type": "text",
+            "description": "The type of organization (e.g., NGO, corporation)."
+          }
+        ],
+        "examples": [
+          "World Trade Organization",
+          "International Monetary Fund"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "COMPETES_WITH",
+        "description": "Indicates competition between two entities in the market.",
+        "source_targets": [
+          {
+            "source": "FreightForwarder",
+            "target": "FreightForwarder"
+          },
+          {
+            "source": "Product",
+            "target": "Product"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INVESTS_IN",
+        "description": "Indicates an investment relationship between an investor and a company.",
+        "source_targets": [
+          {
+            "source": "Investor",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "Indicates regulatory oversight of an organization by a regulatory agency.",
+        "source_targets": [
+          {
+            "source": "RegulatoryAgency",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "Indicates media coverage of an organization or event.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "Organization"
+          },
+          {
+            "source": "MediaOutlet",
+            "target": "Product"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "LEADS",
+        "description": "Indicates leadership of a company by a CEO.",
+        "source_targets": [
+          {
+            "source": "CEO",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "USES",
+        "description": "Indicates the use of a product by an organization or individual.",
+        "source_targets": [
+          {
+            "source": "Organization",
+            "target": "Product"
+          },
+          {
+            "source": "Person",
+            "target": "Product"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  }
+}

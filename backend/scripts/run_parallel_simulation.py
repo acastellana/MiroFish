@@ -1611,10 +1611,21 @@ async def main():
         ipc_handler.update_status("alive")
         
         # 等待命令循环（使用全局 _shutdown_event）
+        # Auto-exit after IDLE_TIMEOUT_SECONDS of no commands to prevent GPU hang
+        IDLE_TIMEOUT_SECONDS = 30 * 60  # 30 minutes
+        last_command_time = asyncio.get_event_loop().time()
         try:
             while not _shutdown_event.is_set():
                 should_continue = await ipc_handler.process_commands()
                 if not should_continue:
+                    break
+                # Reset idle timer if a command was processed
+                if should_continue is True:
+                    last_command_time = asyncio.get_event_loop().time()
+                # Auto-close if idle too long
+                idle_secs = asyncio.get_event_loop().time() - last_command_time
+                if idle_secs >= IDLE_TIMEOUT_SECONDS:
+                    log_manager.info(f"[AutoClose] No commands received for {int(idle_secs//60)} minutes. Closing environment.")
                     break
                 # 使用 wait_for 替代 sleep，这样可以响应 shutdown_event
                 try:
