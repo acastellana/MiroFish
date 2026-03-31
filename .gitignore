@@ -58,3 +58,6 @@ backend/uploads/
 
 # Docker 数据
 data/backend/uploads/graphs/
+backend/test_ff1_vertical_slice.json
+mirofish_pmf_results_*.md
+scripts/

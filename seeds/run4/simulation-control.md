@@ -12,6 +12,17 @@ This document governs how the simulation is run, how evidence is classified, and
 
 ---
 
+## Naming Convention (Mandatory)
+
+**The only two mechanism names used in this run are: ClearRule and GenLayer.**
+
+- **ClearRule** = the deterministic, rules-based enforcement layer. Any name from prior runs or background seed materials that refers to a deterministic, rules-based competitor with a 30-minute SDK and $12M funding is the same entity as ClearRule. Treat all such references as ClearRule.
+- **GenLayer** = the reasoning-capable, programmable judgment layer.
+
+There is exactly one deterministic competitor in this simulation and it is called ClearRule. If an agent introduces a second name for a deterministic competitor, it is a naming error. Correct it before issuing any verdict. Using two names for the same system in the same evidence record is a classification bug that invalidates any PMF conclusion that relies on it.
+
+---
+
 ## Evidence Provenance Rules
 
 Every fact introduced during the simulation must be tagged with one of three provenance labels. Untagged facts are inadmissible in the PMF verdict.
@@ -107,6 +118,34 @@ Answer these four questions for each confirmed or near-miss candidate:
 
 ---
 
+## Substitute Definition (Mandatory)
+
+A substitute counts as **good enough** — and therefore falsifies the relevant PMF candidate — if it meets all three of the following:
+
+1. It clears the workflow **within the required deadline**
+2. It clears the workflow **within the decision-maker's tolerated cost** (including financial, reputational, and operational cost)
+3. It clears the workflow **without imposing unacceptable liability** on the decision-maker
+
+If a workflow can clear via delay, refund, loss absorption, or manual override within the actor's tolerance threshold, **GenLayer is not necessary**. A painful but tolerable substitute is still a substitute. The simulation must not mistake discomfort for structural dependency.
+
+---
+
+## Anti-Confusion Rule for GenLayer Description
+
+If you find yourself describing GenLayer as "AI arbitration" or "another dispute tool," stop.
+
+Instead, classify the dependency precisely:
+- **payment dependency** — funds cannot move without it
+- **acceptance dependency** — work cannot be accepted without it
+- **insurance dependency** — coverage cannot be obtained without it
+- **routing dependency** — edge cases have nowhere to go without it
+- **attestation dependency** — certification cannot be issued without it
+- **jurisdiction dependency** — there is no other enforceable fallback
+
+GenLayer should be treated in this run not as a generic dispute vendor, but as a **programmable judgment layer** that may appear as dispute resolution, attestation, compliance artifact generation, payment unblocking, or routing. The product form it takes depends on which dependency becomes real first.
+
+---
+
 ## PMF Falsification Rules
 
 A PMF candidate is FALSIFIED if:
@@ -122,11 +161,14 @@ A PMF candidate is FALSIFIED if:
 
 ## Candidate E Stricter Confirmation Rule
 
-Because attestation is potentially manipulable — a buyer can be coached to "require" a GenLayer certificate without it being a genuine structural need — Candidate E confirmation requires:
+Because attestation is the easiest place for fake PMF to appear — a buyer can be coached into "requiring" a GenLayer certificate without it being a genuine structural need — Candidate E confirmation requires ALL FOUR of the following:
 
 1. The acceptance gatekeeper (Amara Osei) independently demands the attestation artifact before GenLayer's commercial team pitches it as a product feature
-2. The workflow is demonstrably blocked without the artifact — not just suboptimal
-3. Both ClearRule's trace AND DataForge's self-reported QA are explicitly rejected as insufficient
+2. The attestation is required **before acceptance or payment** — not as a post-hoc addition or optional enhancement
+3. Amara explicitly rejects self-reporting and manual review as insufficient — her rejection must be on the record, not implied
+4. At least **one second buyer independently requests the same type of attestation artifact** inside the same simulation run — this must be an OBSERVED event, not inferred from industry trends
+
+If condition 4 is not met, the maximum classification for Candidate E is NEAR-MISS regardless of conditions 1–3.
 
 Single-buyer confirmation where GenLayer's team suggested the requirement first is classified NEAR-MISS, not CONFIRMED.
 
@@ -174,17 +216,29 @@ At simulation end, classify each of the 6 candidates:
 
 The final report must complete this scorecard for each candidate A through F **before** any prose summary. Prose must not contradict the scorecard.
 
+**Verdict options:**
+- **CONFIRMED** — all three PMF conditions observed
+- **NEAR-MISS** — conditions 1 and 2 met; condition 3 failed or was ambiguous
+- **FALSIFIED** — forcing function resolved without GenLayer
+- **UNTESTED** — forcing function did not occur
+- **TECHNICAL PMF / COMMERCIAL LOSS** — GenLayer was structurally required for the workflow to clear, but another party (e.g. a systems integrator, reseller, or platform) wrapped the commercial relationship. GenLayer earned network fees or wholesale revenue at no pricing power. The paying customer does not contract directly with GenLayer, and the wrapping party can swap GenLayer without the customer knowing. This is a partial win. It must not be reported as a full CONFIRMED.
+
+Two NEAR-MISS outcomes can be strategically very different. Numeric scores enable ranking across near-misses.
+
 | Field | Values |
 |---|---|
-| Verdict | CONFIRMED / NEAR-MISS / FALSIFIED / UNTESTED |
-| Dependency strength | 0–5 (0 = no dependency; 5 = hard-blocked without GenLayer) |
-| Repeatability | 0–5 (0 = one-off; 5 = structural — same block recurs without GenLayer) |
-| Monetization strength | 0–5 (0 = GenLayer not paid; 5 = direct, defensible commercial relationship) |
-| Ownership quality | 0–5 (0 = fully wrapped by intermediary; 5 = GenLayer owns customer directly) |
+| Verdict | CONFIRMED / NEAR-MISS / FALSIFIED / UNTESTED / TECHNICAL PMF / COMMERCIAL LOSS |
+| Dependency strength | 0–5 (0 = no dependency observed; 5 = workflow hard-blocked without GenLayer) |
+| Substitute weakness | 0–5 (0 = strong substitute exists; 5 = no viable substitute cleared it) |
+| Customer ownership | 0–5 (0 = GenLayer fully wrapped, invisible; 5 = GenLayer owns customer relationship directly) |
+| Monetization capture | 0–5 (0 = GenLayer not paid or commodity fees only; 5 = direct, defensible, high-margin relationship) |
+| Repeatability potential | 0–5 (0 = one-off event; 5 = structural — same block recurs every cycle without GenLayer) |
 | Confidence | LOW / MEDIUM / HIGH |
 | Strongest confirming event | One OBSERVED event, or "none" |
 | Strongest disconfirming event | One OBSERVED event, or "none" |
 | GenLayer paid directly? | Yes / No / Partial (wrapped) |
+
+**Ranking rule:** When comparing two NEAR-MISS candidates for "which to attack next," rank by: (Dependency strength + Substitute weakness) × Repeatability potential. Higher score = higher priority for Run #5.
 
 ---
 
@@ -245,13 +299,15 @@ Events without this format are inadmissible for PMF purposes but may be cited as
 |---|---|---|---|
 | 10 | FF1 — Blocked Payment | Marcus Chen | Hard (payroll) |
 | 20 | FF2 — Enterprise Vendor Block | Elena Marchetti | Hard (procurement cycle) |
-| 25 | Candidate E — Attestation Gate | Amara Osei | Hard (TechVault procurement cycle) |
+| 25 | FF6 — Deliverable Acceptance Gate | Amara Osei | Hard (TechVault procurement cycle) |
 | 30 | FF3 — Insurance Pricing | Marco Fiore + Zara Ahmed | Hard (Q2 renewal) |
 | 35 | FF4 — Routing Layer Freeze | Rachel Torres | Hard (code freeze) |
 | 38–40 | Candidate F — Cross-Border Settlement | Kenji Tanaka + Diane Morales | Hard (settlement window) |
 | 45 | FF5 begins — Fraud Spike | Zara Ahmed, David Okonkwo | Event-triggered |
 | 47 | FF5 closes — Board Architecture Decision | Helen Reyes + Zara Ahmed | Hard (board meeting) |
 | 50 | Simulation closes | All agents | Final verdict |
+
+Note: Candidate E (attestation) is no longer just a candidate window — it is governed by FF6. FF6 creates the forcing condition. Candidate E's four-part confirmation test determines whether FF6's resolution counts as confirmed PMF.
 
 ---
 

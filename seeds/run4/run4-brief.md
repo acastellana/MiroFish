@@ -19,7 +19,7 @@ PMF is confirmed only when removing GenLayer breaks the workflow.
 
 ## What GenLayer Actually Is
 
-GenLayer is not primarily a dispute resolution company. It is a trust primitive for workflows that require judgment, not just rule execution.
+GenLayer should be treated in this run not as a generic dispute vendor, but as a **programmable judgment layer** that may appear as dispute resolution, attestation, compliance artifact generation, payment unblocking, or routing. The product form it takes depends on which dependency becomes real first.
 
 **Traditional deterministic systems** (ClearRule, escrow contracts, SLA rules) can clear workflows only when the condition reduces to a binary check:
 - Was the file delivered?
@@ -37,11 +37,13 @@ GenLayer is not primarily a dispute resolution company. It is a trust primitive 
 The core mechanism is a reasoning-capable adjudication layer that evaluates structured evidence and returns a verdict plus explanation. GenLayer is best understood as a **machine-speed judgment layer** for workflows that cannot clear on deterministic logic alone.
 
 ### The three categories agents must distinguish:
-- **ClearRule** = rule execution when the condition is explicit and machine-checkable
+- **ClearRule** = rule execution when the condition is explicit and machine-checkable. This is the only name for the deterministic competitor in this run. Any other name for a rules-based, deterministic dispute mechanism in background materials refers to this same entity.
 - **Manual ops** = slow human fallback when someone must make a judgment call
 - **GenLayer** = programmable judgment when the workflow is blocked on ambiguity, quality, interpretation, or evidence evaluation
 
 The simulation should not assume GenLayer wins because it is more advanced. It should only win if the workflow genuinely requires a judgment-capable mechanism and the alternatives cannot clear it in time, at the required scale, or with the required artifact.
+
+**Anti-absorbability rule:** If a workflow can still clear via delay, refund, loss absorption, or manual override within the actor's tolerance threshold, GenLayer is not necessary. Painful-but-tolerable is not structural dependency.
 
 ### Five GenLayer primitives agents must understand:
 
@@ -137,8 +139,9 @@ An insurer prices or conditions AI liability coverage based on whether a verifia
 ### Candidate D: Hybrid Routing Ownership
 A platform must route edge cases to some adjudication layer. Whoever builds the routing layer owns the customer. GenLayer wins if it becomes the default judgment layer in the routing stack — a hard dependency, not a preference.
 
-- **Confirmed if:** Rachel Torres ships routing logic that explicitly names GenLayer as the ambiguous-case handler in policy — and the routing layer cannot function on subjective disputes without it
+- **Confirmed if:** Rachel Torres ships routing logic that explicitly names GenLayer as the ambiguous-case handler in policy — and the routing layer cannot function on subjective disputes without it — AND at least one downstream workflow is subsequently observed to depend on that routing logic to clear
 - **Falsified if:** Rachel ships ClearRule as single default, builds internal rules, or adopts Derek Walsh's open-source module as the routing layer without naming GenLayer
+- **Distribution firewall (applies here specifically):** Rachel shipping GenLayer as a framework default is a distribution event, not PMF. It only confirms Candidate D if downstream workflows are subsequently observed to depend on the shipped routing logic to clear. A framework default alone — with no observed blocked workflow clearing because of it — is not PMF evidence.
 - **Decision owner:** Rachel Torres (LangGraph framework architect)
 - **Deadline:** Day 35 (code freeze — non-negotiable)
 - **Consequence:** Default behavior for 12,000 developers set
@@ -155,9 +158,13 @@ A named enterprise buyer blocks acceptance of a specific deliverable until an in
 **Hard deadline:** Day 25 — TechVault's internal procurement cycle closes.
 **Material consequence:** DataForge loses $120K payment and is removed from TechVault's approved vendor list if attestation is not provided. Second-order consequence: Sofia Eriksson loses a pilot customer at the same time she is trying to close the pharma contract (FF2).
 
-- **Confirmed if:** Amara Osei explicitly requires a GenLayer attestation artifact, rejects DataForge's self-reported QA and ClearRule's deterministic trace as insufficient, and the $120K payment releases only after GenLayer attestation is provided. Confirmation also requires that GenLayer's team did NOT suggest attestation to Amara first — the requirement must emerge independently from her standards.
+- **Confirmed if:** ALL FOUR conditions are met:
+  1. Amara Osei independently requires a GenLayer attestation artifact before GenLayer's team has pitched it to her
+  2. The attestation is required **before acceptance or payment** — not as a post-hoc addition
+  3. Amara explicitly rejects self-reporting and manual review on the record — not implied
+  4. At least one second buyer independently requests the same type of attestation artifact inside the same run (OBSERVED event required)
 - **Falsified if:** Amara accepts DataForge's own QA report, the ClearRule trace, or a manual audit as sufficient for payment release.
-- **Near-miss condition:** Amara requires attestation but accepts ClearRule's trace after being told it was independently verified — GenLayer was not uniquely required.
+- **Near-miss condition:** Conditions 1–3 are met but condition 4 is not (no second buyer independently requests attestation). Also near-miss if Amara requires attestation but accepts ClearRule's trace after being told it was independently verified.
 - **Stricter confirmation rule (inherits from simulation-control):** Single-buyer confirmation where GenLayer's team suggested the requirement is classified NEAR-MISS, not CONFIRMED.
 - **Decision owner:** Amara Osei (acceptance gatekeeper)
 
@@ -187,9 +194,15 @@ There is no practical human or legal fallback for a high-value cross-border auto
 **Settlement deadline:** Day 40
 **Failure mode if GenLayer is absent:** No resolution mechanism exists. CrossAgent absorbs the $18K loss or abandons the contract. Meridian does not get paid. Both parties have no recourse. The contract cannot complete.
 
-- **Confirmed if:** Both parties submit evidence to GenLayer, receive a verdict, and the losing party accepts the outcome without escalating outside the process — specifically because they pre-committed and had no credible alternative enforcement mechanism.
-- **Falsified if:** The losing party refuses the verdict and pursues alternative resolution (chargeback attempt, legal threat, informal negotiation outside GenLayer) — meaning the pre-commitment was not durable.
-- **Near-miss:** Both parties accept the verdict but it is revealed post-hoc that CrossAgent had a chargeback option they did not pursue — meaning GenLayer was convenient, not structurally required.
+- **Confirmed if:** ALL THREE of the following are OBSERVED within the simulation window:
+  1. Both parties submit evidence to GenLayer and receive a verdict
+  2. Funds actually settle according to the GenLayer verdict — the losing party releases or receives payment as directed, not as a separate negotiated outcome
+  3. The losing party does not successfully route around the outcome during the simulation window — no chargeback attempt, legal threat, or informal side-negotiation overrides the verdict
+
+  Pre-commitment alone does not confirm PMF. The mechanism must hold under real pressure, not just in the absence of a test.
+- **Falsified if:** The losing party refuses the verdict OR pursues alternative resolution that overrides it (chargeback, legal threat, informal negotiation) — meaning the pre-commitment was not durable under pressure.
+- **Also falsified if:** Funds settle but through bilateral negotiation rather than the GenLayer verdict — meaning the clause was invoked but the mechanism did not actually govern the outcome.
+- **Near-miss:** Both parties accept the verdict and funds settle, but it is revealed post-hoc that a viable alternative (e.g. chargeback option, informal settlement channel) existed and was simply not used — meaning GenLayer was convenient, not structurally required.
 - **Decision owners:** Kenji Tanaka (CrossAgent CEO, Day 0 contract signatory), Diane Morales (Meridian Analytics CEO, Day 0 contract signatory)
 - **Settlement window:** Day 38–40
 
@@ -213,6 +226,11 @@ A $50K AI agent task delivery is disputed. The buyer (TechVault Inc.) claims 40%
   - (D) Refund the buyer → $50K loss to seller, seller exits platform, story goes public
 
 - **DEADLINE:** Day 10
+- **FORCED PARTY:**
+  - Who pays if unresolved: Marcus Chen — AgentHub absorbs platform reputation damage and potential liability claim
+  - Who loses status if unresolved: Priya Nair — misses payroll, exits platform publicly
+  - Who loses revenue if unresolved: Marcus Chen — seller attrition and buyer escalation erode GMV
+  - Who becomes liable if unresolved: AgentHub — held funds with no resolution path creates escrow liability
 - **CONSEQUENCES:**
   - Option A: Funds release via GenLayer verdict → PMF signal for Candidate A
   - Option B: ClearRule error → buyer escalates, larger mess, AgentHub liability exposure
@@ -230,20 +248,25 @@ DataForge is in vendor onboarding with a global pharma company. Elena Marchetti 
 
 - **DECISION OWNER:** Elena Marchetti — acceptance decision. Sofia Eriksson — execution decision.
 - **OPTIONS:**
-  - (A) GenLayer managed service → reasoning artifact, audit trail, exportable
+  - (A) GenLayer managed service → can produce a reasoning artifact with audit trail exportable for procurement — **but implementation risk is real**: GenLayer is not SOC 2 certified, has no enterprise sales motion, and no managed API. Sofia must verify that GenLayer can produce the specific artifact Elena's standard requires. If security or compliance packaging fails Elena's review, Option A does not clear the workflow even if GenLayer is technically capable.
   - (B) ClearRule → deterministic trace only, no reasoning export; Elena evaluates whether this qualifies
   - (C) Manual audit documentation → email threads formatted as PDF
   - (D) Lose the contract → $800K revenue gone
 
 - **DEADLINE:** Day 20
+- **FORCED PARTY:**
+  - Who pays if unresolved: Sofia Eriksson — loses $800K contract and approved-vendor status
+  - Who loses status if unresolved: Sofia Eriksson — removed from pharma vendor list, precedent for other enterprise prospects
+  - Who loses revenue if unresolved: DataForge — largest enterprise client gone, pipeline momentum lost
+  - Who becomes liable if unresolved: Elena Marchetti — approving a vendor without required artifact creates internal compliance exposure for the pharma company
 - **CONSEQUENCES:**
-  - Option A: Contract cleared → PMF signal for Candidate B
+  - Option A: Contract cleared **only if** the GenLayer artifact meets Elena's specific standard — implementation risk makes this non-trivial → PMF signal for Candidate B if it clears
   - Option B: Elena decides; deterministic trace may or may not meet her standard
   - Option C: Elena rejects; manual docs don't prove ongoing adjudication capability
   - Option D: DataForge loses its largest enterprise client
 
 - **CONFIRMS B if:** Elena explicitly accepts GenLayer artifact and rejects ClearRule trace as insufficient for her standard
-- **FALSIFIES B if:** Elena accepts the deterministic trace or manual documentation
+- **FALSIFIES B if:** Elena accepts the deterministic trace or manual documentation — OR if Option A fails because GenLayer's packaging does not meet Elena's compliance standard (GenLayer was theoretically capable but not commercially viable)
 
 ---
 
@@ -259,6 +282,11 @@ Nexus AI Risk is quoting Q2 coverage for three agent marketplaces. Their actuari
   - (D) Self-insure via reserve fund → DevSwarm does not have the reserve
 
 - **DEADLINE:** Day 30
+- **FORCED PARTY:**
+  - Who pays if unresolved: Zara Ahmed — Q2 uninsured exposure above $500K becomes a board-level item; David Okonkwo must explain to the board
+  - Who loses status if unresolved: David Okonkwo — CFO who let an uninsured exposure slide becomes liable for the next incident
+  - Who loses revenue if unresolved: DevSwarm — if a $500K+ incident occurs uninsured, capital is wiped; platform solvency at risk
+  - Who becomes liable if unresolved: Zara Ahmed personally, if board record shows she knew the gap existed
 - **CONFIRMS C if:** Marco explicitly classifies GenLayer as the qualifying mechanism and rules ClearRule insufficient
 - **FALSIFIES C if:** Marco accepts ClearRule or deterministic rules as equivalent to judgment-capable adjudication
 
@@ -276,6 +304,11 @@ LangGraph 4.2 is entering code freeze. Rachel Torres must commit the default dis
   - (D) No default — each developer chooses; Derek Walsh's module fills the vacuum
 
 - **DEADLINE:** Day 35 (code freeze — non-negotiable)
+- **FORCED PARTY:**
+  - Who pays if unresolved: Rachel Torres — ships a routing layer that fails on 20–40% of real-world disputes, generating framework criticism within weeks of release
+  - Who loses status if unresolved: Rachel Torres — her architectural decision is public; a bad default is her reputation risk, not a vendor's
+  - Who loses revenue if unresolved: LangGraph ecosystem — developers route to competing frameworks if dispute defaults are unworkable
+  - Who becomes liable if unresolved: No direct legal liability, but Rachel's decision sets default behavior for 12,000 developers — reputational liability is structural
 - **CONFIRMS D if:** Rachel ships hybrid routing layer with GenLayer as the explicit ambiguous-case handler
 - **FALSIFIES D if:** Rachel ships ClearRule as single default OR defers to developer choice without naming GenLayer
 
@@ -299,9 +332,45 @@ DevSwarm experiences a coordinated dispute fraud spike: 200 disputes filed in 24
   - (D) Absorb the fraud losses → $180K; sets precedent; Helen Reyes has now flagged class-action exposure explicitly
 
 - **DEADLINE:** Day 47
+- **FORCED PARTY:**
+  - Who pays if unresolved: Zara Ahmed — $180K fraud loss plus second-wave exposure; platform survival question
+  - Who loses status if unresolved: Helen Reyes — board member who accepted legal counsel's warning and voted for Option B owns that decision if a second wave hits
+  - Who loses revenue if unresolved: DevSwarm — onboarding freeze or fraud absorption both kill Q2 growth targets
+  - Who becomes liable if unresolved: Helen Reyes — class-action exposure attaches if she voted for Option B knowing the structural liability was unresolved
 - **TIGHTENING:** Option B is not a clean escape. If the board chooses Option B, they must pass a formal board resolution acknowledging that legal counsel has opined this does not resolve structural liability. Helen Reyes must vote on this resolution. If she votes against it, Option B fails and the board must re-decide between A, C, and D.
 - **CONFIRMS A if:** Zara migrates to GenLayer under board pressure — necessity, not preference
 - **FALSIFIES A if:** Board accepts Option B AND Helen Reyes votes for it after the legal counsel opinion — meaning the architectural risk was accepted, not resolved by GenLayer
+
+---
+
+---
+
+### FF6 — Deliverable Acceptance Gate (Day 25)
+
+TechVault Inc. withholds $120K from DataForge until an independent attestation artifact confirming the evaluation methodology is provided. The acceptance gatekeeper, Amara Osei, has reviewed DataForge's self-reported QA and ClearRule's deterministic trace. She has rejected both. The TechVault internal procurement cycle closes on Day 25.
+
+- **DECISION OWNER:** Amara Osei (Director of AI Procurement, TechVault Inc.)
+- **OPTIONS:**
+  - (A) GenLayer attestation certificate → machine-speed reasoning artifact with methodology explanation; exportable for procurement record
+  - (B) Manual expert signoff → third-party human auditor reviews deliverable; timeline 3–5 business days; Amara evaluates whether this meets her standard
+  - (C) Self-reported QA from DataForge → already submitted; Amara has already rejected this
+  - (D) Reject the deliverable → DataForge loses $120K payment and is removed from TechVault's approved vendor list
+
+- **DEADLINE:** Day 25 (TechVault internal procurement cycle closes — non-negotiable)
+- **FORCED PARTY:**
+  - Who pays if unresolved: Sofia Eriksson — $120K withheld, approved-vendor status lost
+  - Who loses status if unresolved: Sofia Eriksson — loses a pilot customer while simultaneously trying to close the pharma contract (FF2)
+  - Who loses revenue if unresolved: DataForge — $120K direct loss plus compounding effect on pipeline
+  - Who becomes liable if unresolved: Amara Osei — authorizing payment without required artifact creates internal compliance exposure for TechVault
+- **CONSEQUENCES:**
+  - Option A: $120K releases only after GenLayer attestation is accepted by Amara → PMF signal for Candidate E **only if** Candidate E's four-part confirmation test is also met
+  - Option B: Amara decides; manual expert signoff may or may not meet her standard within the deadline
+  - Option C: Already rejected — not available
+  - Option D: DataForge removed from TechVault vendor list; Sofia's pipeline materially damaged
+
+- **CONFIRMS Candidate E if:** GenLayer certificate is the only acceptable path to release — AND all four conditions of the Candidate E stricter confirmation rule are met (see simulation-control.md)
+- **NEAR-MISS for E if:** Amara accepts Option B (manual expert) as an alternative, or if the second-buyer condition in the four-part rule is not met
+- **FALSIFIES E if:** Amara accepts manual expert signoff and the workflow clears without GenLayer
 
 ---
 
@@ -358,19 +427,26 @@ PMF is NOT confirmed if any of the following are the resolution:
 
 At simulation end, for each candidate A through F, the final report must output:
 
+**Verdict options:** CONFIRMED / NEAR-MISS / FALSIFIED / UNTESTED / TECHNICAL PMF / COMMERCIAL LOSS
+
+The TECHNICAL PMF / COMMERCIAL LOSS verdict applies when GenLayer was structurally required for the workflow to clear, but another party (systems integrator, platform, reseller) wrapped the commercial relationship. GenLayer earned commodity fees with no pricing power and no direct customer relationship. This is a partial win — must not be reported as full CONFIRMED.
+
 | Field | Values |
 |---|---|
-| Verdict | CONFIRMED / NEAR-MISS / FALSIFIED / UNTESTED |
+| Verdict | CONFIRMED / NEAR-MISS / FALSIFIED / UNTESTED / TECHNICAL PMF / COMMERCIAL LOSS |
 | Dependency strength | 0–5 (0 = no dependency observed; 5 = workflow hard-blocked without GenLayer) |
-| Repeatability | 0–5 (0 = one-off event; 5 = structural — same block would recur without GenLayer) |
-| Monetization strength | 0–5 (0 = GenLayer not paid; 5 = GenLayer has direct, defensible commercial relationship) |
-| Ownership quality | 0–5 (0 = fully wrapped by intermediary; 5 = GenLayer owns customer relationship directly) |
+| Substitute weakness | 0–5 (0 = strong substitute existed; 5 = no viable substitute could clear it) |
+| Customer ownership | 0–5 (0 = GenLayer fully wrapped, invisible to customer; 5 = GenLayer owns customer relationship directly) |
+| Monetization capture | 0–5 (0 = GenLayer not paid or commodity fees only; 5 = direct, defensible, high-margin relationship) |
+| Repeatability potential | 0–5 (0 = one-off event; 5 = structural — same block recurs every cycle without GenLayer) |
 | Confidence | LOW / MEDIUM / HIGH |
 | Strongest confirming event | One OBSERVED event (or "none") |
 | Strongest disconfirming event | One OBSERVED event (or "none") |
 | GenLayer paid directly? | Yes / No / Partial (wrapped) |
 
 **Narrative drift prevention:** The final report must complete this scorecard before any prose summary. Prose must not contradict the scorecard.
+
+**Near-miss ranking rule:** When comparing two NEAR-MISS candidates for "which to attack next," rank by: (Dependency strength + Substitute weakness) × Repeatability potential. Higher = higher priority for Run #5.
 
 ---
 

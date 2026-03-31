@@ -684,9 +684,29 @@ watch(() => props.systemLogs?.length, () => {
   })
 })
 
-onMounted(() => {
+onMounted(async () => {
   addLog('Step3 simulation run initialized')
   if (props.simulationId) {
+    // Check if already completed — skip restart, go straight to phase=2
+    try {
+      const res = await getRunStatus(props.simulationId)
+      if (res.success && res.data) {
+        const data = res.data
+        const alreadyDone = data.runner_status === 'completed' || data.runner_status === 'stopped'
+        const platformsDone = checkPlatformsCompleted(data)
+        if (alreadyDone || platformsDone) {
+          runStatus.value = data
+          phase.value = 2
+          addLog(`✓ Loaded completed simulation (${data.total_actions_count || 0} actions, ${data.current_round}/${data.total_rounds} rounds)`)
+          emit('update-status', 'completed')
+          // Load actions for display
+          fetchRunStatusDetail()
+          return
+        }
+      }
+    } catch (err) {
+      // fall through to normal start
+    }
     doStartSimulation()
   }
 })
